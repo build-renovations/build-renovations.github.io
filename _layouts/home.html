@@ -1,0 +1,166 @@
+---
+layout: default
+---
+{% assign t = site.data.translations[page.lang] | default: site.data.translations.uk %}
+<section class="hero">
+  <div class="shell hero__grid">
+    <div class="hero__copy">
+      <p class="eyebrow">{{ page.eyebrow }}</p>
+      <div class="hero__kickers">
+        <span>{{ t.hero_kicker_1 }}</span>
+        <span>{{ t.hero_kicker_2 }}</span>
+        <span>{{ t.hero_kicker_3 }}</span>
+      </div>
+      <h1>{{ page.hero_title }}</h1>
+      <p class="hero__lead">{{ page.hero_lead }}</p>
+      <div class="hero__stats" aria-label="Key facts">
+        <div class="hero__stat">
+          <strong>{{ t.hero_stat_1_value }}</strong>
+          <span>{{ t.hero_stat_1_label }}</span>
+        </div>
+        <div class="hero__stat">
+          <strong>{{ t.hero_stat_2_value }}</strong>
+          <span>{{ t.hero_stat_2_label }}</span>
+        </div>
+        <div class="hero__stat">
+          <strong>{{ t.hero_stat_3_value }}</strong>
+          <span>{{ t.hero_stat_3_label }}</span>
+        </div>
+      </div>
+      <div class="hero__actions">
+        <a class="button button--primary" href="{{ page.primary_cta_url | relative_url }}">{{ t.cta_primary }}</a>
+        <a class="button button--secondary" href="{{ page.secondary_cta_url | relative_url }}">{{ t.cta_secondary }}</a>
+      </div>
+      <div class="hero__ribbon">
+        <div>
+          <p class="hero__ribbon-title">{{ t.hero_ribbon_title }}</p>
+          <p>{{ t.hero_ribbon_text }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="hero__visual">
+      <div class="hero__mosaic">
+        <figure class="hero__shot hero__shot--primary">
+          <img src="{{ '/assets/images/work/plumbing-bath-installation.webp' | relative_url }}" alt="{% if page.lang == 'en' %}Bathroom installation stage{% else %}Етап монтажу ванної кімнати{% endif %}" width="960" height="1280">
+        </figure>
+        <figure class="hero__shot hero__shot--secondary">
+          <img src="{{ '/assets/images/work/core-shell-prep.webp' | relative_url }}" alt="{% if page.lang == 'en' %}Prepared shell before finishing{% else %}Підготовлене приміщення перед чистовими роботами{% endif %}" width="1280" height="720">
+        </figure>
+        <figure class="hero__shot hero__shot--accent">
+          <img src="{{ '/assets/images/work/finishing-feature-wall.webp' | relative_url }}" alt="{% if page.lang == 'en' %}Finished decorative wall{% else %}Готова декоративна стіна{% endif %}" width="1280" height="720">
+        </figure>
+      </div>
+      <article class="hero__panel">
+        <p class="hero__panel-title">{{ t.hero_note_label }}</p>
+        <div class="hero__proof-stack">
+          {% for point in page.panel_points %}
+            <div class="hero__proof-item">
+              <span class="hero__proof-index">0{{ forloop.index }}</span>
+              <div>
+                <strong>{{ point }}</strong>
+                <p>{% if forloop.first %}{{ t.hero_proof_1 }}{% elsif forloop.index == 2 %}{{ t.hero_proof_2 }}{% else %}{{ t.hero_proof_3 }}{% endif %}</p>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="shell">
+    <div class="section-heading section-heading--wide">
+      <p class="eyebrow">{{ t.scope_label }}</p>
+      <h2>{{ t.services_heading }}</h2>
+      <p class="section-intro">{{ t.services_intro }}</p>
+    </div>
+    <div class="service-grid">
+      {% for item in site.data.services.items %}
+        {% assign content = item[page.lang] | default: item.uk %}
+        <article class="service-card">
+          <figure class="service-card__media">
+            <img src="{{ item.image | relative_url }}" alt="{{ content.title }}" loading="lazy" width="960" height="1280">
+          </figure>
+          <div class="service-card__top">
+            <span class="service-card__icon">{{ item.icon }}</span>
+            <p class="service-card__eyebrow">{{ t.scope_label }}</p>
+          </div>
+          <h3>{{ content.title }}</h3>
+          <p>{{ content.description }}</p>
+          <p class="service-card__micro">{{ content.micro }}</p>
+          <a class="service-card__link" href="{% if page.lang == 'en' %}{{ '/en' | append: item.url | relative_url }}{% else %}{{ item.url | relative_url }}{% endif %}">{{ t.service_link_label }}</a>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--accent">
+  <div class="shell">
+    <div class="feature-band">
+      <div class="feature-band__copy">
+        <p class="eyebrow">{{ t.featured_label }}</p>
+        <h2>{{ t.featured_title }}</h2>
+        <p>{{ t.featured_text }}</p>
+      </div>
+      <div class="feature-band__media">
+        <figure><img src="{{ '/assets/images/work/electrical-led-room.webp' | relative_url }}" alt="{% if page.lang == 'en' %}Interior with completed lighting{% else %}Інтер'єр із завершеним освітленням{% endif %}" loading="lazy" width="960" height="1280"></figure>
+        <figure><img src="{{ '/assets/images/work/finishing-hallway.webp' | relative_url }}" alt="{% if page.lang == 'en' %}Finished hallway{% else %}Готовий коридор{% endif %}" loading="lazy" width="722" height="1280"></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include work-examples.html lang=page.lang %}
+
+<section class="section">
+  <div class="shell">
+    <div class="section-heading section-heading--wide">
+      <p class="eyebrow">{{ t.process_label }}</p>
+      <h2>{{ t.process_heading }}</h2>
+      <p class="section-intro">{{ t.process_intro }}</p>
+    </div>
+    <div class="process-grid">
+      {% for step in site.data.process.steps %}
+        {% assign content = step[page.lang] | default: step.uk %}
+        <article class="process-card">
+          <p class="process-card__label">{{ t.process_card_label }}</p>
+          <h3>{{ content.title }}</h3>
+          <p>{{ content.description }}</p>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="shell">
+    <div class="section-heading section-heading--wide">
+      <p class="eyebrow">{{ t.trust_label }}</p>
+      <h2>{{ t.proof_heading }}</h2>
+      <p class="section-intro">{{ t.proof_intro }}</p>
+    </div>
+    <div class="proof-grid">
+      {% for proof in site.data.proof.items %}
+        {% assign content = proof[page.lang] | default: proof.uk %}
+        <article class="proof-card">
+          <h3>{{ content.title }}</h3>
+          <p>{{ content.description }}</p>
+        </article>
+      {% endfor %}
+      <article class="proof-card proof-card--quote">
+        <p class="proof-card__quote">{{ t.proof_quote }}</p>
+        <p class="proof-card__signature">{{ t.proof_signature }}</p>
+      </article>
+    </div>
+    <div class="contact-banner">
+      <div>
+        <p class="eyebrow">{{ t.cta_primary }}</p>
+        <h2>{{ t.contact_banner_title }}</h2>
+        <p>{{ t.contact_banner_text }}</p>
+      </div>
+      <a class="button button--primary" href="{{ page.primary_cta_url | relative_url }}">{{ t.cta_primary }}</a>
+    </div>
+  </div>
+</section>

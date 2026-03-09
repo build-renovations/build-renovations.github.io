@@ -1,0 +1,19 @@
+items:
+  - uk:
+      title: "Пакет послуг, а не лише окремі майстри"
+      description: "Сайт має показувати, що команда закриває всі етапи: від інженерії до чистових робіт."
+    en:
+      title: "A complete delivery partner, not isolated crews"
+      description: "The site should show that one team covers the full path from engineering work to finishing."
+  - uk:
+      title: "Прозора методика"
+      description: "Клієнт має бачити, як ви плануєте етапи, контролюєте якість і ведете зміни."
+    en:
+      title: "Transparent process"
+      description: "Prospects need to see how stages are planned, quality is checked, and changes are handled."
+  - uk:
+      title: "Предметна комунікація"
+      description: "Форма звернення і CTA мають запрошувати до конкретної розмови про об'єкт, а не лише до загального дзвінка."
+    en:
+      title: "Concrete communication"
+      description: "The enquiry flow should invite a practical discussion about the property, not a vague callback."

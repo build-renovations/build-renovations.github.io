@@ -1,0 +1,61 @@
+---
+layout: default
+---
+{% assign service = site.data.service_pages.items[page.service_key] %}
+{% assign content = service[page.lang] | default: service.uk %}
+{% assign t = site.data.translations[page.lang] | default: site.data.translations.uk %}
+<section class="page-hero">
+  <div class="shell service-hero">
+    <div class="service-hero__copy">
+      <p class="eyebrow">{{ content.eyebrow }}</p>
+      <h1>{{ content.title }}</h1>
+      <p class="page-lead">{{ content.lead }}</p>
+      <div class="hero__actions">
+        <a class="button button--primary" href="{% if page.lang == 'en' %}{{ '/en/contact/' | relative_url }}{% else %}{{ '/contact/' | relative_url }}{% endif %}">{{ t.cta_primary }}</a>
+        <a class="button button--secondary" href="{% if page.lang == 'en' %}{{ '/en/services/' | relative_url }}{% else %}{{ '/services/' | relative_url }}{% endif %}">{{ t.cta_secondary }}</a>
+      </div>
+    </div>
+    <figure class="service-hero__media">
+      <img src="{{ service.image | relative_url }}" alt="{{ content.title }}" loading="lazy" width="960" height="1280">
+    </figure>
+  </div>
+</section>
+
+<section class="page-content">
+  <div class="shell service-detail">
+    <article class="service-detail__card">
+      <h2>{% if page.lang == 'en' %}What this service covers{% else %}Що входить у послугу{% endif %}</h2>
+      <p>{{ content.summary }}</p>
+      <ul>
+        {% for item in content.scope %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </article>
+    <article class="service-detail__card">
+      <h2>{% if page.lang == 'en' %}How it fits the project{% else %}Як це вбудовується в проєкт{% endif %}</h2>
+      <p>{{ content.process }}</p>
+      <h2>{% if page.lang == 'en' %}What the proof should show{% else %}Що мають показувати приклади{% endif %}</h2>
+      <p>{{ content.proof }}</p>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <div class="shell">
+    <div class="section-heading section-heading--wide">
+      <p class="eyebrow">{% if page.lang == 'en' %}Related work{% else %}Суміжні напрями{% endif %}</p>
+      <h2>{% if page.lang == 'en' %}This stage works best as part of a connected system{% else %}Цей етап працює найкраще як частина пов'язаної системи{% endif %}</h2>
+    </div>
+    <div class="service-grid">
+      {% for related_key in service.related %}
+        {% assign related_service = site.data.service_pages.items[related_key] %}
+        {% assign related_content = related_service[page.lang] | default: related_service.uk %}
+        <article class="service-card">
+          <h3>{{ related_content.title }}</h3>
+          <p>{{ related_content.summary }}</p>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

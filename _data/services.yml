@@ -1,0 +1,73 @@
+items:
+  - icon: "01"
+    key: plumbing
+    url: /services/plumbing/
+    image: /assets/images/work/plumbing-glass-shower.webp
+    uk:
+      title: "Сантехніка"
+      description: "Розводка води, каналізація, колектори, вбудовані системи та підготовка під обладнання."
+      micro: "Мокрі зони, ревізії, підготовка під ванни й душові."
+    en:
+      title: "Plumbing"
+      description: "Water and drainage routing, collector systems, concealed installation, and equipment preparation."
+      micro: "Wet zones, access points, and bath or shower preparation."
+  - icon: "02"
+    key: electrical
+    url: /services/electrical/
+    image: /assets/images/work/electrical-led-room.webp
+    uk:
+      title: "Електрика"
+      description: "Нові лінії, щити, захист, освітлення, розумні сценарії та безпечне навантаження."
+      micro: "Світло, треки, техніка й продумана логіка точок."
+    en:
+      title: "Electrical"
+      description: "New wiring runs, panels, protection, lighting, smart scenarios, and safe load planning."
+      micro: "Lighting, tracks, equipment feeds, and planned point logic."
+  - icon: "03"
+    key: rough-works
+    url: /services/rough-works/
+    image: /assets/images/work/core-selflevel-floor.webp
+    uk:
+      title: "Чорнові роботи"
+      description: "Демонтаж, стяжки, штукатурка, перепланування, підготовка основ під наступні етапи."
+      micro: "Основа, рівні й технічна дисципліна перед фінішем."
+    en:
+      title: "Core construction"
+      description: "Demolition, screeds, plastering, reconfiguration, and substrate preparation for later stages."
+      micro: "Substrate, levels, and technical discipline before finishing."
+  - icon: "04"
+    key: finishing
+    url: /services/finishing/
+    image: /assets/images/work/finishing-hallway.webp
+    uk:
+      title: "Чистове оздоблення"
+      description: "Плитка, фарбування, декор, підлога, двері, плінтуси та фінальна збірка інтер'єру."
+      micro: "Фактури, світло, вузли й зібраний характер простору."
+    en:
+      title: "Finishing"
+      description: "Tile, paint, decorative surfaces, flooring, doors, skirting, and the final interior assembly."
+      micro: "Texture, light, junctions, and a finished spatial character."
+  - icon: "05"
+    key: procurement
+    url: /services/procurement/
+    image: /assets/images/work/procurement-living-fit.webp
+    uk:
+      title: "Комплектація"
+      description: "Підбір матеріалів, відомості закупівель, координація постачальників і контроль поставок."
+      micro: "Матеріали, меблі та поставки без хаосу на об'єкті."
+    en:
+      title: "Procurement"
+      description: "Material selection, procurement schedules, supplier coordination, and delivery control."
+      micro: "Materials, furniture, and deliveries without site chaos."
+  - icon: "06"
+    key: site-supervision
+    url: /services/site-supervision/
+    image: /assets/images/work/electrical-track-corridor.webp
+    uk:
+      title: "Нагляд за об'єктом"
+      description: "Календар етапів, фотозвіти, контроль якості та одне відповідальне контактне вікно."
+      micro: "Приймання етапів, фотофіксація й контроль суміжних робіт."
+    en:
+      title: "Site supervision"
+      description: "Stage planning, photo reports, quality control, and one accountable point of contact."
+      micro: "Stage acceptance, photo proof, and cross-trade control."

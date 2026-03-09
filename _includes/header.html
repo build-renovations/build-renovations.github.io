@@ -1,0 +1,37 @@
+{% assign t = site.data.translations[page.lang] | default: site.data.translations.uk %}
+{% assign nav = site.data.navigation[page.lang] | default: site.data.navigation.uk %}
+<header class="site-header">
+  <div class="shell">
+    <div class="site-header__inner">
+      <a class="brand" href="{% if page.lang == 'en' %}{{ '/en/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">
+        <img class="brand__mark" src="{{ '/assets/images/logo-mark.svg' | relative_url }}" alt="" width="52" height="52">
+        <span class="brand__copy">
+          <span class="brand__name">{{ site.company.name }}</span>
+          <span class="brand__tag">{{ t.brand_tagline }}</span>
+        </span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">{{ t.nav_toggle }}</button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="{% if page.lang == 'en' %}{{ '/en/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">{{ t.nav_home }}</a>
+        {% for item in nav %}
+          <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+        {% endfor %}
+        <a class="button button--nav" href="{% if page.lang == 'en' %}{{ '/en/contact/' | relative_url }}{% else %}{{ '/contact/' | relative_url }}{% endif %}">{{ t.cta_nav }}</a>
+      </nav>
+      <div class="language-switcher" aria-label="{{ t.language_label }}">
+        {% assign siblings = site.pages | where: "translation_key", page.translation_key %}
+        {% assign ua_url = '/' %}
+        {% assign en_url = '/en/' %}
+        {% for sibling in siblings %}
+          {% if sibling.lang == 'uk' %}
+            {% assign ua_url = sibling.url %}
+          {% elsif sibling.lang == 'en' %}
+            {% assign en_url = sibling.url %}
+          {% endif %}
+        {% endfor %}
+        <a class="{% if page.lang == 'uk' %}is-active{% endif %}" href="{{ ua_url | relative_url }}">UA</a>
+        <a class="{% if page.lang == 'en' %}is-active{% endif %}" href="{{ en_url | relative_url }}">EN</a>
+      </div>
+    </div>
+  </div>
+</header>

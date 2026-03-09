@@ -1,0 +1,31 @@
+items:
+  - uk:
+      question: "З чого починається робота по об'єкту?"
+      answer: "З короткого брифу, первинного аналізу стану об'єкта і розуміння, які етапи мають стартувати першими. Без цього будь-яка оцінка буде неточною."
+    en:
+      question: "How does work on a property start?"
+      answer: "With a short brief, an initial reading of the property condition, and a clear understanding of which stages must start first. Without that, any estimate is unreliable."
+  - uk:
+      question: "Чи можна замовити лише окремий етап?"
+      answer: "Так, але окремий етап усе одно потрібно прив'язати до суміжних робіт. Наприклад, сантехніка й електрика мають узгоджуватися з геометрією, меблями та чистовим оздобленням."
+    en:
+      question: "Can I order only one stage of work?"
+      answer: "Yes, but even a single stage has to be tied to adjacent work. Plumbing and electrical decisions, for example, must still align with geometry, furniture, and finishing."
+  - uk:
+      question: "Хто займається матеріалами?"
+      answer: "Це залежить від формату співпраці. Якщо потрібна комплектація, матеріали, вбудовані рішення та поставки координуються разом із графіком ремонту."
+    en:
+      question: "Who handles materials?"
+      answer: "That depends on the collaboration format. If procurement is included, materials, built-ins, and deliveries are coordinated against the renovation schedule."
+  - uk:
+      question: "Як контролюється якість?"
+      answer: "Через контрольні точки між етапами, фотофіксацію, перевірку вузлів і логічну передачу об'єкта до наступної стадії, а не лише фінальний огляд."
+    en:
+      question: "How is quality controlled?"
+      answer: "Through control points between stages, photo reporting, junction checks, and explicit readiness for the next stage, not only a final visual review."
+  - uk:
+      question: "Що потрібно для попередньої оцінки?"
+      answer: "Тип об'єкта, його стан, потрібні етапи, бажані терміни й будь-які наявні плани або фото. Чим точніші вихідні дані, тим кориснішою буде перша відповідь."
+    en:
+      question: "What is needed for an initial assessment?"
+      answer: "Property type, current condition, needed stages, preferred timing, and any available plans or photos. Better starting data leads to a better first response."

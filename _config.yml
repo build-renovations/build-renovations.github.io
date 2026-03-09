@@ -1,0 +1,60 @@
+title: Remonty
+description: Renovation website for apartments and houses, from plumbing and electrical work to final finishing.
+url: "https://example.github.io"
+baseurl: ""
+lang: uk
+timezone: Europe/Kyiv
+permalink: pretty
+markdown: kramdown
+theme: null
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - AGENTS.md
+  - README.md
+  - agents/
+  - docs/
+  - scripts/
+  - Gemfile
+  - Gemfile.lock
+  - .gitignore
+  - .playwright-cli/
+  - vendor/
+  - node_modules/
+
+collections:
+  pages_en:
+    output: false
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
+      image: /assets/images/og-cover.svg
+
+company:
+  name: "Remonty"
+  phone: "+380000000000"
+  email: "hello@example.com"
+  city: "Kyiv"
+  country: "Ukraine"
+  service_area:
+    uk: "Київ і Київська область"
+    en: "Kyiv and the surrounding region"
+  social:
+    - name: GitHub
+      url: "https://github.com/example"
+
+seo:
+  type: HomeAndConstructionBusiness
+  uk:
+    locale: uk_UA
+    title: "Remonty | Ремонт від сантехніки до фінального оздоблення"
+    description: "Комплексний ремонт квартир і будинків: сантехніка, електрика, чорнові роботи, оздоблення та здача об'єкта під ключ."
+  en:
+    locale: en_US
+    title: "Remonty | Renovation from plumbing to final finishing"
+    description: "Turnkey renovation services for apartments and houses: plumbing, electrical, walls, ceilings, flooring, and final finishing."

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">Renovation mark</title>
+  <desc id="desc">Abstract renovation logo combining a floor plan frame, doorway, and copper route line.</desc>
+  <rect x="18" y="18" width="124" height="124" rx="28" fill="#f6efe5"/>
+  <path d="M52 42h56c6.627 0 12 5.373 12 12v32h-18V60H70v40H52V42Z" fill="#1b2521"/>
+  <path d="M108 98h12v8c0 6.627-5.373 12-12 12H64v-18h44V98Z" fill="#1b2521"/>
+  <path d="M44 112 76 80l22 22 26-26" fill="none" stroke="#ca6a34" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+  <circle cx="44" cy="112" r="8" fill="#ca6a34"/>
+  <circle cx="124" cy="76" r="8" fill="#ca6a34"/>
+ </svg>

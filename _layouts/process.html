@@ -1,0 +1,101 @@
+---
+layout: default
+---
+{% assign t = site.data.translations[page.lang] | default: site.data.translations.uk %}
+{% assign process = site.data.process_page %}
+{% assign metrics = process.metrics[page.lang] | default: process.metrics.uk %}
+{% assign proof = process.proof[page.lang] | default: process.proof.uk %}
+{% assign risk = process.risk_band[page.lang] | default: process.risk_band.uk %}
+<section class="page-hero process-hero">
+  <div class="shell process-hero__grid">
+    <div class="process-hero__copy">
+      <p class="eyebrow">{{ page.eyebrow }}</p>
+      <h1>{{ page.title }}</h1>
+      <p class="page-lead">{{ page.lead }}</p>
+      <div class="hero__actions">
+        <a class="button button--primary" href="{% if page.lang == 'en' %}{{ '/en/contact/' | relative_url }}{% else %}{{ '/contact/' | relative_url }}{% endif %}">{{ t.cta_primary }}</a>
+        <a class="button button--secondary" href="{% if page.lang == 'en' %}{{ '/en/services/' | relative_url }}{% else %}{{ '/services/' | relative_url }}{% endif %}">{{ t.cta_secondary }}</a>
+      </div>
+    </div>
+    <div class="process-hero__proofstrip">
+      {% for metric in metrics %}
+        <article class="process-metric">
+          <p class="process-metric__eyebrow">{{ metric.eyebrow }}</p>
+          <strong>{{ metric.value }}</strong>
+          <span>{{ metric.label }}</span>
+          <p>{{ metric.note }}</p>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="shell">
+    <div class="process-proof">
+      <div class="process-proof__copy">
+        <p class="eyebrow">{{ proof.eyebrow }}</p>
+        <h2>{{ proof.title }}</h2>
+        <p>{{ proof.text }}</p>
+      </div>
+      <blockquote class="process-proof__quote">
+        <p>{{ proof.quote }}</p>
+        <footer>{{ proof.signature }}</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="shell">
+    <div class="section-heading section-heading--wide">
+      <p class="eyebrow">{% if page.lang == 'en' %}Stages{% else %}Стадії{% endif %}</p>
+      <h2>{% if page.lang == 'en' %}How the property moves from uncertainty to a controlled result{% else %}Як об'єкт рухається від невизначеності до контрольованого результату{% endif %}</h2>
+    </div>
+    <div class="process-stages">
+      {% for stage in process.stages %}
+        {% assign content = stage[page.lang] | default: stage.uk %}
+        <article class="process-stage">
+          <span class="process-stage__index">{{ forloop.index }}</span>
+          <figure class="process-stage__media">
+            <img src="{{ stage.image | relative_url }}" alt="{{ content.title }}" loading="lazy" width="960" height="1280">
+          </figure>
+          <div class="process-stage__copy">
+            <h3>{{ content.title }}</h3>
+            <p class="process-stage__summary">{{ content.summary }}</p>
+            <p>{{ content.detail }}</p>
+            <div class="process-stage__protection">
+              <p class="process-stage__protection-label">{{ content.protection_label }}</p>
+              <p>{{ content.protection_text }}</p>
+            </div>
+            <ul>
+              {% for item in content.deliverables %}
+                <li>{{ item }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="shell">
+    <div class="process-risk">
+      <div class="process-risk__copy">
+        <p class="eyebrow">{{ risk.eyebrow }}</p>
+        <h2>{{ risk.title }}</h2>
+        <p>{{ risk.text }}</p>
+      </div>
+      <div class="process-risk__list">
+        {% for item in risk.items %}
+          <article class="process-risk__item">
+            <strong>{{ item.title }}</strong>
+            <p>{{ item.text }}</p>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

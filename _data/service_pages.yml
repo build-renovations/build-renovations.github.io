@@ -1,0 +1,225 @@
+items:
+  apartment-renovation:
+    image: /assets/images/work/procurement-living-fit.webp
+    related:
+      - plumbing
+      - electrical
+      - finishing
+    uk:
+      eyebrow: "Послуга"
+      title: "Ремонт квартир"
+      lead: "Повний маршрут для квартири: від інженерних вузлів і підготовки основ до фінішного оздоблення, комплектації та здачі об'єкта."
+      summary: "Підходить для новобудов і вторинного житла, коли потрібно зібрати всі етапи в один керований процес без розривів між майстрами."
+      scope:
+        - "Аудит стану квартири та логіки приміщень"
+        - "Сантехніка, електрика, чорнові етапи й чистове оздоблення"
+        - "Координація комплектації та контроль суміжних робіт"
+      process: "Ключова цінність для квартири — правильно зібрати послідовність вузлів у межах обмеженого простору, щоб кожен наступний етап не виправляв помилки попереднього."
+      proof: "На таких об'єктах клієнт оцінює не лише фінальний вигляд, а й наскільки зібрано маршрути інженерії, проходи, меблеві прив'язки та світлові сценарії."
+    en:
+      eyebrow: "Service"
+      title: "Apartment renovation"
+      lead: "A complete route for an apartment: from engineering work and substrate preparation to finishing, procurement, and handover."
+      summary: "Designed for new builds and resale properties where all stages must be assembled into one controlled delivery system."
+      scope:
+        - "Audit of the apartment condition and spatial logic"
+        - "Plumbing, electrical, core construction, and finishing"
+        - "Procurement coordination and cross-trade control"
+      process: "The main value in an apartment project is sequencing dense technical junctions inside limited space so each stage supports the next one."
+      proof: "Buyers judge these projects not only by the final look, but by how engineering routes, furniture coordination, and lighting scenarios were assembled."
+  house-renovation:
+    image: /assets/images/work/electrical-track-corridor.webp
+    related:
+      - procurement
+      - site-supervision
+      - rough-works
+    uk:
+      eyebrow: "Послуга"
+      title: "Ремонт будинків"
+      lead: "Будинок вимагає жорсткішої координації етапів, поставок і суміжних рішень, ніж квартира. Тут важлива одна система управління, а не набір окремих підрядників."
+      summary: "Підходить для приватних будинків, котеджів і поетапних реконструкцій, де масштаб об'єкта збільшує ціну будь-якої помилки."
+      scope:
+        - "Планування великих обсягів інженерії та підготовки основ"
+        - "Поетапний контроль кімнат, коридорів і технічних зон"
+        - "Стикування оздоблення, комплектації та нагляду"
+      process: "Для будинку головне — тримати в одному графіку інженерні вузли, поставки матеріалів, меблеві рішення і готовність зон до монтажу."
+      proof: "Сильний сигнал довіри для таких клієнтів — показати, що команда контролює не тільки окремі кімнати, а й загальну дисципліну об'єкта."
+    en:
+      eyebrow: "Service"
+      title: "House renovation"
+      lead: "A house requires tighter coordination of stages, deliveries, and adjacent decisions than an apartment. One management system matters more than separate crews."
+      summary: "Suitable for private houses, cottages, and phased reconstructions where the size of the property raises the cost of every mistake."
+      scope:
+        - "Planning larger volumes of engineering work and substrate preparation"
+        - "Stage control across rooms, corridors, and technical zones"
+        - "Alignment of finishing, procurement, and supervision"
+      process: "The core challenge in a house project is keeping engineering, delivery timing, furniture decisions, and room readiness inside one schedule."
+      proof: "The strongest trust signal here is showing control of the whole property rhythm, not just isolated finished rooms."
+  plumbing:
+    image: /assets/images/work/plumbing-bath-installation.webp
+    related:
+      - rough-works
+      - finishing
+      - site-supervision
+    uk:
+      eyebrow: "Послуга"
+      title: "Сантехнічні роботи"
+      lead: "Розводка води, каналізація, прихований монтаж, підготовка душових, ванн і підвісної сантехніки з прицілом на чистовий результат."
+      summary: "Сантехніка має бути змонтована так, щоб плитка, меблі, ревізії й експлуатація працювали як одна система."
+      scope:
+        - "Маршрути холодної, гарячої води та каналізації"
+        - "Колектори, вбудовані вузли, закладні й ревізії"
+        - "Підготовка під ванни, душові, інсталяції та обладнання"
+      process: "Рішення по сантехніці приймаються разом із геометрією мокрих зон і чистовими матеріалами, а не окремо від оздоблення."
+      proof: "Фото мокрих зон повинні показувати не лише плитку, а логіку розміщення вузлів, стиків і сервісного доступу."
+    en:
+      eyebrow: "Service"
+      title: "Plumbing"
+      lead: "Water routing, drainage, concealed installation, and preparation for showers, baths, and suspended sanitary fixtures with the finish layer in mind."
+      summary: "Plumbing must be assembled so tile, furniture, access points, and day-to-day use work as one system."
+      scope:
+        - "Cold water, hot water, and drainage routing"
+        - "Collectors, concealed elements, embeds, and access points"
+        - "Preparation for baths, showers, installations, and equipment"
+      process: "Plumbing decisions are made together with wet-zone geometry and finish materials, never in isolation."
+      proof: "Wet-zone images should show not only tile, but the placement logic of technical junctions and service access."
+  electrical:
+    image: /assets/images/work/electrical-led-room.webp
+    related:
+      - rough-works
+      - finishing
+      - site-supervision
+    uk:
+      eyebrow: "Послуга"
+      title: "Електромонтажні роботи"
+      lead: "Нові лінії, групування навантаження, підготовка під освітлення і техніку, щоб об'єкт працював без імпровізації під час монтажу."
+      summary: "Електрика має одночасно закривати безпеку, сценарії світла і зручність використання простору."
+      scope:
+        - "Прокладання ліній і прив'язка точок"
+        - "Підготовка під треки, LED і техніку"
+        - "Безпечне навантаження та логіка груп"
+      process: "Електрику потрібно узгоджувати з меблями, стелями, оздобленням і побутовими сценаріями ще до фінішних етапів."
+      proof: "Сильні приклади для цієї послуги показують як чорнову підготовку точок, так і фінальну роботу світла в готовому інтер'єрі."
+    en:
+      eyebrow: "Service"
+      title: "Electrical installation"
+      lead: "New lines, load grouping, and preparation for lighting and equipment so the property works without improvisation during final assembly."
+      summary: "Electrical work must solve safety, lighting scenes, and day-to-day usability at the same time."
+      scope:
+        - "Line routing and point placement"
+        - "Preparation for tracks, LED, and equipment"
+        - "Safe load planning and circuit logic"
+      process: "Electrical work must be aligned with furniture, ceilings, finishes, and appliance scenarios before the finish phase starts."
+      proof: "Strong evidence here shows both rough electrical preparation and the final lighting result inside the finished interior."
+  rough-works:
+    image: /assets/images/work/core-selflevel-floor.webp
+    related:
+      - plumbing
+      - electrical
+      - finishing
+    uk:
+      eyebrow: "Послуга"
+      title: "Чорнові та підготовчі роботи"
+      lead: "Демонтаж, вирівнювання, підготовка основ, проходів і вузлів примикання, які тримають весь наступний ремонт."
+      summary: "Це етап, який не має права бути випадковим, бо саме він визначає якість фінішного результату."
+      scope:
+        - "Демонтаж і підготовка простору"
+        - "Стяжка, вирівнювання, підготовка стін і підлоги"
+        - "Підготовка зон до інженерії та чистових робіт"
+      process: "Чорнові етапи перевіряються не за принципом «закрили й забули», а як база для наступних вузлів і геометрії."
+      proof: "Фотографії повинні показувати рівні, чистоту підготовки й готовність до монтажу, а не просто порожнє приміщення."
+    en:
+      eyebrow: "Service"
+      title: "Core construction and preparation"
+      lead: "Demolition, leveling, and substrate preparation that carry the entire renovation forward."
+      summary: "This stage cannot be random because it defines the quality ceiling of the finish phase."
+      scope:
+        - "Demolition and space preparation"
+        - "Screeds, leveling, wall and floor preparation"
+        - "Readiness for engineering work and finishing"
+      process: "Core work is checked as the base for later junctions and geometry, not as a hidden stage that gets forgotten."
+      proof: "Images should show level quality, preparation discipline, and readiness for the next installation step."
+  finishing:
+    image: /assets/images/work/finishing-hallway.webp
+    related:
+      - plumbing
+      - electrical
+      - procurement
+    uk:
+      eyebrow: "Послуга"
+      title: "Чистове оздоблення"
+      lead: "Плитка, фарбування, декоративні поверхні, світло, двері й фінальна збірка простору в один цілісний інтер'єр."
+      summary: "Фініш має демонструвати не декор заради декору, а акуратну збірку всіх попередніх рішень."
+      scope:
+        - "Плитка, малярні та декоративні роботи"
+        - "Підлога, двері, плінтуси, вузли примикання"
+        - "Фінальна інтеграція світла й меблевих рішень"
+      process: "Чистове оздоблення починається тільки тоді, коли основа, інженерія й поставки не створюють прихованих конфліктів."
+      proof: "У цій категорії важливо показувати фактури, світло і вузли, де видно дисципліну виконання."
+    en:
+      eyebrow: "Service"
+      title: "Finishing"
+      lead: "Tile, paint, decorative surfaces, lighting, doors, and final spatial assembly brought together into one interior."
+      summary: "The finish phase should reveal disciplined execution, not decoration for its own sake."
+      scope:
+        - "Tile, paint, and decorative surfaces"
+        - "Flooring, doors, skirting, and junction detailing"
+        - "Final integration of lighting and furniture decisions"
+      process: "Finishing should start only when the base, engineering work, and deliveries no longer create hidden conflicts."
+      proof: "This category should highlight texture, light, and precise junctions where execution quality is visible."
+  procurement:
+    image: /assets/images/work/procurement-wardrobe-fit.webp
+    related:
+      - finishing
+      - apartment-renovation
+      - house-renovation
+    uk:
+      eyebrow: "Послуга"
+      title: "Комплектація"
+      lead: "Підбір матеріалів, меблевих вузлів, фурнітури та постачань у тій послідовності, яка не ламає графік ремонту."
+      summary: "Комплектація зменшує хаос на об'єкті й допомагає зібрати фактури, розміри та готовність до монтажу в одну систему."
+      scope:
+        - "Підбір матеріалів і готових елементів"
+        - "Прив'язка поставок до стадій ремонту"
+        - "Координація розмірів, фурнітури та монтажної готовності"
+      process: "Рішення по комплектації мають ухвалюватися не відокремлено, а разом із геометрією приміщення й термінами готовності зон."
+      proof: "Тут важливо показувати, як підібрані матеріали й вбудовані рішення реально збираються в готовий інтер'єр."
+    en:
+      eyebrow: "Service"
+      title: "Procurement"
+      lead: "Selection of materials, furniture assemblies, hardware, and deliveries in the sequence that supports the renovation schedule instead of breaking it."
+      summary: "Procurement reduces site chaos and helps align textures, dimensions, and installation readiness into one system."
+      scope:
+        - "Selection of materials and ready-made elements"
+        - "Delivery timing aligned to renovation stages"
+        - "Coordination of dimensions, hardware, and installation readiness"
+      process: "Procurement decisions should be made together with room geometry and readiness dates, not as a disconnected purchasing track."
+      proof: "The goal here is to show how selected materials and built-ins actually come together in the finished interior."
+  site-supervision:
+    image: /assets/images/work/core-corridor-stage.webp
+    related:
+      - apartment-renovation
+      - house-renovation
+      - electrical
+    uk:
+      eyebrow: "Послуга"
+      title: "Нагляд за об'єктом"
+      lead: "Контроль етапів, перевірка якості вузлів і координація суміжних робіт, щоб фініш не маскував технічні помилки."
+      summary: "Нагляд потрібен там, де клієнт хоче бачити відповідального за послідовність, приймання й фотофіксацію результату."
+      scope:
+        - "Приймання етапів і контроль геометрії"
+        - "Фотофіксація та перевірка стиків між роботами"
+        - "Узгодження переходу до наступної стадії"
+      process: "Ця послуга створює контрольні точки між різними видами робіт і не дозволяє накопичувати приховані дефекти."
+      proof: "Показувати варто як проміжні етапи, де видно технічний стан об'єкта, так і фінальну дисципліну після контрольованої здачі."
+    en:
+      eyebrow: "Service"
+      title: "Site supervision"
+      lead: "Stage control, junction checks, and cross-trade coordination so the finish layer never hides technical mistakes."
+      summary: "Supervision matters when the client wants a responsible lead for sequence, acceptance, and photo-backed progress control."
+      scope:
+        - "Stage acceptance and geometry control"
+        - "Photo reporting and checks between trades"
+        - "Approval of readiness for the next stage"
+      process: "This service creates control points between different kinds of work and prevents hidden defects from accumulating."
+      proof: "The best proof combines intermediate stages that show technical condition with the final discipline of a controlled handover."

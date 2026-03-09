@@ -1,0 +1,22 @@
+uk:
+  - title: "Послуги"
+    url: /services/
+  - title: "Процес"
+    url: /process/
+  - title: "FAQ"
+    url: /faq/
+  - title: "Про нас"
+    url: /about/
+  - title: "Контакти"
+    url: /contact/
+en:
+  - title: "Services"
+    url: /en/services/
+  - title: "Process"
+    url: /en/process/
+  - title: "FAQ"
+    url: /en/faq/
+  - title: "About"
+    url: /en/about/
+  - title: "Contact"
+    url: /en/contact/

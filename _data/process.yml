@@ -1,0 +1,25 @@
+steps:
+  - uk:
+      title: "01. Аудит об'єкта"
+      description: "Фіксуємо вихідний стан, обмеження, інженерні ризики та обсяг робіт."
+    en:
+      title: "01. Site audit"
+      description: "We document the current condition, constraints, engineering risks, and scope."
+  - uk:
+      title: "02. Проєктний план"
+      description: "Узгоджуємо черговість етапів, матеріали, бюджетні рамки й терміни."
+    en:
+      title: "02. Delivery plan"
+      description: "We align stage order, materials, budget boundaries, and delivery timing."
+  - uk:
+      title: "03. Виконання і контроль"
+      description: "Ведемо роботи за чіткими чеклістами, погодженнями та фотозвітами."
+    en:
+      title: "03. Execution and control"
+      description: "We manage the work with explicit checklists, approvals, and photo reporting."
+  - uk:
+      title: "04. Завершення"
+      description: "Перевіряємо якість, закриваємо деталі та готуємо об'єкт до експлуатації."
+    en:
+      title: "04. Handover"
+      description: "We verify quality, close remaining details, and prepare the property for use."

@@ -1,0 +1,39 @@
+{
+  "mcpServers": {
+    "filesystem_repo": {
+      "command": "npx",
+      "args": [
+        "--yes",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/mykhailomykhailenko/work/personal/vasyl/remonty"
+      ]
+    },
+    "browser_automation": {
+      "command": "npx",
+      "args": [
+        "--yes",
+        "@playwright/mcp@latest",
+        "--headless",
+        "--isolated",
+        "--caps",
+        "vision,pdf,devtools",
+        "--output-mode",
+        "stdout"
+      ]
+    },
+    "docs_lookup": {
+      "command": "npx",
+      "args": [
+        "--yes",
+        "@upstash/context7-mcp"
+      ]
+    },
+    "memory": {
+      "command": "npx",
+      "args": [
+        "--yes",
+        "@modelcontextprotocol/server-memory"
+      ]
+    }
+  }
+}

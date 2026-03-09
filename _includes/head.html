@@ -1,0 +1,39 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% assign t = site.data.translations[page.lang] | default: site.data.translations.uk %}
+{% assign seo = site.seo[page.lang] | default: site.seo.uk %}
+<meta http-equiv="Content-Language" content="{{ page.lang }}">
+{% assign translation_key = page.translation_key %}
+{% assign x_default_url = '/' %}
+{% if translation_key %}
+  {% assign siblings = site.pages | where: "translation_key", translation_key %}
+  {% for sibling in siblings %}
+<link rel="alternate" hreflang="{{ sibling.lang }}" href="{{ sibling.url | absolute_url }}">
+    {% if sibling.lang == 'uk' %}
+      {% assign x_default_url = sibling.url %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+<link rel="alternate" hreflang="x-default" href="{{ x_default_url | absolute_url }}">
+<link rel="icon" href="{{ '/assets/images/favicon.svg' | relative_url }}" type="image/svg+xml">
+<link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+<script defer src="{{ '/assets/js/site.js' | relative_url }}"></script>
+{% seo %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "{{ site.seo.type }}",
+  "name": "{{ site.company.name }}",
+  "description": "{{ page.seo_description | default: seo.description }}",
+  "url": "{{ page.url | absolute_url }}",
+  "image": "{{ page.image | absolute_url }}",
+  "telephone": "{{ site.company.phone }}",
+  "email": "{{ site.company.email }}",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "{{ site.company.city }}",
+    "addressCountry": "{{ site.company.country }}"
+  },
+  "areaServed": "{{ site.company.service_area[page.lang] | default: site.company.service_area.uk }}"
+}
+</script>

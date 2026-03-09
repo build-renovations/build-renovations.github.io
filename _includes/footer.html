@@ -1,0 +1,16 @@
+{% assign t = site.data.translations[page.lang] | default: site.data.translations.uk %}
+<footer class="site-footer">
+  <div class="shell site-footer__inner">
+    <div class="site-footer__brand">
+      <img class="site-footer__mark" src="{{ '/assets/images/logo-mark.svg' | relative_url }}" alt="" width="44" height="44">
+      <div>
+        <strong>{{ site.company.name }}</strong>
+        <p>{{ t.footer_note }}</p>
+      </div>
+    </div>
+    <div class="site-footer__contacts">
+      <a href="tel:{{ site.company.phone }}">{{ site.company.phone }}</a>
+      <a href="mailto:{{ site.company.email }}">{{ site.company.email }}</a>
+    </div>
+  </div>
+</footer>

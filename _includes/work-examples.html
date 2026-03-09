@@ -1,0 +1,40 @@
+{% assign examples = site.data.work_examples %}
+{% assign section = examples.section[include.lang] | default: examples.section.uk %}
+{% if include.compact %}
+  <div class="work-examples work-examples--compact">
+{% else %}
+  <section class="section section--gallery">
+    <div class="shell">
+{% endif %}
+    <div class="section-heading section-heading--wide">
+      <p class="eyebrow">{{ section.eyebrow }}</p>
+      <h2>{{ section.title }}</h2>
+      <p class="section-intro">{{ section.intro }}</p>
+    </div>
+    <div class="work-categories">
+      {% for category in examples.categories %}
+        {% assign content = category[include.lang] | default: category.uk %}
+        <article class="work-category">
+          <div class="work-category__copy">
+            <p class="work-category__kicker">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</p>
+            <h3>{{ content.title }}</h3>
+            <p>{{ content.summary }}</p>
+            <p class="work-category__process">{{ content.process }}</p>
+          </div>
+          <div class="work-category__media">
+            {% for image in category.images %}
+              {% assign alt = image.alt[include.lang] | default: image.alt.uk %}
+              <figure class="work-shot">
+                <img src="{{ image.src | relative_url }}" alt="{{ alt }}" loading="lazy" width="960" height="1280">
+              </figure>
+            {% endfor %}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+{% if include.compact %}
+  </div>
+{% else %}
+    </div>
+  </section>
+{% endif %}

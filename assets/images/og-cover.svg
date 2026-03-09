@@ -1,0 +1,9 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#F4EFE8"/>
+  <rect x="60" y="60" width="1080" height="510" rx="36" fill="#FFF8EF"/>
+  <path d="M0 0H720C540 160 540 470 840 630H0V0Z" fill="#C7632F" fill-opacity="0.14"/>
+  <text x="110" y="240" fill="#1F1D1A" font-family="Georgia, serif" font-size="76" font-weight="700">Remonty</text>
+  <text x="110" y="320" fill="#5D554C" font-family="Arial, sans-serif" font-size="34">Plumbing, electrical, construction, finishing</text>
+  <text x="110" y="380" fill="#5D554C" font-family="Arial, sans-serif" font-size="34">GitHub Pages ready bilingual Jekyll website</text>
+</svg>
+
