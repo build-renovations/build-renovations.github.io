@@ -1,5 +1,20 @@
-<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="64" height="64" rx="18" fill="#1F1D1A"/>
-  <path d="M17 45V19H25.5C32 19 36 22.6 36 29.1C36 35.8 32 39.2 25.3 39.2H22.7V45H17ZM22.7 34.6H25C28.5 34.6 30.2 32.8 30.2 29.2C30.2 25.6 28.3 23.7 24.9 23.7H22.7V34.6Z" fill="#FFF8EF"/>
-  <path d="M40 45V19H45.7L39.9 45H40Z" fill="#C7632F"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Remonty favicon</title>
+  <defs>
+    <linearGradient id="tile" x1="10" y1="8" x2="54" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff8ef"/>
+      <stop offset="1" stop-color="#ead9c3"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="18" y1="45" x2="46" y2="20" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ba5c2b"/>
+      <stop offset="1" stop-color="#eda470"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="18" fill="#191f1d"/>
+  <rect x="8" y="8" width="48" height="48" rx="14" fill="url(#tile)"/>
+  <path d="M18 20c0-3.314 2.686-6 6-6h16c3.314 0 6 2.686 6 6v18h-6V23c0-1.657-1.343-3-3-3H27c-1.657 0-3 1.343-3 3v22h-6V20Z" fill="#1b2421"/>
+  <path d="M27 26h13v5H32v8h8v5h-8v7h-5V26Z" fill="#fbf1e5"/>
+  <path d="M17 44 28 33l7 7 12-12" fill="none" stroke="url(#accent)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.5"/>
+  <circle cx="17" cy="44" r="3" fill="#bf6331"/>
+  <circle cx="47" cy="21" r="3" fill="#eda470"/>
 </svg>

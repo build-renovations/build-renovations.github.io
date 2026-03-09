@@ -2,7 +2,12 @@
 layout: null
 ---
 
+{% if site.seo.allow_indexing %}
 User-agent: *
 Allow: /
 
 Sitemap: {{ '/sitemap.xml' | absolute_url }}
+{% else %}
+User-agent: *
+Disallow: /
+{% endif %}

@@ -1,9 +1,72 @@
-<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="630" fill="#F4EFE8"/>
-  <rect x="60" y="60" width="1080" height="510" rx="36" fill="#FFF8EF"/>
-  <path d="M0 0H720C540 160 540 470 840 630H0V0Z" fill="#C7632F" fill-opacity="0.14"/>
-  <text x="110" y="240" fill="#1F1D1A" font-family="Georgia, serif" font-size="76" font-weight="700">Remonty</text>
-  <text x="110" y="320" fill="#5D554C" font-family="Arial, sans-serif" font-size="34">Plumbing, electrical, construction, finishing</text>
-  <text x="110" y="380" fill="#5D554C" font-family="Arial, sans-serif" font-size="34">GitHub Pages ready bilingual Jekyll website</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="92" y1="52" x2="1128" y2="586" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fcf7f0"/>
+      <stop offset="1" stop-color="#e5d8c9"/>
+    </linearGradient>
+    <linearGradient id="copper" x1="176" y1="450" x2="944" y2="108" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b65a2a"/>
+      <stop offset="0.55" stop-color="#d97a44"/>
+      <stop offset="1" stop-color="#f1b07b"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="710" y1="86" x2="1090" y2="524" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#24302b"/>
+      <stop offset="1" stop-color="#121917"/>
+    </linearGradient>
+    <filter id="cardShadow" x="78" y="36" width="1048" height="570" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="24" stdDeviation="22" flood-color="#2F1D10" flood-opacity="0.12"/>
+    </filter>
+  </defs>
 
+  <rect width="1200" height="630" fill="#efe8df"/>
+  <path d="M0 0h500c-100 68-161 152-183 252-29 133 7 256 108 378H0V0Z" fill="#ca6a34" fill-opacity="0.14"/>
+  <path d="M853 0h347v630H710c78-61 122-140 133-237 18-156-34-287-156-393Z" fill="#18201d" fill-opacity="0.08"/>
+
+  <g filter="url(#cardShadow)">
+    <rect x="102" y="58" width="996" height="514" rx="34" fill="url(#bg)"/>
+    <rect x="102.5" y="58.5" width="995" height="513" rx="33.5" stroke="white" stroke-opacity="0.45"/>
+  </g>
+
+  <rect x="150" y="116" width="160" height="160" rx="36" fill="#fff9f2"/>
+  <rect x="170" y="136" width="120" height="120" rx="28" fill="#f0e2d0"/>
+  <path d="M192 162c0-9.941 8.059-18 18-18h46c9.941 0 18 8.059 18 18v46h-14v-40c0-5.523-4.477-10-10-10h-34c-5.523 0-10 4.477-10 10v56h-14v-62Z" fill="url(#ink)"/>
+  <path d="M216 177h31v12h-19v18h15v12h-15v17h-12v-59Z" fill="#fbf2e6"/>
+  <path d="M194 226 228 192l18 18 40-40" fill="none" stroke="url(#copper)" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+  <circle cx="194" cy="226" r="7" fill="#bf6331"/>
+  <circle cx="286" cy="170" r="7" fill="#efaa78"/>
+
+  <text x="356" y="192" fill="#18201d" font-family="Georgia, 'Times New Roman', serif" font-size="86" font-weight="700" letter-spacing="0.8">Remonty</text>
+  <text x="360" y="246" fill="#8f4d24" font-family="'Avenir Next', 'Segoe UI', sans-serif" font-size="22" font-weight="700" letter-spacing="4">RENOVATION SYSTEM</text>
+  <text x="360" y="316" fill="#4f4a44" font-family="'Avenir Next', Arial, sans-serif" font-size="34">
+    <tspan x="360" dy="0">Engineering, preparation, and finishing</tspan>
+    <tspan x="360" dy="46">collected into one controlled route.</tspan>
+  </text>
+
+  <g>
+    <rect x="360" y="392" width="220" height="58" rx="29" fill="#fff9f3"/>
+    <rect x="360.5" y="392.5" width="219" height="57" rx="28.5" stroke="#dbc4ae"/>
+    <text x="392" y="429" fill="#18201d" font-family="'Avenir Next', Arial, sans-serif" font-size="22" font-weight="700">Plumbing</text>
+  </g>
+  <g>
+    <rect x="596" y="392" width="220" height="58" rx="29" fill="#fff9f3"/>
+    <rect x="596.5" y="392.5" width="219" height="57" rx="28.5" stroke="#dbc4ae"/>
+    <text x="635" y="429" fill="#18201d" font-family="'Avenir Next', Arial, sans-serif" font-size="22" font-weight="700">Electrical</text>
+  </g>
+  <g>
+    <rect x="832" y="392" width="220" height="58" rx="29" fill="#fff9f3"/>
+    <rect x="832.5" y="392.5" width="219" height="57" rx="28.5" stroke="#dbc4ae"/>
+    <text x="873" y="429" fill="#18201d" font-family="'Avenir Next', Arial, sans-serif" font-size="22" font-weight="700">Finishing</text>
+  </g>
+
+  <g>
+    <path d="M856 153h150c23.196 0 42 18.804 42 42v122h-20V204c0-17.673-14.327-32-32-32H888v231h-32V185c0-17.673 14.327-32 32-32Z" fill="#18201d" fill-opacity="0.1"/>
+    <path d="M856 470h198" stroke="#c6ab93" stroke-width="2"/>
+    <path d="M856 500h146" stroke="#d6bea8" stroke-width="2"/>
+    <path d="M856 530h104" stroke="#e2cfbd" stroke-width="2"/>
+    <path d="M820 438 892 366l48 48 90-90" fill="none" stroke="url(#copper)" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
+    <circle cx="820" cy="438" r="10" fill="#bf6331"/>
+    <circle cx="1030" cy="324" r="10" fill="#efaa78"/>
+  </g>
+
+  <text x="150" y="526" fill="#5d554c" font-family="'Avenir Next', Arial, sans-serif" font-size="22">build-renovations.github.io</text>
+</svg>

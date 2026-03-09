@@ -1,6 +1,6 @@
 title: Remonty
 description: Renovation website for apartments and houses, from plumbing and electrical work to final finishing.
-url: "https://example.github.io"
+url: "https://build-renovations.github.io"
 baseurl: ""
 lang: uk
 timezone: Europe/Kyiv
@@ -39,16 +39,17 @@ company:
   name: "Remonty"
   phone: "+380000000000"
   email: "hello@example.com"
-  city: "Kyiv"
+  city: "Lviv"
   country: "Ukraine"
   service_area:
-    uk: "Київ і Київська область"
-    en: "Kyiv and the surrounding region"
+    uk: "Львів і Львівська область"
+    en: "Lviv and the surrounding region"
   social:
     - name: GitHub
-      url: "https://github.com/example"
+      url: "https://github.com/build-renovations/build-renovations.github.io"
 
 seo:
+  allow_indexing: false
   type: HomeAndConstructionBusiness
   uk:
     locale: uk_UA

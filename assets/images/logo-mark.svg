@@ -1,10 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
   <title id="title">Renovation mark</title>
-  <desc id="desc">Abstract renovation logo combining a floor plan frame, doorway, and copper route line.</desc>
-  <rect x="18" y="18" width="124" height="124" rx="28" fill="#f6efe5"/>
-  <path d="M52 42h56c6.627 0 12 5.373 12 12v32h-18V60H70v40H52V42Z" fill="#1b2521"/>
-  <path d="M108 98h12v8c0 6.627-5.373 12-12 12H64v-18h44V98Z" fill="#1b2521"/>
-  <path d="M44 112 76 80l22 22 26-26" fill="none" stroke="#ca6a34" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
-  <circle cx="44" cy="112" r="8" fill="#ca6a34"/>
-  <circle cx="124" cy="76" r="8" fill="#ca6a34"/>
- </svg>
+  <desc id="desc">Architectural renovation logo combining a crafted frame, interior plan lines, and a copper route accent.</desc>
+  <defs>
+    <linearGradient id="bg" x1="24" y1="20" x2="136" y2="144" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fffaf3"/>
+      <stop offset="1" stop-color="#efe2d1"/>
+    </linearGradient>
+    <linearGradient id="copper" x1="42" y1="116" x2="122" y2="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b85a2a"/>
+      <stop offset="0.52" stop-color="#db814d"/>
+      <stop offset="1" stop-color="#f2b27e"/>
+    </linearGradient>
+    <linearGradient id="shadow" x1="40" y1="34" x2="122" y2="126" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#24302b"/>
+      <stop offset="1" stop-color="#121917"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="18" y="18" width="124" height="124" rx="30" fill="url(#bg)"/>
+  <path d="M40 46c0-8.837 7.163-16 16-16h48c8.837 0 16 7.163 16 16v44h-14V52c0-4.418-3.582-8-8-8H62c-4.418 0-8 3.582-8 8v56H40V46Z" fill="url(#shadow)"/>
+  <path d="M62 58h36v12H74v18h22v12H74v18H62V58Z" fill="#f8efe2"/>
+  <path d="M106 60h14v54c0 8.837-7.163 16-16 16H58v-14h42c3.314 0 6-2.686 6-6V60Z" fill="url(#shadow)"/>
+  <path d="M42 112 70 84l18 18 30-30" fill="none" stroke="url(#copper)" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+  <circle cx="42" cy="112" r="7" fill="#bf6331"/>
+  <circle cx="118" cy="54" r="7" fill="#f0a06d"/>
+  <path d="M116 38c5.523 0 10 4.477 10 10" fill="none" stroke="#f5cfb1" stroke-linecap="round" stroke-width="4"/>
+  <path d="M34 122c0 2.8 2.2 5 5 5h82" fill="none" stroke="rgba(24,32,29,0.12)" stroke-linecap="round" stroke-width="4"/>
+</svg>

@@ -1,14 +1,48 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-{% assign t = site.data.translations[page.lang] | default: site.data.translations.uk %}
-{% assign seo = site.seo[page.lang] | default: site.seo.uk %}
-<meta http-equiv="Content-Language" content="{{ page.lang }}">
+{% assign lang = page.lang | default: site.lang | default: 'uk' %}
+{% assign t = site.data.translations[lang] | default: site.data.translations.uk %}
+{% assign seo = site.seo[lang] | default: site.seo.uk %}
+{% assign page_title = page.seo_title %}
+{% if page_title == nil or page_title == '' %}
+  {% if page.title and page.title != site.company.name and page.title != site.title %}
+    {% assign page_title = page.title | append: ' | ' | append: site.company.name %}
+  {% else %}
+    {% assign page_title = seo.title | default: site.title %}
+  {% endif %}
+{% endif %}
+{% assign page_description = page.seo_description | default: t.seo_description | default: seo.description | default: site.description %}
+{% assign page_image = page.image | default: '/assets/images/og-cover.svg' %}
+{% assign page_url = page.url | absolute_url %}
+<meta http-equiv="Content-Language" content="{{ lang }}">
+<title>{{ page_title }}</title>
+<meta name="description" content="{{ page_description }}">
+<link rel="canonical" href="{{ page_url }}">
+<meta property="og:site_name" content="{{ site.company.name }}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ page_title }}">
+<meta property="og:description" content="{{ page_description }}">
+<meta property="og:url" content="{{ page_url }}">
+<meta property="og:image" content="{{ page_image | absolute_url }}">
+<meta property="og:locale" content="{{ seo.locale | default: 'uk_UA' }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page_title }}">
+<meta name="twitter:description" content="{{ page_description }}">
+<meta name="twitter:image" content="{{ page_image | absolute_url }}">
+{% unless site.seo.allow_indexing %}
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="googlebot" content="noindex, nofollow, noarchive">
+{% endunless %}
 {% assign translation_key = page.translation_key %}
 {% assign x_default_url = '/' %}
 {% if translation_key %}
   {% assign siblings = site.pages | where: "translation_key", translation_key %}
   {% for sibling in siblings %}
 <link rel="alternate" hreflang="{{ sibling.lang }}" href="{{ sibling.url | absolute_url }}">
+    {% if sibling.lang != lang %}
+      {% assign sibling_seo = site.seo[sibling.lang] | default: site.seo.uk %}
+<meta property="og:locale:alternate" content="{{ sibling_seo.locale }}">
+    {% endif %}
     {% if sibling.lang == 'uk' %}
       {% assign x_default_url = sibling.url %}
     {% endif %}
@@ -18,15 +52,15 @@
 <link rel="icon" href="{{ '/assets/images/favicon.svg' | relative_url }}" type="image/svg+xml">
 <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
 <script defer src="{{ '/assets/js/site.js' | relative_url }}"></script>
-{% seo %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "{{ site.seo.type }}",
   "name": "{{ site.company.name }}",
-  "description": "{{ page.seo_description | default: seo.description }}",
-  "url": "{{ page.url | absolute_url }}",
-  "image": "{{ page.image | absolute_url }}",
+  "description": "{{ page_description }}",
+  "url": "{{ page_url }}",
+  "image": "{{ page_image | absolute_url }}",
+  "inLanguage": "{{ lang }}",
   "telephone": "{{ site.company.phone }}",
   "email": "{{ site.company.email }}",
   "address": {
@@ -34,6 +68,6 @@
     "addressLocality": "{{ site.company.city }}",
     "addressCountry": "{{ site.company.country }}"
   },
-  "areaServed": "{{ site.company.service_area[page.lang] | default: site.company.service_area.uk }}"
+  "areaServed": "{{ site.company.service_area[lang] | default: site.company.service_area.uk }}"
 }
 </script>
