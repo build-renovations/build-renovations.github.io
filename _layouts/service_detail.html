@@ -41,6 +41,14 @@ layout: default
   </div>
 </section>
 
+{% if page.service_key == 'plumbing' or page.service_key == 'electrical' or page.service_key == 'rough-works' or page.service_key == 'finishing' or page.service_key == 'procurement' or page.service_key == 'site-supervision' %}
+<section class="section">
+  <div class="shell">
+    {% include work-examples.html lang=page.lang compact=true filter_key=page.service_key %}
+  </div>
+</section>
+{% endif %}
+
 <section class="section">
   <div class="shell">
     <div class="section-heading section-heading--wide">

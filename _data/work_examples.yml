@@ -1,118 +1,399 @@
 section:
   uk:
     eyebrow: "Приклади робіт"
-    title: "Реальні етапи, які показують якість без зайвих обіцянок"
-    intro: "Добірка нижче побудована за категоріями робіт. Кожен блок пояснює не лише фінальний вигляд, а й що саме команда контролювала на об'єкті."
+    title: "Етапи ремонту, де фото пояснюють процес, а не лише фінальний вигляд"
+    intro: "Цей блок розширює кожну категорію робіт: що саме робиться на об'єкті, які контрольні точки важливі, і як це виглядає на реальних фото квартири чи будинку. Така подача допомагає покупцю зрозуміти не лише результат, а й логіку ремонту квартири, ремонту будинку, сантехнічних робіт, електромонтажу, чорнової підготовки та чистового оздоблення."
   en:
     eyebrow: "Work examples"
-    title: "Real project stages that show quality without empty claims"
-    intro: "The examples below are grouped by work category. Each block explains not only the final look, but what the team actually controlled on site."
+    title: "Renovation stages where the photos explain the process, not just the final look"
+    intro: "This section expands each work category with concrete site logic: what is actually built, which checkpoints matter, and how that stage looks in real apartment and house renovation photos. The goal is to make plumbing, electrical work, core preparation, finishing, procurement, and site supervision understandable as one connected delivery process."
 categories:
   - key: plumbing
+    service_url: /services/plumbing/
     uk:
       title: "Сантехніка"
-      summary: "Монтуємо приховані траси, готуємо вузли для ванн, душових і підвісної сантехніки, щоб оздоблення не конфліктувало з інженерією."
-      process: "У фокусі: розмітка мокрих зон, закладні, ревізії, ухили та чисте примикання плитки до сантехнічних вузлів."
+      summary: "Сантехнічні роботи в ремонті починаються не з вибору змішувача, а з логіки мокрої зони: де проходитимуть траси, як залишиться сервісний доступ, де будуть закладні, і чи збігаються висоти з майбутньою плиткою, меблями та склом."
+      process: "Коли сантехніка продумана правильно, ванна кімната працює тихо, чисто і без прихованих конфліктів між інженерією та оздобленням."
+      story_intro: "У хорошому проєкті сантехніка збирається разом із геометрією душової, прив'язкою трапа, висотою підвісної сантехніки, ревізіями та примиканнями плитки. Саме тому на фото важливо показувати не тільки «красиву ванну», а й вузли, які роблять її надійною в експлуатації."
+      stage_heading: "Що ми контролюємо на етапі сантехніки"
+      stages:
+        - "Розмічаємо мокрі зони, осі приладів, висоти виводів і маршрути труб ще до закриття стін."
+        - "Готуємо закладні під душові системи, інсталяції, ванни та скляні перегородки без конфлікту з плиткою."
+        - "Перевіряємо ухили, ревізії, доступ до вузлів і готовність зони до чистового монтажу."
+      checkpoints_heading: "Критичні контрольні точки"
+      checkpoints:
+        - "Прив'язка змішувачів, душових і трапів до фактичної геометрії приміщення."
+        - "Сумісність сантехнічних вузлів із форматом плитки, меблями та дверними примиканнями."
+        - "Сервісний доступ до прихованих елементів без руйнування готового оздоблення."
+      image_story_heading: "Що показують фото"
+      image_story: "Добірка нижче змішує проміжні й готові стани: приховані виводи, душові вузли, технічну готовність та фінальний вигляд мокрої зони після монтажу скла і облицювання."
     en:
       title: "Plumbing"
-      summary: "We install concealed routing and prepare bath, shower, and suspended sanitary zones so the finish layer works with the engineering, not against it."
-      process: "Focus: wet-zone planning, embedded elements, access points, drainage slope, and clean junctions between tile and sanitary fixtures."
+      summary: "Plumbing in a renovation does not start with fixture selection. It starts with wet-zone logic: where pipe routes run, how service access remains possible, where embeds sit, and whether all heights align with future tile, cabinetry, and shower glass."
+      process: "When plumbing is sequenced correctly, the bathroom works quietly, cleanly, and without hidden conflicts between engineering and finishing."
+      story_intro: "In a disciplined project, plumbing is coordinated together with shower geometry, drain positions, suspended fixture heights, access points, and tile junctions. That is why the image set has to show more than a beautiful bathroom. It has to show the technical junctions that make the bathroom reliable in daily use."
+      stage_heading: "What we control during the plumbing stage"
+      stages:
+        - "We mark wet zones, fixture axes, outlet heights, and pipe routes before the walls are closed."
+        - "We prepare embeds for showers, concealed frames, baths, and glass partitions so they do not conflict with tile layout."
+        - "We verify slopes, access points, technical readiness, and clean handoff to the finishing team."
+      checkpoints_heading: "Critical checkpoints"
+      checkpoints:
+        - "Mixer, shower, and drain positions matched to the real room geometry."
+        - "Compatibility between plumbing nodes, tile format, cabinetry, and adjacent finishes."
+        - "Service access to concealed components without damaging the finished room."
+      image_story_heading: "What the images show"
+      image_story: "The gallery mixes mid-stage and finished states: concealed outlets, shower preparation, technical readiness, and the final wet-zone assembly after tile and glass installation."
     images:
-      - src: /assets/images/work/plumbing-shower-zone.webp
-        alt:
-          uk: "Душова зона з готовою плиткою та підготовленими сантехнічними вузлами"
-          en: "Shower zone with finished tile and prepared plumbing points"
       - src: /assets/images/work/plumbing-bath-installation.webp
+        width: 960
+        height: 1280
         alt:
           uk: "Ванна кімната на етапі монтажу сантехніки та облицювання"
           en: "Bathroom during plumbing installation and wall cladding"
+        caption:
+          uk: "Етап монтажу: ще видно технічний стан вузлів, але вже читається майбутня логіка ванної кімнати."
+          en: "Installation stage: the technical nodes are still visible, but the final bathroom logic is already clear."
+      - src: /assets/images/work/plumbing-shower-tray-tile.webp
+        width: 960
+        height: 1280
+        alt:
+          uk: "Душова зона з піддоном, облицюванням і підготовленими сантехнічними вузлами"
+          en: "Shower zone with tray, tile cladding, and prepared plumbing outlets"
+        caption:
+          uk: "Тут важливі примикання, ухили та чиста підготовка зони до монтажу скла й обладнання."
+          en: "This stage shows why slopes, junctions, and clean preparation matter before glass and fixtures are installed."
+      - src: /assets/images/work/plumbing-glass-shower-detail.webp
+        width: 960
+        height: 1280
+        alt:
+          uk: "Готова душова кабіна з плиткою, склом і зібраною сантехнікою"
+          en: "Finished shower enclosure with tile, glass, and assembled plumbing"
+        caption:
+          uk: "Фінальний результат має виглядати спокійно саме тому, що технічні рішення були узгоджені ще до чистового етапу."
+          en: "The finished room looks calm because the technical decisions were resolved before the finish stage."
+
   - key: electrical
+    service_url: /services/electrical/
     uk:
       title: "Електрика"
-      summary: "Прокладаємо нові лінії під сценарії освітлення, побутове навантаження й зручне розміщення точок без випадкових рішень по ходу ремонту."
-      process: "У фокусі: групування світла, підготовка під треки й підсвітки, висоти розеток, виводи під техніку та безпечне навантаження."
+      summary: "Електромонтаж у ремонті квартири чи будинку має закривати безпеку, сценарії освітлення, розетки під техніку та прив'язку до меблів. Якщо це не звести в одну систему на ранньому етапі, фінальне оздоблення починає диктувати компроміси."
+      process: "Сильна електрика читається і в чорновій підготовці, і в готовому просторі: маршрути непомітні, але логіка світла та техніки працює природно."
+      story_intro: "На реальних об'єктах ми перевіряємо не лише кількість точок, а й сценарії користування простором: де людина входить у кімнату, як вмикається світло, де стоятимуть меблі, техніка, треки або підсвітка. Саме тому електрика завжди пов'язана зі стелею, декором, меблями та побутовим навантаженням."
+      stage_heading: "Що входить у контроль електрики"
+      stages:
+        - "Розкладаємо групи навантаження, прив'язку розеток, вимикачів та виводів під техніку."
+        - "Готуємо стелі й ніші під трекові системи, LED-підсвітку та декоративне освітлення."
+        - "Перевіряємо сценарії готового простору, щоб світло працювало разом із меблями та проходами."
+      checkpoints_heading: "Що критично для цього етапу"
+      checkpoints:
+        - "Безпечне навантаження, логічний поділ груп і чисте розміщення обладнання."
+        - "Сумісність електрики зі стелею, вентиляцією, шторами, меблями та технікою."
+        - "Зрозумілі сценарії ввімкнення для щоденного використання, а не тільки для красивого фото."
+      image_story_heading: "Як читати фотодоказ"
+      image_story: "У галереї нижче ми змішуємо чорнову стелю, підготовку до підсвітки та готові коридори з трековими лініями. Це дозволяє побачити електрику як процес від розводки до чистого світлового сценарію."
     en:
       title: "Electrical"
-      summary: "We lay out new lines for lighting scenarios, appliance load, and practical socket placement instead of making ad hoc decisions mid-renovation."
-      process: "Focus: lighting grouping, track and LED prep, socket heights, equipment feeds, and safe load planning."
+      summary: "Electrical work in an apartment or house renovation has to solve safety, lighting scenes, appliance feeds, and furniture coordination. If that is not built as one system early on, the finish stage starts forcing compromises."
+      process: "Strong electrical work can be read both in rough preparation and in the finished space: the routes disappear, but the lighting logic and equipment use feel natural."
+      story_intro: "On real projects we check more than the number of outlets. We check how the space will actually be used: where someone enters the room, how the light turns on, where furniture sits, and how tracks, LED strips, and appliances fit into one logic. That is why electrical work is always tied to ceilings, decor, furniture, and load planning."
+      stage_heading: "What the electrical control stage covers"
+      stages:
+        - "We map load groups, outlet placement, switch positions, and appliance feeds."
+        - "We prepare ceilings and niches for track systems, LED strips, and accent lighting."
+        - "We verify finished-room scenarios so lighting works with furniture layout and movement paths."
+      checkpoints_heading: "What is critical here"
+      checkpoints:
+        - "Safe load planning, logical circuit grouping, and clean equipment placement."
+        - "Compatibility with ceilings, ventilation, curtains, furniture, and appliances."
+        - "Clear everyday switching logic, not just a beautiful photo result."
+      image_story_heading: "How to read the photo proof"
+      image_story: "The gallery combines rough ceiling preparation, LED-ready details, and finished corridors with track lighting. Together they show electrical work as a full process from routing to final light control."
     images:
-      - src: /assets/images/work/electrical-led-room.webp
+      - src: /assets/images/work/electrical-coffer-ceiling-roughin.webp
+        width: 1280
+        height: 722
         alt:
-          uk: "Кімната з LED-підсвіткою по периметру та завершеним освітленням"
-          en: "Room with perimeter LED lighting and completed electrical scheme"
-      - src: /assets/images/work/electrical-ceiling-roughin.webp
+          uk: "Стеля на етапі розводки електрики та підготовки світлових сценаріїв"
+          en: "Ceiling during electrical routing and lighting-scene preparation"
+        caption:
+          uk: "Чорнова підготовка показує, чи було продумано світло до монтажу стелі та декору."
+          en: "The rough ceiling tells you whether the lighting plan existed before the final ceiling went in."
+      - src: /assets/images/work/electrical-blue-led-ceiling.webp
+        width: 1280
+        height: 960
         alt:
-          uk: "Стеля на етапі підготовки електрики та світлових точок"
-          en: "Ceiling during electrical rough-in and light-point preparation"
-  - key: core
+          uk: "Кімната з периметральною LED-підсвіткою та зібраним освітленням"
+          en: "Room with perimeter LED lighting and assembled ceiling lighting"
+        caption:
+          uk: "Готовий сценарій освітлення має виглядати цілісно, а не як набір випадкових точок."
+          en: "The finished lighting scene should feel coherent, not like a collection of random fixtures."
+      - src: /assets/images/work/electrical-track-corridor-perspective-b.webp
+        width: 960
+        height: 1280
+        alt:
+          uk: "Коридор із трековим освітленням, зібраний після електромонтажу та чистового оздоблення"
+          en: "Corridor with track lighting assembled after electrical and finishing work"
+        caption:
+          uk: "Такі кадри доводять, що електрика була узгоджена зі стелею, геометрією коридору та проходами."
+          en: "This kind of image proves the electrical plan was coordinated with the ceiling, corridor geometry, and movement lines."
+
+  - key: rough-works
+    service_url: /services/rough-works/
     uk:
       title: "Чорнові роботи"
-      summary: "Готуємо основу під усі наступні етапи: геометрію, рівні, проходи, вузли примикань і поверхні, які не підведуть на чистовому етапі."
-      process: "У фокусі: підготовка основ, стяжка, вирівнювання, проходи по коридорах і чистий технічний стан перед фінішним монтажем."
+      summary: "Чорнові та підготовчі роботи формують основу всього ремонту: рівні, геометрію, проходи, чистоту монтажних зон і готовність поверхонь до інженерії та фінішу. Саме тут найчастіше народжуються дорогі помилки, якщо етап ведеться без дисципліни."
+      process: "Коли базова підготовка зроблена правильно, наступні стадії не виправляють попередні, а спираються на перевірену основу."
+      story_intro: "Для клієнта цей етап часто найменш «ефектний» на фото, але саме він визначає якість сантехніки, електрики, плитки, дверей і підлог. Тому ми показуємо не порожні кімнати, а стани, де видно готовність поверхонь, чистоту проходів та логіку подальшого монтажу."
+      stage_heading: "Що входить у чорнову підготовку"
+      stages:
+        - "Демонтуємо зайве, формуємо проходи та готуємо зони до інженерних робіт."
+        - "Вирівнюємо підлоги, стіни й площини, щоб наступні вузли збиралися без перекосів."
+        - "Передаємо об'єкт на наступний етап у технічно чистому стані, без прихованих перепадів і хаосу."
+      checkpoints_heading: "Що перевіряємо перед передачею далі"
+      checkpoints:
+        - "Рівні підлоги та стін достатні для плитки, дверей, меблів і чистового оздоблення."
+        - "Проходи, кутові вузли та геометрія кімнат не ламають інженерні чи меблеві рішення."
+        - "Основа готова до монтажу без додаткових аварійних підрізок і переробок."
+      image_story_heading: "Чому ці фото важливі"
+      image_story: "Ми свідомо залишаємо в добірці відкриті підлоги й підготовлені оболонки приміщень. Для SEO та довіри це сильніші сигнали, ніж абстрактні фрази про «якісну основу», бо покупець бачить реальну готовність об'єкта."
     en:
       title: "Core construction"
-      summary: "We prepare the base for every later stage: geometry, levels, junctions, access paths, and surfaces that will not fail during finishing."
-      process: "Focus: substrate preparation, screeds, leveling, corridor readiness, and a disciplined technical condition before the finish stage."
+      summary: "Core construction and preparation set the base for the entire renovation: levels, geometry, movement paths, clean installation zones, and surface readiness for engineering and finishing. This is where the most expensive mistakes usually start if the stage is handled without discipline."
+      process: "When the base layer is done correctly, later stages do not fix earlier mistakes. They build on a verified foundation."
+      story_intro: "Clients often see this as the least photogenic part of the project, but it defines the quality of plumbing, electrical work, tile, doors, and floors. That is why we show prepared shells and floor conditions that reveal readiness, not just empty rooms."
+      stage_heading: "What the core preparation stage includes"
+      stages:
+        - "We remove what blocks the renovation flow and prepare the property for engineering work."
+        - "We level floors, walls, and key planes so later junctions can be assembled without distortion."
+        - "We hand the project to the next stage in a technically clean state, without hidden irregularities."
+      checkpoints_heading: "What we verify before handoff"
+      checkpoints:
+        - "Floor and wall levels are good enough for tile, doors, cabinetry, and finishing."
+        - "Paths, corner junctions, and room geometry do not break engineering or furniture logic."
+        - "The base is ready for installation without emergency cutting and rework."
+      image_story_heading: "Why these photos matter"
+      image_story: "We intentionally keep exposed floors and prepared shells in the set. For both SEO and buyer trust, these are stronger signals than generic claims about a 'quality base' because they show actual project readiness."
     images:
       - src: /assets/images/work/core-shell-prep.webp
+        width: 1280
+        height: 720
         alt:
-          uk: "Приміщення на підготовчому етапі перед чистовими роботами"
-          en: "Interior shell at the preparation stage before finishing"
+          uk: "Підготовлене приміщення перед чистовими роботами"
+          en: "Prepared interior shell before the finishing stage"
+        caption:
+          uk: "Це фото показує технічну готовність приміщення до наступних монтажних етапів."
+          en: "This image shows the property in a technically ready state before the next installation stages."
       - src: /assets/images/work/core-selflevel-floor.webp
+        width: 960
+        height: 1280
         alt:
-          uk: "Рівна підлога після підготовчих робіт та заливки"
-          en: "Leveled floor after screed and preparation work"
+          uk: "Вирівняна підлога після підготовчих робіт і заливки"
+          en: "Leveled floor after preparation and screed work"
+        caption:
+          uk: "Рівна основа підлоги напряму впливає на двері, меблі, плитку та чистовий монтаж."
+          en: "A level floor base directly affects doors, cabinetry, tile, and clean final installation."
+      - src: /assets/images/work/core-open-floor-ready.webp
+        width: 960
+        height: 1280
+        alt:
+          uk: "Порожня кімната з відкритою підлогою, підготовлена до наступного етапу ремонту"
+          en: "Empty room with exposed prepared floor, ready for the next renovation stage"
+        caption:
+          uk: "Такі кадри показують не декор, а ступінь готовності об'єкта до інженерії, оздоблення й меблів."
+          en: "This kind of frame shows readiness for engineering, finishes, and furniture rather than decoration."
+
   - key: finishing
+    service_url: /services/finishing/
     uk:
       title: "Чистове оздоблення"
-      summary: "Збираємо фінальний вигляд інтер'єру через фактури, світло, плитку, фарбування та акуратні вузли, де видно дисципліну виконання."
-      process: "У фокусі: декоративні поверхні, малярні вузли, плитка, приховані двері, світлові сценарії та завершений характер простору."
+      summary: "Чистове оздоблення має продавати не лише красу, а й якість збирання всіх попередніх рішень: плитки, фарбування, фактур, дверей, стель, світла та меблевих стиків. Саме на цьому етапі стає видно, чи був ремонт керованим від самого початку."
+      process: "Сильне оздоблення виглядає спокійно й дорого не тому, що в ньому багато декору, а тому, що всі вузли зібрані точно."
+      story_intro: "Для SEO ця категорія важлива ще й тому, що саме за нею користувачі найчастіше шукають 'ремонт під ключ', 'чистове оздоблення', 'оздоблення квартири' або 'декоративні стіни'. Але показувати потрібно не лише красиві поверхні. Потрібно показувати логіку світла, стиків і завершеного характеру простору."
+      stage_heading: "Що видно в якісному чистовому результаті"
+      stages:
+        - "Чіткі примикання плитки, фарбування, дверей і підлоги без випадкових компромісів."
+        - "Світло, яке підкреслює фактуру поверхонь і не конфліктує зі стелею чи меблями."
+        - "Зібраний інтер'єр, де декоративні рішення виглядають частиною системи, а не накладкою поверх технічних помилок."
+      checkpoints_heading: "Що повинно бути бездоганно"
+      checkpoints:
+        - "Геометрія стиків, примикань, кутів і тіньових швів."
+        - "Сумісність оздоблення з дверима, меблями, освітленням і сценаріями користування."
+        - "Однорідна якість фактур і кольору на великих площинах."
+      image_story_heading: "Що підсилюють ці зображення"
+      image_story: "Тут ми свідомо змішуємо коридори, акцентні стіни, фальшпанелі та декоративні площини. Разом вони показують, як чистове оздоблення працює не як окрема прикраса, а як підсумок усього процесу ремонту."
     en:
       title: "Finishing"
-      summary: "We assemble the final interior through texture, light, tile, paint, and precise junctions that reveal execution discipline."
-      process: "Focus: decorative surfaces, paint detailing, tile work, hidden doors, lighting scenes, and a finished spatial character."
+      summary: "Finishing should sell more than beauty. It should reveal the quality of everything that came before it: tile, paint, decorative surfaces, doors, ceilings, lighting, and furniture junctions. This is the stage where buyers can finally see whether the renovation was controlled from the start."
+      process: "Strong finishing looks calm and expensive not because it is overloaded with decor, but because every junction is assembled accurately."
+      story_intro: "This category is also valuable for SEO because buyers often search for terms such as turnkey finishing, apartment finishing, decorative walls, and final renovation assembly. But the gallery has to show more than beautiful surfaces. It has to show light, material transitions, and the finished character of the space."
+      stage_heading: "What quality finishing should reveal"
+      stages:
+        - "Clean junctions between tile, paint, doors, floors, and decorative surfaces."
+        - "Lighting that supports texture without conflicting with ceilings or furniture."
+        - "A finished interior where decorative choices feel integrated, not layered on top of technical mistakes."
+      checkpoints_heading: "What has to be precise"
+      checkpoints:
+        - "Junction geometry, corners, reveals, and shadow gaps."
+        - "Compatibility between finishes, doors, cabinetry, lighting, and real use scenarios."
+        - "Consistent texture and color quality across large visible surfaces."
+      image_story_heading: "What these images reinforce"
+      image_story: "We intentionally mix corridors, feature walls, fluted panels, and decorative planes. Together they show finishing as the visual proof of a disciplined renovation process rather than isolated decoration."
     images:
       - src: /assets/images/work/finishing-hallway.webp
+        width: 722
+        height: 1280
         alt:
-          uk: "Оздоблений коридор з фактурними стінами та вбудованим освітленням"
+          uk: "Готовий коридор із фактурними стінами та вбудованим освітленням"
           en: "Finished hallway with textured walls and integrated lighting"
-      - src: /assets/images/work/finishing-feature-wall.webp
+        caption:
+          uk: "Готовий коридор показує, як світло, фактура і геометрія стиків працюють як одна композиція."
+          en: "The finished hallway shows how light, texture, and junction geometry work as one composition."
+      - src: /assets/images/work/finishing-fluted-panel.webp
+        width: 960
+        height: 1280
         alt:
-          uk: "Акцентна декоративна стіна на фінальному етапі оздоблення"
-          en: "Feature wall at the final finishing stage"
+          uk: "Вертикальна декоративна панель на чистовому етапі оздоблення"
+          en: "Vertical decorative panel at the final finishing stage"
+        caption:
+          uk: "Такі деталі працюють тільки тоді, коли основа рівна, а освітлення та меблі враховані заздалегідь."
+          en: "Details like this work only when the base is level and the lighting and furniture were planned in advance."
+      - src: /assets/images/work/finishing-arched-wall.webp
+        width: 960
+        height: 1280
+        alt:
+          uk: "Інтер'єр із арковою стіною, текстилем і зібраним чистовим оздобленням"
+          en: "Interior with an arched wall, textiles, and assembled finishing"
+        caption:
+          uk: "Фінальний простір має читатися цілісно: від декоративної форми до світла і м'яких переходів матеріалів."
+          en: "The final room should read as a whole, from decorative form to lighting and material transitions."
+
   - key: procurement
+    service_url: /services/procurement/
     uk:
       title: "Комплектація"
-      summary: "Підбираємо матеріали й готові елементи так, щоб фактури, фурнітура, меблеві вузли та техніка збиралися в один логічний комплект."
-      process: "У фокусі: сумісність матеріалів, послідовність постачань, прив'язка меблів до геометрії приміщення та готовність об'єкта до монтажу."
+      summary: "Комплектація в ремонті означає не просто купити матеріали, а прив'язати постачання, меблі, двері, сантехніку, освітлення та фурнітуру до фактичної готовності об'єкта. Це критично для ремонту під ключ, де збої в поставках швидко ламають графік."
+      process: "Добра комплектація непомітна на об'єкті саме тому, що все приїжджає в потрібний момент і збирається без хаосу."
+      story_intro: "Для покупця цей розділ корисний тим, що показує, як матеріали й готові елементи переходять із відомості закупівель у реальний інтер'єр. На фото важливо бачити не лише готові меблі, а й ступінь підготовки стін, електрики та зон монтажу до їх встановлення."
+      stage_heading: "Що включає комплектаційна логіка"
+      stages:
+        - "Підбираємо матеріали та елементи, які сумісні між собою за розміром, кольором і технічними умовами монтажу."
+        - "Прив'язуємо поставки до готовності кімнат, щоб меблі, двері чи сантехніка не зберігались без сенсу на об'єкті."
+        - "Перевіряємо, чи стіни, підлоги, електрика і закладні реально готові до монтажу замовлених елементів."
+      checkpoints_heading: "Що важливо для контролю"
+      checkpoints:
+        - "Точні розміри ніш, дверних прорізів, меблевих вузлів і підключень."
+        - "Чітка послідовність поставок без простоїв для майстрів."
+        - "Відповідність вибраних матеріалів стилю, бюджету та експлуатації."
+      image_story_heading: "Що демонструють ці приклади"
+      image_story: "У цій добірці є як майже готові кімнати, так і простори, де видно підготовку до меблювання й техніки. Разом це показує, що комплектація в ремонті - це частина процесу, а не окрема покупка в кінці."
     en:
       title: "Procurement"
-      summary: "We coordinate materials and ready-made elements so textures, hardware, furniture assemblies, and equipment arrive as one coherent package."
-      process: "Focus: material compatibility, delivery sequencing, furniture-to-geometry coordination, and readiness for clean installation."
+      summary: "Procurement in renovation is not just buying materials. It is tying deliveries, furniture, doors, sanitary fixtures, lighting, and hardware to the real readiness of the property. This is critical in turnkey renovation because supply mistakes break the schedule quickly."
+      process: "Good procurement feels invisible on site because the right elements arrive at the right time and assemble without chaos."
+      story_intro: "For buyers, this section explains how selected materials and built-in elements move from a procurement list into a real interior. The image set should show not only finished rooms, but also whether the walls, electrical points, and installation zones were properly prepared for what was ordered."
+      stage_heading: "What procurement logic includes"
+      stages:
+        - "We select materials and built elements that are compatible in size, finish, and installation requirements."
+        - "We align deliveries with room readiness so furniture, doors, and fixtures do not sit pointlessly on site."
+        - "We verify that walls, floors, electrical points, and embeds are actually ready for the ordered items."
+      checkpoints_heading: "What needs control"
+      checkpoints:
+        - "Exact niche sizes, door openings, furniture dimensions, and connection points."
+        - "Clear delivery sequencing without idle time for the crews."
+        - "Alignment between selected materials, style direction, budget, and daily use."
+      image_story_heading: "What these examples demonstrate"
+      image_story: "This set mixes nearly finished rooms with spaces that are visibly prepared for furniture and equipment. Together they show procurement as part of the renovation process, not as a disconnected shopping step at the end."
     images:
-      - src: /assets/images/work/procurement-living-fit.webp
+      - src: /assets/images/work/procurement-living-sockets-ready.webp
+        width: 960
+        height: 1280
         alt:
-          uk: "Житлова зона після підбору меблів, оздоблення та техніки"
-          en: "Living zone after coordinating furniture, finishes, and equipment"
+          uk: "Житлова зона з підготовленими виводами під меблі, світло й техніку"
+          en: "Living zone with prepared connection points for furniture, lighting, and equipment"
+        caption:
+          uk: "Ще до меблювання має бути зрозуміло, що електрика, стіни та монтажні зони відповідають майбутньому комплекту."
+          en: "Before furniture arrives, the electrical points, walls, and installation zones should already match the future package."
+      - src: /assets/images/work/procurement-bedroom-ready.webp
+        width: 960
+        height: 1280
+        alt:
+          uk: "Спальня, підготовлена до меблювання та фінальної збірки інтер'єру"
+          en: "Bedroom prepared for furniture installation and final interior assembly"
+        caption:
+          uk: "Такі фото показують, що приміщення готове до монтажу меблів і не вимагатиме аварійних доробок."
+          en: "This kind of image shows the room is ready for furniture installation without last-minute rework."
       - src: /assets/images/work/procurement-wardrobe-fit.webp
+        width: 960
+        height: 1280
         alt:
-          uk: "Вбудовані меблі та оздоблення, підібрані як єдина система"
-          en: "Built-in furniture and finishes selected as one system"
-  - key: supervision
+          uk: "Вбудована шафа та оздоблення, підібрані як єдина система"
+          en: "Built-in wardrobe and finishes selected as one coordinated system"
+        caption:
+          uk: "У фіналі комплектація читається через точність стику меблів, дверей, оздоблення та фурнітури."
+          en: "In the final stage, procurement quality is visible in how precisely cabinetry, doors, finishes, and hardware fit together."
+
+  - key: site-supervision
+    service_url: /services/site-supervision/
     uk:
       title: "Нагляд за об'єктом"
-      summary: "Тримаємо під контролем послідовність етапів і якість вузлів, щоб фінішні роботи не маскували технічні помилки попередніх підрядників."
-      process: "У фокусі: приймання етапів, контроль геометрії, узгодження суміжних робіт і фотофіксація результату перед наступним кроком."
+      summary: "Нагляд за об'єктом потрібен там, де ремонт має проходити через послідовні контрольні точки: хто приймає етап, хто перевіряє геометрію, хто підтверджує готовність до наступної бригади. Саме цей сервіс зменшує приховані дефекти й конфлікти між суміжними роботами."
+      process: "Коли нагляд ведеться системно, об'єкт не розсипається на окремі етапи та не накопичує проблеми до фінальної здачі."
+      story_intro: "Для довіри та SEO ця категорія особливо сильна: користувач бачить, що на сайті показані не тільки красиві інтер'єри, а й проміжні технічні стани, готовність коридорів, фотофіксація та контроль після монтажу. Це набагато переконливіше для замовника ремонту під ключ."
+      stage_heading: "Що робить нагляд предметним"
+      stages:
+        - "Фіксуємо стан об'єкта на кожній критичній межі між видами робіт."
+        - "Перевіряємо геометрію, стики, готовність зон і логіку переходу до наступної стадії."
+        - "Збираємо фотодокази й комунікацію так, щоб клієнт бачив реальний статус, а не загальні обіцянки."
+      checkpoints_heading: "На що дивимось у першу чергу"
+      checkpoints:
+        - "Чи готовий етап до закриття наступним шаром робіт."
+        - "Чи не маскує фініш технічну помилку попереднього виконавця."
+        - "Чи є в клієнта зрозуміле підтвердження приймання та руху далі."
+      image_story_heading: "Як працює візуальний доказ"
+      image_story: "Нижче поєднані проміжні коридори, підготовлені оболонки та фінальні проходи з освітленням. Разом вони показують, що контроль не закінчується на етапі фото готової кімнати, а ведеться від технічного стану до здачі."
     en:
       title: "Site supervision"
-      summary: "We control stage sequence and junction quality so the finish layer never hides technical mistakes from earlier contractors."
-      process: "Focus: stage acceptance, geometry checks, coordination between trades, and photo proof before the next step starts."
+      summary: "Site supervision matters when the renovation has to pass through clear control points: who accepts a stage, who checks geometry, and who confirms readiness for the next crew. This service is what reduces hidden defects and cross-trade conflict."
+      process: "When supervision is systematic, the project does not fragment into isolated stages and does not accumulate problems until handover."
+      story_intro: "This category is especially strong for both trust and SEO because it proves the site shows more than attractive interiors. It shows intermediate technical states, corridor readiness, photo reporting, and controlled transitions between stages. That is far more convincing for a turnkey renovation buyer."
+      stage_heading: "What makes supervision tangible"
+      stages:
+        - "We record the site state at each critical boundary between trades."
+        - "We check geometry, junctions, room readiness, and logic before the next stage begins."
+        - "We collect photo proof and communication in a way the client can actually follow."
+      checkpoints_heading: "What we prioritise first"
+      checkpoints:
+        - "Whether the current stage is truly ready to be covered by the next layer of work."
+        - "Whether the finish layer is hiding a technical mistake from an earlier contractor."
+        - "Whether the client has clear proof of acceptance and next-step readiness."
+      image_story_heading: "How the visual proof works"
+      image_story: "The set below combines intermediate corridors, prepared shells, and finished passages with lighting. Together they show that control runs from technical condition to final handover, not just through polished after-photos."
     images:
       - src: /assets/images/work/core-corridor-stage.webp
+        width: 1280
+        height: 720
         alt:
-          uk: "Коридор на проміжному етапі, придатний для контролю геометрії та підготовки"
-          en: "Corridor at an intermediate stage, ready for geometry and quality checks"
-      - src: /assets/images/work/electrical-track-corridor.webp
+          uk: "Коридор на проміжному етапі ремонту, придатний для контролю геометрії"
+          en: "Corridor at an intermediate renovation stage, ready for geometry checks"
+        caption:
+          uk: "Такі стани найкраще показують, чи можна безпечно переходити до наступного шару робіт."
+          en: "States like this show most clearly whether the project is ready for the next work layer."
+      - src: /assets/images/work/electrical-track-corridor-perspective-a.webp
+        width: 960
+        height: 1280
         alt:
-          uk: "Довгий коридор із завершеними трековими лініями та чистою збіркою"
-          en: "Long corridor with completed track lighting and disciplined final assembly"
+          uk: "Довгий коридор із трековим освітленням після контрольованого завершення робіт"
+          en: "Long corridor with track lighting after controlled project completion"
+        caption:
+          uk: "Фінальний прохід доводить, що геометрія, освітлення та оздоблення були зведені в один контрольований результат."
+          en: "The finished corridor proves that geometry, lighting, and finishing were brought into one controlled result."
+      - src: /assets/images/work/electrical-track-corridor-perspective-c.webp
+        width: 960
+        height: 1280
+        alt:
+          uk: "Коридор із завершеними трековими лініями та чистою збіркою після нагляду за об'єктом"
+          en: "Corridor with completed track lines and clean final assembly after site supervision"
+        caption:
+          uk: "Фото після здачі мають показувати не тільки красу, а й дисципліну всього шляху до цього стану."
+          en: "Post-handover photos should show not only beauty, but the discipline of the path that produced it."

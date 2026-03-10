@@ -13,23 +13,57 @@
     </div>
     <div class="work-categories">
       {% for category in examples.categories %}
+        {% if include.filter_key == nil or include.filter_key == category.key %}
         {% assign content = category[include.lang] | default: category.uk %}
+        {% assign t = site.data.translations[include.lang] | default: site.data.translations.uk %}
+        {% if include.lang == 'en' %}
+          {% assign category_url = '/en' | append: category.service_url %}
+        {% else %}
+          {% assign category_url = category.service_url %}
+        {% endif %}
         <article class="work-category">
           <div class="work-category__copy">
             <p class="work-category__kicker">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</p>
             <h3>{{ content.title }}</h3>
             <p>{{ content.summary }}</p>
             <p class="work-category__process">{{ content.process }}</p>
+            <p class="work-category__story">{{ content.story_intro }}</p>
+            <div class="work-category__details">
+              <section class="work-category__block" aria-labelledby="work-{{ category.key }}-stage-{{ include.lang }}">
+                <p class="work-category__label" id="work-{{ category.key }}-stage-{{ include.lang }}">{{ content.stage_heading }}</p>
+                <ul class="work-category__list">
+                  {% for item in content.stages %}
+                    <li>{{ item }}</li>
+                  {% endfor %}
+                </ul>
+              </section>
+              <section class="work-category__block" aria-labelledby="work-{{ category.key }}-check-{{ include.lang }}">
+                <p class="work-category__label" id="work-{{ category.key }}-check-{{ include.lang }}">{{ content.checkpoints_heading }}</p>
+                <ul class="work-category__list">
+                  {% for item in content.checkpoints %}
+                    <li>{{ item }}</li>
+                  {% endfor %}
+                </ul>
+              </section>
+            </div>
+            <a class="service-card__link" href="{{ category_url | relative_url }}">{{ t.service_link_label }}</a>
           </div>
-          <div class="work-category__media">
+          <div class="work-category__media" aria-label="{{ content.title }}">
             {% for image in category.images %}
               {% assign alt = image.alt[include.lang] | default: image.alt.uk %}
+              {% assign caption = image.caption[include.lang] | default: image.caption.uk %}
               <figure class="work-shot">
-                <img src="{{ image.src | relative_url }}" alt="{{ alt }}" loading="lazy" width="960" height="1280">
+                <img src="{{ image.src | relative_url }}" alt="{{ alt }}" loading="lazy" width="{{ image.width }}" height="{{ image.height }}">
+                <figcaption>{{ caption }}</figcaption>
               </figure>
             {% endfor %}
+            <div class="work-category__media-note">
+              <p class="work-category__label">{{ content.image_story_heading }}</p>
+              <p>{{ content.image_story }}</p>
+            </div>
           </div>
         </article>
+        {% endif %}
       {% endfor %}
     </div>
 {% if include.compact %}

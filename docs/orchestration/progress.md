@@ -53,6 +53,8 @@ Gate 4 — All Audits Passed
 
 ## Recent updates
 
+- 2026-03-10: CONTENT-004 completed with curated sibling assets converted to metadata-free WebP, expanded bilingual work sections, and QA enforcement for image format plus metadata policy.
+- 2026-03-10: CONTENT-004 opened to expand process-led SEO copy and curated gallery content using additional real project assets from `../assets`.
 - 2026-03-10: DEV-002 completed with shared responsive overrides validated in browser automation on mobile, tablet, desktop, and process-page layouts.
 - 2026-03-10: DEV-002 opened to repair shared responsive layout regressions after mobile inspection on iPhone 12 Pro width using browser automation.
 - 2026-03-09: Repository scaffold created for GitHub Pages compatible bilingual Jekyll.
