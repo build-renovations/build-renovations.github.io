@@ -30,6 +30,7 @@ Use this file as the orchestrator-managed queue. Every task must have one owner 
 
 | ID | Title | Owner | Status | Tool mode | Depends on | Outcome |
 | --- | --- | --- | --- | --- | --- | --- |
+| DEV-002 | Repair responsive layout across shared site components | development | done | mcp_preferred | DEV-001 | Final responsive overrides added for shared layouts, with browser verification at phone, tablet, and desktop widths |
 | BOOT-001 | Bootstrap GitHub Pages compatible bilingual Jekyll repository | development | done | repo_only | none | Base site, bilingual routing, SEO baseline, and QA scripts created |
 | ORCH-000 | Establish orchestrator framework | orchestrator | done | repo_only | BOOT-001 | Added orchestrator brief, progress tracker, and task ledger |
 | ORCH-001 | Define wave 1 milestone plan | orchestrator | done | repo_only | none | Gate 1 task sequence defined and Gate 1 successfully unlocked |

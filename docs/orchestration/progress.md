@@ -1,7 +1,7 @@
 # Progress Tracker
 
-Last updated: 2026-03-09
-Orchestrator: pending assignment
+Last updated: 2026-03-10
+Orchestrator: codex
 Project: Remonty bilingual GitHub Pages site
 
 ## Goal
@@ -53,6 +53,8 @@ Gate 4 — All Audits Passed
 
 ## Recent updates
 
+- 2026-03-10: DEV-002 completed with shared responsive overrides validated in browser automation on mobile, tablet, desktop, and process-page layouts.
+- 2026-03-10: DEV-002 opened to repair shared responsive layout regressions after mobile inspection on iPhone 12 Pro width using browser automation.
 - 2026-03-09: Repository scaffold created for GitHub Pages compatible bilingual Jekyll.
 - 2026-03-09: Ukrainian user-facing content replaced with real Ukrainian language copy.
 - 2026-03-09: Orchestrator role, progress tracker, and task ledger added.
