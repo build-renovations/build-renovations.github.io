@@ -53,6 +53,7 @@ Gate 4 — All Audits Passed
 
 ## Recent updates
 
+- 2026-03-10: ORCH-002 completed with a fresh `.planning/codebase/` map covering stack, integrations, architecture, structure, conventions, testing, and concerns; fallback default agents were used because the dedicated `gsd-codebase-mapper` role was unavailable.
 - 2026-03-10: CONTENT-004 completed with curated sibling assets converted to metadata-free WebP, expanded bilingual work sections, and QA enforcement for image format plus metadata policy.
 - 2026-03-10: CONTENT-004 opened to expand process-led SEO copy and curated gallery content using additional real project assets from `../assets`.
 - 2026-03-10: DEV-002 completed with shared responsive overrides validated in browser automation on mobile, tablet, desktop, and process-page layouts.
