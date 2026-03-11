@@ -3,7 +3,7 @@ phase: 2
 slug: content-architecture-expansion
 status: draft
 nyquist_compliant: false
-wave_0_complete: false
+wave_0_complete: true
 created: 2026-03-11
 ---
 
@@ -19,8 +19,8 @@ created: 2026-03-11
 |----------|-------|
 | **Framework** | repo QA scripts + rendered route checks |
 | **Config file** | `scripts/qa.sh` |
-| **Quick run command** | `bundle exec ruby -e 'require "yaml"; %w[_data/service_pages.yml _data/process_page.yml _data/faqs.yml _data/translations.yml].each { |path| YAML.load_file(path) if File.exist?(path) }'` + Phase 2 metadata smoke checks |
-| **Full suite command** | `./scripts/qa.sh` + Phase 2 rendered content checks |
+| **Quick run command** | `bundle exec ruby -e 'require "yaml"; %w[_data/service_pages.yml _data/process_page.yml _data/faqs.yml _data/translations.yml].each { |path| YAML.load_file(path) if File.exist?(path) }'` |
+| **Full suite command** | `./scripts/qa.sh` |
 | **Estimated runtime** | ~90-180 seconds |
 
 ---
@@ -38,10 +38,10 @@ created: 2026-03-11
 
 | Task ID | Plan | Wave | Requirement | Test Type | Automated Command | File Exists | Status |
 |---------|------|------|-------------|-----------|-------------------|-------------|--------|
-| 02-01-01 | 01 | 1 | CONT-01 | rendered + metadata | `./scripts/qa.sh` + Phase 2 marker and metadata-parity check | ✅ | ⬜ pending |
-| 02-01-02 | 01 | 1 | CONT-01 | data integrity | `bundle exec ruby -e 'require "yaml"; %w[_data/service_pages.yml _data/process_page.yml _data/faqs.yml].each { |path| YAML.load_file(path) }'` | ✅ | ⬜ pending |
-| 02-01-03 | 01 | 1 | CONT-01 | rendered | `./scripts/qa.sh` | ✅ | ⬜ pending |
-| 02-01-04 | 01 | 1 | CONT-01 | validation artifact | `rg -n "canonical|hreflang|language-switch|02-01-01|02-01-04" .planning/phases/02-content-architecture-expansion/02-VALIDATION.md` | ✅ | ⬜ pending |
+| 02-01-01 | 01 | 1 | CONT-01 | rendered + metadata | `./scripts/qa.sh` (`scripts/phase2_render_checks.mjs` validates route markers, metadata parity, and retained Phase 1 trust/call surfaces) | ✅ | ✅ green |
+| 02-01-02 | 01 | 1 | CONT-01 | data integrity | `bundle exec ruby -e 'require "yaml"; %w[_data/service_pages.yml _data/process_page.yml _data/faqs.yml].each { |path| YAML.load_file(path) }'` | ✅ | ✅ green |
+| 02-01-03 | 01 | 1 | CONT-01 | rendered | `./scripts/qa.sh` | ✅ | ✅ green |
+| 02-01-04 | 01 | 1 | CONT-01 | validation artifact | `rg -n "canonical|hreflang|language-switch|02-01-01|02-01-04" .planning/phases/02-content-architecture-expansion/02-VALIDATION.md` | ✅ | ✅ green |
 | 02-02-01 | 02 | 2 | CONT-01 | data integrity | `bundle exec ruby -e 'require "yaml"; YAML.load_file("_data/service_pages.yml")'` | ✅ | ⬜ pending |
 | 02-02-02 | 02 | 2 | CONT-03 | data integrity | `bundle exec ruby -e 'require "yaml"; %w[_data/process_page.yml _data/translations.yml].each { |path| YAML.load_file(path) }'` | ✅ | ⬜ pending |
 | 02-02-03 | 02 | 2 | CONT-01 | rendered | `./scripts/qa.sh` | ✅ | ⬜ pending |
@@ -58,12 +58,18 @@ created: 2026-03-11
 
 ## Wave 0 Requirements
 
-- [ ] Add `scripts/phase2_render_checks.mjs` and wire it into `./scripts/qa.sh`
-- [ ] Add checks that richer shared data contracts contain both `uk` and `en`
-- [ ] Add route-level checks for `/`, `/services/`, `/process/`, `/faq/`, priority service pages, property-type pages, and `/en/` equivalents
-- [ ] Add stable rendered markers for content-depth, objection, commercial-clarity, fit-guide, and FAQ-group surfaces
-- [ ] Add canonical, `hreflang`, `lang`, and language-switch parity checks on touched bilingual routes
-- [ ] Add checks that Phase 1 trust/call modules remain present on pages that should retain them
+- [x] Add `scripts/phase2_render_checks.mjs` and wire it into `./scripts/qa.sh`
+- [x] Add checks that richer shared data contracts contain both `uk` and `en`
+- [x] Add route-level checks for `/`, `/services/`, `/process/`, `/faq/`, priority service pages, property-type pages, and `/en/` equivalents
+- [x] Add stable rendered markers for content-depth, objection, commercial-clarity, fit-guide, and FAQ-group surfaces
+- [x] Add canonical, `hreflang`, `lang`, and language-switch parity checks on touched bilingual routes
+- [x] Add checks that Phase 1 trust/call modules remain present on pages that should retain them
+
+**Wave 0 owner:** Plan `02-01`
+
+**Implemented route coverage:** `/`, `/services/`, `/process/`, `/faq/`, `/services/plumbing/`, `/services/electrical/`, `/services/apartment-renovation/`, `/services/house-renovation/`, and each `/en/` equivalent.
+
+**Metadata parity assertions:** `html[lang]`, canonical, `hreflang` (`uk`, `en`, `x-default`), and header language-switch links on all touched bilingual route pairs.
 
 ---
 
@@ -80,11 +86,11 @@ created: 2026-03-11
 
 ## Validation Sign-Off
 
-- [ ] All tasks have `<verify>` commands or Wave 0 dependencies
-- [ ] Sampling continuity: no 3 consecutive tasks without automated verify
-- [ ] Wave 0 covers all missing Phase 2 rendered/content checks
+- [x] All tasks have `<verify>` commands or Wave 0 dependencies
+- [x] Sampling continuity: no 3 consecutive tasks without automated verify
+- [x] Wave 0 covers all missing Phase 2 rendered/content checks
 - [ ] No watch-mode flags
-- [ ] Feedback latency < 180s
+- [x] Feedback latency < 180s
 - [ ] `nyquist_compliant: true` set in frontmatter
 
-**Approval:** pending
+**Approval:** Wave 0 complete for Plan `02-01`; final phase approval remains pending until Plans `02-02` through `02-04` complete and full route/requirement coverage is closed.
