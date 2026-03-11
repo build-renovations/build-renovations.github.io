@@ -75,7 +75,7 @@ layout: default
 </section>
 
 <section class="section">
-  <div class="shell" data-phase2-marker="content-depth">
+  <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="home-service-teaser">
     <div class="section-heading section-heading--wide">
       <p class="eyebrow">{{ t.scope_label }}</p>
       <h2>{{ t.services_heading }}</h2>
@@ -119,7 +119,7 @@ layout: default
 </section>
 
 <section class="section">
-  <div class="shell" data-phase2-marker="fit-guidance">
+  <div class="shell" data-phase2-marker="fit-guidance" data-phase2-surface="home-fit-guidance">
     {% include project-fit.html lang=page.lang %}
   </div>
 </section>
@@ -127,7 +127,7 @@ layout: default
 {% include work-examples.html lang=page.lang %}
 
 <section class="section">
-  <div class="shell" data-phase2-marker="content-depth">
+  <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="home-process-teaser">
     <div class="section-heading section-heading--wide">
       <p class="eyebrow">{{ t.process_label }}</p>
       <h2>{{ t.process_heading }}</h2>
@@ -149,7 +149,7 @@ layout: default
 {% assign faq_groups = site.data.faqs.groups | default: empty %}
 {% if faq_groups != empty %}
 <section class="section section--accent">
-  <div class="shell" data-phase2-marker="faq-group-visibility">
+  <div class="shell" data-phase2-marker="faq-group-visibility" data-phase2-surface="home-faq-teaser">
     <div class="section-heading section-heading--wide">
       <p class="eyebrow">{% if page.lang == 'en' %}Key questions{% else %}Ключові питання{% endif %}</p>
       <h2>{% if page.lang == 'en' %}Short answers before the deeper service and process pages{% else %}Короткі відповіді перед переходом до детальних сторінок послуг і процесу{% endif %}</h2>

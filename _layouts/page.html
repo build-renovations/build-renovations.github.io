@@ -20,7 +20,7 @@ layout: default
 {% if page.translation_key == 'services' %}
   {% assign featured_keys = "plumbing,electrical,apartment-renovation" | split: "," %}
   <section class="section section--accent">
-    <div class="shell" data-phase2-marker="content-depth">
+    <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="page-depth-bridge">
       <div class="section-heading section-heading--wide">
         <p class="eyebrow">{% if page.lang == 'en' %}Where to read deeper{% else %}Куди йти за деталями{% endif %}</p>
         <h2>{% if page.lang == 'en' %}Use the service routes for scope, fit, and commercial expectations{% else %}Для обсягу, відповідності й комерційних очікувань переходьте на сторінки окремих послуг{% endif %}</h2>
@@ -43,7 +43,7 @@ layout: default
   {% assign faq_groups = site.data.faqs.groups | default: empty %}
   {% if faq_groups != empty %}
   <section class="section">
-    <div class="shell" data-phase2-marker="faq-group-visibility">
+    <div class="shell" data-phase2-marker="faq-group-visibility" data-phase2-surface="page-faq-teaser">
       <div class="section-heading section-heading--wide">
         <p class="eyebrow">{% if page.lang == 'en' %}FAQ clusters{% else %}FAQ-кластери{% endif %}</p>
         <h2>{% if page.lang == 'en' %}The FAQ stays shared so service pages can answer objections without duplicating long copy{% else %}FAQ залишається спільним джерелом, щоб сторінки послуг знімали заперечення без дублювання довгого тексту{% endif %}</h2>
@@ -80,7 +80,7 @@ layout: default
 
 {% if page.show_project_fit %}
 <section class="section">
-  <div class="shell" data-phase2-marker="fit-guidance">
+  <div class="shell" data-phase2-marker="fit-guidance" data-phase2-surface="page-fit-guidance">
     {% include project-fit.html lang=page.lang %}
   </div>
 </section>

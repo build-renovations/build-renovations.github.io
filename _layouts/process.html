@@ -38,7 +38,7 @@ layout: default
 </section>
 
 <section class="section">
-  <div class="shell" data-phase2-marker="content-depth">
+  <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="process-planning">
     <div class="process-proof">
       <div class="process-proof__copy">
         <p class="eyebrow">{{ planning.eyebrow }}</p>
@@ -58,7 +58,7 @@ layout: default
 </section>
 
 <section class="section section--accent">
-  <div class="shell" data-phase2-marker="commercial-clarity">
+  <div class="shell" data-phase2-marker="commercial-clarity" data-phase2-surface="process-commercial-clarity">
     <div class="process-risk">
       <div class="process-risk__copy">
         <p class="eyebrow">{{ commercial_clarity.eyebrow }}</p>
@@ -78,7 +78,7 @@ layout: default
 </section>
 
 <section class="section">
-  <div class="shell" data-phase2-marker="objection-handling">
+  <div class="shell" data-phase2-marker="objection-handling" data-phase2-surface="process-objections">
     <div class="section-heading section-heading--wide">
       <p class="eyebrow">{{ objection_cards.eyebrow }}</p>
       <h2>{{ objection_cards.title }}</h2>
@@ -118,10 +118,11 @@ layout: default
 </section>
 
 <section class="section">
-  <div class="shell" data-phase2-marker="content-depth">
+  <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="process-stage-map">
     <div class="section-heading section-heading--wide">
       <p class="eyebrow">{% if page.lang == 'en' %}Stages{% else %}Стадії{% endif %}</p>
       <h2>{% if page.lang == 'en' %}How the property moves from uncertainty to a controlled result{% else %}Як об'єкт рухається від невизначеності до контрольованого результату{% endif %}</h2>
+      <p class="section-intro">{% if page.lang == 'en' %}The stage map stays readable because each block explains one handoff, one protection point, and one buyer-facing outcome.{% else %}Карта етапів залишається читабельною, бо кожен блок пояснює один перехід, одну точку захисту і один зрозумілий для покупця результат.{% endif %}</p>
     </div>
     <div class="process-stages">
       {% for stage in process.stages %}
@@ -158,7 +159,7 @@ layout: default
 </section>
 
 <section class="section">
-  <div class="shell" data-phase2-marker="fit-guidance">
+  <div class="shell" data-phase2-marker="fit-guidance" data-phase2-surface="process-fit-guidance">
     {% include project-fit.html lang=page.lang %}
   </div>
 </section>
@@ -171,7 +172,7 @@ layout: default
 
 <section class="section">
   <div class="shell">
-    <div class="process-proof" data-phase2-marker="content-depth">
+    <div class="process-proof" data-phase2-marker="content-depth" data-phase2-surface="process-procurement">
       <div class="process-proof__copy">
         <p class="eyebrow">{{ procurement.eyebrow }}</p>
         <h2>{{ procurement.title }}</h2>
@@ -190,7 +191,7 @@ layout: default
 </section>
 
 <section class="section section--accent">
-  <div class="shell" data-phase2-marker="content-depth">
+  <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="process-handoff">
     <div class="process-proof">
       <div class="process-proof__copy">
         <p class="eyebrow">{{ handoff.eyebrow }}</p>
@@ -213,7 +214,7 @@ layout: default
 {% assign process_faq_refs = process.faq_refs | default: empty %}
 {% if faq_groups != empty %}
 <section class="section">
-  <div class="shell" data-phase2-marker="faq-group-visibility">
+  <div class="shell" data-phase2-marker="faq-group-visibility" data-phase2-surface="process-faq-bridge">
     <div class="section-heading section-heading--wide">
       <p class="eyebrow">{% if page.lang == 'en' %}Shared answers{% else %}Спільні відповіді{% endif %}</p>
       <h2>{% if page.lang == 'en' %}The process page points to the same buyer questions used by the FAQ and service pages{% else %}Сторінка процесу веде до тих самих питань покупця, що й FAQ та сторінки послуг{% endif %}</h2>

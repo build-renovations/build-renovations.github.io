@@ -36,7 +36,7 @@ layout: default
 </section>
 
 <section class="page-content">
-  <div class="shell service-detail" data-phase2-marker="content-depth">
+  <div class="shell service-detail" data-phase2-marker="content-depth" data-phase2-surface="service-depth">
     <article class="service-detail__card">
       <h2>{% if page.lang == 'en' %}What this service covers{% else %}Що входить у послугу{% endif %}</h2>
       <p>{{ content.summary }}</p>
@@ -81,7 +81,7 @@ layout: default
 
 {% if fit_boundaries %}
 <section class="section">
-  <div class="shell" data-phase2-marker="fit-guidance">
+  <div class="shell" data-phase2-marker="fit-guidance" data-phase2-surface="service-fit-guidance">
     <div class="process-risk">
       <div class="process-risk__copy">
         <p class="eyebrow">{% if page.lang == 'en' %}Fit guidance{% else %}Підказка по відповідності{% endif %}</p>
@@ -103,7 +103,7 @@ layout: default
 
 {% if objection_cards %}
 <section class="section section--accent">
-  <div class="shell" data-phase2-marker="objection-handling">
+  <div class="shell" data-phase2-marker="objection-handling" data-phase2-surface="service-objections">
     <div class="section-heading section-heading--wide">
       <p class="eyebrow">{{ objection_cards.eyebrow }}</p>
       <h2>{{ objection_cards.title }}</h2>
@@ -137,7 +137,7 @@ layout: default
 
 {% if commercial_clarity %}
 <section class="section">
-  <div class="shell" data-phase2-marker="commercial-clarity">
+  <div class="shell" data-phase2-marker="commercial-clarity" data-phase2-surface="service-commercial-clarity">
     <div class="process-risk">
       <div class="process-risk__copy">
         <p class="eyebrow">{% if page.lang == 'en' %}Commercial clarity{% else %}Комерційна ясність{% endif %}</p>
@@ -158,7 +158,7 @@ layout: default
 {% endif %}
 
 <section class="section section--accent">
-  <div class="shell" data-phase2-marker="fit-guidance">
+  <div class="shell" data-phase2-marker="fit-guidance" data-phase2-surface="service-fit-module">
     {% include project-fit.html lang=page.lang %}
   </div>
 </section>
@@ -186,7 +186,7 @@ layout: default
 {% assign content_faq_refs = content.faq_refs | default: empty %}
 {% if faq_groups != empty %}
 <section class="section section--accent">
-  <div class="shell" data-phase2-marker="faq-group-visibility">
+  <div class="shell" data-phase2-marker="faq-group-visibility" data-phase2-surface="service-faq-bridge">
     <div class="section-heading section-heading--wide">
       <p class="eyebrow">{% if page.lang == 'en' %}Related questions{% else %}Пов'язані питання{% endif %}</p>
       <h2>{% if page.lang == 'en' %}These answers stay shared across the FAQ and the deeper service pages{% else %}Ці відповіді залишаються спільними для FAQ і глибших сторінок послуг{% endif %}</h2>
