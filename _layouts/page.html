@@ -11,11 +11,57 @@ layout: default
   </div>
 </section>
 
-<section class="page-content">
-  <div class="shell prose">
-    {{ content }}
-  </div>
-</section>
+{% if page.translation_key == 'faq' %}
+  {% assign faq_groups = site.data.faqs.groups | default: empty %}
+  <section class="page-content">
+    <div class="shell" data-phase2-marker="faq-group-visibility" data-phase2-surface="faq-reference-surface">
+      {% for group in faq_groups %}
+        {% assign group_copy = group[page.lang] | default: group.uk %}
+        <section class="faq-group" data-faq-group="{{ group.key }}">
+          <div class="section-heading section-heading--wide">
+            <p class="eyebrow">{{ group_copy.title }}</p>
+            <h2>{{ group_copy.title }}</h2>
+            <p class="section-intro">{{ group_copy.intro }}</p>
+          </div>
+          <div class="service-grid">
+            {% for item in group.items %}
+              {% assign item_copy = item[page.lang] | default: item.uk %}
+              <article class="service-card" data-faq-key="{{ item.key }}">
+                <h3>{{ item_copy.question }}</h3>
+                <p>{{ item_copy.answer }}</p>
+              </article>
+            {% endfor %}
+          </div>
+        </section>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="section section--accent">
+    <div class="shell">
+      <div class="service-grid">
+        <article class="service-card">
+          <p class="service-card__eyebrow">{% if page.lang == 'en' %}Process{% else %}Процес{% endif %}</p>
+          <h3>{% if page.lang == 'en' %}See how these answers connect to the full project route{% else %}Подивіться, як ці відповіді вбудовуються у повний маршрут проєкту{% endif %}</h3>
+          <p>{% if page.lang == 'en' %}The process page shows where planning, procurement, control points, and handoff remove the risks behind these questions.{% else %}Сторінка процесу показує, де планування, закупівлі, контрольні точки і здача знімають ризики, які стоять за цими питаннями.{% endif %}</p>
+          <a class="service-card__link" href="{% if page.lang == 'en' %}{{ '/en/process/' | relative_url }}{% else %}{{ '/process/' | relative_url }}{% endif %}">{{ site.data.translations[page.lang].process_link_label | default: site.data.translations.uk.process_link_label }}</a>
+        </article>
+        <article class="service-card">
+          <p class="service-card__eyebrow">{% if page.lang == 'en' %}Fit guidance{% else %}Підбір маршруту{% endif %}</p>
+          <h3>{% if page.lang == 'en' %}Use the apartment or house pages when the project format is the real question{% else %}Переходьте на сторінки квартири або будинку, якщо головне питання в самому форматі проєкту{% endif %}</h3>
+          <p>{% if page.lang == 'en' %}Those routes explain complexity, coordination, and which services matter next before the first call.{% else %}Ці маршрути пояснюють складність, координацію і те, які послуги варто читати далі ще до першого дзвінка.{% endif %}</p>
+          <a class="service-card__link" href="{% if page.lang == 'en' %}{{ '/en/services/' | relative_url }}{% else %}{{ '/services/' | relative_url }}{% endif %}">{{ site.data.translations[page.lang].service_link_label | default: site.data.translations.uk.service_link_label }}</a>
+        </article>
+      </div>
+    </div>
+  </section>
+{% else %}
+  <section class="page-content">
+    <div class="shell prose">
+      {{ content }}
+    </div>
+  </section>
+{% endif %}
 
 {% if page.translation_key == 'services' %}
   {% assign featured_keys = "plumbing,electrical,apartment-renovation" | split: "," %}

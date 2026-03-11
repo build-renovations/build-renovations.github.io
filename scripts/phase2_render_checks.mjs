@@ -10,20 +10,20 @@ const requiredLocales = ["uk", "en"];
 const routeChecks = [
   { route: "/", lang: "uk", markers: ["content-depth", "fit-guidance", "faq-group-visibility"], surfaces: ["home-service-teaser", "home-process-teaser", "home-route-bridge"], keepTrust: true, keepCall: true },
   { route: "/services/", lang: "uk", markers: ["content-depth", "fit-guidance", "faq-group-visibility"], keepTrust: true, keepCall: true },
-  { route: "/process/", lang: "uk", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], surfaces: ["process-planning", "process-coordination", "process-readiness", "process-commercial-clarity", "process-objections", "process-procurement", "process-handoff", "process-route-bridges"], keepTrust: true, keepCall: true },
-  { route: "/faq/", lang: "uk", markers: ["faq-group-visibility"], keepTrust: false, keepCall: false },
-  { route: "/services/plumbing/", lang: "uk", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], surfaces: ["service-depth", "service-sequence", "service-commercial-clarity", "service-route-bridge"], keepTrust: true, keepCall: true },
-  { route: "/services/electrical/", lang: "uk", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], surfaces: ["service-depth", "service-sequence", "service-commercial-clarity", "service-route-bridge"], keepTrust: true, keepCall: true },
-  { route: "/services/apartment-renovation/", lang: "uk", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], surfaces: ["service-depth", "service-sequence", "service-commercial-clarity", "service-route-bridge"], keepTrust: true, keepCall: true },
-  { route: "/services/house-renovation/", lang: "uk", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], surfaces: ["service-depth", "service-sequence", "service-commercial-clarity", "service-route-bridge"], keepTrust: true, keepCall: true },
+  { route: "/process/", lang: "uk", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], surfaces: ["process-planning", "process-coordination", "process-readiness", "process-commercial-clarity", "process-objections", "process-procurement", "process-handoff", "process-route-bridges"], requireFaqKeys: true, keepTrust: true, keepCall: true },
+  { route: "/faq/", lang: "uk", markers: ["faq-group-visibility"], surfaces: ["faq-reference-surface"], requireFaqKeys: true, keepTrust: false, keepCall: false },
+  { route: "/services/plumbing/", lang: "uk", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], surfaces: ["service-depth", "service-sequence", "service-commercial-clarity", "service-route-bridge"], requireFaqKeys: true, keepTrust: true, keepCall: true },
+  { route: "/services/electrical/", lang: "uk", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], surfaces: ["service-depth", "service-sequence", "service-commercial-clarity", "service-route-bridge"], requireFaqKeys: true, keepTrust: true, keepCall: true },
+  { route: "/services/apartment-renovation/", lang: "uk", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], surfaces: ["service-depth", "service-sequence", "service-commercial-clarity", "service-route-bridge"], requireFaqKeys: true, keepTrust: true, keepCall: true },
+  { route: "/services/house-renovation/", lang: "uk", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], surfaces: ["service-depth", "service-sequence", "service-commercial-clarity", "service-route-bridge"], requireFaqKeys: true, keepTrust: true, keepCall: true },
   { route: "/en/", lang: "en", markers: ["content-depth", "fit-guidance", "faq-group-visibility"], surfaces: ["home-service-teaser", "home-process-teaser", "home-route-bridge"], keepTrust: true, keepCall: true },
   { route: "/en/services/", lang: "en", markers: ["content-depth", "fit-guidance", "faq-group-visibility"], keepTrust: true, keepCall: true },
-  { route: "/en/process/", lang: "en", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], surfaces: ["process-planning", "process-coordination", "process-readiness", "process-commercial-clarity", "process-objections", "process-procurement", "process-handoff", "process-route-bridges"], keepTrust: true, keepCall: true },
-  { route: "/en/faq/", lang: "en", markers: ["faq-group-visibility"], keepTrust: false, keepCall: false },
-  { route: "/en/services/plumbing/", lang: "en", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], surfaces: ["service-depth", "service-sequence", "service-commercial-clarity", "service-route-bridge"], keepTrust: true, keepCall: true },
-  { route: "/en/services/electrical/", lang: "en", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], surfaces: ["service-depth", "service-sequence", "service-commercial-clarity", "service-route-bridge"], keepTrust: true, keepCall: true },
-  { route: "/en/services/apartment-renovation/", lang: "en", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], surfaces: ["service-depth", "service-sequence", "service-commercial-clarity", "service-route-bridge"], keepTrust: true, keepCall: true },
-  { route: "/en/services/house-renovation/", lang: "en", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], surfaces: ["service-depth", "service-sequence", "service-commercial-clarity", "service-route-bridge"], keepTrust: true, keepCall: true }
+  { route: "/en/process/", lang: "en", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], surfaces: ["process-planning", "process-coordination", "process-readiness", "process-commercial-clarity", "process-objections", "process-procurement", "process-handoff", "process-route-bridges"], requireFaqKeys: true, keepTrust: true, keepCall: true },
+  { route: "/en/faq/", lang: "en", markers: ["faq-group-visibility"], surfaces: ["faq-reference-surface"], requireFaqKeys: true, keepTrust: false, keepCall: false },
+  { route: "/en/services/plumbing/", lang: "en", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], surfaces: ["service-depth", "service-sequence", "service-commercial-clarity", "service-route-bridge"], requireFaqKeys: true, keepTrust: true, keepCall: true },
+  { route: "/en/services/electrical/", lang: "en", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], surfaces: ["service-depth", "service-sequence", "service-commercial-clarity", "service-route-bridge"], requireFaqKeys: true, keepTrust: true, keepCall: true },
+  { route: "/en/services/apartment-renovation/", lang: "en", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], surfaces: ["service-depth", "service-sequence", "service-commercial-clarity", "service-route-bridge"], requireFaqKeys: true, keepTrust: true, keepCall: true },
+  { route: "/en/services/house-renovation/", lang: "en", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], surfaces: ["service-depth", "service-sequence", "service-commercial-clarity", "service-route-bridge"], requireFaqKeys: true, keepTrust: true, keepCall: true }
 ];
 const metadataPairs = [
   ["/", "/en/"],
@@ -173,6 +173,12 @@ function ensureFaqGrouping(route, html) {
   }
 }
 
+function ensureFaqKeyBinding(route, html) {
+  if (countMatches(html, /data-faq-key=/g) < 2) {
+    fail(`${route} should render shared FAQ-key bindings`);
+  }
+}
+
 function ensureLocaleBranch(data, filePath) {
   if (!Array.isArray(data.required_locales)) {
     fail(`${filePath} must declare required_locales`);
@@ -253,6 +259,9 @@ for (const check of routeChecks) {
   ensureLanguageMetadata(check.route, html, check.lang);
   ensureMarkers(check.route, html, check.markers);
   ensureSurfaces(check.route, html, check.surfaces);
+  if (check.requireFaqKeys) {
+    ensureFaqKeyBinding(check.route, html);
+  }
   ensurePhase1Surfaces(check.route, html, check.keepTrust, check.keepCall);
 }
 
