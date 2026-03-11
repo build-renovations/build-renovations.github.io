@@ -1,0 +1,43 @@
+{% assign lang = include.lang | default: page.lang | default: site.lang %}
+{% assign trust = site.data.trust_foundation[lang] | default: site.data.trust_foundation.uk %}
+{% assign proof = trust.proof %}
+{% assign module = include.module %}
+{% assign wrapper_class = include.class | default: '' %}
+<section class="sourced-proof{% if wrapper_class != '' %} {{ wrapper_class }}{% endif %}" data-sourced-proof aria-labelledby="sourced-proof-{{ lang }}">
+  <div class="sourced-proof__intro">
+    <p class="eyebrow">{{ module.eyebrow | default: proof.eyebrow }}</p>
+    <h2 id="sourced-proof-{{ lang }}">{{ module.title | default: proof.title }}</h2>
+    <p>{{ module.text | default: proof.intro }}</p>
+  </div>
+  <div class="sourced-proof__grid">
+    {% for item in proof.items %}
+      {% assign include_item = true %}
+      {% if module and module.item_keys %}
+        {% assign include_item = false %}
+        {% if module.item_keys contains item.key %}
+          {% assign include_item = true %}
+        {% endif %}
+      {% endif %}
+      {% if include_item %}
+        <article class="sourced-proof__card sourced-proof__card--{{ item.status }}" data-proof-item data-proof-status="{{ item.status }}">
+          <div class="sourced-proof__card-top">
+            <span class="sourced-proof__badge">
+              {% if item.status == 'placeholder' %}
+                {{ proof.placeholder_badge }}
+              {% else %}
+                {{ proof.publishable_badge }}
+              {% endif %}
+            </span>
+            <p class="sourced-proof__source"><strong>{{ proof.source_label }}:</strong> {{ item.source_label }}</p>
+          </div>
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.summary }}</p>
+          <p class="sourced-proof__attribution"><strong>{{ proof.attribution_label }}:</strong> {{ item.attribution }}</p>
+          {% if item.status == 'placeholder' %}
+            <p class="sourced-proof__note">{{ proof.placeholder_note }}</p>
+          {% endif %}
+        </article>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
