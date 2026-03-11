@@ -76,35 +76,35 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| TRST-01 | Phase TBD | Pending |
-| TRST-02 | Phase TBD | Pending |
-| TRST-03 | Phase TBD | Pending |
-| TRST-04 | Phase TBD | Pending |
-| CALL-01 | Phase TBD | Pending |
-| CALL-02 | Phase TBD | Pending |
-| CALL-03 | Phase TBD | Pending |
-| CALL-04 | Phase TBD | Pending |
-| CASE-01 | Phase TBD | Pending |
-| CASE-02 | Phase TBD | Pending |
-| CASE-03 | Phase TBD | Pending |
-| CASE-04 | Phase TBD | Pending |
-| CONT-01 | Phase TBD | Pending |
-| CONT-02 | Phase TBD | Pending |
-| CONT-03 | Phase TBD | Pending |
-| CONT-04 | Phase TBD | Pending |
-| UX-01 | Phase TBD | Pending |
-| UX-02 | Phase TBD | Pending |
-| UX-03 | Phase TBD | Pending |
-| UX-04 | Phase TBD | Pending |
-| SEO-01 | Phase TBD | Pending |
-| SEO-02 | Phase TBD | Pending |
-| SEO-03 | Phase TBD | Pending |
+| TRST-01 | Phase 1 | Pending |
+| TRST-02 | Phase 1 | Pending |
+| TRST-03 | Phase 1 | Pending |
+| TRST-04 | Phase 1 | Pending |
+| CALL-01 | Phase 1 | Pending |
+| CALL-02 | Phase 1 | Pending |
+| CALL-03 | Phase 1 | Pending |
+| CALL-04 | Phase 1 | Pending |
+| CASE-01 | Phase 3 | Pending |
+| CASE-02 | Phase 3 | Pending |
+| CASE-03 | Phase 3 | Pending |
+| CASE-04 | Phase 3 | Pending |
+| CONT-01 | Phase 2 | Pending |
+| CONT-02 | Phase 2 | Pending |
+| CONT-03 | Phase 2 | Pending |
+| CONT-04 | Phase 2 | Pending |
+| UX-01 | Phase 4 | Pending |
+| UX-02 | Phase 4 | Pending |
+| UX-03 | Phase 4 | Pending |
+| UX-04 | Phase 4 | Pending |
+| SEO-01 | Phase 5 | Pending |
+| SEO-02 | Phase 5 | Pending |
+| SEO-03 | Phase 5 | Pending |
 
 **Coverage:**
 - v1 requirements: 23 total
-- Mapped to phases: 0
-- Unmapped: 23 ⚠️
+- Mapped to phases: 23
+- Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-03-11*
-*Last updated: 2026-03-11 after initial definition*
+*Last updated: 2026-03-11 after roadmap mapping*
