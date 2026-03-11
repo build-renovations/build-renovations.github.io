@@ -6,6 +6,7 @@ layout: default
 {% assign buyer_relevance = case_study.buyer_relevance[page.lang] | default: case_study.buyer_relevance.uk %}
 {% assign proof_source = case_study.proof_source[page.lang] | default: case_study.proof_source.uk %}
 {% assign bridge = case_study.bridge[page.lang] | default: case_study.bridge.uk %}
+{% assign service_data = site.data.service_pages.items %}
 <section class="page-hero">
   <div class="shell service-hero" data-phase3-marker="dossier-snapshot" data-phase3-surface="case-study-dossier">
     <div class="service-hero__copy">
@@ -30,6 +31,32 @@ layout: default
         <p class="eyebrow">{{ content.snapshot_title }}</p>
         <h2>{{ buyer_relevance.title }}</h2>
         <p>{{ content.snapshot_text }}</p>
+        <div class="service-detail">
+          <article class="service-detail__card">
+            <h3>{% if page.lang == 'en' %}Relevant service routes{% else %}Релевантні маршрути послуг{% endif %}</h3>
+            <ul class="service-detail__list">
+              {% for ref in case_study.related_services %}
+                {% assign related_service = service_data[ref] %}
+                {% assign related_content = related_service[page.lang] | default: related_service.uk %}
+                <li>
+                  <a href="{% if page.lang == 'en' %}{{ '/en/services/' | append: ref | append: '/' | relative_url }}{% else %}{{ '/services/' | append: ref | append: '/' | relative_url }}{% endif %}">{{ related_content.title }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </article>
+          <article class="service-detail__card">
+            <h3>{% if page.lang == 'en' %}Property fit{% else %}Формат об'єкта{% endif %}</h3>
+            <ul class="service-detail__list">
+              {% for ref in case_study.related_property_types %}
+                {% assign related_service = service_data[ref] %}
+                {% assign related_content = related_service[page.lang] | default: related_service.uk %}
+                <li>
+                  <a href="{% if page.lang == 'en' %}{{ '/en/services/' | append: ref | append: '/' | relative_url }}{% else %}{{ '/services/' | append: ref | append: '/' | relative_url }}{% endif %}">{{ related_content.title }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </article>
+        </div>
       </div>
       <blockquote class="process-proof__quote" data-case-study-buyer-relevance>
         <p>{{ buyer_relevance.text }}</p>
