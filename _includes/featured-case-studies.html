@@ -24,14 +24,14 @@
           {% assign proof = item.proof_source[lang] | default: item.proof_source.uk %}
           {% assign relevance = item.buyer_relevance[lang] | default: item.buyer_relevance.uk %}
           {% assign route = item.route[lang] | default: item.route.uk %}
-          <article class="service-card" data-case-study-card data-case-study-related-route="{{ route }}" data-phase3-marker="related-route-bridge" data-phase3-marker-secondary="buyer-relevance">
+          <article class="service-card" data-case-study-card data-case-study-related-route="{{ route }}" data-phase3-marker="related-route-bridge" data-phase3-buyer-relevance="buyer-relevance">
             <figure class="service-card__media">
               <img src="{{ item.card_image | default: item.image | relative_url }}" alt="{{ card.title }}" loading="lazy" width="960" height="1280">
             </figure>
             <p class="service-card__eyebrow">{{ card.eyebrow }}</p>
             <h3>{{ card.title }}</h3>
             <p>{{ item.summary[lang] | default: item.summary.uk }}</p>
-            <p data-case-study-buyer-relevance><strong>{{ relevance.title }}:</strong> {{ relevance.text }}</p>
+            <p data-phase3-marker="buyer-relevance" data-case-study-buyer-relevance><strong>{{ relevance.title }}:</strong> {{ relevance.text }}</p>
             <p data-case-study-proof-status><strong>{% if lang == 'en' %}Proof status{% else %}Статус доказу{% endif %}:</strong> {{ proof.label }}</p>
             <a class="service-card__link" href="{{ route | relative_url }}">{% if lang == 'en' %}Open the full dossier{% else %}Відкрити повне досьє{% endif %}</a>
           </article>

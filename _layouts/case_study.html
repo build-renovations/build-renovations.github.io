@@ -93,10 +93,6 @@ layout: default
   </div>
 </section>
 
-{% capture related_bridge_title %}{{ bridge.title }}{% endcapture %}
-{% capture related_bridge_text %}{{ bridge.text }}{% endcapture %}
-{% assign bridge_payload = "" | split: "" %}
-{% assign bridge_payload = bridge_payload | push: related_bridge_title %}
 {% include featured-case-studies.html
   lang=page.lang
   refs=page.related_case_study_refs
