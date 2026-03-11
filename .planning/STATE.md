@@ -4,17 +4,17 @@ milestone: v1.0
 milestone_name: milestone
 current_phase: 01
 current_phase_name: trust and phone foundation
-current_plan: 3
+current_plan: 4
 status: verifying
-stopped_at: Completed 01-04-PLAN.md
-last_updated: "2026-03-11T12:34:40.851Z"
+stopped_at: Completed 02-01-PLAN.md
+last_updated: "2026-03-11T15:02:15.657Z"
 last_activity: 2026-03-11
 progress:
   total_phases: 5
   completed_phases: 1
-  total_plans: 4
-  completed_plans: 4
-  percent: 100
+  total_plans: 8
+  completed_plans: 5
+  percent: 63
 ---
 
 # Project State
@@ -36,7 +36,7 @@ See: `.planning/PROJECT.md` (updated 2026-03-10)
 - **Status:** Phase complete — ready for verification
 - **Last Activity:** 2026-03-11
 - **Last Activity Description:** Executing 01-04 trust copy gap closure
-- **Progress:** [██████████] 100%
+- **Progress:** [██████░░░░] 63%
 
 ## Performance Metrics
 
@@ -44,6 +44,7 @@ See: `.planning/PROJECT.md` (updated 2026-03-10)
 |------|----------|-------|-------|
 | Phase 01 P03 | 7min | 4 tasks | 18 files |
 | Phase 01 P04 | 18 min | 3 tasks | 4 files |
+| Phase 02 P01 | 13m | 4 tasks | 12 files |
 
 ## Decisions
 
@@ -58,6 +59,9 @@ See: `.planning/PROJECT.md` (updated 2026-03-10)
 - [Phase 01]: Phase 1 render checks now require trust-strip, accountability, and sourced-proof modules on the main UA/EN decision routes.
 - [Phase 01]: Kept the trust-strip card structure unchanged and solved the trust-label issue through shared data only.
 - [Phase 01]: Limited the copy pass to the exact UAT gaps so no CTA hierarchy, layout, or unrelated trust copy drifted.
+- [Phase 02]: Phase 2 validation is additive: qa.sh now runs Phase 1 and Phase 2 render checks together so trust and phone coverage cannot regress while content depth expands.
+- [Phase 02]: Shared FAQ content now uses grouped stable keys so service pages, the process page, and the standalone FAQ can reuse the same bilingual answers without copy drift.
+- [Phase 02]: Service-detail and process layouts carry the deepest Phase 2 modules while home and generic pages stay lighter and primarily bridge users toward those deeper reading surfaces.
 
 ## Blockers
 
@@ -65,6 +69,6 @@ None
 
 ## Session
 
-- **Last Date:** 2026-03-11T12:34:40.849Z
-- **Stopped At:** Completed 01-04-PLAN.md
+- **Last Date:** 2026-03-11T15:02:15.655Z
+- **Stopped At:** Completed 02-01-PLAN.md
 - **Resume File:** None

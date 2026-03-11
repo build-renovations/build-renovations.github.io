@@ -28,9 +28,9 @@
 
 ### Content Depth
 
-- [ ] **CONT-01**: Visitor can find substantially richer text content on key pages that answers scope, process, quality, timing, and coordination questions.
-- [ ] **CONT-02**: Visitor can read objection-handling FAQ content that addresses real buyer hesitation around renovation risk, communication, and project control.
-- [ ] **CONT-03**: Visitor can understand commercial expectations such as how the team approaches planning, procurement, changes, and handoff.
+- [x] **CONT-01**: Visitor can find substantially richer text content on key pages that answers scope, process, quality, timing, and coordination questions.
+- [x] **CONT-02**: Visitor can read objection-handling FAQ content that addresses real buyer hesitation around renovation risk, communication, and project control.
+- [x] **CONT-03**: Visitor can understand commercial expectations such as how the team approaches planning, procurement, changes, and handoff.
 - [ ] **CONT-04**: Visitor can access property-type or scope-specific content that helps them identify whether their apartment or house project is a fit.
 
 ### Visual System And UX Quality
@@ -88,9 +88,9 @@
 | CASE-02 | Phase 3 | Pending |
 | CASE-03 | Phase 3 | Pending |
 | CASE-04 | Phase 3 | Pending |
-| CONT-01 | Phase 2 | Pending |
-| CONT-02 | Phase 2 | Pending |
-| CONT-03 | Phase 2 | Pending |
+| CONT-01 | Phase 2 | Complete |
+| CONT-02 | Phase 2 | Complete |
+| CONT-03 | Phase 2 | Complete |
 | CONT-04 | Phase 2 | Pending |
 | UX-01 | Phase 4 | Pending |
 | UX-02 | Phase 4 | Pending |
