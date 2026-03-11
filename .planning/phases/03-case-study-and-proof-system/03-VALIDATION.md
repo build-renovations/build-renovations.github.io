@@ -1,9 +1,9 @@
 ---
 phase: 3
 slug: case-study-and-proof-system
-status: ready
+status: in_progress
 nyquist_compliant: false
-wave_0_complete: false
+wave_0_complete: true
 created: 2026-03-11
 ---
 
@@ -38,10 +38,10 @@ created: 2026-03-11
 
 | Task ID | Plan | Wave | Requirement | Test Type | Automated Command | File Exists | Status |
 |---------|------|------|-------------|-----------|-------------------|-------------|--------|
-| 03-01-01 | 01 | 1 | CASE-01 | rendered + metadata | `./scripts/qa.sh` (`scripts/phase3_render_checks.mjs` validates project routes, metadata parity, and required proof markers) | ⬜ | ⬜ pending |
-| 03-01-02 | 01 | 1 | CASE-01 | data integrity | `bundle exec ruby -e 'require "yaml"; %w[_data/case_studies.yml _data/service_pages.yml _data/process_page.yml _data/trust_foundation.yml].each { |path| YAML.load_file(path) }'` | ⬜ | ⬜ pending |
-| 03-01-03 | 01 | 1 | CASE-03 | rendered | `./scripts/qa.sh` | ⬜ | ⬜ pending |
-| 03-01-04 | 01 | 1 | CASE-01 | validation artifact | `rg -n "phase3_render_checks|buyer-relevance|project-route|placeholder" .planning/phases/03-case-study-and-proof-system/03-VALIDATION.md` | ✅ | ⬜ pending |
+| 03-01-01 | 01 | 1 | CASE-01 | rendered + metadata | `./scripts/qa.sh` (`scripts/phase3_render_checks.mjs` validates project routes, metadata parity, and required proof markers) | ✅ | ✅ green |
+| 03-01-02 | 01 | 1 | CASE-01 | data integrity | `bundle exec ruby -e 'require "yaml"; %w[_data/case_studies.yml _data/service_pages.yml _data/process_page.yml _data/trust_foundation.yml].each { |path| YAML.load_file(path) }'` | ✅ | ✅ green |
+| 03-01-03 | 01 | 1 | CASE-03 | rendered | `./scripts/qa.sh` | ✅ | ✅ green |
+| 03-01-04 | 01 | 1 | CASE-01 | validation artifact | `rg -n "phase3_render_checks|buyer-relevance|project-route|placeholder" .planning/phases/03-case-study-and-proof-system/03-VALIDATION.md` | ✅ | ✅ green |
 | 03-02-01 | 02 | 2 | CASE-01 | content + data integrity | `bundle exec ruby -e 'require "yaml"; YAML.load_file("_data/case_studies.yml")'` | ⬜ | ⬜ pending |
 | 03-02-02 | 02 | 2 | CASE-02 | rendered | `./scripts/qa.sh` | ⬜ | ⬜ pending |
 | 03-02-03 | 02 | 2 | CASE-04 | rendered | `./scripts/qa.sh` | ⬜ | ⬜ pending |
@@ -58,13 +58,13 @@ created: 2026-03-11
 
 ## Wave 0 Requirements
 
-- [ ] Add `scripts/phase3_render_checks.mjs` and wire it into `./scripts/qa.sh`
-- [ ] Add checks that `_data/case_studies.yml` and every new bilingual branch used for Phase 3 contain both `uk` and `en`
-- [ ] Add route-level checks for `/projects/`, `/en/projects/`, at least two representative case-study route pairs, and the homepage/process/service routes that surface them
-- [ ] Add stable rendered markers for case-study snapshot, buyer relevance, stage-proof timeline, related-routes bridge, and proof-source status
-- [ ] Add canonical, `hreflang`, `lang`, and language-switch parity checks on all touched project-route pairs
-- [ ] Add checks that routes upgraded to publishable proof no longer render unlabeled placeholder proof cards
-- [ ] Preserve existing Phase 1 and Phase 2 QA as additive coverage, not replacement
+- [x] Add `scripts/phase3_render_checks.mjs` and wire it into `./scripts/qa.sh`
+- [x] Add checks that `_data/case_studies.yml` and every new bilingual branch used for Phase 3 contain both `uk` and `en`
+- [x] Add route-level checks for `/projects/`, `/en/projects/`, at least two representative case-study route pairs, and the homepage/process/service routes that surface them
+- [x] Add stable rendered markers for case-study snapshot, buyer relevance, stage-proof timeline, related-routes bridge, and proof-source status
+- [x] Add canonical, `hreflang`, `lang`, and language-switch parity checks on all touched project-route pairs
+- [x] Add checks that routes upgraded to publishable proof no longer render unlabeled placeholder proof cards
+- [x] Preserve existing Phase 1 and Phase 2 QA as additive coverage, not replacement
 
 **Wave 0 owner:** Plan `03-01`
 
@@ -92,4 +92,4 @@ created: 2026-03-11
 - [x] Feedback latency < 180s
 - [ ] `nyquist_compliant: true` set only after Phase 3 execution closes all CASE requirements
 
-**Approval:** planning complete; execution may begin once Wave 0 is implemented in `03-01`.
+**Approval:** Wave 0 implemented in `03-01`; later plans can now build on the enforced Phase 3 route and proof-marker contract.
