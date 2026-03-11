@@ -24,13 +24,13 @@ The current implementation is not yet meeting the phase requirements:
 - visible business identity is still placeholder-level
 - the contact page explains the brief, but not through a stronger conversion system
 
-The biggest planning fact is that two requirements are partly blocked by missing business inputs:
-- `TRST-01` cannot be closed credibly while `_config.yml` still uses placeholder business name, phone, email, and broad service-area defaults.
-- `TRST-04` cannot be closed credibly without real sourced proof assets such as review links, testimonial attributions, credentials, guarantees, or equivalent evidence.
+The biggest planning fact is that two requirements need explicit placeholder policy when business inputs are still missing:
+- `TRST-01` becomes risky if `_config.yml` uses placeholder business name, phone, email, and broad service-area defaults without clearly tracking them as temporary.
+- `TRST-04` becomes misleading if proof modules use invented reviews or testimonials without clearly labeling them as placeholder/demo content.
 
 Plan this phase in two tracks:
 1. Build the reusable phone-first and trust-module system now.
-2. Fill it with real business data and sourced proof before calling the phase complete.
+2. Allow clearly labeled placeholder identity and proof content now, then replace it with real business data and sourced proof in later phases before release.
 
 ## What You Need To Know To Plan This Phase Well
 
@@ -235,7 +235,7 @@ Use this phase to improve visible trust and accurate business fields first. Rich
 
 ## Business Inputs Required Before Planning Final Task Estimates
 
-Get these before treating the phase as fully plan-ready:
+Get these before treating the site as release-ready:
 
 ### Must-have identity inputs
 
@@ -265,16 +265,16 @@ Get these before treating the phase as fully plan-ready:
 - whether site visit, estimate, or follow-up sequence is standard
 - which project types should be politely disqualified or reframed
 
-If these inputs are missing, plan a subtask to collect them. Do not let implementation invent them.
+If these inputs are missing, implementation may use clearly labeled placeholders for layout and copy scaffolding, but later phases must replace them before release.
 
 ## Requirement-to-Implementation Map
 
 | Requirement | What Phase 1 should build |
 | --- | --- |
-| `TRST-01` | shared identity/trust strip on core pages; real business fields in config; visible service area and business framing |
+| `TRST-01` | shared identity/trust strip on core pages; centralized business fields in config; visible service area and business framing |
 | `TRST-02` | reusable project-fit section with property type, scope type, and project-stage fit bullets |
 | `TRST-03` | reusable accountability/process-control module tied to current process content |
-| `TRST-04` | sourced proof block with attribution labels and outbound proof links where appropriate |
+| `TRST-04` | sourced proof block with attribution labels and outbound proof links where appropriate, or clearly labeled placeholder proof when real sources are not yet available |
 | `CALL-01` | phone CTA include on every primary page and page family |
 | `CALL-02` | reusable “what to prepare / what happens next” content on contact and CTA-adjacent modules |
 | `CALL-03` | mobile sticky phone bar with content-safe spacing and tap-friendly target size |
@@ -337,10 +337,11 @@ Completion criteria:
 
 ### Task 5. Add business-data guardrails
 
-Implement one or more lightweight checks so placeholder data cannot quietly ship:
-- fail build if phone or email are still placeholders
+Implement one or more lightweight checks so placeholder data cannot quietly ship as if it were final:
+- fail build if phone or email are unlabeled placeholders
 - optionally fail if messenger URLs are missing when Phase 1 is enabled
 - fail if sourced-proof items are present without attribution fields
+- fail if placeholder proof items are presented without explicit placeholder/demo labeling
 
 Completion criteria:
 - trust and contact regressions become detectable before release
@@ -358,7 +359,7 @@ Completion criteria:
 
 - Do not hand-roll per-page CTA markup when shared includes will do.
 - Do not hardcode UA and EN CTA copy separately inside layouts when `_data/` can drive it.
-- Do not invent testimonials, ratings, guarantees, years in business, or service-area claims.
+- Do not present invented testimonials, ratings, guarantees, years in business, or service-area claims as real facts.
 - Do not add unsupported Jekyll plugins for translation or schema generation.
 - Do not add review rich-result markup for self-published business reviews on the business’s own pages.
 - Do not make email or messenger visually equal to phone if the business goal is phone-first.
@@ -376,7 +377,7 @@ The phase context says Telegram, Viber, and WhatsApp are real first-contact path
 
 ### 3. Shipping placeholder trust
 
-A polished trust module with fake or generic proof is worse than a thinner but honest one. Phase 1 planning must separate “UI component ready” from “real evidence loaded.”
+A polished trust module with fake or generic proof is worse than a thinner but honest one. Phase 1 planning must separate “UI component ready” from “real evidence loaded,” and any placeholder proof must read as temporary rather than factual.
 
 ### 4. Breaking bilingual parity through include shortcuts
 

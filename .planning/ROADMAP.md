@@ -60,7 +60,7 @@ This roadmap expands the existing bilingual renovation site into a stronger sale
 
 **Success criteria:**
 1. Visitors can browse structured project proof with scope, stage logic, and outcome context rather than image-only storytelling.
-2. Proof content demonstrates before, during, and after logic where project material supports it.
+2. Proof content demonstrates before, during, and after logic where project material supports it, and placeholder proof modules from Phase 1 are replaced with publishable sourced material where available.
 3. Service pages and homepage proof sections can route visitors into deeper, relevant case-study content.
 4. Each featured project or proof module makes its relevance to buyer concerns explicit.
 
@@ -86,15 +86,15 @@ This roadmap expands the existing bilingual renovation site into a stronger sale
 1. New trust and support pages preserve correct canonical and `hreflang` behavior across both languages.
 2. Search-oriented pages target distinct renovation intents rather than thin or duplicative footprint growth.
 3. Structured data and metadata are upgraded where accurate and useful to search engines.
-4. Rendered QA covers root bilingual routes, primary CTA visibility, and major layout regressions before release.
+4. Rendered QA covers root bilingual routes, primary CTA visibility, major layout regressions, and final replacement of placeholder identity/contact content before release.
 
 ## Ordering Rationale
 
 - Phase 1 comes first because trust and call clarity directly support the project core value.
 - Phase 2 comes before large proof expansion so richer content lands inside a maintainable structure.
-- Phase 3 converts trust strategy into real project evidence, which is the most persuasive proof layer.
+- Phase 3 converts trust strategy into real project evidence, which is the most persuasive proof layer and the first planned replacement point for placeholder testimonials or reviews.
 - Phase 4 refines the design system after trust and proof modules are structurally defined.
-- Phase 5 hardens discoverability and regression prevention once the new page and component footprint exists.
+- Phase 5 hardens discoverability and regression prevention once the new page and component footprint exists, including final replacement of placeholder business identity/contact details before release.
 
 ## Research Flags
 

@@ -1,6 +1,6 @@
 # Progress Tracker
 
-Last updated: 2026-03-10
+Last updated: 2026-03-11
 Orchestrator: codex
 Project: Remonty bilingual GitHub Pages site
 
@@ -49,11 +49,12 @@ Gate 4 — All Audits Passed
 
 ## Blockers
 
-- Missing real company profile, contacts, service area specifics, and final brand details.
+- Missing final production company profile, contacts, proof sources, and brand details for the later replacement pass.
 
 ## Recent updates
 
 - 2026-03-10: ORCH-002 completed with a fresh `.planning/codebase/` map covering stack, integrations, architecture, structure, conventions, testing, and concerns; fallback default agents were used because the dedicated `gsd-codebase-mapper` role was unavailable.
+- 2026-03-11: Phase 1 planning was updated to allow clearly labeled placeholder contact and proof content now, while deferring replacement with real business identity and publishable proof to later roadmap phases.
 - 2026-03-10: CONTENT-004 completed with curated sibling assets converted to metadata-free WebP, expanded bilingual work sections, and QA enforcement for image format plus metadata policy.
 - 2026-03-10: CONTENT-004 opened to expand process-led SEO copy and curated gallery content using additional real project assets from `../assets`.
 - 2026-03-10: DEV-002 completed with shared responsive overrides validated in browser automation on mobile, tablet, desktop, and process-page layouts.
@@ -75,4 +76,4 @@ Gate 4 — All Audits Passed
 
 ## Next orchestration step
 
-Replace placeholder business data, confirm final brand details, and deploy to GitHub Pages.
+Execute Phase 1 with placeholder-safe trust and contact content, then replace placeholder proof in Phase 3 and placeholder identity/contact details before release in Phase 5.

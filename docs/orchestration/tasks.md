@@ -6,7 +6,7 @@ Use this file as the orchestrator-managed queue. Every task must have one owner 
 
 | ID | Title | Owner | Status | Tool mode | Depends on | Definition of done |
 | --- | --- | --- | --- | --- | --- | --- |
-| none | none | none | none | none | none | none |
+| ORCH-003 | Track placeholder replacement across later roadmap phases | orchestrator | ready | repo_only | ORCH-002 | Phase 3 and Phase 5 planning explicitly replace placeholder proof and placeholder business identity/contact content before release |
 
 ## In progress
 
