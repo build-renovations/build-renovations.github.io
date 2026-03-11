@@ -58,7 +58,7 @@ This roadmap expands the existing bilingual renovation site into a stronger sale
 
 **Goal:** Turn the current gallery/proof baseline into a structured project-evidence system that shows how work is controlled from challenge to result.
 
-**Plan progress:** 3 / 4 complete (`03-01`, `03-02`, `03-03` finished on 2026-03-11)
+**Plan progress:** 4 / 4 complete (`03-01`, `03-02`, `03-03`, `03-04` finished on 2026-03-11)
 
 **Requirements:** `CASE-01`, `CASE-02`, `CASE-03`, `CASE-04`
 

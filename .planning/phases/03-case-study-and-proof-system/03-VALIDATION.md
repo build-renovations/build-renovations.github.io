@@ -1,7 +1,7 @@
 ---
 phase: 3
 slug: case-study-and-proof-system
-status: in_progress
+status: complete
 nyquist_compliant: true
 wave_0_complete: true
 created: 2026-03-11
