@@ -3,7 +3,7 @@
 {% assign call_flow = site.data.call_flow[lang] | default: site.data.call_flow.uk %}
 {% assign call = call_flow.completeness.call %}
 {% assign wrapper_class = include.class | default: '' %}
-<section class="call-expectations{% if wrapper_class != '' %} {{ wrapper_class }}{% endif %}" aria-labelledby="call-expectations-{{ lang }}">
+<section class="call-expectations{% if wrapper_class != '' %} {{ wrapper_class }}{% endif %}" data-call-expectations aria-labelledby="call-expectations-{{ lang }}">
   <div class="call-expectations__intro">
     <p class="eyebrow">{{ t.call_expectations_label }}</p>
     <h2 id="call-expectations-{{ lang }}">{{ call.title }}</h2>

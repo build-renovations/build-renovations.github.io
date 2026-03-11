@@ -17,3 +17,18 @@ layout: default
   </div>
 </section>
 
+{% if page.show_project_fit %}
+<section class="section">
+  <div class="shell">
+    {% include project-fit.html lang=page.lang %}
+  </div>
+</section>
+{% endif %}
+
+{% if page.show_call_expectations %}
+<section class="section section--accent">
+  <div class="shell">
+    {% include call-expectations.html lang=page.lang %}
+  </div>
+</section>
+{% endif %}

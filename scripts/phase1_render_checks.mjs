@@ -13,12 +13,18 @@ const requiredRoutes = [
   "/process/",
   "/contact/",
   "/services/plumbing/",
+  "/services/electrical/",
+  "/services/finishing/",
+  "/services/site-supervision/",
   "/en/",
   "/en/about/",
   "/en/services/",
   "/en/process/",
   "/en/contact/",
-  "/en/services/plumbing/"
+  "/en/services/plumbing/",
+  "/en/services/electrical/",
+  "/en/services/finishing/",
+  "/en/services/site-supervision/"
 ];
 const messengerNames = ["telegram", "viber", "whatsapp"];
 const placeholderRegexByField = {
@@ -187,7 +193,46 @@ function checkContactChannels(contactChannels) {
   }
 }
 
-function checkRenderedRoutes(contactChannels) {
+function checkCallFlow(callFlow) {
+  for (const lang of ["uk", "en"]) {
+    const branch = callFlow[lang];
+    if (!branch) {
+      fail(`_data/call_flow.yml is missing the ${lang} branch`);
+    }
+
+    const fit = branch.completeness?.fit;
+    const call = branch.completeness?.call;
+    if (!fit || !call) {
+      fail(`call_flow.${lang}.completeness must contain fit and call sections`);
+    }
+
+    if (typeof fit.title !== "string" || fit.title.trim() === "") {
+      fail(`call_flow.${lang}.completeness.fit.title is required`);
+    }
+
+    if (!Array.isArray(fit.items) || fit.items.length < 3) {
+      fail(`call_flow.${lang}.completeness.fit.items must contain at least 3 items`);
+    }
+
+    if (!Array.isArray(call.prepare) || call.prepare.length < 3) {
+      fail(`call_flow.${lang}.completeness.call.prepare must contain at least 3 items`);
+    }
+
+    if (!Array.isArray(call.clarify) || call.clarify.length < 3) {
+      fail(`call_flow.${lang}.completeness.call.clarify must contain at least 3 items`);
+    }
+
+    if (!Array.isArray(call.return_items) || call.return_items.length < 3) {
+      fail(`call_flow.${lang}.completeness.call.return_items must contain at least 3 items`);
+    }
+
+    if (typeof call.messenger_note !== "string" || call.messenger_note.trim() === "") {
+      fail(`call_flow.${lang}.completeness.call.messenger_note is required`);
+    }
+  }
+}
+
+function checkRenderedRoutes(contactChannels, callFlow) {
   for (const route of requiredRoutes) {
     const filePath = routeToFile(route);
     ensureFile(filePath);
@@ -207,6 +252,18 @@ function checkRenderedRoutes(contactChannels) {
     const expectedSecondaryHeading = contactChannels[lang].secondary_heading;
     if (!html.includes(expectedSecondaryHeading)) {
       fail(`route ${route} is missing the localized messenger/support heading`);
+    }
+    if (!html.includes("data-project-fit")) {
+      fail(`route ${route} is missing the project-fit module`);
+    }
+    if (!html.includes("data-call-expectations")) {
+      fail(`route ${route} is missing the first-call guidance module`);
+    }
+    if (!html.includes(callFlow[lang].completeness.fit.title)) {
+      fail(`route ${route} is missing localized project-fit content`);
+    }
+    if (!html.includes(callFlow[lang].completeness.call.title)) {
+      fail(`route ${route} is missing localized first-call content`);
     }
 
     const messengerLinks = links.filter((link) => {
@@ -258,12 +315,16 @@ function main() {
   ensureFile(siteRoot);
   const config = readYamlAsJson(path.join(repoRoot, "_config.yml"));
   const contactChannelsPath = path.join(repoRoot, "_data/contact_channels.yml");
+  const callFlowPath = path.join(repoRoot, "_data/call_flow.yml");
   ensureFile(contactChannelsPath);
+  ensureFile(callFlowPath);
   const contactChannels = readYamlAsJson(contactChannelsPath);
+  const callFlow = readYamlAsJson(callFlowPath);
 
   checkPlaceholderPolicy(config);
   checkContactChannels(contactChannels);
-  checkRenderedRoutes(contactChannels);
+  checkCallFlow(callFlow);
+  checkRenderedRoutes(contactChannels, callFlow);
   checkStickyCtaContract();
 
   console.log("Phase 1 render checks passed.");

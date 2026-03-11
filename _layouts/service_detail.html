@@ -41,6 +41,12 @@ layout: default
   </div>
 </section>
 
+<section class="section section--accent">
+  <div class="shell">
+    {% include project-fit.html lang=page.lang %}
+  </div>
+</section>
+
 {% if page.service_key == 'plumbing' or page.service_key == 'electrical' or page.service_key == 'rough-works' or page.service_key == 'finishing' or page.service_key == 'procurement' or page.service_key == 'site-supervision' %}
 <section class="section">
   <div class="shell">
@@ -65,5 +71,11 @@ layout: default
         </article>
       {% endfor %}
     </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="shell">
+    {% include call-expectations.html lang=page.lang %}
   </div>
 </section>
