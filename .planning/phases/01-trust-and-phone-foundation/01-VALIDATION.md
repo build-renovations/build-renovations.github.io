@@ -49,6 +49,9 @@ completed: 2026-03-11
 | 01-03-02 | 03 | 3 | TRST-04 | data + rendered | `./scripts/qa.sh` + sourced-proof-or-placeholder-label check | ✅ | ✅ green |
 | 01-03-03 | 03 | 3 | TRST-01 | validation artifact | `test -f .planning/phases/01-trust-and-phone-foundation/01-VALIDATION.md` | ✅ | ✅ green |
 | 01-03-04 | 03 | 3 | TRST-04 | sign-off gate | `./scripts/qa.sh` + sourced-proof-or-placeholder-label check | ✅ | ✅ green |
+| 01-04-01 | 04 | 4 | TRST-01 | copy + rendered | `./scripts/qa.sh` + homepage copy replacement check | ✅ | ⬜ pending |
+| 01-04-02 | 04 | 4 | TRST-03 | copy + rendered | `./scripts/qa.sh` + service-detail bridge copy check | ✅ | ⬜ pending |
+| 01-04-03 | 04 | 4 | TRST-04 | copy + rendered | `./scripts/qa.sh` + trust-strip label removal check | ✅ | ⬜ pending |
 
 *Status: ⬜ pending · ✅ green · ❌ red · ⚠️ flaky*
 
