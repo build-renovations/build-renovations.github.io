@@ -28,7 +28,7 @@ layout: default
         </div>
       </div>
       <div class="hero__actions">
-        <a class="button button--primary" href="{{ page.primary_cta_url | relative_url }}">{{ t.cta_primary }}</a>
+        {% include primary-phone-cta.html lang=page.lang %}
         <a class="button button--secondary" href="{{ page.secondary_cta_url | relative_url }}">{{ t.cta_secondary }}</a>
       </div>
       <div class="hero__ribbon">
@@ -156,11 +156,11 @@ layout: default
     </div>
     <div class="contact-banner">
       <div>
-        <p class="eyebrow">{{ t.cta_primary }}</p>
+        <p class="eyebrow">{{ t.cta_call }}</p>
         <h2>{{ t.contact_banner_title }}</h2>
         <p>{{ t.contact_banner_text }}</p>
       </div>
-      <a class="button button--primary" href="{{ page.primary_cta_url | relative_url }}">{{ t.cta_primary }}</a>
+      {% include primary-phone-cta.html lang=page.lang %}
     </div>
   </div>
 </section>

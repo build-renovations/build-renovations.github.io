@@ -1,0 +1,10 @@
+{% assign lang = include.lang | default: page.lang | default: site.lang %}
+{% assign t = site.data.translations[lang] | default: site.data.translations.uk %}
+{% assign is_compact = include.compact | default: false %}
+{% assign button_classes = include.class | default: '' %}
+<a class="button button--primary button--phone{% if is_compact %} button--phone-compact{% endif %}{% if button_classes != '' %} {{ button_classes }}{% endif %}" href="tel:{{ site.company.phone }}">
+  <span class="button__label">{{ include.label | default: t.cta_call }}</span>
+  {% unless is_compact %}
+    <span class="button__meta">{{ site.company.phone_display | default: site.company.phone }}</span>
+  {% endunless %}
+</a>

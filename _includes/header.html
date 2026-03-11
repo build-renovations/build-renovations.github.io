@@ -16,7 +16,7 @@
         {% for item in nav %}
           <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
         {% endfor %}
-        <a class="button button--nav" href="{% if page.lang == 'en' %}{{ '/en/contact/' | relative_url }}{% else %}{{ '/contact/' | relative_url }}{% endif %}">{{ t.cta_nav }}</a>
+        {% include primary-phone-cta.html lang=page.lang compact=true class="button--nav" %}
       </nav>
       <div class="language-switcher" aria-label="{{ t.language_label }}">
         {% assign siblings = site.pages | where: "translation_key", page.translation_key %}

@@ -2,8 +2,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const menuToggle = document.querySelector(".menu-toggle");
   const siteHeader = document.querySelector(".site-header");
   const progressBar = document.querySelector(".scroll-progress");
+  const stickyPhoneCta = document.querySelector("[data-sticky-phone-cta]");
   const parallaxNodes = document.querySelectorAll(".hero__shot, .service-card, .feature-band__media figure");
   const nodes = document.querySelectorAll(".service-card, .process-card, .proof-card, .feature-band, .work-category, .contact-banner, .page-hero, .service-detail__card, .service-hero__copy, .service-hero__media, .process-stage, .process-proof, .process-metric");
+  const stickyMediaQuery = window.matchMedia("(max-width: 900px)");
 
   if (menuToggle && siteHeader) {
     menuToggle.addEventListener("click", () => {
@@ -22,6 +24,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
   updateProgress();
   window.addEventListener("scroll", updateProgress, { passive: true });
+
+  const syncStickyPhoneCta = () => {
+    const enabled = Boolean(stickyPhoneCta) && stickyMediaQuery.matches;
+    document.body.classList.toggle("has-sticky-phone-cta", enabled);
+    if (stickyPhoneCta) {
+      stickyPhoneCta.hidden = !enabled;
+    }
+  };
+
+  syncStickyPhoneCta();
+  if (typeof stickyMediaQuery.addEventListener === "function") {
+    stickyMediaQuery.addEventListener("change", syncStickyPhoneCta);
+  } else if (typeof stickyMediaQuery.addListener === "function") {
+    stickyMediaQuery.addListener(syncStickyPhoneCta);
+  }
+  window.addEventListener("resize", syncStickyPhoneCta, { passive: true });
 
   parallaxNodes.forEach((node) => {
     node.addEventListener("pointermove", (event) => {

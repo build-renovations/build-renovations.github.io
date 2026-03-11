@@ -9,8 +9,8 @@
       </div>
     </div>
     <div class="site-footer__contacts">
-      <a href="tel:{{ site.company.phone }}">{{ site.company.phone }}</a>
-      <a href="mailto:{{ site.company.email }}">{{ site.company.email }}</a>
+      <a href="tel:{{ site.company.phone }}">{{ site.company.phone_display | default: site.company.phone }}</a>
+      <a href="mailto:{{ site.company.email }}">{{ t.contact_email_label }}: {{ site.company.email }}</a>
     </div>
   </div>
 </footer>

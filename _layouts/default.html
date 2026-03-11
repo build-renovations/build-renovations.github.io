@@ -9,6 +9,21 @@
     <main>
       {{ content }}
     </main>
+    <div class="shell">
+      {% include contact-options.html lang=page.lang class="site-contact-shell" %}
+    </div>
     {% include footer.html %}
+    {% assign contact = site.data.contact_channels[page.lang] | default: site.data.contact_channels.uk %}
+    <div class="sticky-phone-cta" data-sticky-phone-cta hidden>
+      <div class="shell">
+        <div class="sticky-phone-cta__inner">
+          <div class="sticky-phone-cta__copy">
+            <strong>{{ contact.sticky_note }}</strong>
+            <span>{{ site.company.phone_display | default: site.company.phone }}</span>
+          </div>
+          {% include primary-phone-cta.html lang=page.lang compact=true class="sticky-phone-cta__button" label=contact.sticky_label %}
+        </div>
+      </div>
+    </div>
   </body>
 </html>

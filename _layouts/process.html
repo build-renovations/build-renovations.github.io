@@ -13,7 +13,7 @@ layout: default
       <h1>{{ page.title }}</h1>
       <p class="page-lead">{{ page.lead }}</p>
       <div class="hero__actions">
-        <a class="button button--primary" href="{% if page.lang == 'en' %}{{ '/en/contact/' | relative_url }}{% else %}{{ '/contact/' | relative_url }}{% endif %}">{{ t.cta_primary }}</a>
+        {% include primary-phone-cta.html lang=page.lang %}
         <a class="button button--secondary" href="{% if page.lang == 'en' %}{{ '/en/services/' | relative_url }}{% else %}{{ '/services/' | relative_url }}{% endif %}">{{ t.cta_secondary }}</a>
       </div>
     </div>
