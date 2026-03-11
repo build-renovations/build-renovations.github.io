@@ -6,6 +6,7 @@ layout: default
 {% assign buyer_relevance = case_study.buyer_relevance[page.lang] | default: case_study.buyer_relevance.uk %}
 {% assign proof_source = case_study.proof_source[page.lang] | default: case_study.proof_source.uk %}
 {% assign bridge = case_study.bridge[page.lang] | default: case_study.bridge.uk %}
+{% assign scan_card = case_study.scan_card[page.lang] | default: case_study.scan_card.uk %}
 {% assign service_data = site.data.service_pages.items %}
 <section class="page-hero">
   <div class="shell service-hero" data-phase3-marker="dossier-snapshot" data-phase3-surface="case-study-dossier">
@@ -25,12 +26,35 @@ layout: default
 </section>
 
 <section class="section">
+  <div class="shell" data-phase3-marker="proof-source-status" data-phase3-surface="case-study-dossier">
+    <div class="service-detail">
+      <article class="service-detail__card" data-case-study-proof-status="{{ case_study.proof_source.status }}">
+        <p class="eyebrow">{{ content.snapshot_title }}</p>
+        <h2>{% if page.lang == 'en' %}Snapshot and proof status{% else %}Стислий знімок і статус доказу{% endif %}</h2>
+        <p>{{ content.snapshot_text }}</p>
+        <p><strong>{{ proof_source.label }}</strong></p>
+        <p>{{ proof_source.note }}</p>
+      </article>
+      <article class="service-detail__card">
+        <h2>{% if page.lang == 'en' %}What to scan first{% else %}Що сканувати спочатку{% endif %}</h2>
+        <p>{{ case_study.summary[page.lang] | default: case_study.summary.uk }}</p>
+        {% if scan_card %}
+          <p><strong>{% if page.lang == 'en' %}Best for{% else %}Найкраще для{% endif %}:</strong> {{ scan_card.concern }}</p>
+          <p><strong>{% if page.lang == 'en' %}Route focus{% else %}Фокус маршруту{% endif %}:</strong> {{ scan_card.stage_focus }}</p>
+        {% endif %}
+        <p><strong>{% if page.lang == 'en' %}Stage count{% else %}Кількість етапів{% endif %}:</strong> {{ case_study.stages.size }}</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
   <div class="shell" data-phase3-marker="buyer-relevance" data-phase3-surface="case-study-dossier">
     <div class="process-proof">
       <div class="process-proof__copy">
-        <p class="eyebrow">{{ content.snapshot_title }}</p>
+        <p class="eyebrow">{% if page.lang == 'en' %}Buyer relevance{% else %}Релевантність для покупця{% endif %}</p>
         <h2>{{ buyer_relevance.title }}</h2>
-        <p>{{ content.snapshot_text }}</p>
+        <p>{{ buyer_relevance.text }}</p>
         <div class="service-detail">
           <article class="service-detail__card">
             <h3>{% if page.lang == 'en' %}Relevant service routes{% else %}Релевантні маршрути послуг{% endif %}</h3>
@@ -59,7 +83,7 @@ layout: default
         </div>
       </div>
       <blockquote class="process-proof__quote" data-case-study-buyer-relevance>
-        <p>{{ buyer_relevance.text }}</p>
+        <p>{{ content.lead }}</p>
         <footer>{{ proof_source.label }}</footer>
       </blockquote>
     </div>
@@ -67,27 +91,22 @@ layout: default
 </section>
 
 <section class="section section--accent">
-  <div class="shell" data-phase3-marker="proof-source-status" data-phase3-surface="case-study-dossier">
-    <div class="service-detail">
-      <article class="service-detail__card" data-case-study-proof-status="{{ case_study.proof_source.status }}">
-        <h2>{% if page.lang == 'en' %}Proof source status{% else %}Статус джерела доказу{% endif %}</h2>
-        <p><strong>{{ proof_source.label }}</strong></p>
-        <p>{{ proof_source.note }}</p>
-      </article>
-      <article class="service-detail__card">
-        <h2>{% if page.lang == 'en' %}Project scope summary{% else %}Коротко про рамку проєкту{% endif %}</h2>
-        <p>{{ case_study.summary[page.lang] | default: case_study.summary.uk }}</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="section">
   <div class="shell" data-phase3-marker="stage-proof-timeline" data-phase3-surface="case-study-dossier">
     <div class="section-heading section-heading--wide">
       <p class="eyebrow">{% if page.lang == 'en' %}Stage-proof timeline{% else %}Таймлайн доказів по етапах{% endif %}</p>
       <h2>{% if page.lang == 'en' %}How the route moved from audit to readiness{% else %}Як маршрут рухався від аудиту до готовності{% endif %}</h2>
       <p class="section-intro">{% if page.lang == 'en' %}Each stage is here to show what was checked before the next layer moved in.{% else %}Кожен етап потрібен, щоб показати, що саме перевірили до переходу на наступний шар.{% endif %}</p>
+    </div>
+    <div class="service-detail">
+      <article class="service-detail__card">
+        <h3>{% if page.lang == 'en' %}Stage logic in one read{% else %}Логіка етапів одним поглядом{% endif %}</h3>
+        <ul class="service-detail__list">
+          {% for stage in case_study.stages %}
+            {% assign stage_content = stage[page.lang] | default: stage.uk %}
+            <li>{{ forloop.index }}. {{ stage_content.title }}</li>
+          {% endfor %}
+        </ul>
+      </article>
     </div>
     <div class="process-stages">
       {% for stage in case_study.stages %}
@@ -106,6 +125,11 @@ layout: default
 
 <section class="section section--accent">
   <div class="shell" data-phase3-marker="dossier-snapshot" data-phase3-surface="case-study-dossier">
+    <div class="section-heading section-heading--wide">
+      <p class="eyebrow">{% if page.lang == 'en' %}Proof evidence{% else %}Доказові кадри{% endif %}</p>
+      <h2>{% if page.lang == 'en' %}Evidence frames that support the route{% else %}Кадри, які підтримують маршрут рішень{% endif %}</h2>
+      <p class="section-intro">{% if page.lang == 'en' %}The images matter because they stay tied to the control point described above, not because they look polished in isolation.{% else %}Кадри важливі лише тому, що прив'язані до контрольних точок вище, а не існують як окрема красива галерея.{% endif %}</p>
+    </div>
     <div class="service-grid">
       {% for image in case_study.gallery %}
         {% assign image_content = image[page.lang] | default: image.uk %}
