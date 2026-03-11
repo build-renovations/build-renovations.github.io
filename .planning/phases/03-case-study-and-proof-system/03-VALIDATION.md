@@ -2,7 +2,7 @@
 phase: 3
 slug: case-study-and-proof-system
 status: in_progress
-nyquist_compliant: false
+nyquist_compliant: true
 wave_0_complete: true
 created: 2026-03-11
 ---
@@ -42,15 +42,15 @@ created: 2026-03-11
 | 03-01-02 | 01 | 1 | CASE-01 | data integrity | `bundle exec ruby -e 'require "yaml"; %w[_data/case_studies.yml _data/service_pages.yml _data/process_page.yml _data/trust_foundation.yml].each { |path| YAML.load_file(path) }'` | ✅ | ✅ green |
 | 03-01-03 | 01 | 1 | CASE-03 | rendered | `./scripts/qa.sh` | ✅ | ✅ green |
 | 03-01-04 | 01 | 1 | CASE-01 | validation artifact | `rg -n "phase3_render_checks|buyer-relevance|project-route|placeholder" .planning/phases/03-case-study-and-proof-system/03-VALIDATION.md` | ✅ | ✅ green |
-| 03-02-01 | 02 | 2 | CASE-01 | content + data integrity | `bundle exec ruby -e 'require "yaml"; YAML.load_file("_data/case_studies.yml")'` | ⬜ | ⬜ pending |
-| 03-02-02 | 02 | 2 | CASE-02 | rendered | `./scripts/qa.sh` | ⬜ | ⬜ pending |
-| 03-02-03 | 02 | 2 | CASE-04 | rendered | `./scripts/qa.sh` | ⬜ | ⬜ pending |
-| 03-03-01 | 03 | 3 | CASE-03 | data integrity | `bundle exec ruby -e 'require "yaml"; %w[_data/case_studies.yml _data/service_pages.yml _data/process_page.yml _data/trust_foundation.yml].each { |path| YAML.load_file(path) }'` | ⬜ | ⬜ pending |
-| 03-03-02 | 03 | 3 | CASE-03 | rendered | `./scripts/qa.sh` | ⬜ | ⬜ pending |
-| 03-03-03 | 03 | 3 | CASE-01 | rendered + replacement policy | `./scripts/qa.sh` | ⬜ | ⬜ pending |
-| 03-04-01 | 04 | 4 | CASE-04 | rendered | `./scripts/qa.sh` | ⬜ | ⬜ pending |
-| 03-04-02 | 04 | 4 | CASE-02 | rendered parity | `./scripts/qa.sh` | ⬜ | ⬜ pending |
-| 03-04-03 | 04 | 4 | CASE-01 / CASE-03 / CASE-04 | sign-off gate | `./scripts/qa.sh` | ⬜ | ⬜ pending |
+| 03-02-01 | 02 | 2 | CASE-01 | content + data integrity | `bundle exec ruby -e 'require "yaml"; YAML.load_file("_data/case_studies.yml")'` | ✅ | ✅ green |
+| 03-02-02 | 02 | 2 | CASE-02 | rendered | `./scripts/qa.sh` | ✅ | ✅ green |
+| 03-02-03 | 02 | 2 | CASE-04 | rendered | `./scripts/qa.sh` | ✅ | ✅ green |
+| 03-03-01 | 03 | 3 | CASE-03 | data integrity | `bundle exec ruby -e 'require "yaml"; %w[_data/case_studies.yml _data/service_pages.yml _data/process_page.yml _data/trust_foundation.yml].each { |path| YAML.load_file(path) }'` | ✅ | ✅ green |
+| 03-03-02 | 03 | 3 | CASE-03 | rendered | `./scripts/qa.sh` | ✅ | ✅ green |
+| 03-03-03 | 03 | 3 | CASE-01 | rendered + replacement policy | `./scripts/qa.sh` | ✅ | ✅ green |
+| 03-04-01 | 04 | 4 | CASE-04 | rendered | `./scripts/qa.sh` | ✅ | ✅ green |
+| 03-04-02 | 04 | 4 | CASE-02 | rendered parity | `./scripts/qa.sh` | ✅ | ✅ green |
+| 03-04-03 | 04 | 4 | CASE-01 / CASE-03 / CASE-04 | sign-off gate | `./scripts/qa.sh` | ✅ | ✅ green |
 
 *Status: ⬜ pending · ✅ green · ❌ red · ⚠️ flaky*
 
@@ -90,6 +90,14 @@ created: 2026-03-11
 - [x] Wave 0 requirements defined for project routes, case-study markers, metadata parity, and placeholder-replacement policy
 - [x] No watch-mode flags
 - [x] Feedback latency < 180s
-- [ ] `nyquist_compliant: true` set only after Phase 3 execution closes all CASE requirements
+- [x] `nyquist_compliant: true` set only after Phase 3 execution closes all CASE requirements
 
-**Approval:** Wave 0 implemented in `03-01`; later plans can now build on the enforced Phase 3 route and proof-marker contract.
+**Approval:** Wave 0 implemented in `03-01`; later plans executed against the enforced Phase 3 route and proof-marker contract with green QA at each pass.
+
+## Phase 3 Closure Notes
+
+- `./scripts/qa.sh` passed after the final `03-04` execution pass on 2026-03-11.
+- `/projects/` and `/en/projects/` now work as buyer-concern scan surfaces instead of flat dossier lists.
+- Dossier pages preserve the Phase 3 proof contract with explicit snapshot, buyer-relevance, stage-proof, proof-source, and related-route markers.
+- Homepage, process, service, and supporting bridge surfaces still render dossier routes with metadata parity and replacement-policy checks intact.
+- CASE-01 through CASE-04 are now covered by implemented routes, shared data, and additive rendered QA, so Phase 3 is ready for verification.
