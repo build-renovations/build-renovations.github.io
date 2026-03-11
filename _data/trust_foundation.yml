@@ -12,7 +12,7 @@ uk:
     title: "Ремонт читається як керований маршрут, а не як хаос окремих майстрів"
     intro: "Цей блок не замінює реальні кейси. Він пояснює, як саме зібрана відповідальність, поки на сайті ще накопичуються публічні докази."
     labels:
-      company: "Статус бренду"
+      company: "Компанія"
       profile: "Профіль роботи"
       service_area: "Географія"
       accountability: "Хто веде рішення"
@@ -77,7 +77,7 @@ en:
     title: "The renovation should read like a controlled route, not like chaos between separate trades"
     intro: "This block does not replace real case studies. It explains how responsibility is assembled while the site is still collecting publishable proof."
     labels:
-      company: "Brand status"
+      company: "Company"
       profile: "Service profile"
       service_area: "Coverage"
       accountability: "Who owns decisions"
