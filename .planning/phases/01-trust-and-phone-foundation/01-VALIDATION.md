@@ -1,10 +1,11 @@
 ---
 phase: 1
 slug: trust-and-phone-foundation
-status: draft
-nyquist_compliant: false
-wave_0_complete: false
+status: complete
+nyquist_compliant: true
+wave_0_complete: true
 created: 2026-03-11
+completed: 2026-03-11
 ---
 
 # Phase 1 — Validation Strategy
@@ -38,16 +39,16 @@ created: 2026-03-11
 
 | Task ID | Plan | Wave | Requirement | Test Type | Automated Command | File Exists | Status |
 |---------|------|------|-------------|-----------|-------------------|-------------|--------|
-| 01-01-01 | 01 | 1 | CALL-01 | build + rendered | `./scripts/qa.sh` | ✅ | ⬜ pending |
-| 01-01-02 | 01 | 1 | CALL-03 | rendered mobile | `./scripts/qa.sh` + mobile sticky CTA check | ✅ | ⬜ pending |
-| 01-01-03 | 01 | 1 | TRST-01 | data integrity | `./scripts/qa.sh` + placeholder policy check | ✅ | ⬜ pending |
-| 01-02-01 | 02 | 2 | TRST-02 | content + rendered | `./scripts/qa.sh` + project-fit visibility check | ✅ | ⬜ pending |
-| 01-02-02 | 02 | 2 | CALL-02 | content + rendered | `./scripts/qa.sh` + call-brief visibility check | ✅ | ⬜ pending |
-| 01-02-03 | 02 | 2 | CALL-04 | rendered | `./scripts/qa.sh` + messenger-secondary check | ✅ | ⬜ pending |
-| 01-03-01 | 03 | 3 | TRST-03 | rendered | `./scripts/qa.sh` + accountability-block check | ✅ | ⬜ pending |
-| 01-03-02 | 03 | 3 | TRST-04 | data + rendered | `./scripts/qa.sh` + sourced-proof-or-placeholder-label check | ✅ | ⬜ pending |
-| 01-03-03 | 03 | 3 | TRST-01 | validation artifact | `test -f .planning/phases/01-trust-and-phone-foundation/01-VALIDATION.md` | ✅ | ⬜ pending |
-| 01-03-04 | 03 | 3 | TRST-04 | sign-off gate | `./scripts/qa.sh` + sourced-proof-or-placeholder-label check | ✅ | ⬜ pending |
+| 01-01-01 | 01 | 1 | CALL-01 | build + rendered | `./scripts/qa.sh` | ✅ | ✅ green |
+| 01-01-02 | 01 | 1 | CALL-03 | rendered mobile | `./scripts/qa.sh` + mobile sticky CTA check | ✅ | ✅ green |
+| 01-01-03 | 01 | 1 | TRST-01 | data integrity | `./scripts/qa.sh` + placeholder policy check | ✅ | ✅ green |
+| 01-02-01 | 02 | 2 | TRST-02 | content + rendered | `./scripts/qa.sh` + project-fit visibility check | ✅ | ✅ green |
+| 01-02-02 | 02 | 2 | CALL-02 | content + rendered | `./scripts/qa.sh` + call-brief visibility check | ✅ | ✅ green |
+| 01-02-03 | 02 | 2 | CALL-04 | rendered | `./scripts/qa.sh` + messenger-secondary check | ✅ | ✅ green |
+| 01-03-01 | 03 | 3 | TRST-03 | rendered | `./scripts/qa.sh` + accountability-block check | ✅ | ✅ green |
+| 01-03-02 | 03 | 3 | TRST-04 | data + rendered | `./scripts/qa.sh` + sourced-proof-or-placeholder-label check | ✅ | ✅ green |
+| 01-03-03 | 03 | 3 | TRST-01 | validation artifact | `test -f .planning/phases/01-trust-and-phone-foundation/01-VALIDATION.md` | ✅ | ✅ green |
+| 01-03-04 | 03 | 3 | TRST-04 | sign-off gate | `./scripts/qa.sh` + sourced-proof-or-placeholder-label check | ✅ | ✅ green |
 
 *Status: ⬜ pending · ✅ green · ❌ red · ⚠️ flaky*
 
@@ -55,11 +56,11 @@ created: 2026-03-11
 
 ## Wave 0 Requirements
 
-- [ ] Extend `scripts/qa.sh` or add a Phase 1 validation helper to fail on unlabeled placeholder phone/email/business identity data.
-- [ ] Add checks that new trust/contact data files contain both `uk` and `en`.
-- [ ] Add rendered browser checks for visible `a[href^="tel:"]` across `/`, `/about/`, `/services/`, `/process/`, `/contact/`, `/services/plumbing/`, `/services/electrical/`, `/services/finishing/`, `/services/site-supervision/`, and their `/en/` equivalents.
-- [ ] Add rendered browser checks that sticky mobile CTA does not cover readable content or footer actions.
-- [ ] Add rendered browser checks that messenger links exist and remain visually secondary to phone.
+- [x] Extend `scripts/qa.sh` or add a Phase 1 validation helper to fail on unlabeled placeholder phone/email/business identity data.
+- [x] Add checks that new trust/contact data files contain both `uk` and `en`.
+- [x] Add rendered browser checks for visible `a[href^="tel:"]` across `/`, `/about/`, `/services/`, `/process/`, `/contact/`, `/services/plumbing/`, `/services/electrical/`, `/services/finishing/`, `/services/site-supervision/`, and their `/en/` equivalents.
+- [x] Add rendered browser checks that sticky mobile CTA does not cover readable content or footer actions.
+- [x] Add rendered browser checks that messenger links exist and remain visually secondary to phone.
 
 ---
 
@@ -75,11 +76,11 @@ created: 2026-03-11
 
 ## Validation Sign-Off
 
-- [ ] All tasks have `<automated>` verify or Wave 0 dependencies
-- [ ] Sampling continuity: no 3 consecutive tasks without automated verify
-- [ ] Wave 0 guardrails cover placeholder identity policy, bilingual shared-data completeness, required tel-link route coverage, sticky CTA overlap, and messenger-secondary hierarchy checks
-- [ ] No watch-mode flags
-- [ ] Feedback latency < 180s
-- [ ] `nyquist_compliant: true` set in frontmatter
+- [x] All tasks have `<automated>` verify or Wave 0 dependencies
+- [x] Sampling continuity: no 3 consecutive tasks without automated verify
+- [x] Wave 0 guardrails cover placeholder identity policy, bilingual shared-data completeness, required tel-link route coverage, sticky CTA overlap, and messenger-secondary hierarchy checks
+- [x] No watch-mode flags
+- [x] Feedback latency < 180s
+- [x] `nyquist_compliant: true` set in frontmatter
 
-**Approval:** pending
+**Approval:** ready for phase verification
