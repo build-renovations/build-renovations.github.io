@@ -4,17 +4,17 @@ milestone: v1.0
 milestone_name: milestone
 current_phase: 03
 current_phase_name: case study and proof system
-current_plan: 3
+current_plan: 4
 status: executing
-stopped_at: Completed 03-03-PLAN.md
-last_updated: "2026-03-11T19:56:18.490Z"
+stopped_at: Completed 03-04-PLAN.md
+last_updated: "2026-03-11T20:04:17.817Z"
 last_activity: 2026-03-11
 progress:
   total_phases: 5
-  completed_phases: 2
+  completed_phases: 3
   total_plans: 12
-  completed_plans: 11
-  percent: 92
+  completed_plans: 12
+  percent: 100
 ---
 
 # Project State
@@ -31,12 +31,12 @@ See: `.planning/PROJECT.md` (updated 2026-03-10)
 - **Current Phase:** 03
 - **Current Phase Name:** case study and proof system
 - **Total Phases:** 5
-- **Current Plan:** 3
+- **Current Plan:** 4
 - **Total Plans in Phase:** 4
-- **Status:** Executing
+- **Status:** Ready to execute
 - **Last Activity:** 2026-03-11
 - **Last Activity Description:** Executed 03-03 route integration, dossier-backed proof replacement, and supporting-page bridge rollout
-- **Progress:** [█████████░] 92%
+- **Progress:** [██████████] 100%
 
 ## Performance Metrics
 
@@ -47,6 +47,7 @@ See: `.planning/PROJECT.md` (updated 2026-03-10)
 | Phase 02 P01 | 13m | 4 tasks | 12 files |
 | Phase 03 P02 | 6min | 3 tasks | 8 files |
 | Phase 03 P03 | 11min | 3 tasks | 12 files |
+| Phase 03 P04 | 4m 47s | 3 tasks | 6 files |
 
 ## Decisions
 
@@ -72,6 +73,9 @@ See: `.planning/PROJECT.md` (updated 2026-03-10)
 - [Phase 03]: Featured dossier selection now lives in _data/case_studies.yml so home, process, and service routes pull from one shared mapping contract.
 - [Phase 03]: Default sourced-proof cards remain visibly temporary for legacy surfaces, while module-driven proof blocks upgrade to publishable dossier-backed cards when real evidence exists.
 - [Phase 03]: About and services index pages keep the inherited sourced-proof module for Phase 1 parity but add lightweight dossier bridges instead of long duplicate proof copy.
+- [Phase 03]: Project indexes now group dossiers by buyer concern so visitors can choose proof by risk instead of scanning a flat list.
+- [Phase 03]: Case-study pages surface snapshot and proof-status cues before deeper buyer-relevance and stage detail so dossier pages stay scannable.
+- [Phase 03]: Phase 3 sign-off happens only after the full QA suite stays green with explicit CASE coverage and replacement-policy checks.
 
 ## Blockers
 
@@ -79,6 +83,6 @@ None
 
 ## Session
 
-- **Last Date:** 2026-03-11T19:56:08.662Z
-- **Stopped At:** Completed 03-03-PLAN.md
+- **Last Date:** 2026-03-11T20:04:17.815Z
+- **Stopped At:** Completed 03-04-PLAN.md
 - **Resume File:** None
