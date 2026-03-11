@@ -441,6 +441,10 @@ h3 {
   font-size: 0.74rem;
 }
 
+.faq-group + .faq-group {
+  margin-top: 3rem;
+}
+
 .feature-band,
 .contact-banner {
   display: grid;

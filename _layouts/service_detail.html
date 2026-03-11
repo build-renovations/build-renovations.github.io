@@ -132,12 +132,31 @@ layout: default
       <p class="section-intro">{{ objection_cards.intro }}</p>
     </div>
     <div class="service-grid">
-      {% for card in objection_cards.cards %}
-        <article class="service-card">
-          <h3>{{ card.title }}</h3>
-          <p>{{ card.text }}</p>
-        </article>
-      {% endfor %}
+      {% assign objection_refs = content.objection_refs | default: objection_cards.refs | default: empty %}
+      {% if objection_refs != empty %}
+        {% for ref in objection_refs %}
+          {% for group in site.data.faqs.groups %}
+            {% for item in group.items %}
+              {% if item.key == ref %}
+                {% assign group_copy = group[page.lang] | default: group.uk %}
+                {% assign item_copy = item[page.lang] | default: item.uk %}
+                <article class="service-card" data-faq-key="{{ item.key }}">
+                  <p class="service-card__eyebrow">{{ group_copy.title }}</p>
+                  <h3>{{ item_copy.question }}</h3>
+                  <p>{{ item_copy.answer }}</p>
+                </article>
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
+        {% endfor %}
+      {% else %}
+        {% for card in objection_cards.cards %}
+          <article class="service-card">
+            <h3>{{ card.title }}</h3>
+            <p>{{ card.text }}</p>
+          </article>
+        {% endfor %}
+      {% endif %}
     </div>
   </div>
 </section>
