@@ -1,8 +1,8 @@
 ---
 phase: 2
 slug: content-architecture-expansion
-status: draft
-nyquist_compliant: false
+status: complete
+nyquist_compliant: true
 wave_0_complete: true
 created: 2026-03-11
 ---
@@ -42,15 +42,15 @@ created: 2026-03-11
 | 02-01-02 | 01 | 1 | CONT-01 | data integrity | `bundle exec ruby -e 'require "yaml"; %w[_data/service_pages.yml _data/process_page.yml _data/faqs.yml].each { |path| YAML.load_file(path) }'` | ✅ | ✅ green |
 | 02-01-03 | 01 | 1 | CONT-01 | rendered | `./scripts/qa.sh` | ✅ | ✅ green |
 | 02-01-04 | 01 | 1 | CONT-01 | validation artifact | `rg -n "canonical|hreflang|language-switch|02-01-01|02-01-04" .planning/phases/02-content-architecture-expansion/02-VALIDATION.md` | ✅ | ✅ green |
-| 02-02-01 | 02 | 2 | CONT-01 | data integrity | `bundle exec ruby -e 'require "yaml"; YAML.load_file("_data/service_pages.yml")'` | ✅ | ⬜ pending |
-| 02-02-02 | 02 | 2 | CONT-03 | data integrity | `bundle exec ruby -e 'require "yaml"; %w[_data/process_page.yml _data/translations.yml].each { |path| YAML.load_file(path) }'` | ✅ | ⬜ pending |
-| 02-02-03 | 02 | 2 | CONT-01 | rendered | `./scripts/qa.sh` | ✅ | ⬜ pending |
-| 02-03-01 | 03 | 3 | CONT-02 | data integrity | `bundle exec ruby -e 'require "yaml"; %w[_data/faqs.yml _data/process_page.yml _data/service_pages.yml].each { |path| YAML.load_file(path) }'` | ✅ | ⬜ pending |
-| 02-03-02 | 03 | 3 | CONT-02 | rendered | `./scripts/qa.sh` | ✅ | ⬜ pending |
-| 02-03-03 | 03 | 3 | CONT-02 | rendered | `./scripts/qa.sh` | ✅ | ⬜ pending |
-| 02-04-01 | 04 | 4 | CONT-04 | data integrity | `bundle exec ruby -e 'require "yaml"; YAML.load_file("_data/service_pages.yml")'` | ✅ | ⬜ pending |
-| 02-04-02 | 04 | 4 | CONT-04 | rendered | `./scripts/qa.sh` | ✅ | ⬜ pending |
-| 02-04-03 | 04 | 4 | CONT-01 | sign-off gate | `./scripts/qa.sh` | ✅ | ⬜ pending |
+| 02-02-01 | 02 | 2 | CONT-01 | data integrity | `bundle exec ruby -e 'require "yaml"; YAML.load_file("_data/service_pages.yml")'` | ✅ | ✅ green |
+| 02-02-02 | 02 | 2 | CONT-03 | data integrity | `bundle exec ruby -e 'require "yaml"; %w[_data/process_page.yml _data/translations.yml].each { |path| YAML.load_file(path) }'` | ✅ | ✅ green |
+| 02-02-03 | 02 | 2 | CONT-01 | rendered | `./scripts/qa.sh` | ✅ | ✅ green |
+| 02-03-01 | 03 | 3 | CONT-02 | data integrity | `bundle exec ruby -e 'require "yaml"; %w[_data/faqs.yml _data/process_page.yml _data/service_pages.yml].each { |path| YAML.load_file(path) }'` | ✅ | ✅ green |
+| 02-03-02 | 03 | 3 | CONT-02 | rendered | `./scripts/qa.sh` | ✅ | ✅ green |
+| 02-03-03 | 03 | 3 | CONT-02 | rendered | `./scripts/qa.sh` | ✅ | ✅ green |
+| 02-04-01 | 04 | 4 | CONT-04 | data integrity | `bundle exec ruby -e 'require "yaml"; YAML.load_file("_data/service_pages.yml")'` | ✅ | ✅ green |
+| 02-04-02 | 04 | 4 | CONT-04 | rendered | `./scripts/qa.sh` | ✅ | ✅ green |
+| 02-04-03 | 04 | 4 | CONT-01 | sign-off gate | `./scripts/qa.sh` | ✅ | ✅ green |
 
 *Status: ⬜ pending · ✅ green · ❌ red · ⚠️ flaky*
 
@@ -89,8 +89,8 @@ created: 2026-03-11
 - [x] All tasks have `<verify>` commands or Wave 0 dependencies
 - [x] Sampling continuity: no 3 consecutive tasks without automated verify
 - [x] Wave 0 covers all missing Phase 2 rendered/content checks
-- [ ] No watch-mode flags
+- [x] No watch-mode flags
 - [x] Feedback latency < 180s
-- [ ] `nyquist_compliant: true` set in frontmatter
+- [x] `nyquist_compliant: true` set in frontmatter
 
-**Approval:** Wave 0 complete for Plan `02-01`; final phase approval remains pending until Plans `02-02` through `02-04` complete and full route/requirement coverage is closed.
+**Approval:** Plans `02-01` through `02-04` are complete. Phase 2 route coverage, bilingual parity, retained Phase 1 trust/call surfaces, grouped FAQ synchronization, and property-fit guidance are now closed and approved.
