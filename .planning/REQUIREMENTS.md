@@ -22,9 +22,9 @@
 ### Case Studies And Proof
 
 - [x] **CASE-01**: Visitor can browse structured project proof that explains scope, stages, decisions, and outcomes rather than only viewing isolated images.
-- [ ] **CASE-02**: Visitor can understand renovation quality through before, during, and after states where those states are available.
+- [x] **CASE-02**: Visitor can understand renovation quality through before, during, and after states where those states are available.
 - [x] **CASE-03**: Visitor can move from a service page or homepage proof section into deeper project evidence relevant to that service or property type.
-- [ ] **CASE-04**: Visitor can understand why a featured project or proof block is relevant to their own renovation concerns.
+- [x] **CASE-04**: Visitor can understand why a featured project or proof block is relevant to their own renovation concerns.
 
 ### Content Depth
 
@@ -85,9 +85,9 @@
 | CALL-03 | Phase 1 | Complete |
 | CALL-04 | Phase 1 | Complete |
 | CASE-01 | Phase 3 | Complete |
-| CASE-02 | Phase 3 | Pending |
+| CASE-02 | Phase 3 | Complete |
 | CASE-03 | Phase 3 | Complete |
-| CASE-04 | Phase 3 | Pending |
+| CASE-04 | Phase 3 | Complete |
 | CONT-01 | Phase 2 | Complete |
 | CONT-02 | Phase 2 | Complete |
 | CONT-03 | Phase 2 | Complete |

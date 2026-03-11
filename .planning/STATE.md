@@ -4,17 +4,17 @@ milestone: v1.0
 milestone_name: milestone
 current_phase: 03
 current_phase_name: case study and proof system
-current_plan: 1
+current_plan: 2
 status: executing
-stopped_at: Completed 03-01-PLAN.md
-last_updated: "2026-03-11T19:34:09.704Z"
+stopped_at: Completed 03-02-PLAN.md
+last_updated: "2026-03-11T19:43:01.049Z"
 last_activity: 2026-03-11
 progress:
   total_phases: 5
   completed_phases: 2
   total_plans: 12
-  completed_plans: 9
-  percent: 67
+  completed_plans: 10
+  percent: 83
 ---
 
 # Project State
@@ -31,12 +31,12 @@ See: `.planning/PROJECT.md` (updated 2026-03-10)
 - **Current Phase:** 03
 - **Current Phase Name:** case study and proof system
 - **Total Phases:** 5
-- **Current Plan:** 1
+- **Current Plan:** 2
 - **Total Plans in Phase:** 4
 - **Status:** Ready to execute
 - **Last Activity:** 2026-03-11
 - **Last Activity Description:** Finalized Phase 3 research, validation strategy, and execution plans
-- **Progress:** [███████░░░] 67%
+- **Progress:** [████████░░] 83%
 
 ## Performance Metrics
 
@@ -45,6 +45,7 @@ See: `.planning/PROJECT.md` (updated 2026-03-10)
 | Phase 01 P03 | 7min | 4 tasks | 18 files |
 | Phase 01 P04 | 18 min | 3 tasks | 4 files |
 | Phase 02 P01 | 13m | 4 tasks | 12 files |
+| Phase 03 P02 | 6min | 3 tasks | 8 files |
 
 ## Decisions
 
@@ -65,6 +66,8 @@ See: `.planning/PROJECT.md` (updated 2026-03-10)
 - [Phase 03]: Phase 3 will introduce a dedicated `/projects/` route family backed by `_data/case_studies.yml` rather than trying to stretch service galleries into full project dossiers.
 - [Phase 03]: Publishable proof may replace Phase 1 temporary proof only where real project-backed evidence exists; any unreplaced proof must stay visibly temporary.
 - [Phase 03]: Homepage, process, and service/property routes will map into case studies through shared keys so deeper proof routing stays bilingual and testable.
+- [Phase 03]: The first dossier rollout adds new publishable project keys instead of replacing the Phase 3 foundation examples, so existing proof integrations keep working while the named routes from this plan go live.
+- [Phase 03]: Buyer relevance now includes linked service and property routes high on the page so visitors understand the practical fit before the detailed stage timeline.
 
 ## Blockers
 
@@ -72,6 +75,6 @@ None
 
 ## Session
 
-- **Last Date:** 2026-03-11T19:34:09.702Z
-- **Stopped At:** Completed 03-01-PLAN.md
+- **Last Date:** 2026-03-11T19:43:01.047Z
+- **Stopped At:** Completed 03-02-PLAN.md
 - **Resume File:** None
