@@ -37,6 +37,57 @@ featured_sets:
       en:
         title: Project dossiers that show the process in action
         text: These cases prove the process through real decision routes, control points, and handover readiness rather than abstract process language.
+concern_groups:
+  hidden-work-control:
+    refs:
+      - compact-apartment-engineering
+      - wet-zone-control
+    uk:
+      title: Контроль прихованих робіт
+      text: Для покупця, який хоче бачити не обіцянку, а точку перевірки до того, як сантехніка, електрика або трапи сховаються під фінішем.
+    en:
+      title: Hidden-work control
+      text: For the buyer who needs a real checkpoint before plumbing, electrical work, or drain logic disappears behind the finish.
+  wet-zone-coordination:
+    refs:
+      - wet-zone-control
+      - apartment-system-renovation
+    uk:
+      title: Координація мокрих зон
+      text: Для сценарію, де головний ризик сидить у душовій, санвузлі, примиканнях і тому, чи зійдуться плитка, скло та сервісний доступ.
+    en:
+      title: Wet-zone coordination
+      text: For the scenario where the real risk lives in the shower, bathroom interfaces, and whether tile, glass, and service access still work together.
+  apartment-system-logic:
+    refs:
+      - apartment-system-renovation
+      - compact-apartment-engineering
+    uk:
+      title: Системна логіка квартири
+      text: Для компактних квартир, де важливо довести, що мокрі зони, світло, меблі та фініш збиралися як одна система, а не окремими шматками.
+    en:
+      title: Apartment system logic
+      text: For compact apartments where the buyer needs proof that wet zones, lighting, furniture, and finishing were coordinated as one system.
+  house-stage-discipline:
+    refs:
+      - house-stage-coordination
+      - controlled-handover
+    uk:
+      title: Дисципліна етапів у будинку
+      text: Для покупця будинку, який оцінює не одну кімнату, а те, чи не розсиплеться логіка між зонами, поставками та переходами між етапами.
+    en:
+      title: House stage discipline
+      text: For the house buyer judging whether zone sequencing, deliveries, and stage handoffs stay coherent across the full property.
+  handover-readiness:
+    refs:
+      - controlled-handover
+      - house-stage-coordination
+    uk:
+      title: Керована здача і готовність
+      text: Для сценарію, де потрібно зрозуміти, чи сходяться комплектація, світло, оздоблення і контроль приймання до передачі ключів.
+    en:
+      title: Controlled handover readiness
+      text: For the buyer who wants to know whether procurement, lighting, finishing, and acceptance checks converge before key transfer.
 route_groups:
   apartment-renovation:
     refs:
@@ -161,6 +212,13 @@ items:
       en:
         title: Why this matters to an apartment buyer
         text: "This case answers the main compact-apartment concern: whether engineering work, furniture, lighting, and wet zones were assembled into one route before finishing locked the mistakes in."
+    scan_card:
+      uk:
+        concern: Приховані вузли і щільна інженерія
+        stage_focus: Аудит, приховані роботи, готовність до здачі
+      en:
+        concern: Concealed junctions and dense engineering
+        stage_focus: Audit, concealed work, and handover readiness
     dossier:
       uk:
         eyebrow: Проєкт-доказ
@@ -261,6 +319,13 @@ items:
       en:
         title: Why this matters to a house buyer
         text: "The point here is not pretty rooms. It is showing large-property discipline: zone control, delivery timing, and stage handoffs across the whole house."
+    scan_card:
+      uk:
+        concern: Зони, поставки і масштаб будинку
+        stage_focus: Зонування, координація етапів, здача
+      en:
+        concern: Zone control, deliveries, and house scale
+        stage_focus: Zoning, cross-stage coordination, handover
     dossier:
       uk:
         eyebrow: Проєкт-доказ
@@ -362,6 +427,13 @@ items:
       en:
         title: Why this matters to an apartment buyer
         text: This dossier answers whether plumbing, electrical work, lighting, and finishing were coordinated inside a tight apartment before the finish layer hid the mistakes.
+    scan_card:
+      uk:
+        concern: Системний маршрут квартири
+        stage_focus: Оболонка, мокра зона, фінішний сценарій
+      en:
+        concern: End-to-end apartment route
+        stage_focus: Shell prep, wet zone, finished scenario
     dossier:
       uk:
         eyebrow: Проєкт-доказ
@@ -463,6 +535,13 @@ items:
       en:
         title: Why this matters to a wet-zone buyer concern
         text: "This dossier is about more than bathroom aesthetics. It addresses the hidden-junction risk: whether access, tile, glass, drain logic, and fixtures still work after installation."
+    scan_card:
+      uk:
+        concern: Доступ, трап і примикання у мокрій зоні
+        stage_focus: Підготовка, відкритий контроль, монтаж скла
+      en:
+        concern: Access, drain logic, and wet-zone interfaces
+        stage_focus: Prep, open-stage control, glass installation
     dossier:
       uk:
         eyebrow: Проєкт-доказ
@@ -565,6 +644,13 @@ items:
       en:
         title: Why this matters to a buyer nearing handover
         text: The biggest fear near completion is not just whether the interior looks good. It is whether handover stays controlled instead of collapsing into chaotic fixes, missing items, and cross-trade conflict.
+    scan_card:
+      uk:
+        concern: Готовність до передачі без хаосу
+        stage_focus: Критерії готовності, фінальна збірка, здача
+      en:
+        concern: Handover readiness without chaos
+        stage_focus: Readiness criteria, final assembly, handover
     dossier:
       uk:
         eyebrow: Проєкт-доказ

@@ -23,6 +23,7 @@
           {% assign card = item.dossier[lang] | default: item.dossier.uk %}
           {% assign proof = item.proof_source[lang] | default: item.proof_source.uk %}
           {% assign relevance = item.buyer_relevance[lang] | default: item.buyer_relevance.uk %}
+          {% assign scan_card = item.scan_card[lang] | default: item.scan_card.uk %}
           {% assign route = item.route[lang] | default: item.route.uk %}
           <article class="service-card" data-case-study-card data-case-study-related-route="{{ route }}" data-phase3-marker="related-route-bridge" data-phase3-buyer-relevance="buyer-relevance">
             <figure class="service-card__media">
@@ -31,6 +32,10 @@
             <p class="service-card__eyebrow">{{ card.eyebrow }}</p>
             <h3>{{ card.title }}</h3>
             <p>{{ item.summary[lang] | default: item.summary.uk }}</p>
+            {% if scan_card %}
+              <p><strong>{% if lang == 'en' %}Best for{% else %}Найкраще для{% endif %}:</strong> {{ scan_card.concern }}</p>
+              <p><strong>{% if lang == 'en' %}Route focus{% else %}Фокус маршруту{% endif %}:</strong> {{ scan_card.stage_focus }}</p>
+            {% endif %}
             <p data-phase3-marker="buyer-relevance" data-case-study-buyer-relevance><strong>{{ relevance.title }}:</strong> {{ relevance.text }}</p>
             <p data-case-study-proof-status><strong>{% if lang == 'en' %}Proof status{% else %}Статус доказу{% endif %}:</strong> {{ proof.label }}</p>
             <a class="service-card__link" href="{{ route | relative_url }}">{% if lang == 'en' %}Open the full dossier{% else %}Відкрити повне досьє{% endif %}</a>
