@@ -214,3 +214,307 @@ items:
         en:
           title: Readable handover readiness
           text: The property handoff rested on checked zones and readable status, not only on decorative completion.
+  apartment-system-renovation:
+    status: publishable
+    route:
+      uk: /projects/apartment-system-renovation/
+      en: /en/projects/apartment-system-renovation/
+    translation_key: apartment-system-renovation
+    image: /assets/images/work/core-shell-prep.webp
+    card_image: /assets/images/work/electrical-led-room.webp
+    related_services:
+      - apartment-renovation
+      - plumbing
+      - electrical
+      - finishing
+    related_property_types:
+      - apartment-renovation
+    proof_source:
+      type: photo-report
+      status: publishable
+      uk:
+        label: Фотофіксація квартири від прихованих рішень до готового сценарію
+        note: "Матеріал зібраний із реальних етапів квартири: підготовка оболонки, мокра зона і фінальне світло читаються як один маршрут без вигаданих відгуків чи цифр."
+      en:
+        label: Photo record of the apartment from concealed decisions to the finished scene
+        note: The material comes from real apartment stages. The shell, wet-zone work, and finished lighting are presented as one route without invented testimonials or numbers.
+    buyer_relevance:
+      uk:
+        title: Чому це важливо покупцю квартири
+        text: Цей кейс відповідає на питання, чи зведуть у маленькому метражі сантехніку, електрику, світло і чистове оздоблення в один маршрут до того, як фініш сховає помилки.
+      en:
+        title: Why this matters to an apartment buyer
+        text: This dossier answers whether plumbing, electrical work, lighting, and finishing were coordinated inside a tight apartment before the finish layer hid the mistakes.
+    dossier:
+      uk:
+        eyebrow: Проєкт-доказ
+        title: Ремонт квартири як одна система, а не набір окремих бригад
+        lead: "Досьє показує квартиру в логіці маршруту: від оболонки й прив'язок до мокрої зони та фінального світлового сценарію. Це не історія про красивий кадр, а про послідовність рішень до здачі."
+        snapshot_title: Що тут доведено
+        snapshot_text: Покупець бачить, що квартира не збиралась по шматках. До чистового шару були зведені геометрія, приховані вузли, точки світла і готовність зон.
+      en:
+        eyebrow: Project proof
+        title: Apartment renovation handled as one system instead of separate crews
+        lead: "This dossier reads the apartment as one route: from shell preparation and coordinates to the wet zone and the final lighting scene. It is not a beauty gallery. It is the sequence of decisions before handover."
+        snapshot_title: What this proves
+        snapshot_text: The buyer can see that the apartment was not assembled in fragments. Geometry, concealed junctions, lighting points, and room readiness were aligned before the finish layer.
+    summary:
+      uk: Показує, як квартира проходить шлях від підготовки оболонки до готового світлового й мокрого сценарію без конфлікту між інженерією та фінішем.
+      en: Shows how an apartment moves from shell preparation to finished lighting and wet-zone readiness without conflict between engineering and finishing.
+    bridge:
+      uk:
+        title: Пов'язані досьє
+        text: Якщо вам потрібен схожий контроль у квартирі, порівняйте далі окремий кейс по мокрій зоні та досьє, де головний акцент зроблено на керованій здачі.
+      en:
+        title: Related dossiers
+        text: If you need similar apartment control, compare the dedicated wet-zone dossier next and then the handover-focused route.
+    gallery:
+      - image: /assets/images/work/core-shell-prep.webp
+        uk:
+          alt: Квартира на етапі підготовки оболонки перед прихованими роботами
+          caption: Ранній стан не називається класичним before. Він показує момент, коли геометрія й маршрути ще можна перевірити до закриття шарів.
+        en:
+          alt: Apartment shell preparation before concealed work starts
+          caption: This is not framed as a classic before shot. It shows the point where geometry and route decisions can still be checked before later layers close them.
+      - image: /assets/images/work/plumbing-bath-installation.webp
+        uk:
+          alt: Мокра зона квартири під час монтажу сантехніки
+          caption: "Етап during concealed work: видно логіку висот, сервісного доступу і готовності до облицювання, а не лише майбутній декор."
+        en:
+          alt: Apartment wet zone during plumbing installation
+          caption: This is the during concealed work stage. Heights, service access, and readiness for cladding are still visible instead of being hidden behind decoration.
+      - image: /assets/images/work/electrical-led-room.webp
+        uk:
+          alt: Готовий світловий сценарій у квартирі після координації етапів
+          caption: Фінальний кадр чесно позначає стан після чистового етапу, бо його сенс тримається на попередніх контрольних точках.
+        en:
+          alt: Finished apartment lighting scene after coordinated stages
+          caption: The final image is honestly an after finishing state, and it matters only because the earlier control points made it predictable.
+    stages:
+      - key: audit
+        type: audit
+        uk:
+          title: До старту оздоблення зібрали систему квартири
+          text: На ранньому етапі звели мокрі зони, світло, меблеві прив'язки й обмеження компактного плану, щоб квартира не розпалась на локальні компроміси.
+        en:
+          title: The apartment system was mapped before finishing started
+          text: The early stage aligned wet zones, lighting, furniture coordinates, and compact-plan limits so the route would not collapse into local compromises.
+      - key: engineering
+        type: engineering
+        uk:
+          title: Приховані роботи фіксуються до закриття
+          text: Сантехнічні та електричні рішення проходять фотофіксацію тоді, коли ще видно висоти, доступ і суміщення між етапами.
+        en:
+          title: Concealed work is documented before closure
+          text: Plumbing and electrical decisions are recorded while heights, service access, and cross-trade alignment are still visible.
+      - key: finishing
+        type: finishing
+        uk:
+          title: Фініш показує наслідок правильної координації
+          text: Готовий простір виглядає спокійно не випадково. Він читається як результат того, що світло, сантехніка і чистовий шар були погоджені ще раніше.
+        en:
+          title: The finished space shows the result of earlier coordination
+          text: The calm final space is not accidental. It reads as the result of lighting, plumbing, and finish work being aligned earlier in the route.
+  wet-zone-control:
+    status: publishable
+    route:
+      uk: /projects/wet-zone-control/
+      en: /en/projects/wet-zone-control/
+    translation_key: wet-zone-control
+    image: /assets/images/work/plumbing-bath-installation.webp
+    card_image: /assets/images/work/plumbing-glass-shower-detail.webp
+    related_services:
+      - plumbing
+      - finishing
+      - site-supervision
+    related_property_types:
+      - apartment-renovation
+      - house-renovation
+    proof_source:
+      type: photo-report
+      status: publishable
+      uk:
+        label: Фотофіксація контролю мокрої зони
+        note: Досьє тримається на проміжних і фінальних кадрах душової та ванної зони, де видно доступ, примикання і готовність до монтажу скла та обладнання.
+      en:
+        label: Photo record of wet-zone control
+        note: The dossier relies on mid-stage and finished shower and bathroom images where access, junctions, and readiness for glass and fixtures are visible.
+    buyer_relevance:
+      uk:
+        title: Чому це важливо покупцю мокрої зони
+        text: "Тут вирішується не естетика душової, а ризик прихованих вузлів: чи залишиться доступ, чи зійдуться плитка, скло, трап і арматура після монтажу."
+      en:
+        title: Why this matters to a wet-zone buyer concern
+        text: "This dossier is about more than bathroom aesthetics. It addresses the hidden-junction risk: whether access, tile, glass, drain logic, and fixtures still work after installation."
+    dossier:
+      uk:
+        eyebrow: Проєкт-доказ
+        title: Контроль мокрої зони до того, як облицювання сховає вузли
+        lead: "Кейc концентрується на тій частині ремонту, де помилка швидко стає дорогою: душова, трап, висоти виводів, доступ і передача зони у чистовий монтаж."
+        snapshot_title: Що тут доведено
+        snapshot_text: Сторінка показує не лише готову душову. Вона пояснює, які контрольні точки пройшли до скла, обладнання і фінішного використання.
+      en:
+        eyebrow: Project proof
+        title: Wet-zone control before cladding hides the junctions
+        lead: "This case focuses on the part of renovation where mistakes become expensive quickly: shower geometry, drain logic, outlet heights, service access, and the handoff into final installation."
+        snapshot_title: What this proves
+        snapshot_text: The page shows more than a finished shower. It explains which checkpoints were cleared before glass, fixtures, and daily use closed the zone.
+    summary:
+      uk: Пояснює, як мокра зона проходить маршрут від технічної підготовки до готового користування без втрати доступу до критичних вузлів.
+      en: Explains how a wet zone moves from technical preparation to daily-use readiness without losing access to critical junctions.
+    bridge:
+      uk:
+        title: Пов'язані досьє
+        text: Далі корисно подивитися загальний маршрут квартири та досьє по контрольованій здачі, щоб побачити, як мокра зона вбудовується у весь об'єкт.
+      en:
+        title: Related dossiers
+        text: Next, compare the broader apartment route and the controlled handover dossier to see how this wet zone fits into the full property path.
+    gallery:
+      - image: /assets/images/work/plumbing-shower-mixer-prep.webp
+        uk:
+          alt: Підготовка душового змішувача і прихованих виводів
+          caption: Ранній технічний стан потрібен, щоб чесно показати перевірку висот і осей before finishing, а не вигадувати відсутній стартовий кадр.
+        en:
+          alt: Shower mixer preparation and concealed outlets
+          caption: This technical state is used to honestly show the before finishing checkpoint instead of inventing a missing starting photo.
+      - image: /assets/images/work/plumbing-shower-tray-tile.webp
+        uk:
+          alt: Душова зона під час облицювання і підготовки до скла
+          caption: Етап during concealed work показує ухили, примикання та готовність зони до наступного шару без втрати логіки сервісу.
+        en:
+          alt: Shower zone during tiling and preparation for glass
+          caption: The during concealed work stage shows slopes, junctions, and readiness for the next layer without losing service logic.
+      - image: /assets/images/work/plumbing-glass-shower-detail.webp
+        uk:
+          alt: Готова душова кабіна після контрольованого монтажу
+          caption: Після контрольованого монтажу видно спокійний результат, який тримається на попередніх рішеннях по доступу і геометрії.
+        en:
+          alt: Finished shower enclosure after controlled installation
+          caption: The calm finished result depends on the earlier decisions about access and geometry rather than on cosmetics alone.
+    stages:
+      - key: audit
+        type: audit
+        uk:
+          title: До облицювання фіксують логіку доступу
+          text: На першому контрольному етапі узгоджують трап, змішувач, осі приладів і примикання, бо ці рішення не можна відкладати до кінця.
+        en:
+          title: Access logic is fixed before cladding starts
+          text: The first checkpoint aligns the drain, mixer, fixture axes, and junctions because these decisions cannot be postponed to the end.
+      - key: engineering
+        type: engineering
+        uk:
+          title: Приховані вузли проходять перевірку у відкритому стані
+          text: Поки зона не закрита, видно ухили, ревізії та сумісність з майбутнім склом і облицюванням.
+        en:
+          title: Concealed junctions are checked while the zone is still open
+          text: Before the zone is closed, slopes, access points, and compatibility with future glass and cladding can still be verified.
+      - key: finishing
+        type: finishing
+        uk:
+          title: Фінішний вигляд підтверджує технічну дисципліну
+          text: Готова душова не маскує помилки, а підтверджує, що сервіс, геометрія і чистовий монтаж були зібрані в один керований сценарій.
+        en:
+          title: The finished look confirms the technical discipline
+          text: The completed shower does not hide mistakes. It confirms that service access, geometry, and finish installation were assembled into one controlled route.
+  controlled-handover:
+    status: publishable
+    route:
+      uk: /projects/controlled-handover/
+      en: /en/projects/controlled-handover/
+    translation_key: controlled-handover
+    image: /assets/images/work/procurement-living-fit.webp
+    card_image: /assets/images/work/finishing-hallway.webp
+    related_services:
+      - site-supervision
+      - procurement
+      - finishing
+      - electrical
+    related_property_types:
+      - apartment-renovation
+      - house-renovation
+    proof_source:
+      type: site-audit
+      status: publishable
+      uk:
+        label: Публічне досьє по контрольованій здачі
+        note: Кейс зібраний із готових і передфінальних кадрів, де видно не тільки декоративний результат, а й читабельну готовність кімнат, меблів і світла до передачі.
+      en:
+        label: Publishable dossier about controlled handover
+        note: The case uses final and pre-final images that show not only decoration but also readable room, furniture, and lighting readiness for handoff.
+    buyer_relevance:
+      uk:
+        title: Чому це важливо покупцю перед здачею
+        text: "Найбільший страх перед фінішем не в тому, чи гарно виглядатиме інтер'єр, а чи буде здача керованою: без хаотичних доробок, втрати комплектуючих і конфліктів між суміжними бригадами."
+      en:
+        title: Why this matters to a buyer nearing handover
+        text: The biggest fear near completion is not just whether the interior looks good. It is whether handover stays controlled instead of collapsing into chaotic fixes, missing items, and cross-trade conflict.
+    dossier:
+      uk:
+        eyebrow: Проєкт-доказ
+        title: Контрольована здача, де готовність читається до передачі ключів
+        lead: "Це досьє потрібне тим, хто хоче побачити не символічний фінал, а дисципліну перед здачею: чи зійшлися комплектація, світло, оздоблення і приймання по зонах."
+        snapshot_title: Що тут доведено
+        snapshot_text: Сторінка пояснює, як фінальні кімнати і коридори переходять у здачу через перевірені точки готовності, а не через нервовий останній тиждень.
+      en:
+        eyebrow: Project proof
+        title: Controlled handover where readiness is readable before key transfer
+        lead: This dossier is for buyers who want to see more than symbolic completion. It shows whether procurement, lighting, finishing, and acceptance were brought together before handover.
+        snapshot_title: What this proves
+        snapshot_text: The page explains how final rooms and circulation areas move into handover through checked readiness points instead of a frantic final week.
+    summary:
+      uk: Показує, як фінальні поставки, оздоблення і контроль готовності сходяться у зрозумілу здачу об'єкта.
+      en: Shows how final deliveries, finishing, and readiness control converge into a readable handover.
+    bridge:
+      uk:
+        title: Пов'язані досьє
+        text: Для повної картини порівняйте цей маршрут із квартирним системним кейсом і окремим контролем мокрої зони, які підводять до такої здачі.
+      en:
+        title: Related dossiers
+        text: For the full picture, compare this handover route with the apartment-system case and the dedicated wet-zone control dossier that feed into it.
+    gallery:
+      - image: /assets/images/work/procurement-living-sockets-ready.webp
+        uk:
+          alt: Кімната на передфінальному етапі з готовими точками під обладнання
+          caption: "Це етап before controlled handover: кімната вже читається, але ще можна перевірити комплектуючі, точки і готовність без косметичного туману."
+        en:
+          alt: Room at the pre-handover stage with prepared equipment points
+          caption: This is the before controlled handover stage. The room is readable, yet fixtures, points, and readiness can still be checked without cosmetic fog.
+      - image: /assets/images/work/procurement-living-fit.webp
+        uk:
+          alt: Житлова зона під час узгодження комплектації і світла
+          caption: Під час фінального складання видно, як меблі, підсвітка і чистовий шар збираються без конфлікту між етапами.
+        en:
+          alt: Living zone during procurement and lighting coordination
+          caption: During final assembly, furniture, lighting, and finishing are shown converging without cross-stage conflict.
+      - image: /assets/images/work/finishing-hallway.webp
+        uk:
+          alt: Готовий коридор після контрольованої здачі
+          caption: Після здачі простір читається спокійно саме тому, що статус готовності був зрозумілий ще до передачі.
+        en:
+          alt: Finished hallway after controlled handover
+          caption: After handover, the calm result makes sense because readiness status was already clear before the transfer.
+    stages:
+      - key: audit
+        type: audit
+        uk:
+          title: До фінішу визначають критерії готовності
+          text: Ще до останнього шару фіксують, що саме означає готовність по кімнатах, світлу, меблях і суміжних роботах.
+        en:
+          title: Readiness criteria are fixed before the final layer
+          text: Before the last layer goes in, the team defines what readiness means across rooms, lighting, furniture, and adjacent work.
+      - key: finishing
+        type: finishing
+        uk:
+          title: Фінальні етапи збирають без хаотичних доробок
+          text: Оздоблення, комплектація і електрика зводяться за статусом готовності, а не за останніми вікнами у графіку.
+        en:
+          title: Final stages are assembled without chaotic fixes
+          text: Finishing, procurement, and electrical work are aligned according to readiness status instead of opportunistic late schedule gaps.
+      - key: handover
+        type: handover
+        uk:
+          title: Здача читається як контроль, а не як рятувальна операція
+          text: Передача об'єкта показує, що перевірка по зонах, приймання і фінальна картинка працюють як одна дисципліна.
+        en:
+          title: Handover reads as control, not as rescue work
+          text: The property transfer shows that zone checks, acceptance, and the final visual result operate as one discipline.
