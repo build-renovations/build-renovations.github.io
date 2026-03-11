@@ -248,30 +248,14 @@ objection_cards:
     eyebrow: Заперечення по процесу
     title: Покупець оцінює процес через ризики грошей, зупинок і втрати керування
     intro: Ці питання мають бути видимими на сторінці процесу, бо саме тут формується довіра до логіки ведення об'єкта.
-    cards:
-    - key: process-budget
-      title: Чи не приховує процес майбутні доплати?
-      text: Процес не маскує невизначеність. Він показує, де рішення потрібно прийняти раніше, щоб не переносити ризик у фінішний шар.
-    - key: process-delays
-      title: Що не дає об'єкту зупинятися між етапами?
-      text: Зупинки найчастіше виникають через розрив між рішеннями, поставками і суміжними роботами. Процес зводить це в одну систему контрольних точок.
-    - key: process-control
-      title: Як клієнт розуміє, що об'єкт дійсно під контролем?
-      text: Не за словами, а через фотофіксацію, пояснення статусу і видимий маршрут переходу між етапами.
   en:
     eyebrow: Process objections
     title: Buyers judge the process through money risk, delays, and loss of control
     intro: These questions need to stay visible on the process page because this is where trust in delivery logic is formed.
-    cards:
-    - key: process-budget
-      title: Does the process hide future add-ons?
-      text: The process should not hide uncertainty. It should show where decisions need to happen earlier so the risk does not move into the finish layer.
-    - key: process-delays
-      title: What keeps the property from stalling between stages?
-      text: Stalls usually come from gaps between decisions, deliveries, and adjacent work. The process turns those into one control-point system.
-    - key: process-control
-      title: How does the buyer know the property is really controlled?
-      text: Not through slogans, but through photo reporting, readable status notes, and a visible route between stages.
+objection_refs:
+- budget-surprises
+- stage-sequence
+- quality-control
 commercial_clarity:
   uk:
     eyebrow: Комерційна ясність
@@ -409,5 +393,7 @@ risk_band:
       text: When there is no single decision route, every stage explains the problem through the previous contractor and the buyer pays for the gap.
 faq_refs:
 - project-start
-- materials
+- material-readiness
+- budget-surprises
+- handover-readiness
 - quality-control

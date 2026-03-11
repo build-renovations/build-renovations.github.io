@@ -63,6 +63,10 @@ items:
         - key: apartment-sequence
           title: Хто тримає послідовність між майстрами?
           text: Сенс формату в тому, що клієнт бачить не окремих виконавців, а один маршрут рішень між етапами.
+      objection_refs:
+      - budget-surprises
+      - stage-sequence
+      - communication-visibility
       coordination_notes:
         title: Що потрібно координувати без затримок
         items:
@@ -136,6 +140,10 @@ items:
         - key: apartment-sequence
           title: Who keeps the crews in sequence?
           text: The whole point of the format is that the buyer sees one route of decisions between stages, not disconnected contractors.
+      objection_refs:
+      - budget-surprises
+      - stage-sequence
+      - communication-visibility
       coordination_notes:
         title: What must stay coordinated without delay
         items:
@@ -215,6 +223,10 @@ items:
         - key: house-handover
           title: Як зрозуміти, що будинок дійсно готовий?
           text: Потрібна зрозуміла рамка перевірки вузлів і переходу до експлуатації, а не лише гарні фото готового інтер'єру.
+      objection_refs:
+      - budget-surprises
+      - material-readiness
+      - handover-readiness
       coordination_notes:
         title: Координаційні вузли, які не можна залишати «на потім»
         items:
@@ -288,6 +300,10 @@ items:
         - key: house-handover
           title: How do you know the house is really ready?
           text: There has to be a visible framework for checking junctions and moving into use, not just attractive final photos.
+      objection_refs:
+      - budget-surprises
+      - material-readiness
+      - handover-readiness
       coordination_notes:
         title: Coordination points that cannot be left for later
         items:
@@ -381,6 +397,10 @@ items:
         - key: plumbing-coordination
           title: Хто узгоджує сантехніку з чистовими роботами?
           text: Потрібен один маршрут рішень між сантехнікою, плиткою, меблями і монтажем обладнання.
+      objection_refs:
+      - quality-control
+      - stage-sequence
+      - handover-readiness
       coordination_notes:
         title: Без чого сантехніка не буде контрольованою
         items:
@@ -468,6 +488,10 @@ items:
         - key: plumbing-coordination
           title: Who coordinates plumbing with finishing?
           text: There has to be one route of decisions between plumbing, tile, furniture, and fixture installation.
+      objection_refs:
+      - quality-control
+      - stage-sequence
+      - handover-readiness
       coordination_notes:
         title: What plumbing cannot stay controlled without
         items:
@@ -561,6 +585,10 @@ items:
         - key: electrical-rework
           title: Хто не дасть фінішу виправляти чорновий етап?
           text: На сторінці має бути видно, як точки перевіряються до того, як їх закриють стелі, меблі й оздоблення.
+      objection_refs:
+      - quality-control
+      - stage-sequence
+      - communication-visibility
       coordination_notes:
         title: Що потрібно зв'язати між собою до фінішу
         items:
@@ -648,6 +676,10 @@ items:
         - key: electrical-rework
           title: Who keeps the finish phase from repairing the rough stage?
           text: The page should show how points are checked before ceilings, furniture, and finishes close them.
+      objection_refs:
+      - quality-control
+      - stage-sequence
+      - communication-visibility
       coordination_notes:
         title: What needs to stay connected before finishing
         items:
