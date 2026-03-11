@@ -79,6 +79,15 @@ items:
           text: Матеріали, меблі та вбудовані елементи підтягуються до графіка готовності зон, а не замовляються навмання.
         - title: Здача
           text: Фінал означає перевірений маршрут, а не просто приємну картинку без пояснення, що саме готове до використання.
+      sequence_signals:
+        title: Які рішення по квартирі не можна відкладати до кінця
+        items:
+        - title: До старту чорнових та інженерних етапів
+          text: Потрібно зафіксувати мокрі зони, меблеві прив'язки і критичні обмеження простору, які впливають на весь маршрут.
+        - title: До чистового шару
+          text: Електрика, сантехніка, стелі й комплектація мають бути погоджені так, щоб не виправляти одне одного після монтажу.
+        - title: Перед здачею квартири
+          text: Клієнт має бачити, які зони реально готові до користування, а які рішення були перевірені до фінального запуску.
       faq_refs:
       - project-start
       - single-stage
@@ -143,6 +152,15 @@ items:
           text: Materials, furniture, and built-ins need to follow zone readiness instead of being ordered as a separate shopping stream.
         - title: Handover
           text: The finish means a checked route, not only a pleasing visual surface with no explanation of what is truly ready.
+      sequence_signals:
+        title: Which apartment decisions cannot slide to the end
+        items:
+        - title: Before rough and engineering stages begin
+          text: Wet zones, furniture coordinates, and the critical space limits need to be fixed because they affect the whole route.
+        - title: Before finishing starts
+          text: Electrical work, plumbing, ceilings, and procurement need alignment so they do not repair one another during installation.
+        - title: Before apartment handover
+          text: The buyer should be able to see which zones are truly ready for use and which decisions were checked before final launch.
       faq_refs:
       - project-start
       - single-stage
@@ -213,6 +231,15 @@ items:
           text: Будинок вимагає зв'язати постачання з доступністю кімнат і технічних зон, а не лише з бажаними датами.
         - title: Передача
           text: Здача має пояснювати, що вже перевірено по всьому маршруту будинку, а не лише по видимих фінішних поверхнях.
+      sequence_signals:
+        title: Які рішення по будинку не можна переносити занадто пізно
+        items:
+        - title: До запуску зон
+          text: Треба визначити, які поверхи, кімнати і технічні ділянки відкриваються першими та що блокує решту маршруту.
+        - title: До хвиль поставок і монтажу
+          text: Інженерія, оздоблення, меблі й логістика мають бути синхронізовані з реальною готовністю зон, а не з бажаними датами.
+        - title: Перед передачею будинку
+          text: Клієнт має розуміти, які вузли прийняті по всьому об'єкту і що саме вважається готовим до нормального користування.
       faq_refs:
       - materials
       - quality-control
@@ -277,6 +304,15 @@ items:
           text: A house requires deliveries to follow room and technical-zone readiness instead of preferred target dates alone.
         - title: Handover
           text: Completion should explain what was checked across the whole house route, not only on visible finish surfaces.
+      sequence_signals:
+        title: Which house decisions cannot be pushed too late
+        items:
+        - title: Before zones launch
+          text: The project needs to define which floors, rooms, and technical areas open first and what blocks the rest of the route.
+        - title: Before delivery and installation waves
+          text: Engineering work, finishing, furniture, and logistics must stay synchronized with actual zone readiness instead of preferred dates.
+        - title: Before house handover
+          text: The buyer should understand which junctions were accepted across the property and what is truly ready for normal use.
       faq_refs:
       - materials
       - quality-control
