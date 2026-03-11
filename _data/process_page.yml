@@ -1,186 +1,315 @@
+---
+required_locales:
+- uk
+- en
 metrics:
   uk:
-    - eyebrow: "Фотофіксація"
-      value: "кожної критичної стадії"
-      label: "Результат видно не після завершення, а під час руху об'єкта."
-      note: "Клієнт розуміє, що саме вже перевірено і що ще попереду."
-    - eyebrow: "Контрольні точки"
-      value: "до закриття вузлів"
-      label: "Суміжні роботи стикуються до того, як помилка сховається під оздобленням."
-      note: "Менше дорогих переробок і менше конфліктів між бригадами."
-    - eyebrow: "Маршрут рішень"
-      value: "один відповідальний"
-      label: "Послідовність етапів і комунікація не розсипаються між окремими підрядниками."
-      note: "Процес читається як система, а не як набір випадкових дій."
+  - eyebrow: Фотофіксація
+    value: кожної критичної стадії
+    label: Результат видно не після завершення, а під час руху об'єкта.
+    note: Клієнт розуміє, що саме вже перевірено і що ще попереду.
+  - eyebrow: Контрольні точки
+    value: до закриття вузлів
+    label: Суміжні роботи стикуються до того, як помилка сховається під оздобленням.
+    note: Менше дорогих переробок і менше конфліктів між бригадами.
+  - eyebrow: Маршрут рішень
+    value: один відповідальний
+    label: Послідовність етапів і комунікація не розсипаються між окремими підрядниками.
+    note: Процес читається як система, а не як набір випадкових дій.
   en:
-    - eyebrow: "Photo reporting"
-      value: "for each critical stage"
-      label: "The result is visible while the property moves forward, not only at the end."
-      note: "The buyer can see what was already checked and what comes next."
-    - eyebrow: "Control points"
-      value: "before junctions are closed"
-      label: "Cross-trade work is checked before a mistake disappears behind finishing."
-      note: "That means fewer expensive reworks and fewer trade conflicts."
-    - eyebrow: "Decision route"
-      value: "one accountable lead"
-      label: "Stage order and communication do not scatter across separate contractors."
-      note: "The process reads like a system instead of a pile of disconnected actions."
+  - eyebrow: Photo reporting
+    value: for each critical stage
+    label: The result is visible while the property moves forward, not only at the end.
+    note: The buyer can see what was already checked and what comes next.
+  - eyebrow: Control points
+    value: before junctions are closed
+    label: Cross-trade work is checked before a mistake disappears behind finishing.
+    note: That means fewer expensive reworks and fewer trade conflicts.
+  - eyebrow: Decision route
+    value: one accountable lead
+    label: Stage order and communication do not scatter across separate contractors.
+    note: The process reads like a system instead of a pile of disconnected actions.
 proof:
   uk:
-    eyebrow: "Що отримує клієнт"
-    title: "Процес існує, щоб зменшити хаос і зробити рішення передбачуваними"
-    text: "Коли сантехніка, електрика, чорнові й чистові етапи працюють окремо, клієнт платить за розриви між ними. Ми будуємо процес так, щоб кожен наступний крок спирався на вже перевірену основу."
-    quote: "Довіра народжується тоді, коли на кожному етапі зрозуміло, хто приймає рішення, що саме перевірено і чому можна рухатись далі."
-    signature: "Принцип ведення об'єкта"
+    eyebrow: Що отримує клієнт
+    title: Процес існує, щоб зменшити хаос і зробити рішення передбачуваними
+    text: Коли сантехніка, електрика, чорнові й чистові етапи працюють окремо, клієнт платить за розриви між ними. Ми будуємо процес так, щоб кожен наступний крок спирався на вже перевірену основу.
+    quote: Довіра народжується тоді, коли на кожному етапі зрозуміло, хто приймає рішення, що саме перевірено і чому можна рухатись далі.
+    signature: Принцип ведення об'єкта
   en:
-    eyebrow: "What the buyer gets"
-    title: "The process exists to reduce chaos and make decisions predictable"
-    text: "When plumbing, electrical, structural preparation, and finishing run separately, the buyer ends up paying for the gaps between them. The process is built so every next step rests on an already checked base."
-    quote: "Trust appears when each stage makes it clear who decides, what was checked, and why the project can safely move forward."
-    signature: "Project-control principle"
+    eyebrow: What the buyer gets
+    title: The process exists to reduce chaos and make decisions predictable
+    text: When plumbing, electrical, structural preparation, and finishing run separately, the buyer ends up paying for the gaps between them. The process is built so every next step rests on an already checked base.
+    quote: Trust appears when each stage makes it clear who decides, what was checked, and why the project can safely move forward.
+    signature: Project-control principle
 accountability:
   uk:
-    eyebrow: "Хто тримає маршрут"
-    title: "Процес має показувати не лише етапи, а й дисципліну переходу між ними"
-    text: "Для сторінки процесу важливо не просто описати послідовність, а пояснити, хто збирає вузли в робочу систему."
+    eyebrow: Хто тримає маршрут
+    title: Процес має показувати не лише етапи, а й дисципліну переходу між ними
+    text: Для сторінки процесу важливо не просто описати послідовність, а пояснити, хто збирає вузли в робочу систему.
     items:
-      - "Аудит і рішення по зонах збираються до закупівель та старту бригад."
-      - "Кожна стадія має контрольну точку перед тим, як її закриє наступний етап."
-      - "Фотофіксація і пояснення статусу потрібні, щоб клієнт бачив логіку руху об'єкта."
+    - Аудит і рішення по зонах збираються до закупівель та старту бригад.
+    - Кожна стадія має контрольну точку перед тим, як її закриє наступний етап.
+    - Фотофіксація і пояснення статусу потрібні, щоб клієнт бачив логіку руху об'єкта.
   en:
-    eyebrow: "Who holds the route together"
-    title: "The process should show not only stages, but discipline at the handoff between them"
-    text: "On the process page, the point is not just sequencing. It is showing who turns the junctions into one operating system."
+    eyebrow: Who holds the route together
+    title: The process should show not only stages, but discipline at the handoff between them
+    text: On the process page, the point is not just sequencing. It is showing who turns the junctions into one operating system.
     items:
-      - "Audit findings and zone decisions are assembled before procurement and crew starts."
-      - "Each stage has a control point before the next layer closes it."
-      - "Photo reporting and status notes make the project logic visible to the buyer."
+    - Audit findings and zone decisions are assembled before procurement and crew starts.
+    - Each stage has a control point before the next layer closes it.
+    - Photo reporting and status notes make the project logic visible to the buyer.
 proof_module:
   uk:
-    eyebrow: "Який доказ доречний саме тут"
-    title: "Для сторінки процесу доказ має підтверджувати контроль переходів, а не просто красивий фінал"
-    text: "Тут доречні матеріали, які показують маршрут рішень до старту, перевірку прихованих вузлів і контроль перед здачею."
+    eyebrow: Який доказ доречний саме тут
+    title: Для сторінки процесу доказ має підтверджувати контроль переходів, а не просто красивий фінал
+    text: Тут доречні матеріали, які показують маршрут рішень до старту, перевірку прихованих вузлів і контроль перед здачею.
     item_keys:
-      - routing-audit
-      - hidden-junction-control
-      - handover-checklist
+    - routing-audit
+    - hidden-junction-control
+    - handover-checklist
   en:
-    eyebrow: "What proof matters on this page"
-    title: "On the process page, proof should confirm stage control, not just a polished finish"
-    text: "Relevant proof here shows the decision route before start, concealed-junction checks, and control before handover."
+    eyebrow: What proof matters on this page
+    title: On the process page, proof should confirm stage control, not just a polished finish
+    text: Relevant proof here shows the decision route before start, concealed-junction checks, and control before handover.
     item_keys:
-      - routing-audit
-      - hidden-junction-control
-      - handover-checklist
+    - routing-audit
+    - hidden-junction-control
+    - handover-checklist
+planning:
+  uk:
+    eyebrow: Планування до старту
+    title: Процес має пояснювати порядок рішень ще до першого активного монтажу
+    text: 'Покупцю важливо розуміти не тільки етапи на майданчику, а й логіку рішень до старту: що треба визначити по зонах, які вузли блокують далі і як команда не допускає хаотичного старту.'
+    items:
+    - title: Початковий аудит
+      text: Фіксуються реальний стан об'єкта, технічні обмеження і точки, що впливають на черговість етапів.
+    - title: Порядок рішень
+      text: Матеріали, інженерія, меблі й готовність зон зводяться в зрозумілий маршрут без суперечностей між бригадами.
+    - title: Контрольні точки
+      text: Ще до старту визначається, де саме проєкт зупиняється на перевірку перед переходом до наступного шару.
+  en:
+    eyebrow: Planning before start
+    title: The process should explain the order of decisions before active installation begins
+    text: 'A buyer needs to understand not only the site stages, but also the decision logic before start: what must be defined by zone, which junctions block the rest, and how the team prevents chaotic launch conditions.'
+    items:
+    - title: Initial audit
+      text: The real site condition, technical limits, and the points that affect stage order are recorded first.
+    - title: Decision order
+      text: Materials, engineering work, furniture, and zone readiness are assembled into one readable route instead of trade-by-trade contradiction.
+    - title: Control points
+      text: Before work starts, the team defines where the project pauses for checks before the next layer moves in.
+procurement:
+  uk:
+    eyebrow: Комплектація без хаосу
+    title: Закупівлі мають підсилювати графік, а не ламати його
+    text: 'Публічна мова про комплектацію потрібна не для демонстрації операційної складності. Вона потрібна, щоб покупець бачив: матеріали, вбудовані рішення і поставки рухаються за логікою готовності зон.'
+    items:
+    - title: Матеріали не живуть окремо
+      text: Рішення по плитці, світлу, меблях і сантехнічному обладнанню прив'язуються до етапів і вузлів, а не замовляються окремою хвилею.
+    - title: Зони запускаються вчасно
+      text: Закупівлі орієнтуються на фактичну готовність кімнат, щоб об'єкт не перетворювався на склад і джерело переробок.
+    - title: Покупець розуміє свій внесок
+      text: Клієнт бачить, які рішення треба підтвердити вчасно, щоб не гальмувати наступні етапи.
+  en:
+    eyebrow: Procurement without chaos
+    title: Purchasing decisions should support the schedule instead of breaking it
+    text: Public-facing procurement language does not need to read like an operations memo. It needs to show that materials, built-ins, and deliveries follow actual zone readiness and project logic.
+    items:
+    - title: Materials do not live separately
+      text: Tile, lighting, furniture, and plumbing-equipment decisions are tied to stages and junctions instead of becoming a disconnected shopping stream.
+    - title: Zones open on time
+      text: Purchases follow actual room readiness so the property does not become a warehouse or a rework trigger.
+    - title: The buyer sees their role
+      text: The client can see which confirmations need to happen on time to avoid slowing the next stage.
+handoff:
+  uk:
+    eyebrow: Що означає здача
+    title: Передача об'єкта має пояснювати готовність до користування, а не лише естетику
+    text: 'Хороша сторінка процесу показує, як команда переходить від виконання до передачі: які вузли перевіряються, що вважається готовим, і чому клієнт отримує робочий простір, а не просто фотофініш.'
+    items:
+    - title: Перевірка деталей
+      text: Передача включає контроль примикань, чистоти завершення і статусу критичних вузлів.
+    - title: Пояснення готовності
+      text: Клієнт розуміє, які зони повністю готові до користування і що було перевірено перед здачею.
+    - title: Менше післясмаку хаосу
+      text: Результат читається як завершена система, а не як красивий фінал із прихованими хвостами.
+  en:
+    eyebrow: What handoff means
+    title: Property handoff should explain readiness for use, not only visual polish
+    text: 'A strong process page shows how the team moves from execution to handoff: which junctions are checked, what counts as ready, and why the buyer receives a workable space instead of a photo finish.'
+    items:
+    - title: Detail checks
+      text: Handover includes interfaces, finish discipline, and the status of critical junctions.
+    - title: Readable readiness
+      text: The buyer can see which zones are ready for normal use and what was verified before handoff.
+    - title: Less post-project chaos
+      text: The result reads as a finished system instead of a beautiful ending with hidden leftovers.
+objection_cards:
+  uk:
+    eyebrow: Заперечення по процесу
+    title: Покупець оцінює процес через ризики грошей, зупинок і втрати керування
+    intro: Ці питання мають бути видимими на сторінці процесу, бо саме тут формується довіра до логіки ведення об'єкта.
+    cards:
+    - key: process-budget
+      title: Чи не приховує процес майбутні доплати?
+      text: Процес не маскує невизначеність. Він показує, де рішення потрібно прийняти раніше, щоб не переносити ризик у фінішний шар.
+    - key: process-delays
+      title: Що не дає об'єкту зупинятися між етапами?
+      text: Зупинки найчастіше виникають через розрив між рішеннями, поставками і суміжними роботами. Процес зводить це в одну систему контрольних точок.
+    - key: process-control
+      title: Як клієнт розуміє, що об'єкт дійсно під контролем?
+      text: Не за словами, а через фотофіксацію, пояснення статусу і видимий маршрут переходу між етапами.
+  en:
+    eyebrow: Process objections
+    title: Buyers judge the process through money risk, delays, and loss of control
+    intro: These questions need to stay visible on the process page because this is where trust in delivery logic is formed.
+    cards:
+    - key: process-budget
+      title: Does the process hide future add-ons?
+      text: The process should not hide uncertainty. It should show where decisions need to happen earlier so the risk does not move into the finish layer.
+    - key: process-delays
+      title: What keeps the property from stalling between stages?
+      text: Stalls usually come from gaps between decisions, deliveries, and adjacent work. The process turns those into one control-point system.
+    - key: process-control
+      title: How does the buyer know the property is really controlled?
+      text: Not through slogans, but through photo reporting, readable status notes, and a visible route between stages.
+commercial_clarity:
+  uk:
+    eyebrow: Комерційна ясність
+    title: Публічне пояснення процесу має спокійно розкривати планування, закупівлі й здачу
+    text: Цей блок не перетворює сторінку на операційний регламент. Він дає покупцю зрозуміти, де визначається рамка робіт, як рішення переходять у закупівлі і що означає контрольована передача об'єкта.
+    items:
+    - title: Планування
+      text: На старті фіксуються зони, черговість і критичні рішення, які не можна відкладати до середини ремонту.
+    - title: Закупівлі
+      text: Матеріали і вбудовані рішення не існують окремо від графіка готовності та суміжних етапів.
+    - title: Здача
+      text: Передача означає перевірену готовність до користування, а не просто формальне завершення робіт.
+  en:
+    eyebrow: Commercial clarity
+    title: The public process explanation should calmly cover planning, procurement, and handoff
+    text: This section does not turn the page into an operations manual. It helps the buyer understand where the work frame is defined, how decisions move into procurement, and what a controlled handoff means.
+    items:
+    - title: Planning
+      text: The project starts by fixing the zones, order, and critical decisions that cannot be delayed until mid-renovation.
+    - title: Procurement
+      text: Materials and built-in decisions do not live separately from readiness dates and adjacent stages.
+    - title: Handover
+      text: Completion means verified readiness for use, not only the formal end of active work.
 stages:
-  - key: audit
-    image: /assets/images/work/core-corridor-stage.webp
-    uk:
-      title: "01. Аудит об'єкта"
-      summary: "Починаємо з фактичного стану об'єкта, а не з абстрактної калькуляції."
-      detail: "Фіксуємо геометрію, технічні обмеження, стан інженерії, ризики по суміжних роботах і точки, які вплинуть на бюджет та послідовність етапів."
-      protection_label: "Що це захищає"
-      protection_text: "Запобігає помилковим оцінкам, прихованим ризикам і старту робіт у неправильній послідовності."
-      deliverables:
-        - "Картина поточного стану без прикрас"
-        - "Перелік ризиків, які не можна ігнорувати"
-        - "Розуміння, які етапи мають стартувати першими"
-    en:
-      title: "01. Site audit"
-      summary: "We start from the real condition of the property, not from an abstract estimate."
-      detail: "We document geometry, technical limits, current engineering condition, cross-trade risks, and the points that affect budget and stage order."
-      protection_label: "What this protects"
-      protection_text: "It prevents false estimates, hidden risks, and the wrong stages starting too early."
-      deliverables:
-        - "A realistic picture of the current condition"
-        - "A list of risks that cannot be ignored"
-        - "Clarity on which stages must start first"
-  - key: plan
-    image: /assets/images/work/electrical-ceiling-roughin.webp
-    uk:
-      title: "02. Проєктний план"
-      summary: "Після аудиту будуємо порядок робіт, а не просто список задач."
-      detail: "Узгоджуємо логіку етапів, матеріалів, поставок, доступу до зон і контрольних точок, щоб об'єкт не зупинявся через неузгоджені рішення."
-      protection_label: "Що це захищає"
-      protection_text: "Не дає об'єкту зупинятися через хаотичні закупівлі, неправильну черговість і розрив між суміжними роботами."
-      deliverables:
-        - "Черговість етапів і критичних вузлів"
-        - "Попередня рамка матеріалів і поставок"
-        - "Чіткі контрольні точки перед наступною стадією"
-    en:
-      title: "02. Delivery plan"
-      summary: "After the audit, we build the order of work, not just a task list."
-      detail: "We align stage logic, materials, deliveries, zone readiness, and control points so the property does not stall because of disconnected decisions."
-      protection_label: "What this protects"
-      protection_text: "It keeps the property from stalling because of chaotic procurement, wrong sequencing, and gaps between trades."
-      deliverables:
-        - "Order of stages and critical junctions"
-        - "An initial material and delivery frame"
-        - "Explicit control points before the next stage"
-  - key: execution
-    image: /assets/images/work/plumbing-bath-installation.webp
-    uk:
-      title: "03. Виконання і контроль"
-      summary: "На цьому етапі процес показує свою головну цінність: жоден вузол не залишається без перевірки."
-      detail: "Роботи ведуться з фотофіксацією, перевіркою стиків між етапами і контролем якості до того, як наступна бригада закриє попередню помилку оздобленням."
-      protection_label: "Що це захищає"
-      protection_text: "Дає змогу зловити помилки вчасно, поки їх ще можна виправити без дорогого демонтажу."
-      deliverables:
-        - "Фото та зрозумілий статус по етапах"
-        - "Контроль суміжних робіт до їх закриття"
-        - "Менше переробок і прихованих конфліктів"
-    en:
-      title: "03. Execution and control"
-      summary: "This is where the process proves its value: no junction is left unchecked."
-      detail: "Work moves forward with photo reporting, checks between stages, and quality control before the next crew hides an earlier mistake behind finishing."
-      protection_label: "What this protects"
-      protection_text: "It catches errors while they are still cheap to fix instead of discovering them after costly closure."
-      deliverables:
-        - "Photo-backed status across stages"
-        - "Cross-trade checks before closure"
-        - "Fewer reworks and hidden conflicts"
-  - key: handover
-    image: /assets/images/work/finishing-hallway.webp
-    uk:
-      title: "04. Завершення і здача"
-      summary: "Фініш — це не момент, коли все просто виглядає красиво, а коли об'єкт готовий до нормальної експлуатації."
-      detail: "Перед завершенням перевіряємо деталі, стики, готовність зон і загальну дисципліну результату, щоб клієнт отримав не лише картинку, а робочий простір."
-      protection_label: "Що це захищає"
-      protection_text: "Зменшує ризик того, що красивий фінал приховає технічні хвости, які проявляться вже після заселення."
-      deliverables:
-        - "Перевірені деталі перед здачею"
-        - "Завершений інтер'єр без технічних хвостів"
-        - "Об'єкт, готовий до користування"
-    en:
-      title: "04. Handover"
-      summary: "The finish is not the moment when things merely look attractive, but when the property is ready for normal use."
-      detail: "Before handover, we check details, junctions, room readiness, and the overall discipline of the result so the buyer receives a workable space, not just a visual impression."
-      protection_label: "What this protects"
-      protection_text: "It reduces the risk of a beautiful finish hiding technical leftovers that show up after move-in."
-      deliverables:
-        - "Checked details before handover"
-        - "A finished interior without technical leftovers"
-        - "A property ready for use"
+- key: audit
+  image: "/assets/images/work/core-corridor-stage.webp"
+  uk:
+    title: 01. Аудит об'єкта
+    summary: Починаємо з фактичного стану об'єкта, а не з абстрактної калькуляції.
+    detail: Фіксуємо геометрію, технічні обмеження, стан інженерії, ризики по суміжних роботах і точки, які вплинуть на бюджет та послідовність етапів.
+    protection_label: Що це захищає
+    protection_text: Запобігає помилковим оцінкам, прихованим ризикам і старту робіт у неправильній послідовності.
+    deliverables:
+    - Картина поточного стану без прикрас
+    - Перелік ризиків, які не можна ігнорувати
+    - Розуміння, які етапи мають стартувати першими
+  en:
+    title: 01. Site audit
+    summary: We start from the real condition of the property, not from an abstract estimate.
+    detail: We document geometry, technical limits, current engineering condition, cross-trade risks, and the points that affect budget and stage order.
+    protection_label: What this protects
+    protection_text: It prevents false estimates, hidden risks, and the wrong stages starting too early.
+    deliverables:
+    - A realistic picture of the current condition
+    - A list of risks that cannot be ignored
+    - Clarity on which stages must start first
+- key: plan
+  image: "/assets/images/work/electrical-ceiling-roughin.webp"
+  uk:
+    title: 02. Проєктний план
+    summary: Після аудиту будуємо порядок робіт, а не просто список задач.
+    detail: Узгоджуємо логіку етапів, матеріалів, поставок, доступу до зон і контрольних точок, щоб об'єкт не зупинявся через неузгоджені рішення.
+    protection_label: Що це захищає
+    protection_text: Не дає об'єкту зупинятися через хаотичні закупівлі, неправильну черговість і розрив між суміжними роботами.
+    deliverables:
+    - Черговість етапів і критичних вузлів
+    - Попередня рамка матеріалів і поставок
+    - Чіткі контрольні точки перед наступною стадією
+  en:
+    title: 02. Delivery plan
+    summary: After the audit, we build the order of work, not just a task list.
+    detail: We align stage logic, materials, deliveries, zone readiness, and control points so the property does not stall because of disconnected decisions.
+    protection_label: What this protects
+    protection_text: It keeps the property from stalling because of chaotic procurement, wrong sequencing, and gaps between trades.
+    deliverables:
+    - Order of stages and critical junctions
+    - An initial material and delivery frame
+    - Explicit control points before the next stage
+- key: execution
+  image: "/assets/images/work/plumbing-bath-installation.webp"
+  uk:
+    title: 03. Виконання і контроль
+    summary: 'На цьому етапі процес показує свою головну цінність: жоден вузол не залишається без перевірки.'
+    detail: Роботи ведуться з фотофіксацією, перевіркою стиків між етапами і контролем якості до того, як наступна бригада закриє попередню помилку оздобленням.
+    protection_label: Що це захищає
+    protection_text: Дає змогу зловити помилки вчасно, поки їх ще можна виправити без дорогого демонтажу.
+    deliverables:
+    - Фото та зрозумілий статус по етапах
+    - Контроль суміжних робіт до їх закриття
+    - Менше переробок і прихованих конфліктів
+  en:
+    title: 03. Execution and control
+    summary: 'This is where the process proves its value: no junction is left unchecked.'
+    detail: Work moves forward with photo reporting, checks between stages, and quality control before the next crew hides an earlier mistake behind finishing.
+    protection_label: What this protects
+    protection_text: It catches errors while they are still cheap to fix instead of discovering them after costly closure.
+    deliverables:
+    - Photo-backed status across stages
+    - Cross-trade checks before closure
+    - Fewer reworks and hidden conflicts
+- key: handover
+  image: "/assets/images/work/finishing-hallway.webp"
+  uk:
+    title: 04. Завершення і здача
+    summary: Фініш — це не момент, коли все просто виглядає красиво, а коли об'єкт готовий до нормальної експлуатації.
+    detail: Перед завершенням перевіряємо деталі, стики, готовність зон і загальну дисципліну результату, щоб клієнт отримав не лише картинку, а робочий простір.
+    protection_label: Що це захищає
+    protection_text: Зменшує ризик того, що красивий фінал приховає технічні хвости, які проявляться вже після заселення.
+    deliverables:
+    - Перевірені деталі перед здачею
+    - Завершений інтер'єр без технічних хвостів
+    - Об'єкт, готовий до користування
+  en:
+    title: 04. Handover
+    summary: The finish is not the moment when things merely look attractive, but when the property is ready for normal use.
+    detail: Before handover, we check details, junctions, room readiness, and the overall discipline of the result so the buyer receives a workable space, not just a visual impression.
+    protection_label: What this protects
+    protection_text: It reduces the risk of a beautiful finish hiding technical leftovers that show up after move-in.
+    deliverables:
+    - Checked details before handover
+    - A finished interior without technical leftovers
+    - A property ready for use
 risk_band:
   uk:
-    eyebrow: "Що процес запобігає"
-    title: "Без чіткого процесу ремонт найчастіше ламається саме на стиках між етапами"
-    text: "Найбільші втрати в ремонті виникають не через один поганий матеріал, а через те, що рішення, поставки й суміжні роботи не зводяться в одну логіку. Цей блок пояснює, які саме ризики ми прибираємо завдяки дисципліні процесу."
+    eyebrow: Що процес запобігає
+    title: Без чіткого процесу ремонт найчастіше ламається саме на стиках між етапами
+    text: Найбільші втрати в ремонті виникають не через один поганий матеріал, а через те, що рішення, поставки й суміжні роботи не зводяться в одну логіку. Цей блок пояснює, які саме ризики ми прибираємо завдяки дисципліні процесу.
     items:
-      - title: "Приховані переробки"
-        text: "Коли попередній вузол не перевірили вчасно, наступна стадія маскує проблему замість її вирішення."
-      - title: "Зупинки через матеріали"
-        text: "Без плану поставок об'єкт простоює, а бригади змушені працювати ривками й з компромісами."
-      - title: "Розрив між підрядниками"
-        text: "Коли немає одного маршруту рішень, кожен етап пояснює проблему попереднім, а платить за це клієнт."
+    - title: Приховані переробки
+      text: Коли попередній вузол не перевірили вчасно, наступна стадія маскує проблему замість її вирішення.
+    - title: Зупинки через матеріали
+      text: Без плану поставок об'єкт простоює, а бригади змушені працювати ривками й з компромісами.
+    - title: Розрив між підрядниками
+      text: Коли немає одного маршруту рішень, кожен етап пояснює проблему попереднім, а платить за це клієнт.
   en:
-    eyebrow: "What the process prevents"
-    title: "Without a clear process, renovation usually breaks down at the junctions between stages"
-    text: "The biggest losses in renovation rarely come from one bad material. They come from decisions, deliveries, and cross-trade work failing to align into one operating logic. This section explains which risks are removed through process discipline."
+    eyebrow: What the process prevents
+    title: Without a clear process, renovation usually breaks down at the junctions between stages
+    text: The biggest losses in renovation rarely come from one bad material. They come from decisions, deliveries, and cross-trade work failing to align into one operating logic. This section explains which risks are removed through process discipline.
     items:
-      - title: "Hidden rework"
-        text: "When an earlier junction is not checked in time, the next stage hides the issue instead of solving it."
-      - title: "Material-driven delays"
-        text: "Without a delivery plan, the property stalls and crews are pushed into fragmented work and compromise decisions."
-      - title: "Trade gaps"
-        text: "When there is no single decision route, every stage explains the problem through the previous contractor and the buyer pays for the gap."
+    - title: Hidden rework
+      text: When an earlier junction is not checked in time, the next stage hides the issue instead of solving it.
+    - title: Material-driven delays
+      text: Without a delivery plan, the property stalls and crews are pushed into fragmented work and compromise decisions.
+    - title: Trade gaps
+      text: When there is no single decision route, every stage explains the problem through the previous contractor and the buyer pays for the gap.
+faq_refs:
+- project-start
+- materials
+- quality-control
