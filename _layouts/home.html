@@ -146,6 +146,40 @@ layout: default
   </div>
 </section>
 
+{% assign apartment_service = site.data.service_pages.items['apartment-renovation'] %}
+{% assign apartment_content = apartment_service[page.lang] | default: apartment_service.uk %}
+{% assign house_service = site.data.service_pages.items['house-renovation'] %}
+{% assign house_content = house_service[page.lang] | default: house_service.uk %}
+<section class="section section--accent">
+  <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="home-route-bridge">
+    <div class="section-heading section-heading--wide">
+      <p class="eyebrow">{{ t.phase2_next_route_label }}</p>
+      <h2>{% if page.lang == 'en' %}Choose the deeper page by project format before you call{% else %}Виберіть глибшу сторінку за форматом проєкту ще до дзвінка{% endif %}</h2>
+      <p class="section-intro">{% if page.lang == 'en' %}The homepage stays concise, but it should still point visitors toward the route that answers their real scope and coordination questions.{% else %}Головна залишається лаконічною, але має направити відвідувача на маршрут, який відповідає на його реальні питання про обсяг робіт і координацію.{% endif %}</p>
+    </div>
+    <div class="service-grid">
+      <article class="service-card">
+        <p class="service-card__eyebrow">{{ t.process_label }}</p>
+        <h3>{% if page.lang == 'en' %}Read the full process before comparing stages one by one{% else %}Прочитайте повний процес, перш ніж порівнювати окремі етапи по одному{% endif %}</h3>
+        <p>{% if page.lang == 'en' %}This route explains planning, control points, procurement timing, and what handover actually means for a live project.{% else %}Цей маршрут пояснює планування, контрольні точки, ритм закупівель і те, що на практиці означає здача об'єкта.{% endif %}</p>
+        <a class="service-card__link" href="{% if page.lang == 'en' %}{{ '/en/process/' | relative_url }}{% else %}{{ '/process/' | relative_url }}{% endif %}">{{ t.phase2_process_route_label }}</a>
+      </article>
+      <article class="service-card">
+        <p class="service-card__eyebrow">{{ t.project_fit_label }}</p>
+        <h3>{{ apartment_content.title }}</h3>
+        <p>{{ apartment_content.summary }}</p>
+        <a class="service-card__link" href="{% if page.lang == 'en' %}{{ '/en/services/apartment-renovation/' | relative_url }}{% else %}{{ '/services/apartment-renovation/' | relative_url }}{% endif %}">{{ t.service_link_label }}</a>
+      </article>
+      <article class="service-card">
+        <p class="service-card__eyebrow">{{ t.project_fit_label }}</p>
+        <h3>{{ house_content.title }}</h3>
+        <p>{{ house_content.summary }}</p>
+        <a class="service-card__link" href="{% if page.lang == 'en' %}{{ '/en/services/house-renovation/' | relative_url }}{% else %}{{ '/services/house-renovation/' | relative_url }}{% endif %}">{{ t.service_link_label }}</a>
+      </article>
+    </div>
+  </div>
+</section>
+
 {% assign faq_groups = site.data.faqs.groups | default: empty %}
 {% if faq_groups != empty %}
 <section class="section section--accent">

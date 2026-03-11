@@ -8,9 +8,12 @@ layout: default
 {% assign risk = process.risk_band[page.lang] | default: process.risk_band.uk %}
 {% assign accountability = process.accountability[page.lang] | default: process.accountability.uk %}
 {% assign proof_module = process.proof_module[page.lang] | default: process.proof_module.uk %}
+{% assign coordination_logic = process.coordination_logic[page.lang] | default: process.coordination_logic.uk %}
 {% assign planning = process.planning[page.lang] | default: process.planning.uk %}
+{% assign readiness_checks = process.readiness_checks[page.lang] | default: process.readiness_checks.uk %}
 {% assign procurement = process.procurement[page.lang] | default: process.procurement.uk %}
 {% assign handoff = process.handoff[page.lang] | default: process.handoff.uk %}
+{% assign route_bridges = process.route_bridges[page.lang] | default: process.route_bridges.uk %}
 {% assign objection_cards = process.objection_cards[page.lang] | default: process.objection_cards.uk %}
 {% assign commercial_clarity = process.commercial_clarity[page.lang] | default: process.commercial_clarity.uk %}
 <section class="page-hero process-hero">
@@ -58,6 +61,26 @@ layout: default
 </section>
 
 <section class="section section--accent">
+  <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="process-coordination">
+    <div class="process-risk">
+      <div class="process-risk__copy">
+        <p class="eyebrow">{{ coordination_logic.eyebrow }}</p>
+        <h2>{{ coordination_logic.title }}</h2>
+        <p>{{ coordination_logic.text }}</p>
+      </div>
+      <div class="process-risk__list">
+        {% for item in coordination_logic.items %}
+          <article class="process-risk__item">
+            <strong>{{ item.title }}</strong>
+            <p>{{ item.text }}</p>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--accent">
   <div class="shell" data-phase2-marker="commercial-clarity" data-phase2-surface="process-commercial-clarity">
     <div class="process-risk">
       <div class="process-risk__copy">
@@ -91,6 +114,26 @@ layout: default
           <p>{{ card.text }}</p>
         </article>
       {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="process-readiness">
+    <div class="process-risk">
+      <div class="process-risk__copy">
+        <p class="eyebrow">{{ readiness_checks.eyebrow }}</p>
+        <h2>{{ readiness_checks.title }}</h2>
+        <p>{{ readiness_checks.text }}</p>
+      </div>
+      <div class="process-risk__list">
+        {% for item in readiness_checks.items %}
+          <article class="process-risk__item">
+            <strong>{{ item.title }}</strong>
+            <p>{{ item.text }}</p>
+          </article>
+        {% endfor %}
+      </div>
     </div>
   </div>
 </section>
@@ -161,6 +204,26 @@ layout: default
 <section class="section">
   <div class="shell" data-phase2-marker="fit-guidance" data-phase2-surface="process-fit-guidance">
     {% include project-fit.html lang=page.lang %}
+  </div>
+</section>
+
+<section class="section section--accent">
+  <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="process-route-bridges">
+    <div class="section-heading section-heading--wide">
+      <p class="eyebrow">{{ route_bridges.eyebrow }}</p>
+      <h2>{{ route_bridges.title }}</h2>
+      <p class="section-intro">{{ route_bridges.text }}</p>
+    </div>
+    <div class="service-grid">
+      {% for item in route_bridges.items %}
+        <article class="service-card">
+          <p class="service-card__eyebrow">{{ t.phase2_next_route_label }}</p>
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.text }}</p>
+          <a class="service-card__link" href="{{ item.url | relative_url }}">{{ t.service_link_label }}</a>
+        </article>
+      {% endfor %}
+    </div>
   </div>
 </section>
 

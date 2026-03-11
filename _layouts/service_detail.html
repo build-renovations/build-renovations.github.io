@@ -9,6 +9,7 @@ layout: default
 {% assign overview = content.overview %}
 {% assign outcomes = content.outcomes %}
 {% assign fit_boundaries = content.fit_boundaries %}
+{% assign sequence_signals = content.sequence_signals %}
 {% assign objection_cards = content.objection_cards %}
 {% assign coordination_notes = content.coordination_notes %}
 {% assign commercial_clarity = content.commercial_clarity %}
@@ -101,6 +102,27 @@ layout: default
 </section>
 {% endif %}
 
+{% if sequence_signals %}
+<section class="section">
+  <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="service-sequence">
+    <div class="process-risk">
+      <div class="process-risk__copy">
+        <p class="eyebrow">{{ t.phase2_sequence_label }}</p>
+        <h2>{{ sequence_signals.title }}</h2>
+      </div>
+      <div class="process-risk__list">
+        {% for item in sequence_signals.items %}
+          <article class="process-risk__item">
+            <strong>{{ item.title }}</strong>
+            <p>{{ item.text }}</p>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
 {% if objection_cards %}
 <section class="section section--accent">
   <div class="shell" data-phase2-marker="objection-handling" data-phase2-surface="service-objections">
@@ -164,18 +186,27 @@ layout: default
 </section>
 
 <section class="section">
-  <div class="shell">
+  <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="service-route-bridge">
     <div class="section-heading section-heading--wide">
-      <p class="eyebrow">{% if page.lang == 'en' %}Related work{% else %}Суміжні напрями{% endif %}</p>
-      <h2>{% if page.lang == 'en' %}This stage works best as part of a coordinated renovation route{% else %}Найкраще цей етап працює як частина узгодженого маршруту ремонту{% endif %}</h2>
+      <p class="eyebrow">{{ t.phase2_next_route_label }}</p>
+      <h2>{% if page.lang == 'en' %}Read the connected stages before you lock the final scope{% else %}Прочитайте пов'язані етапи до того, як фіксувати фінальний обсяг робіт{% endif %}</h2>
+      <p class="section-intro">{% if page.lang == 'en' %}A strong service page should clarify what needs to be aligned around this stage, not pretend the route ends here.{% else %}Сильна сторінка послуги має показати, що саме потрібно узгодити навколо цього етапу, а не робити вигляд, що маршрут закінчується тут.{% endif %}</p>
     </div>
     <div class="service-grid">
+      <article class="service-card">
+        <p class="service-card__eyebrow">{{ t.process_label }}</p>
+        <h3>{% if page.lang == 'en' %}See how this stage fits into the full delivery route{% else %}Подивіться, як цей етап вбудовується у повний маршрут проєкту{% endif %}</h3>
+        <p>{% if page.lang == 'en' %}The process page explains planning, control points, procurement logic, and readiness before the next handoff.{% else %}Сторінка процесу пояснює планування, контрольні точки, логіку закупівель і готовність перед наступним переходом.{% endif %}</p>
+        <a class="service-card__link" href="{% if page.lang == 'en' %}{{ '/en/process/' | relative_url }}{% else %}{{ '/process/' | relative_url }}{% endif %}">{{ t.phase2_process_route_label }}</a>
+      </article>
       {% for related_key in service.related %}
         {% assign related_service = site.data.service_pages.items[related_key] %}
         {% assign related_content = related_service[page.lang] | default: related_service.uk %}
         <article class="service-card">
+          <p class="service-card__eyebrow">{{ t.scope_label }}</p>
           <h3>{{ related_content.title }}</h3>
           <p>{{ related_content.summary }}</p>
+          <a class="service-card__link" href="{% if page.lang == 'en' %}{{ '/en/services/' | append: related_key | append: '/' | relative_url }}{% else %}{{ '/services/' | append: related_key | append: '/' | relative_url }}{% endif %}">{{ t.service_link_label }}</a>
         </article>
       {% endfor %}
     </div>

@@ -8,22 +8,22 @@ const repoRoot = process.cwd();
 const siteRoot = path.join(repoRoot, "_site");
 const requiredLocales = ["uk", "en"];
 const routeChecks = [
-  { route: "/", lang: "uk", markers: ["content-depth", "fit-guidance", "faq-group-visibility"], keepTrust: true, keepCall: true },
+  { route: "/", lang: "uk", markers: ["content-depth", "fit-guidance", "faq-group-visibility"], surfaces: ["home-service-teaser", "home-process-teaser", "home-route-bridge"], keepTrust: true, keepCall: true },
   { route: "/services/", lang: "uk", markers: ["content-depth", "fit-guidance", "faq-group-visibility"], keepTrust: true, keepCall: true },
-  { route: "/process/", lang: "uk", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], keepTrust: true, keepCall: true },
+  { route: "/process/", lang: "uk", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], surfaces: ["process-planning", "process-coordination", "process-readiness", "process-commercial-clarity", "process-objections", "process-procurement", "process-handoff", "process-route-bridges"], keepTrust: true, keepCall: true },
   { route: "/faq/", lang: "uk", markers: ["faq-group-visibility"], keepTrust: false, keepCall: false },
-  { route: "/services/plumbing/", lang: "uk", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], keepTrust: true, keepCall: true },
-  { route: "/services/electrical/", lang: "uk", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], keepTrust: true, keepCall: true },
-  { route: "/services/apartment-renovation/", lang: "uk", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], keepTrust: true, keepCall: true },
-  { route: "/services/house-renovation/", lang: "uk", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], keepTrust: true, keepCall: true },
-  { route: "/en/", lang: "en", markers: ["content-depth", "fit-guidance", "faq-group-visibility"], keepTrust: true, keepCall: true },
+  { route: "/services/plumbing/", lang: "uk", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], surfaces: ["service-depth", "service-sequence", "service-commercial-clarity", "service-route-bridge"], keepTrust: true, keepCall: true },
+  { route: "/services/electrical/", lang: "uk", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], surfaces: ["service-depth", "service-sequence", "service-commercial-clarity", "service-route-bridge"], keepTrust: true, keepCall: true },
+  { route: "/services/apartment-renovation/", lang: "uk", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], surfaces: ["service-depth", "service-sequence", "service-commercial-clarity", "service-route-bridge"], keepTrust: true, keepCall: true },
+  { route: "/services/house-renovation/", lang: "uk", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], surfaces: ["service-depth", "service-sequence", "service-commercial-clarity", "service-route-bridge"], keepTrust: true, keepCall: true },
+  { route: "/en/", lang: "en", markers: ["content-depth", "fit-guidance", "faq-group-visibility"], surfaces: ["home-service-teaser", "home-process-teaser", "home-route-bridge"], keepTrust: true, keepCall: true },
   { route: "/en/services/", lang: "en", markers: ["content-depth", "fit-guidance", "faq-group-visibility"], keepTrust: true, keepCall: true },
-  { route: "/en/process/", lang: "en", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], keepTrust: true, keepCall: true },
+  { route: "/en/process/", lang: "en", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], surfaces: ["process-planning", "process-coordination", "process-readiness", "process-commercial-clarity", "process-objections", "process-procurement", "process-handoff", "process-route-bridges"], keepTrust: true, keepCall: true },
   { route: "/en/faq/", lang: "en", markers: ["faq-group-visibility"], keepTrust: false, keepCall: false },
-  { route: "/en/services/plumbing/", lang: "en", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], keepTrust: true, keepCall: true },
-  { route: "/en/services/electrical/", lang: "en", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], keepTrust: true, keepCall: true },
-  { route: "/en/services/apartment-renovation/", lang: "en", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], keepTrust: true, keepCall: true },
-  { route: "/en/services/house-renovation/", lang: "en", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], keepTrust: true, keepCall: true }
+  { route: "/en/services/plumbing/", lang: "en", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], surfaces: ["service-depth", "service-sequence", "service-commercial-clarity", "service-route-bridge"], keepTrust: true, keepCall: true },
+  { route: "/en/services/electrical/", lang: "en", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], surfaces: ["service-depth", "service-sequence", "service-commercial-clarity", "service-route-bridge"], keepTrust: true, keepCall: true },
+  { route: "/en/services/apartment-renovation/", lang: "en", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], surfaces: ["service-depth", "service-sequence", "service-commercial-clarity", "service-route-bridge"], keepTrust: true, keepCall: true },
+  { route: "/en/services/house-renovation/", lang: "en", markers: ["content-depth", "objection-handling", "commercial-clarity", "fit-guidance", "faq-group-visibility"], surfaces: ["service-depth", "service-sequence", "service-commercial-clarity", "service-route-bridge"], keepTrust: true, keepCall: true }
 ];
 const metadataPairs = [
   ["/", "/en/"],
@@ -150,6 +150,14 @@ function ensureMarkers(route, html, markers) {
   }
 }
 
+function ensureSurfaces(route, html, surfaces = []) {
+  for (const surface of surfaces) {
+    if (!html.includes(`data-phase2-surface="${surface}"`)) {
+      fail(`${route} is missing the Phase 2 surface ${surface}`);
+    }
+  }
+}
+
 function ensurePhase1Surfaces(route, html, checkTrust, checkCall) {
   if (checkTrust && !html.includes("trust-strip")) {
     fail(`${route} lost the Phase 1 trust strip surface`);
@@ -244,6 +252,7 @@ for (const check of routeChecks) {
   const html = readRoute(check.route);
   ensureLanguageMetadata(check.route, html, check.lang);
   ensureMarkers(check.route, html, check.markers);
+  ensureSurfaces(check.route, html, check.surfaces);
   ensurePhase1Surfaces(check.route, html, check.keepTrust, check.keepCall);
 }
 
