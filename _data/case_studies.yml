@@ -13,6 +13,119 @@ schema:
     - engineering
     - finishing
     - handover
+featured_sets:
+  home:
+    refs:
+      - apartment-system-renovation
+      - controlled-handover
+    bridge:
+      uk:
+        title: Проєкти-докази, які найшвидше переводять довіру у предметний наступний крок
+        text: "Ці досьє показують те, що хвилює покупця вже на головній: як квартира або будинок проходять шлях від прихованих рішень до контрольованої здачі без демо-позначок."
+      en:
+        title: Project dossiers that turn trust into the next concrete step
+        text: "These dossiers answer the homepage question directly: how an apartment or house moves from hidden decisions to controlled handover without demo labeling."
+  process:
+    refs:
+      - compact-apartment-engineering
+      - house-stage-coordination
+      - controlled-handover
+    bridge:
+      uk:
+        title: Проєкти-докази, які показують процес у дії
+        text: Тут кейси потрібні як підтвердження маршрутів рішень, контрольних точок і готовності до здачі на реальних об'єктах.
+      en:
+        title: Project dossiers that show the process in action
+        text: These cases prove the process through real decision routes, control points, and handover readiness rather than abstract process language.
+route_groups:
+  apartment-renovation:
+    refs:
+      - apartment-system-renovation
+      - compact-apartment-engineering
+    bridge:
+      uk:
+        title: Які досьє найкраще пояснюють ризики квартири
+        text: Почніть із системного квартирного кейсу, а потім переходьте до щільної інженерії там, де головний ризик у прихованих вузлах, світлі й готовності до здачі.
+      en:
+        title: Which dossiers explain apartment risk most clearly
+        text: Start with the system-level apartment case, then move into the dense-engineering dossier when the real risk sits in hidden junctions, lighting, and handover readiness.
+  house-renovation:
+    refs:
+      - house-stage-coordination
+      - controlled-handover
+    bridge:
+      uk:
+        title: Які досьє найкраще пояснюють ризики будинку
+        text: Тут важливо побачити не лише масштаб, а й те, як зони, поставки й передача об'єкта тримаються в одному керованому маршруті.
+      en:
+        title: Which dossiers explain house risk most clearly
+        text: The useful proof here is not scale alone, but how zones, deliveries, and handover stay inside one controllable route.
+  plumbing:
+    refs:
+      - wet-zone-control
+      - compact-apartment-engineering
+    bridge:
+      uk:
+        title: Які досьє найкраще пояснюють ризики сантехніки
+        text: Ці кейси показують, як мокрі зони, приховані стики та суміжні рішення перевіряються до того, як облицювання сховає помилки.
+      en:
+        title: Which dossiers explain plumbing risk most clearly
+        text: These dossiers show how wet zones, concealed junctions, and adjacent decisions are checked before cladding hides mistakes.
+  electrical:
+    refs:
+      - compact-apartment-engineering
+      - apartment-system-renovation
+    bridge:
+      uk:
+        title: Які досьє найкраще пояснюють ризики електрики
+        text: Досьє тут мають показати, як точки, сценарії світла і готовність зон сходяться в один маршрут до закриття стель і меблів.
+      en:
+        title: Which dossiers explain electrical risk most clearly
+        text: The right dossiers here prove how points, lighting scenes, and zone readiness are aligned before ceilings and cabinetry close the work.
+  rough-works:
+    refs:
+      - compact-apartment-engineering
+      - house-stage-coordination
+    bridge:
+      uk:
+        title: Які досьє найкраще пояснюють ціну помилки на чорновому етапі
+        text: Вони показують, як база об'єкта перевіряється під інженерію, оздоблення і передачу, поки геометрію ще можна контролювати.
+      en:
+        title: Which dossiers explain the cost of rough-stage mistakes
+        text: They show how the base is checked for engineering, finishing, and handover while geometry is still controllable.
+  finishing:
+    refs:
+      - wet-zone-control
+      - controlled-handover
+    bridge:
+      uk:
+        title: Які досьє найкраще пояснюють ризики чистового етапу
+        text: Тут важливо бачити, як деталі, примикання і передздачний контроль зчитуються до того, як фініш почне приховувати технічні хвости.
+      en:
+        title: Which dossiers explain finishing risk most clearly
+        text: The relevant proof here shows how detail discipline, interfaces, and pre-handover checks stay readable before the finish starts hiding technical loose ends.
+  procurement:
+    refs:
+      - controlled-handover
+      - house-stage-coordination
+    bridge:
+      uk:
+        title: Які досьє найкраще пояснюють ризики комплектації
+        text: Ці кейси показують, як поставки, вбудовані рішення і готовність зон приходять у правильний момент, а не ламають графік об'єкта.
+      en:
+        title: Which dossiers explain procurement risk most clearly
+        text: These cases show how deliveries, built-ins, and zone readiness arrive at the right moment instead of breaking the project schedule.
+  site-supervision:
+    refs:
+      - wet-zone-control
+      - controlled-handover
+    bridge:
+      uk:
+        title: Які досьє найкраще пояснюють цінність технагляду
+        text: Саме тут видно, як фотофіксація вузлів і контроль перед здачею переводять нагляд у зрозумілий для клієнта доказ.
+      en:
+        title: Which dossiers explain the value of site supervision most clearly
+        text: This is where concealed-junction reporting and pre-handover control turn supervision into buyer-readable proof.
 items:
   compact-apartment-engineering:
     status: publishable

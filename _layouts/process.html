@@ -3,6 +3,8 @@ layout: default
 ---
 {% assign t = site.data.translations[page.lang] | default: site.data.translations.uk %}
 {% assign process = site.data.process_page %}
+{% assign process_case_studies = site.data.case_studies.featured_sets.process %}
+{% assign process_case_bridge = process_case_studies.bridge[page.lang] | default: process_case_studies.bridge.uk %}
 {% assign metrics = process.metrics[page.lang] | default: process.metrics.uk %}
 {% assign proof = process.proof[page.lang] | default: process.proof.uk %}
 {% assign risk = process.risk_band[page.lang] | default: process.risk_band.uk %}
@@ -173,14 +175,13 @@ layout: default
   </div>
 </section>
 
-{% assign case_study_bridge = process.case_study_bridge[page.lang] | default: process.case_study_bridge.uk %}
 {% include featured-case-studies.html
   lang=page.lang
-  refs=process.case_study_refs
+  refs=process_case_studies.refs
   marker="project-index-visibility"
   surface="process-featured-case-studies"
   accent=true
-  bridge=case_study_bridge
+  bridge=process_case_bridge
 %}
 
 <section class="section section--accent">

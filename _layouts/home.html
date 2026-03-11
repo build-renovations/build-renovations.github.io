@@ -74,10 +74,11 @@ layout: default
   </div>
 </section>
 
-{% assign home_case_bridge = site.data.trust_foundation[page.lang].case_study_bridge | default: site.data.trust_foundation.uk.case_study_bridge %}
+{% assign home_case_studies = site.data.case_studies.featured_sets.home %}
+{% assign home_case_bridge = home_case_studies.bridge[page.lang] | default: home_case_studies.bridge.uk %}
 {% include featured-case-studies.html
   lang=page.lang
-  refs=home_case_bridge.refs
+  refs=home_case_studies.refs
   marker="project-index-visibility"
   surface="home-featured-case-studies"
   accent=true

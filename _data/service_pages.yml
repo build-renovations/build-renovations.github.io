@@ -790,6 +790,9 @@ items:
     - plumbing
     - electrical
     - finishing
+    case_study_refs:
+    - compact-apartment-engineering
+    - house-stage-coordination
     uk:
       eyebrow: Послуга
       title: Чорнові та підготовчі роботи
@@ -970,6 +973,9 @@ items:
     - plumbing
     - electrical
     - procurement
+    case_study_refs:
+    - wet-zone-control
+    - controlled-handover
     uk:
       eyebrow: Послуга
       title: Чистове оздоблення
@@ -1150,6 +1156,9 @@ items:
     - finishing
     - apartment-renovation
     - house-renovation
+    case_study_refs:
+    - controlled-handover
+    - house-stage-coordination
     uk:
       eyebrow: Послуга
       title: Комплектація
@@ -1330,6 +1339,9 @@ items:
     - apartment-renovation
     - house-renovation
     - electrical
+    case_study_refs:
+    - wet-zone-control
+    - controlled-handover
     uk:
       eyebrow: Послуга
       title: Нагляд за об'єктом
