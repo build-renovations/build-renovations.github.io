@@ -9,6 +9,7 @@ layout: default
 {% assign overview = content.overview %}
 {% assign outcomes = content.outcomes %}
 {% assign fit_boundaries = content.fit_boundaries %}
+{% assign project_conditions = content.project_conditions %}
 {% assign sequence_signals = content.sequence_signals %}
 {% assign objection_cards = content.objection_cards %}
 {% assign coordination_notes = content.coordination_notes %}
@@ -97,6 +98,26 @@ layout: default
           </article>
         {% endfor %}
       </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if project_conditions %}
+<section class="section section--accent">
+  <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="service-property-fit">
+    <div class="section-heading section-heading--wide">
+      <p class="eyebrow">{% if page.lang == 'en' %}Property fit{% else %}Формат об'єкта{% endif %}</p>
+      <h2>{{ project_conditions.title }}</h2>
+      <p class="section-intro">{% if page.lang == 'en' %}This layer helps the buyer decide whether the project format itself is the real source of complexity before comparing separate trades one by one.{% else %}Цей блок допомагає зрозуміти, чи головна складність ховається саме у форматі об'єкта ще до порівняння окремих етапів по одному.{% endif %}</p>
+    </div>
+    <div class="service-grid">
+      {% for item in project_conditions.items %}
+        <article class="service-card">
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.text }}</p>
+        </article>
+      {% endfor %}
     </div>
   </div>
 </section>

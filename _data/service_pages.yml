@@ -7,6 +7,7 @@ schema:
   - overview
   - outcomes
   - fit_boundaries
+  - project_conditions
   - sequence_signals
   - objection_cards
   - coordination_notes
@@ -49,6 +50,15 @@ items:
           text: Поетапні ремонти з проживанням на об'єкті, де потрібно окремо погоджувати доступ до зон і черговість запуску кімнат.
         - title: Не варто купувати як ілюзію простоти
           text: Якщо очікування зводяться до швидкого декоративного оновлення без уваги до прихованих вузлів, сторінка квартири не вирішить ризики сама по собі.
+      project_conditions:
+        title: За якими ознаками квартира потребує саме такого маршруту
+        items:
+        - title: Щільний простір і мало права на помилку
+          text: У квартирі один невдалий вузол швидко ламає проходи, меблеві прив'язки і сервісний доступ одразу в кількох зонах.
+        - title: Кімнати залежать одна від одної сильніше, ніж здається
+          text: Кухня, санвузол, коридор і житлові кімнати часто ділять спільні рішення по електриці, сантехніці, стелях і фінішу.
+        - title: Формат добре працює, коли рішення треба зібрати до монтажу
+          text: Якщо клієнт хоче зрозуміти весь маршрут до старту чистового шару, сторінка квартири дає правильну рамку для самокваліфікації.
       objection_cards:
         eyebrow: Що найчастіше турбує покупця
         title: Квартира викликає не стільки питання про стиль, скільки про контроль обмеженого простору
@@ -126,6 +136,15 @@ items:
           text: Phased renovations with residents on site, where room access and stage order have to be negotiated explicitly.
         - title: Not a shortcut to simplicity
           text: If the expectation is a quick decorative refresh without dealing with hidden junctions, this page should not pretend the risk disappears.
+      project_conditions:
+        title: Which signs show that an apartment needs this route
+        items:
+        - title: Tight space with very little margin for error
+          text: In an apartment, one bad junction quickly breaks access, furniture coordinates, and service logic across several zones at once.
+        - title: Rooms depend on one another more than they seem to
+          text: The kitchen, wet zones, corridor, and living areas often share electrical, plumbing, ceiling, and finish decisions.
+        - title: The format works best when decisions must be assembled before installation
+          text: If the buyer wants to understand the whole route before the finish layer starts, the apartment page provides the right self-qualification frame.
       objection_cards:
         eyebrow: Common buyer objections
         title: Apartment projects create more control questions than style questions
@@ -209,6 +228,15 @@ items:
           text: Реконструкції з поетапним запуском поверхів або зовнішніх зон, де графік залежить від доступу, сезону і проживання.
         - title: Слабкий сценарій
           text: Якщо клієнт шукає лише окрему локальну бригаду без координації всього маршруту, ця сторінка не повинна обіцяти повний контроль.
+      project_conditions:
+        title: За якими ознаками будинок потребує окремої рамки управління
+        items:
+        - title: Масштаб множить ціну кожної паузи
+          text: Будинок швидко стає складним, коли поверхи, технічні зони і поставки живуть різними темпами.
+        - title: Координація відбувається між зонами, а не лише всередині кімнати
+          text: Тут важливо тримати логіку між поверхами, технічними приміщеннями, меблями, світлом і оздобленням, а не лише окремий локальний вузол.
+        - title: Формат підходить, коли потрібен читабельний маршрут по всьому об'єкту
+          text: Якщо клієнт оцінює не одну кімнату, а керованість великого об'єкта до здачі, сторінка будинку має бути точкою входу.
       objection_cards:
         eyebrow: Головні заперечення
         title: У будинку найбільше лякають масштаб, зупинки і втрата контролю між зонами
@@ -286,6 +314,15 @@ items:
           text: Reconstructions with phased floor launches or exterior-zone dependencies where access, season, and occupancy affect the schedule.
         - title: Weak fit
           text: If the buyer only needs a local crew for one isolated task, this page should not imply full-route control.
+      project_conditions:
+        title: Which signs show that a house needs its own management frame
+        items:
+        - title: Scale multiplies the cost of every pause
+          text: A house becomes difficult quickly when floors, technical zones, and deliveries move at different speeds.
+        - title: Coordination happens between zones, not only inside one room
+          text: The route has to hold logic between floors, technical rooms, furniture, lighting, and finishing instead of solving only one local junction.
+        - title: The format fits when the buyer needs a readable whole-property route
+          text: If the buyer is judging the controllability of a large property rather than one room, the house page should be the real entry point.
       objection_cards:
         eyebrow: Main objections
         title: House buyers usually fear scale, delays, and losing control between zones
