@@ -26,3 +26,8 @@ show_call_expectations: true
 - A concrete discussion about the property instead of vague promises
 
 The first contact is treated as a short working brief about the property type, condition, scope, and timing. That helps filter out loose scenarios early and move into concrete next steps.
+
+## Where this approach is already visible as proof
+
+{% assign about_case_refs = "apartment-system-renovation,controlled-handover" | split: "," %}
+{% include featured-case-studies.html lang=page.lang refs=about_case_refs marker="project-index-visibility" surface="about-featured-case-studies" title="Two dossiers where the approach becomes a real decision route" intro="The about page should not repeat the whole proof system. It only needs to show how the operating model works on real properties and where to read the deeper evidence next." %}

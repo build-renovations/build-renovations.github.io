@@ -17,6 +17,11 @@ show_call_expectations: true
 
 {% include work-examples.html lang=page.lang compact=true %}
 
+## Які досьє допомагають перейти від послуги до доказу
+
+{% assign service_case_refs = "wet-zone-control,house-stage-coordination,controlled-handover" | split: "," %}
+{% include featured-case-studies.html lang=page.lang refs=service_case_refs marker="project-index-visibility" surface="services-index-featured-case-studies" title="Коли потрібен не перелік робіт, а доказ того, як вони сходяться в один маршрут" intro="Індекс послуг має залишатися швидким для сканування. Ці досьє дають короткий місток у глибший доказ там, де покупцю вже потрібно побачити контроль мокрих зон, координацію будинку або дисципліну перед здачею." %}
+
 ## Для кого це підходить
 
 - Для квартир у новобудовах, де треба зібрати всі етапи з нуля

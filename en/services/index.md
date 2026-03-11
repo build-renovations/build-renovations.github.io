@@ -17,6 +17,11 @@ The categories are arranged so a buyer can quickly understand the full scope of 
 
 {% include work-examples.html lang=page.lang compact=true %}
 
+## Which dossiers help the buyer move from services into proof
+
+{% assign service_case_refs = "wet-zone-control,house-stage-coordination,controlled-handover" | split: "," %}
+{% include featured-case-studies.html lang=page.lang refs=service_case_refs marker="project-index-visibility" surface="services-index-featured-case-studies" title="When the buyer needs more than a trade list and wants proof of how the route holds together" intro="The services index should stay quick to scan. These dossiers act as a short bridge into deeper proof when the next question is wet-zone control, house-scale coordination, or disciplined handover." %}
+
 ## Who this is for
 
 - Apartments in new buildings where all stages need to be assembled from scratch

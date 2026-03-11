@@ -26,3 +26,8 @@ show_call_expectations: true
 - Предметна розмова про об'єкт, а не загальні обіцянки
 
 Перший контакт тут розглядається як короткий робочий бриф: по типу об'єкта, стану, складу робіт і старту. Це дає змогу одразу відсіяти випадкові сценарії й перейти до предметних наступних кроків.
+
+## Де цей підхід уже читається як доказ
+
+{% assign about_case_refs = "apartment-system-renovation,controlled-handover" | split: "," %}
+{% include featured-case-studies.html lang=page.lang refs=about_case_refs marker="project-index-visibility" surface="about-featured-case-studies" title="Два досьє, де підхід переходить у реальний маршрут рішень" intro="Сторінка «Про нас» не має дублювати всю систему доказів. Тут достатньо показати, як заявлений підхід працює на реальних об'єктах і куди читати далі за деталями." %}
