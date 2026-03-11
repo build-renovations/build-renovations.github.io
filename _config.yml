@@ -36,14 +36,24 @@ defaults:
       image: /assets/images/og-cover.svg
 
 company:
-  name: "Remonty"
+  name: "Business name pending confirmation"
   phone: "+380000000000"
+  phone_display: "+380 (00) 000-00-00"
   email: "hello@example.com"
   city: "Lviv"
   country: "Ukraine"
   service_area:
     uk: "Львів і Львівська область"
     en: "Lviv and the surrounding region"
+  phase1_placeholder:
+    status: "approved-phase-1"
+    fields:
+      - name
+      - phone
+      - email
+      - service_area.uk
+      - service_area.en
+    note: "Phase 1 uses centralized placeholder identity values until the production business details are confirmed."
   social:
     - name: GitHub
       url: "https://github.com/build-renovations/build-renovations.github.io"

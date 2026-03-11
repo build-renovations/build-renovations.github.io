@@ -1,0 +1,36 @@
+uk:
+  primary_label: "Подзвонити й коротко описати об'єкт"
+  primary_support: "Телефон залишається головним каналом для швидкого брифу по типу об'єкта, етапах і термінах."
+  sticky_label: "Подзвонити зараз"
+  sticky_note: "Телефон для короткого брифу"
+  secondary_heading: "Месенджери, якщо зручніше написати"
+  secondary_support: "Telegram, Viber і WhatsApp підтримують ту саму розмову про об'єкт, але не перехоплюють головну телефонну дію."
+  email_label: "Email для документів і уточнень"
+  messengers:
+    - name: Telegram
+      label: "Telegram"
+      url: "https://t.me/example_phase1_contact"
+    - name: Viber
+      label: "Viber"
+      url: "https://invite.viber.com/?g2=AQExamplePhase1"
+    - name: WhatsApp
+      label: "WhatsApp"
+      url: "https://wa.me/380000000000"
+en:
+  primary_label: "Call and outline the property brief"
+  primary_support: "Phone stays the main channel for a fast brief about property type, work stages, and timing."
+  sticky_label: "Call now"
+  sticky_note: "Phone line for a short project brief"
+  secondary_heading: "Messengers if writing is easier"
+  secondary_support: "Telegram, Viber, and WhatsApp support the same project conversation without overtaking the primary call action."
+  email_label: "Email for documents and follow-up"
+  messengers:
+    - name: Telegram
+      label: "Telegram"
+      url: "https://t.me/example_phase1_contact"
+    - name: Viber
+      label: "Viber"
+      url: "https://invite.viber.com/?g2=AQExamplePhase1"
+    - name: WhatsApp
+      label: "WhatsApp"
+      url: "https://wa.me/380000000000"
