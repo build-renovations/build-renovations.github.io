@@ -8,8 +8,21 @@ seo_description: "Common questions about stages, procurement, quality control, a
 eyebrow: "Questions"
 lead: "The FAQ should remove common objections and explain how the team handles stages, materials, and quality control."
 ---
-{% for item in site.data.faqs.items %}
-## {{ item.en.question }}
+<section data-phase2-marker="faq-group-visibility">
+{% for group in site.data.faqs.groups %}
+{% assign copy = group.en %}
+<div data-faq-group="{{ group.key }}">
+
+## {{ copy.title }}
+
+{{ copy.intro }}
+
+{% for item in group.items %}
+### {{ item.en.question }}
 
 {{ item.en.answer }}
 {% endfor %}
+
+</div>
+{% endfor %}
+</section>

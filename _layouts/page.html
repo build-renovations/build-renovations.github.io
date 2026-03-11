@@ -17,6 +17,51 @@ layout: default
   </div>
 </section>
 
+{% if page.translation_key == 'services' %}
+  {% assign featured_keys = "plumbing,electrical,apartment-renovation" | split: "," %}
+  <section class="section section--accent">
+    <div class="shell" data-phase2-marker="content-depth">
+      <div class="section-heading section-heading--wide">
+        <p class="eyebrow">{% if page.lang == 'en' %}Where to read deeper{% else %}Куди йти за деталями{% endif %}</p>
+        <h2>{% if page.lang == 'en' %}Use the service routes for scope, fit, and commercial expectations{% else %}Для обсягу, відповідності й комерційних очікувань переходьте на сторінки окремих послуг{% endif %}</h2>
+        <p class="section-intro">{% if page.lang == 'en' %}The index stays scan-friendly. The deeper service pages carry the denser explanations about coordination, objections, and what a controlled result really means.{% else %}Індекс залишається швидким для сканування. Глибші сторінки послуг несуть щільніші пояснення про координацію, заперечення і те, що означає контрольований результат.{% endif %}</p>
+      </div>
+      <div class="service-grid">
+        {% for featured_key in featured_keys %}
+          {% assign featured_service = site.data.service_pages.items[featured_key] %}
+          {% assign featured_content = featured_service[page.lang] | default: featured_service.uk %}
+          <article class="service-card">
+            <h3>{{ featured_content.title }}</h3>
+            <p>{{ featured_content.summary }}</p>
+            <a class="service-card__link" href="{% if page.lang == 'en' %}{{ '/en' | append: '/services/' | append: featured_key | append: '/' | relative_url }}{% else %}{{ '/services/' | append: featured_key | append: '/' | relative_url }}{% endif %}">{% if page.lang == 'en' %}Open service page{% else %}Відкрити сторінку послуги{% endif %}</a>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  {% assign faq_groups = site.data.faqs.groups | default: empty %}
+  {% if faq_groups != empty %}
+  <section class="section">
+    <div class="shell" data-phase2-marker="faq-group-visibility">
+      <div class="section-heading section-heading--wide">
+        <p class="eyebrow">{% if page.lang == 'en' %}FAQ clusters{% else %}FAQ-кластери{% endif %}</p>
+        <h2>{% if page.lang == 'en' %}The FAQ stays shared so service pages can answer objections without duplicating long copy{% else %}FAQ залишається спільним джерелом, щоб сторінки послуг знімали заперечення без дублювання довгого тексту{% endif %}</h2>
+      </div>
+      <div class="service-grid">
+        {% for group in faq_groups limit: 2 %}
+          {% assign group_copy = group[page.lang] | default: group.uk %}
+          <article class="service-card" data-faq-group="{{ group.key }}">
+            <h3>{{ group_copy.title }}</h3>
+            <p>{{ group_copy.intro }}</p>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
+{% endif %}
+
 {% if page.show_trust_strip %}
 <section class="section section--accent">
   <div class="shell">
@@ -35,7 +80,7 @@ layout: default
 
 {% if page.show_project_fit %}
 <section class="section">
-  <div class="shell">
+  <div class="shell" data-phase2-marker="fit-guidance">
     {% include project-fit.html lang=page.lang %}
   </div>
 </section>

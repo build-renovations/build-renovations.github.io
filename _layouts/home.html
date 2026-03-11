@@ -75,7 +75,7 @@ layout: default
 </section>
 
 <section class="section">
-  <div class="shell">
+  <div class="shell" data-phase2-marker="content-depth">
     <div class="section-heading section-heading--wide">
       <p class="eyebrow">{{ t.scope_label }}</p>
       <h2>{{ t.services_heading }}</h2>
@@ -119,7 +119,7 @@ layout: default
 </section>
 
 <section class="section">
-  <div class="shell">
+  <div class="shell" data-phase2-marker="fit-guidance">
     {% include project-fit.html lang=page.lang %}
   </div>
 </section>
@@ -127,7 +127,7 @@ layout: default
 {% include work-examples.html lang=page.lang %}
 
 <section class="section">
-  <div class="shell">
+  <div class="shell" data-phase2-marker="content-depth">
     <div class="section-heading section-heading--wide">
       <p class="eyebrow">{{ t.process_label }}</p>
       <h2>{{ t.process_heading }}</h2>
@@ -145,6 +145,33 @@ layout: default
     </div>
   </div>
 </section>
+
+{% assign faq_groups = site.data.faqs.groups | default: empty %}
+{% if faq_groups != empty %}
+<section class="section section--accent">
+  <div class="shell" data-phase2-marker="faq-group-visibility">
+    <div class="section-heading section-heading--wide">
+      <p class="eyebrow">{% if page.lang == 'en' %}Key questions{% else %}Ключові питання{% endif %}</p>
+      <h2>{% if page.lang == 'en' %}Short answers before the deeper service and process pages{% else %}Короткі відповіді перед переходом до детальних сторінок послуг і процесу{% endif %}</h2>
+      <p class="section-intro">{% if page.lang == 'en' %}The homepage stays concise, but it should still reveal the buyer questions that the deeper routes answer in detail.{% else %}Головна залишається лаконічною, але має показувати питання покупця, які детально розкриваються на глибших сторінках.{% endif %}</p>
+    </div>
+    <div class="service-grid">
+      {% for group in faq_groups limit: 2 %}
+        {% assign group_copy = group[page.lang] | default: group.uk %}
+        <article class="service-card" data-faq-group="{{ group.key }}">
+          <p class="service-card__eyebrow">{{ group_copy.title }}</p>
+          <p>{{ group_copy.intro }}</p>
+          {% assign first_question = group.items | first %}
+          {% assign first_question_copy = first_question[page.lang] | default: first_question.uk %}
+          <h3>{{ first_question_copy.question }}</h3>
+          <p>{{ first_question_copy.answer }}</p>
+          <a class="service-card__link" href="{% if page.lang == 'en' %}{{ '/en/faq/' | relative_url }}{% else %}{{ '/faq/' | relative_url }}{% endif %}">{% if page.lang == 'en' %}Read the grouped FAQ{% else %}Переглянути згрупований FAQ{% endif %}</a>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
 
 <section class="section">
   <div class="shell">

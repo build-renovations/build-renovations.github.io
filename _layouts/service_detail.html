@@ -6,6 +6,12 @@ layout: default
 {% assign t = site.data.translations[page.lang] | default: site.data.translations.uk %}
 {% assign accountability = content.accountability %}
 {% assign proof_module = content.proof_module %}
+{% assign overview = content.overview %}
+{% assign outcomes = content.outcomes %}
+{% assign fit_boundaries = content.fit_boundaries %}
+{% assign objection_cards = content.objection_cards %}
+{% assign coordination_notes = content.coordination_notes %}
+{% assign commercial_clarity = content.commercial_clarity %}
 <section class="page-hero">
   <div class="shell service-hero">
     <div class="service-hero__copy">
@@ -30,7 +36,7 @@ layout: default
 </section>
 
 <section class="page-content">
-  <div class="shell service-detail">
+  <div class="shell service-detail" data-phase2-marker="content-depth">
     <article class="service-detail__card">
       <h2>{% if page.lang == 'en' %}What this service covers{% else %}Що входить у послугу{% endif %}</h2>
       <p>{{ content.summary }}</p>
@@ -46,8 +52,74 @@ layout: default
       <h2>{% if page.lang == 'en' %}What the proof should show{% else %}Що мають показувати приклади{% endif %}</h2>
       <p>{{ content.proof }}</p>
     </article>
+    {% if overview %}
+    <article class="service-detail__card">
+      <h2>{{ overview.title }}</h2>
+      <p>{{ overview.text }}</p>
+      {% if outcomes %}
+      <h2>{{ outcomes.title }}</h2>
+      <ul>
+        {% for item in outcomes.items %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </article>
+    {% endif %}
+    {% if coordination_notes %}
+    <article class="service-detail__card">
+      <h2>{{ coordination_notes.title }}</h2>
+      <ul>
+        {% for item in coordination_notes.items %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </article>
+    {% endif %}
   </div>
 </section>
+
+{% if fit_boundaries %}
+<section class="section">
+  <div class="shell" data-phase2-marker="fit-guidance">
+    <div class="process-risk">
+      <div class="process-risk__copy">
+        <p class="eyebrow">{% if page.lang == 'en' %}Fit guidance{% else %}Підказка по відповідності{% endif %}</p>
+        <h2>{{ fit_boundaries.title }}</h2>
+        <p>{{ fit_boundaries.text }}</p>
+      </div>
+      <div class="process-risk__list">
+        {% for item in fit_boundaries.items %}
+          <article class="process-risk__item">
+            <strong>{{ item.title }}</strong>
+            <p>{{ item.text }}</p>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if objection_cards %}
+<section class="section section--accent">
+  <div class="shell" data-phase2-marker="objection-handling">
+    <div class="section-heading section-heading--wide">
+      <p class="eyebrow">{{ objection_cards.eyebrow }}</p>
+      <h2>{{ objection_cards.title }}</h2>
+      <p class="section-intro">{{ objection_cards.intro }}</p>
+    </div>
+    <div class="service-grid">
+      {% for card in objection_cards.cards %}
+        <article class="service-card">
+          <h3>{{ card.title }}</h3>
+          <p>{{ card.text }}</p>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
 
 <section class="section section--accent">
   <div class="shell">
@@ -63,8 +135,30 @@ layout: default
 </section>
 {% endif %}
 
+{% if commercial_clarity %}
+<section class="section">
+  <div class="shell" data-phase2-marker="commercial-clarity">
+    <div class="process-risk">
+      <div class="process-risk__copy">
+        <p class="eyebrow">{% if page.lang == 'en' %}Commercial clarity{% else %}Комерційна ясність{% endif %}</p>
+        <h2>{{ commercial_clarity.title }}</h2>
+        <p>{{ commercial_clarity.text }}</p>
+      </div>
+      <div class="process-risk__list">
+        {% for item in commercial_clarity.items %}
+          <article class="process-risk__item">
+            <strong>{{ item.title }}</strong>
+            <p>{{ item.text }}</p>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
 <section class="section section--accent">
-  <div class="shell">
+  <div class="shell" data-phase2-marker="fit-guidance">
     {% include project-fit.html lang=page.lang %}
   </div>
 </section>
@@ -87,6 +181,36 @@ layout: default
     </div>
   </div>
 </section>
+
+{% assign faq_groups = site.data.faqs.groups | default: empty %}
+{% assign content_faq_refs = content.faq_refs | default: empty %}
+{% if faq_groups != empty %}
+<section class="section section--accent">
+  <div class="shell" data-phase2-marker="faq-group-visibility">
+    <div class="section-heading section-heading--wide">
+      <p class="eyebrow">{% if page.lang == 'en' %}Related questions{% else %}Пов'язані питання{% endif %}</p>
+      <h2>{% if page.lang == 'en' %}These answers stay shared across the FAQ and the deeper service pages{% else %}Ці відповіді залишаються спільними для FAQ і глибших сторінок послуг{% endif %}</h2>
+    </div>
+    <div class="service-grid">
+      {% for group in faq_groups %}
+        {% assign printed = false %}
+        {% for item in group.items %}
+          {% if content_faq_refs contains item.key and printed == false %}
+            {% assign group_copy = group[page.lang] | default: group.uk %}
+            {% assign item_copy = item[page.lang] | default: item.uk %}
+            <article class="service-card" data-faq-group="{{ group.key }}">
+              <p class="service-card__eyebrow">{{ group_copy.title }}</p>
+              <h3>{{ item_copy.question }}</h3>
+              <p>{{ item_copy.answer }}</p>
+            </article>
+            {% assign printed = true %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
 
 <section class="section">
   <div class="shell">

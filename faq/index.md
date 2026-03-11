@@ -8,8 +8,21 @@ seo_description: "Поширені питання про етапи ремонт
 eyebrow: "Питання"
 lead: "FAQ має знімати типові заперечення й уточнювати, як команда працює з етапами, матеріалами та контролем якості."
 ---
-{% for item in site.data.faqs.items %}
-## {{ item.uk.question }}
+<section data-phase2-marker="faq-group-visibility">
+{% for group in site.data.faqs.groups %}
+{% assign copy = group.uk %}
+<div data-faq-group="{{ group.key }}">
+
+## {{ copy.title }}
+
+{{ copy.intro }}
+
+{% for item in group.items %}
+### {{ item.uk.question }}
 
 {{ item.uk.answer }}
 {% endfor %}
+
+</div>
+{% endfor %}
+</section>
