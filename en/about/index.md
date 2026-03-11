@@ -5,6 +5,9 @@ title: "About"
 permalink: /en/about/
 eyebrow: "Approach"
 lead: "The team should not sell abstract craftsmanship. It should sell the ability to turn renovation into a controlled, sequential process that a buyer can understand."
+show_trust_strip: true
+trust_context: about
+show_sourced_proof: true
 show_project_fit: true
 show_call_expectations: true
 ---

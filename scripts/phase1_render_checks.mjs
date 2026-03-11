@@ -232,7 +232,66 @@ function checkCallFlow(callFlow) {
   }
 }
 
-function checkRenderedRoutes(contactChannels, callFlow) {
+function checkTrustFoundation(trustFoundation) {
+  const requiredLocales = trustFoundation.required_locales || [];
+  const requiredModules = trustFoundation.required_modules || [];
+
+  for (const lang of ["uk", "en"]) {
+    if (!requiredLocales.includes(lang)) {
+      fail(`_data/trust_foundation.yml must declare ${lang} in required_locales`);
+    }
+
+    const branch = trustFoundation[lang];
+    if (!branch) {
+      fail(`_data/trust_foundation.yml is missing the ${lang} branch`);
+    }
+
+    for (const key of requiredModules) {
+      if (!branch[key]) {
+        fail(`trust_foundation.${lang}.${key} is required`);
+      }
+    }
+
+    if (typeof branch.strip.title !== "string" || branch.strip.title.trim() === "") {
+      fail(`trust_foundation.${lang}.strip.title is required`);
+    }
+
+    if (!branch.strip.labels?.company || !branch.strip.labels?.service_area || !branch.strip.labels?.accountability) {
+      fail(`trust_foundation.${lang}.strip.labels must include company, service_area, and accountability`);
+    }
+
+    if (!Array.isArray(branch.accountability.items) || branch.accountability.items.length < 3) {
+      fail(`trust_foundation.${lang}.accountability.items must contain at least 3 entries`);
+    }
+
+    if (!Array.isArray(branch.proof.items) || branch.proof.items.length < 2) {
+      fail(`trust_foundation.${lang}.proof.items must contain at least 2 entries`);
+    }
+
+    for (const item of branch.proof.items) {
+      if (typeof item.key !== "string" || item.key.trim() === "") {
+        fail(`trust_foundation.${lang}.proof.items[].key is required`);
+      }
+      if (typeof item.status !== "string" || item.status.trim() === "") {
+        fail(`trust_foundation.${lang}.proof.items[].status is required`);
+      }
+      if (typeof item.source_label !== "string" || item.source_label.trim() === "") {
+        fail(`trust_foundation.${lang}.proof.items[].source_label is required`);
+      }
+      if (typeof item.attribution !== "string" || item.attribution.trim() === "") {
+        fail(`trust_foundation.${lang}.proof.items[].attribution is required`);
+      }
+    }
+
+    for (const key of ["home", "about", "services", "contact"]) {
+      if (!branch.page_contexts?.[key]?.title || !branch.page_contexts?.[key]?.text) {
+        fail(`trust_foundation.${lang}.page_contexts.${key} must contain title and text`);
+      }
+    }
+  }
+}
+
+function checkRenderedRoutes(contactChannels, callFlow, trustFoundation) {
   for (const route of requiredRoutes) {
     const filePath = routeToFile(route);
     ensureFile(filePath);
@@ -259,11 +318,32 @@ function checkRenderedRoutes(contactChannels, callFlow) {
     if (!html.includes("data-call-expectations")) {
       fail(`route ${route} is missing the first-call guidance module`);
     }
+    if (!html.includes("data-trust-strip")) {
+      fail(`route ${route} is missing the trust strip module`);
+    }
+    if (!html.includes("data-accountability-block")) {
+      fail(`route ${route} is missing the accountability block`);
+    }
+    if (!html.includes("data-sourced-proof")) {
+      fail(`route ${route} is missing the sourced proof module`);
+    }
     if (!html.includes(callFlow[lang].completeness.fit.title)) {
       fail(`route ${route} is missing localized project-fit content`);
     }
     if (!html.includes(callFlow[lang].completeness.call.title)) {
       fail(`route ${route} is missing localized first-call content`);
+    }
+    if (!html.includes(trustFoundation[lang].proof.source_label) || !html.includes(trustFoundation[lang].proof.attribution_label)) {
+      fail(`route ${route} is missing proof source or attribution labels`);
+    }
+    if (!html.includes(trustFoundation[lang].proof.placeholder_badge)) {
+      fail(`route ${route} is missing the placeholder/demo proof badge`);
+    }
+    if (!html.includes(trustFoundation[lang].proof.placeholder_note)) {
+      fail(`route ${route} is missing the placeholder proof disclaimer`);
+    }
+    if (html.includes('data-proof-status="placeholder"') && !html.includes(trustFoundation[lang].proof.placeholder_badge)) {
+      fail(`route ${route} shows placeholder proof without explicit placeholder labeling`);
     }
 
     const messengerLinks = links.filter((link) => {
@@ -320,11 +400,15 @@ function main() {
   ensureFile(callFlowPath);
   const contactChannels = readYamlAsJson(contactChannelsPath);
   const callFlow = readYamlAsJson(callFlowPath);
+  const trustFoundationPath = path.join(repoRoot, "_data/trust_foundation.yml");
+  ensureFile(trustFoundationPath);
+  const trustFoundation = readYamlAsJson(trustFoundationPath);
 
   checkPlaceholderPolicy(config);
   checkContactChannels(contactChannels);
   checkCallFlow(callFlow);
-  checkRenderedRoutes(contactChannels, callFlow);
+  checkTrustFoundation(trustFoundation);
+  checkRenderedRoutes(contactChannels, callFlow, trustFoundation);
   checkStickyCtaContract();
 
   console.log("Phase 1 render checks passed.");

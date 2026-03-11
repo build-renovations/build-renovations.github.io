@@ -68,6 +68,12 @@ layout: default
   </div>
 </section>
 
+<section class="section section--accent">
+  <div class="shell">
+    {% include trust-strip.html lang=page.lang context="home" %}
+  </div>
+</section>
+
 <section class="section">
   <div class="shell">
     <div class="section-heading section-heading--wide">
@@ -142,24 +148,7 @@ layout: default
 
 <section class="section">
   <div class="shell">
-    <div class="section-heading section-heading--wide">
-      <p class="eyebrow">{{ t.trust_label }}</p>
-      <h2>{{ t.proof_heading }}</h2>
-      <p class="section-intro">{{ t.proof_intro }}</p>
-    </div>
-    <div class="proof-grid">
-      {% for proof in site.data.proof.items %}
-        {% assign content = proof[page.lang] | default: proof.uk %}
-        <article class="proof-card">
-          <h3>{{ content.title }}</h3>
-          <p>{{ content.description }}</p>
-        </article>
-      {% endfor %}
-      <article class="proof-card proof-card--quote">
-        <p class="proof-card__quote">{{ t.proof_quote }}</p>
-        <p class="proof-card__signature">{{ t.proof_signature }}</p>
-      </article>
-    </div>
+    {% include sourced-proof.html lang=page.lang %}
     <div class="contact-banner">
       <div>
         <p class="eyebrow">{{ t.cta_call }}</p>

@@ -5,6 +5,9 @@ title: "Services"
 permalink: /en/services/
 eyebrow: "Work categories"
 lead: "Services are presented as one delivery system: engineering work, substrate preparation, finishing, procurement, and on-site control."
+show_trust_strip: true
+trust_context: services
+show_sourced_proof: true
 show_project_fit: true
 show_call_expectations: true
 ---

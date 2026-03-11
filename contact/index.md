@@ -5,6 +5,9 @@ title: "Контакти"
 permalink: /contact/
 eyebrow: "Початок розмови"
 lead: "Найкращий перший контакт для ремонту починається з короткого, але предметного брифу. Так можна відразу зрозуміти етапи, ризики й формат співпраці."
+show_trust_strip: true
+trust_context: contact
+show_sourced_proof: true
 show_project_fit: true
 show_call_expectations: true
 ---

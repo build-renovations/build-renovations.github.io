@@ -5,6 +5,9 @@ title: "Contact"
 permalink: /en/contact/
 eyebrow: "Start the conversation"
 lead: "The best first contact for a renovation starts with a short but practical brief. That makes it possible to assess stages, risks, and the right collaboration format."
+show_trust_strip: true
+trust_context: contact
+show_sourced_proof: true
 show_project_fit: true
 show_call_expectations: true
 ---

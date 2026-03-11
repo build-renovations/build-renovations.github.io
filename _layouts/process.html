@@ -6,6 +6,8 @@ layout: default
 {% assign metrics = process.metrics[page.lang] | default: process.metrics.uk %}
 {% assign proof = process.proof[page.lang] | default: process.proof.uk %}
 {% assign risk = process.risk_band[page.lang] | default: process.risk_band.uk %}
+{% assign accountability = process.accountability[page.lang] | default: process.accountability.uk %}
+{% assign proof_module = process.proof_module[page.lang] | default: process.proof_module.uk %}
 <section class="page-hero process-hero">
   <div class="shell process-hero__grid">
     <div class="process-hero__copy">
@@ -48,7 +50,7 @@ layout: default
 
 <section class="section section--accent">
   <div class="shell">
-    {% include project-fit.html lang=page.lang %}
+    {% include trust-strip.html lang=page.lang accountability=accountability %}
   </div>
 </section>
 
@@ -83,6 +85,18 @@ layout: default
         </article>
       {% endfor %}
     </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="shell">
+    {% include sourced-proof.html lang=page.lang module=proof_module %}
+  </div>
+</section>
+
+<section class="section">
+  <div class="shell">
+    {% include project-fit.html lang=page.lang %}
   </div>
 </section>
 

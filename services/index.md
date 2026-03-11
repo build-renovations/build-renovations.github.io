@@ -5,6 +5,9 @@ title: "Послуги"
 permalink: /services/
 eyebrow: "Напрями робіт"
 lead: "Послуги подані як єдина система виконання: від інженерних вузлів і підготовки основ до чистового результату, комплектації та контролю на об'єкті."
+show_trust_strip: true
+trust_context: services
+show_sourced_proof: true
 show_project_fit: true
 show_call_expectations: true
 ---

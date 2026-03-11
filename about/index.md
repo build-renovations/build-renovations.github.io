@@ -5,6 +5,9 @@ title: "Про нас"
 permalink: /about/
 eyebrow: "Підхід"
 lead: "Команда має продавати не абстрактну «майстерність», а вміння зібрати ремонт у послідовний, контрольований і зрозумілий для клієнта процес."
+show_trust_strip: true
+trust_context: about
+show_sourced_proof: true
 show_project_fit: true
 show_call_expectations: true
 ---
