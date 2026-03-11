@@ -1,0 +1,24 @@
+{% assign lang = include.lang | default: page.lang | default: site.lang %}
+{% assign t = site.data.translations[lang] | default: site.data.translations.uk %}
+{% assign call_flow = site.data.call_flow[lang] | default: site.data.call_flow.uk %}
+{% assign fit = call_flow.completeness.fit %}
+{% assign wrapper_class = include.class | default: '' %}
+<section class="project-fit{% if wrapper_class != '' %} {{ wrapper_class }}{% endif %}" aria-labelledby="project-fit-{{ lang }}">
+  <div class="project-fit__intro">
+    <p class="eyebrow">{{ t.project_fit_label }}</p>
+    <h2 id="project-fit-{{ lang }}">{{ fit.title }}</h2>
+    <p>{{ fit.intro }}</p>
+  </div>
+  <div class="project-fit__grid">
+    {% for item in fit.items %}
+      <article class="project-fit__card">
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.text }}</p>
+      </article>
+    {% endfor %}
+  </div>
+  <div class="project-fit__note">
+    <p class="project-fit__note-label">{{ t.project_fit_note_label }}</p>
+    <p>{{ fit.note }}</p>
+  </div>
+</section>

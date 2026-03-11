@@ -1874,6 +1874,89 @@ body.has-sticky-phone-cta main {
   margin-bottom: 1.5rem;
 }
 
+.project-fit,
+.call-expectations {
+  display: grid;
+  gap: 1.35rem;
+  padding: 1.9rem;
+  border-radius: 34px;
+  background:
+    radial-gradient(circle at top right, rgba(191, 122, 60, 0.16), transparent 32%),
+    linear-gradient(145deg, rgba(255, 251, 245, 0.94), rgba(245, 236, 224, 0.98));
+  border: 1px solid rgba(120, 78, 36, 0.12);
+  box-shadow: var(--shadow);
+}
+
+.project-fit__intro,
+.call-expectations__intro {
+  max-width: 48rem;
+}
+
+.project-fit__intro p:last-child,
+.call-expectations__intro p:last-child,
+.project-fit__note p:last-child,
+.call-expectations__footer p:last-child {
+  color: var(--muted);
+}
+
+.project-fit__grid,
+.call-expectations__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.project-fit__card,
+.call-expectations__card,
+.project-fit__note,
+.call-expectations__footer {
+  padding: 1.25rem;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(24, 32, 29, 0.08);
+}
+
+.project-fit__card h3,
+.call-expectations__card h3 {
+  margin-bottom: 0.55rem;
+  color: var(--accent-dark);
+}
+
+.project-fit__note {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.project-fit__note-label,
+.call-expectations__support-label {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent-dark);
+}
+
+.call-expectations__card ul,
+.project-fit__card p {
+  margin-bottom: 0;
+}
+
+.call-expectations__card ul {
+  padding-left: 1.1rem;
+}
+
+.call-expectations__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.call-expectations__cta {
+  flex-shrink: 0;
+}
+
 .contact-options {
   display: grid;
   grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
@@ -1990,6 +2073,8 @@ body.has-sticky-phone-cta main {
 }
 
 @media (max-width: 900px) {
+  .project-fit__grid,
+  .call-expectations__grid,
   .contact-options,
   .contact-options__panel {
     grid-template-columns: 1fr;
@@ -1997,6 +2082,17 @@ body.has-sticky-phone-cta main {
 }
 
 @media (max-width: 640px) {
+  .project-fit,
+  .call-expectations {
+    padding: 1.4rem;
+  }
+
+  .call-expectations__footer {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .call-expectations__cta,
   .contact-options .button {
     width: 100%;
   }

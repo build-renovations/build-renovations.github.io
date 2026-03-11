@@ -1,0 +1,45 @@
+{% assign lang = include.lang | default: page.lang | default: site.lang %}
+{% assign t = site.data.translations[lang] | default: site.data.translations.uk %}
+{% assign call_flow = site.data.call_flow[lang] | default: site.data.call_flow.uk %}
+{% assign call = call_flow.completeness.call %}
+{% assign wrapper_class = include.class | default: '' %}
+<section class="call-expectations{% if wrapper_class != '' %} {{ wrapper_class }}{% endif %}" aria-labelledby="call-expectations-{{ lang }}">
+  <div class="call-expectations__intro">
+    <p class="eyebrow">{{ t.call_expectations_label }}</p>
+    <h2 id="call-expectations-{{ lang }}">{{ call.title }}</h2>
+    <p>{{ call.intro }}</p>
+  </div>
+  <div class="call-expectations__grid">
+    <article class="call-expectations__card">
+      <h3>{{ t.call_prepare_label }}</h3>
+      <ul>
+        {% for item in call.prepare %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </article>
+    <article class="call-expectations__card">
+      <h3>{{ call.clarify_title }}</h3>
+      <ul>
+        {% for item in call.clarify %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </article>
+    <article class="call-expectations__card">
+      <h3>{{ call.return_title }}</h3>
+      <ul>
+        {% for item in call.return_items %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </article>
+  </div>
+  <div class="call-expectations__footer">
+    <div>
+      <p class="call-expectations__support-label">{{ t.call_messenger_label }}</p>
+      <p>{{ call.messenger_note }}</p>
+    </div>
+    {% include primary-phone-cta.html lang=lang class="call-expectations__cta" %}
+  </div>
+</section>
