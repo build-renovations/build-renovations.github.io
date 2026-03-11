@@ -1912,6 +1912,24 @@ body.has-sticky-phone-cta main {
   border-left: 3px solid rgba(191, 122, 60, 0.38);
 }
 
+.trust-strip__focus {
+  display: grid;
+  gap: 0.3rem;
+}
+
+.trust-strip__focus strong {
+  color: var(--accent-dark);
+}
+
+.trust-strip__focus-label {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent-dark);
+}
+
 .trust-strip__context strong {
   color: var(--accent-dark);
 }
@@ -1945,6 +1963,23 @@ body.has-sticky-phone-cta main {
   display: grid;
   gap: 0.45rem;
   align-content: start;
+}
+
+.trust-strip__points {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.trust-strip__point {
+  padding: 1rem 1.1rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.58);
+  border: 1px solid rgba(24, 32, 29, 0.08);
+}
+
+.trust-strip__point strong {
+  color: var(--accent-dark);
 }
 
 .trust-strip__card--placeholder {
@@ -2177,6 +2212,7 @@ body.has-sticky-phone-cta main {
 
 @media (max-width: 900px) {
   .trust-strip__grid,
+  .trust-strip__points,
   .sourced-proof__grid,
   .project-fit__grid,
   .call-expectations__grid,

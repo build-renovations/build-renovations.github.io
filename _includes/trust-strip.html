@@ -7,6 +7,7 @@
   {% assign page_context = trust.page_contexts[context_key] %}
 {% endif %}
 {% assign wrapper_class = include.class | default: '' %}
+{% assign accountability = include.accountability | default: trust.accountability %}
 {% assign placeholder_fields = site.company.phase1_placeholder.fields | default: empty %}
 {% assign company_placeholder = false %}
 {% if site.company.phase1_placeholder.status == 'approved-phase-1' and placeholder_fields contains 'name' %}
@@ -21,6 +22,19 @@
       <div class="trust-strip__context">
         <strong>{{ page_context.title }}</strong>
         <p>{{ page_context.text }}</p>
+      </div>
+    {% endif %}
+    {% if accountability %}
+      <div class="trust-strip__focus">
+        {% if accountability.eyebrow %}
+          <p class="trust-strip__focus-label">{{ accountability.eyebrow }}</p>
+        {% endif %}
+        {% if accountability.title %}
+          <strong>{{ accountability.title }}</strong>
+        {% endif %}
+        {% if accountability.text %}
+          <p>{{ accountability.text }}</p>
+        {% endif %}
       </div>
     {% endif %}
   </div>
@@ -48,7 +62,21 @@
     <article class="trust-strip__card">
       <p class="trust-strip__label">{{ strip.labels.accountability }}</p>
       <strong class="trust-strip__value">{{ strip.accountability_value }}</strong>
-      <p class="trust-strip__support">{{ trust.accountability.text }}</p>
+      <p class="trust-strip__support">{{ accountability.text }}</p>
     </article>
   </div>
+  {% if accountability and accountability.items %}
+    <div class="trust-strip__points">
+      {% for item in accountability.items %}
+        <article class="trust-strip__point">
+          {% if item.title %}
+            <strong>{{ item.title }}</strong>
+            <p>{{ item.text }}</p>
+          {% else %}
+            <p>{{ item }}</p>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
+  {% endif %}
 </section>
