@@ -19,21 +19,31 @@
         {% endif %}
       {% endif %}
       {% if include_item %}
-        <article class="sourced-proof__card sourced-proof__card--{{ item.status }}" data-proof-item data-proof-status="{{ item.status }}" data-proof-source-status="{{ item.proof_source_status | default: item.status }}">
+        {% assign resolved_item = item %}
+        {% if module and module.item_keys and proof.publishable_items and proof.publishable_items[item.key] %}
+          {% assign resolved_item = proof.publishable_items[item.key] %}
+        {% endif %}
+        {% assign linked_case_key = resolved_item.case_study_ref | default: site.data.case_studies.proof_replacements[resolved_item.key] %}
+        {% assign linked_case = site.data.case_studies.items[linked_case_key] %}
+        <article class="sourced-proof__card sourced-proof__card--{{ resolved_item.status }}" data-proof-item data-proof-status="{{ resolved_item.status }}" data-proof-source-status="{{ resolved_item.proof_source_status | default: resolved_item.status }}">
           <div class="sourced-proof__card-top">
             <span class="sourced-proof__badge">
-              {% if item.status == 'placeholder' %}
+              {% if resolved_item.status == 'placeholder' %}
                 {{ proof.placeholder_badge }}
               {% else %}
                 {{ proof.publishable_badge }}
               {% endif %}
             </span>
-            <p class="sourced-proof__source"><strong>{{ proof.source_label }}:</strong> {{ item.proof_source_label | default: item.source_label }}</p>
+            <p class="sourced-proof__source"><strong>{{ proof.source_label }}:</strong> {{ resolved_item.proof_source_label | default: resolved_item.source_label }}</p>
           </div>
-          <h3>{{ item.title }}</h3>
-          <p>{{ item.summary }}</p>
-          <p class="sourced-proof__attribution"><strong>{{ proof.attribution_label }}:</strong> {{ item.attribution }}</p>
-          {% if item.status == 'placeholder' %}
+          <h3>{{ resolved_item.title }}</h3>
+          <p>{{ resolved_item.summary }}</p>
+          <p class="sourced-proof__attribution"><strong>{{ proof.attribution_label }}:</strong> {{ resolved_item.attribution }}</p>
+          {% if linked_case %}
+            {% assign linked_route = linked_case.route[lang] | default: linked_case.route.uk %}
+            <p><a class="service-card__link" href="{{ linked_route | relative_url }}">{% if lang == 'en' %}Open the backing dossier{% else %}Перейти до досьє-джерела{% endif %}</a></p>
+          {% endif %}
+          {% if resolved_item.status == 'placeholder' %}
             <p class="sourced-proof__note">{{ proof.placeholder_note }}</p>
           {% endif %}
         </article>

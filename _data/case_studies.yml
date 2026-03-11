@@ -126,6 +126,10 @@ route_groups:
       en:
         title: Which dossiers explain the value of site supervision most clearly
         text: This is where concealed-junction reporting and pre-handover control turn supervision into buyer-readable proof.
+proof_replacements:
+  routing-audit: apartment-system-renovation
+  hidden-junction-control: wet-zone-control
+  handover-checklist: controlled-handover
 items:
   compact-apartment-engineering:
     status: publishable

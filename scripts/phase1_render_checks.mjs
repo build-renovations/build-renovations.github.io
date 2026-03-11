@@ -336,14 +336,17 @@ function checkRenderedRoutes(contactChannels, callFlow, trustFoundation) {
     if (!html.includes(trustFoundation[lang].proof.source_label) || !html.includes(trustFoundation[lang].proof.attribution_label)) {
       fail(`route ${route} is missing proof source or attribution labels`);
     }
-    if (!html.includes(trustFoundation[lang].proof.placeholder_badge)) {
-      fail(`route ${route} is missing the placeholder/demo proof badge`);
+    const hasPlaceholderProof = html.includes('data-proof-status="placeholder"');
+    const hasPlaceholderBadge = html.includes(trustFoundation[lang].proof.placeholder_badge);
+    const hasPublishableBadge = html.includes(trustFoundation[lang].proof.publishable_badge);
+    if (!hasPlaceholderBadge && !hasPublishableBadge) {
+      fail(`route ${route} is missing a visible proof-status badge`);
     }
-    if (!html.includes(trustFoundation[lang].proof.placeholder_note)) {
-      fail(`route ${route} is missing the placeholder proof disclaimer`);
-    }
-    if (html.includes('data-proof-status="placeholder"') && !html.includes(trustFoundation[lang].proof.placeholder_badge)) {
+    if (hasPlaceholderProof && !hasPlaceholderBadge) {
       fail(`route ${route} shows placeholder proof without explicit placeholder labeling`);
+    }
+    if (hasPlaceholderProof && !html.includes(trustFoundation[lang].proof.placeholder_note)) {
+      fail(`route ${route} is missing the placeholder proof disclaimer`);
     }
 
     const messengerLinks = links.filter((link) => {

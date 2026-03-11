@@ -40,6 +40,34 @@ uk:
     placeholder_badge: "Тимчасовий демо-доказ"
     publishable_badge: "Публічний доказ"
     placeholder_note: "Не клієнтський відгук. Це демонстрація формату доказів для наступних фаз."
+    publishable_items:
+      routing-audit:
+        case_study_ref: apartment-system-renovation
+        status: publishable
+        proof_source_status: publishable
+        proof_source_label: Фотофіксація квартирного маршруту від підготовки до готового сценарію
+        title: "Публічний доказ: системна карта рішень для квартири до чистового етапу"
+        summary: "Досьє показує, як оболонка, мокрі зони, точки світла і готовність до здачі були зібрані в один маршрут ще до того, як фініш сховав помилки."
+        source_label: "Досьє реального квартирного маршруту"
+        attribution: "Побудовано на опублікованому досьє apartment-system-renovation з фотофіксацією етапів і buyer-relevance."
+      hidden-junction-control:
+        case_study_ref: wet-zone-control
+        status: publishable
+        proof_source_status: publishable
+        proof_source_label: Фотофіксація контролю мокрої зони до закриття облицюванням
+        title: "Публічний доказ: приховані вузли перевірені до плитки, скла і фінального монтажу"
+        summary: "Опублікований кейс по мокрій зоні показує, як сервісний доступ, геометрія, трап і стики були зафіксовані до того, як декоративний шар закрив рішення."
+        source_label: "Публічне досьє по контролю мокрої зони"
+        attribution: "Побудовано на опублікованому досьє wet-zone-control з проміжними фото та поясненням контрольних точок."
+      handover-checklist:
+        case_study_ref: controlled-handover
+        status: publishable
+        proof_source_status: publishable
+        proof_source_label: Публічне досьє контрольованої здачі
+        title: "Публічний доказ: контрольні точки готовності перед передачею об'єкта"
+        summary: "Цей матеріал вже не імітує чек-лист. Він показує, як поставки, світло, оздоблення і приймання зон сходяться у читабельну здачу."
+        source_label: "Досьє по контрольованій здачі"
+        attribution: "Побудовано на опублікованому досьє controlled-handover з передфінальними і фінальними кадрами."
     items:
       - key: routing-audit
         status: placeholder
@@ -117,6 +145,34 @@ en:
     placeholder_badge: "Temporary demo proof"
     publishable_badge: "Publishable proof"
     placeholder_note: "Not a client testimonial. This is a demonstration of the proof format planned for later phases."
+    publishable_items:
+      routing-audit:
+        case_study_ref: apartment-system-renovation
+        status: publishable
+        proof_source_status: publishable
+        proof_source_label: Photo-backed apartment route from shell preparation to the finished scene
+        title: "Publishable proof: the apartment decision map is already backed by a real dossier"
+        summary: "This dossier shows how shell prep, wet zones, lighting points, and handover readiness were assembled into one route before the finish layer could hide mistakes."
+        source_label: "Published apartment route dossier"
+        attribution: "Built from the published apartment-system-renovation dossier with stage photography and buyer-relevance framing."
+      hidden-junction-control:
+        case_study_ref: wet-zone-control
+        status: publishable
+        proof_source_status: publishable
+        proof_source_label: Photo-backed wet-zone control before the finish closes the work
+        title: "Publishable proof: concealed junctions are checked before tile, glass, and final fitting"
+        summary: "The wet-zone dossier makes service access, geometry, drain logic, and hidden-junction checks visible before decorative layers hide the decisions."
+        source_label: "Published wet-zone control dossier"
+        attribution: "Built from the published wet-zone-control dossier with intermediate images and explicit control-point notes."
+      handover-checklist:
+        case_study_ref: controlled-handover
+        status: publishable
+        proof_source_status: publishable
+        proof_source_label: Publishable dossier about controlled handover
+        title: "Publishable proof: readiness is checked before the property is handed over"
+        summary: "This no longer stands in for a checklist. It shows how deliveries, lighting, finishing, and acceptance converge into a readable handover route."
+        source_label: "Published controlled-handover dossier"
+        attribution: "Built from the published controlled-handover dossier with pre-final and final photography."
     items:
       - key: routing-audit
         status: placeholder
