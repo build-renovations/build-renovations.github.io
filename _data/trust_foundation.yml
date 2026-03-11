@@ -6,6 +6,7 @@ required_modules:
   - accountability
   - proof
   - page_contexts
+  - case_study_bridge
 uk:
   strip:
     eyebrow: "Хто веде об'єкт"
@@ -42,18 +43,24 @@ uk:
     items:
       - key: routing-audit
         status: placeholder
+        proof_source_status: temporary-demo-proof
+        proof_source_label: Тимчасовий демо-доказ маршруту
         title: "Демо: маршрут рішень для об'єкта до старту робіт"
         summary: "Майбутній публічний матеріал показуватиме, які вузли, ризики та суміжні етапи були зібрані в одну стартову карту."
         source_label: "Демо-структура сайту"
         attribution: "Placeholder content for Phase 1 until publishable site-audit material is approved."
       - key: hidden-junction-control
         status: placeholder
+        proof_source_status: temporary-demo-proof
+        proof_source_label: Тимчасовий демо-доказ прихованих вузлів
         title: "Демо: фотофіксація прихованих вузлів до закриття"
         summary: "На реальному кейсі тут з'явиться добірка кадрів і короткі пояснення, що саме було перевірено перед оздобленням."
         source_label: "Тимчасовий формат доказу"
         attribution: "Phase 1 placeholder demonstrating how concealed-junction proof will be labeled."
       - key: handover-checklist
         status: placeholder
+        proof_source_status: temporary-demo-proof
+        proof_source_label: Тимчасовий демо-доказ здачі
         title: "Демо: перелік контрольних точок перед здачею"
         summary: "Публічний доказ пізніше покаже, які саме деталі й переходи між етапами були перевірені перед завершенням об'єкта."
         source_label: "Демо чек-лист"
@@ -71,6 +78,12 @@ uk:
     contact:
       title: "На контактах модулі довіри мають стояти поруч із поясненням першого дзвінка"
       text: "Фінальний конверсійний екран повинен доводити, що команда працює предметно ще до початку розмови."
+  case_study_bridge:
+    title: "Перші проєкти-докази замінюють абстрактну довіру конкретним маршрутом"
+    text: "Поки не всі сторінки отримали повні досьє, головна вже має вести в ті кейси, де видно buyer relevance, етапи і статус джерела доказу."
+    refs:
+      - compact-apartment-engineering
+      - house-stage-coordination
 en:
   strip:
     eyebrow: "Who runs the project"
@@ -107,18 +120,24 @@ en:
     items:
       - key: routing-audit
         status: placeholder
+        proof_source_status: temporary-demo-proof
+        proof_source_label: Temporary demo route proof
         title: "Demo: decision-routing map before work starts"
         summary: "The future publishable item will show which junctions, risks, and adjacent stages were assembled into one starting map."
         source_label: "Site demo structure"
         attribution: "Placeholder content for Phase 1 until publishable site-audit material is approved."
       - key: hidden-junction-control
         status: placeholder
+        proof_source_status: temporary-demo-proof
+        proof_source_label: Temporary concealed-junction demo proof
         title: "Demo: photo reporting for concealed junctions before closure"
         summary: "A real case later will add image-backed notes about what was checked before finishing covered the work."
         source_label: "Temporary proof format"
         attribution: "Phase 1 placeholder demonstrating how concealed-junction proof will be labeled."
       - key: handover-checklist
         status: placeholder
+        proof_source_status: temporary-demo-proof
+        proof_source_label: Temporary handover demo proof
         title: "Demo: control-point checklist before handover"
         summary: "The publishable version will show which details and stage transitions were checked before the property was handed over."
         source_label: "Demo checklist"
@@ -136,3 +155,9 @@ en:
     contact:
       title: "On contact, trust modules need to sit next to the first-call explanation"
       text: "The last conversion surface should prove that the team works concretely before the conversation even starts."
+  case_study_bridge:
+    title: "The first project dossiers replace abstract trust with route-level proof"
+    text: "Not every page has a full dossier yet, but the homepage should already point to the cases that show buyer relevance, stage logic, and proof-source status."
+    refs:
+      - compact-apartment-engineering
+      - house-stage-coordination

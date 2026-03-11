@@ -243,6 +243,16 @@ route_bridges:
     - title: Engineering and finish stages
       text: If the question is really about a technical stage, continue to the plumbing, electrical, or finishing pages.
       url: /en/services/
+case_study_bridge:
+  uk:
+    title: Проєкти-докази, які підтверджують логіку процесу
+    text: Ці кейси не дублюють сторінку процесу, а показують, як buyer-relevance, етапи і статус джерела доказу виглядають на конкретному об'єкті.
+  en:
+    title: Project dossiers that prove the process logic
+    text: These cases do not duplicate the process page. They show how buyer relevance, stage logic, and proof-source status look on a real route.
+case_study_refs:
+  - compact-apartment-engineering
+  - house-stage-coordination
 objection_cards:
   uk:
     eyebrow: Заперечення по процесу

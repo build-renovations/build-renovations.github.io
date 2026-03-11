@@ -74,6 +74,16 @@ layout: default
   </div>
 </section>
 
+{% assign home_case_bridge = site.data.trust_foundation[page.lang].case_study_bridge | default: site.data.trust_foundation.uk.case_study_bridge %}
+{% include featured-case-studies.html
+  lang=page.lang
+  refs=home_case_bridge.refs
+  marker="project-index-visibility"
+  surface="home-featured-case-studies"
+  accent=true
+  bridge=home_case_bridge
+%}
+
 <section class="section">
   <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="home-service-teaser">
     <div class="section-heading section-heading--wide">

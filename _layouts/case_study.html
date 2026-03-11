@@ -1,0 +1,113 @@
+---
+layout: default
+---
+{% assign case_study = site.data.case_studies.items[page.case_study_key] %}
+{% assign content = case_study.dossier[page.lang] | default: case_study.dossier.uk %}
+{% assign buyer_relevance = case_study.buyer_relevance[page.lang] | default: case_study.buyer_relevance.uk %}
+{% assign proof_source = case_study.proof_source[page.lang] | default: case_study.proof_source.uk %}
+{% assign bridge = case_study.bridge[page.lang] | default: case_study.bridge.uk %}
+<section class="page-hero">
+  <div class="shell service-hero" data-phase3-marker="dossier-snapshot" data-phase3-surface="case-study-dossier">
+    <div class="service-hero__copy">
+      <p class="eyebrow">{{ content.eyebrow }}</p>
+      <h1>{{ content.title }}</h1>
+      <p class="page-lead">{{ content.lead }}</p>
+      <div class="hero__actions">
+        {% include primary-phone-cta.html lang=page.lang %}
+        <a class="button button--secondary" href="{% if page.lang == 'en' %}{{ '/en/projects/' | relative_url }}{% else %}{{ '/projects/' | relative_url }}{% endif %}">{% if page.lang == 'en' %}All projects{% else %}Усі проєкти{% endif %}</a>
+      </div>
+    </div>
+    <figure class="service-hero__media">
+      <img src="{{ case_study.image | relative_url }}" alt="{{ content.title }}" loading="lazy" width="960" height="1280">
+    </figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="shell" data-phase3-marker="buyer-relevance" data-phase3-surface="case-study-dossier">
+    <div class="process-proof">
+      <div class="process-proof__copy">
+        <p class="eyebrow">{{ content.snapshot_title }}</p>
+        <h2>{{ buyer_relevance.title }}</h2>
+        <p>{{ content.snapshot_text }}</p>
+      </div>
+      <blockquote class="process-proof__quote" data-case-study-buyer-relevance>
+        <p>{{ buyer_relevance.text }}</p>
+        <footer>{{ proof_source.label }}</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="section section--accent">
+  <div class="shell" data-phase3-marker="proof-source-status" data-phase3-surface="case-study-dossier">
+    <div class="service-detail">
+      <article class="service-detail__card" data-case-study-proof-status="{{ case_study.proof_source.status }}">
+        <h2>{% if page.lang == 'en' %}Proof source status{% else %}Статус джерела доказу{% endif %}</h2>
+        <p><strong>{{ proof_source.label }}</strong></p>
+        <p>{{ proof_source.note }}</p>
+      </article>
+      <article class="service-detail__card">
+        <h2>{% if page.lang == 'en' %}Project scope summary{% else %}Коротко про рамку проєкту{% endif %}</h2>
+        <p>{{ case_study.summary[page.lang] | default: case_study.summary.uk }}</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="shell" data-phase3-marker="stage-proof-timeline" data-phase3-surface="case-study-dossier">
+    <div class="section-heading section-heading--wide">
+      <p class="eyebrow">{% if page.lang == 'en' %}Stage-proof timeline{% else %}Таймлайн доказів по етапах{% endif %}</p>
+      <h2>{% if page.lang == 'en' %}How the route moved from audit to readiness{% else %}Як маршрут рухався від аудиту до готовності{% endif %}</h2>
+      <p class="section-intro">{% if page.lang == 'en' %}Each stage is here to show what was checked before the next layer moved in.{% else %}Кожен етап потрібен, щоб показати, що саме перевірили до переходу на наступний шар.{% endif %}</p>
+    </div>
+    <div class="process-stages">
+      {% for stage in case_study.stages %}
+        {% assign stage_content = stage[page.lang] | default: stage.uk %}
+        <article class="process-stage" data-case-study-stage="{{ stage.type }}">
+          <span class="process-stage__index">{{ forloop.index }}</span>
+          <div class="process-stage__copy">
+            <h3>{{ stage_content.title }}</h3>
+            <p>{{ stage_content.text }}</p>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--accent">
+  <div class="shell" data-phase3-marker="dossier-snapshot" data-phase3-surface="case-study-dossier">
+    <div class="service-grid">
+      {% for image in case_study.gallery %}
+        {% assign image_content = image[page.lang] | default: image.uk %}
+        <article class="service-card">
+          <figure class="service-card__media">
+            <img src="{{ image.image | relative_url }}" alt="{{ image_content.alt }}" loading="lazy" width="960" height="1280">
+          </figure>
+          <p>{{ image_content.caption }}</p>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% capture related_bridge_title %}{{ bridge.title }}{% endcapture %}
+{% capture related_bridge_text %}{{ bridge.text }}{% endcapture %}
+{% assign bridge_payload = "" | split: "" %}
+{% assign bridge_payload = bridge_payload | push: related_bridge_title %}
+{% include featured-case-studies.html
+  lang=page.lang
+  refs=page.related_case_study_refs
+  marker="related-route-bridge"
+  surface="case-study-dossier"
+  title=bridge.title
+  intro=bridge.text
+%}
+
+<section class="section">
+  <div class="shell">
+    {% include sourced-proof.html lang=page.lang %}
+  </div>
+</section>

@@ -19,7 +19,7 @@
         {% endif %}
       {% endif %}
       {% if include_item %}
-        <article class="sourced-proof__card sourced-proof__card--{{ item.status }}" data-proof-item data-proof-status="{{ item.status }}">
+        <article class="sourced-proof__card sourced-proof__card--{{ item.status }}" data-proof-item data-proof-status="{{ item.status }}" data-proof-source-status="{{ item.proof_source_status | default: item.status }}">
           <div class="sourced-proof__card-top">
             <span class="sourced-proof__badge">
               {% if item.status == 'placeholder' %}
@@ -28,7 +28,7 @@
                 {{ proof.publishable_badge }}
               {% endif %}
             </span>
-            <p class="sourced-proof__source"><strong>{{ proof.source_label }}:</strong> {{ item.source_label }}</p>
+            <p class="sourced-proof__source"><strong>{{ proof.source_label }}:</strong> {{ item.proof_source_label | default: item.source_label }}</p>
           </div>
           <h3>{{ item.title }}</h3>
           <p>{{ item.summary }}</p>

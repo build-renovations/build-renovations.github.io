@@ -173,6 +173,16 @@ layout: default
   </div>
 </section>
 
+{% assign case_study_bridge = process.case_study_bridge[page.lang] | default: process.case_study_bridge.uk %}
+{% include featured-case-studies.html
+  lang=page.lang
+  refs=process.case_study_refs
+  marker="project-index-visibility"
+  surface="process-featured-case-studies"
+  accent=true
+  bridge=case_study_bridge
+%}
+
 <section class="section section--accent">
   <div class="shell">
     {% include trust-strip.html lang=page.lang accountability=accountability %}

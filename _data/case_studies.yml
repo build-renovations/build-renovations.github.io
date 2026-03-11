@@ -1,0 +1,216 @@
+required_locales:
+  - uk
+  - en
+schema:
+  statuses:
+    - planned
+    - publishable
+  proof_source_types:
+    - site-audit
+    - photo-report
+  stage_types:
+    - audit
+    - engineering
+    - finishing
+    - handover
+items:
+  compact-apartment-engineering:
+    status: publishable
+    route:
+      uk: /projects/compact-apartment-engineering/
+      en: /en/projects/compact-apartment-engineering/
+    translation_key: compact-apartment-engineering
+    image: /assets/images/work/plumbing-bath-installation.webp
+    card_image: /assets/images/work/procurement-living-fit.webp
+    related_services:
+      - apartment-renovation
+      - plumbing
+      - electrical
+    related_property_types:
+      - apartment-renovation
+    proof_source:
+      type: photo-report
+      status: publishable
+      uk:
+        label: Фотофіксація реального маршруту квартири
+        note: Показує керованість прихованих вузлів, світлових рішень і готовності мокрих зон без демо-позначок.
+      en:
+        label: Photo-backed apartment route
+        note: Shows hidden-junction control, lighting decisions, and wet-zone readiness without demo labeling.
+    buyer_relevance:
+      uk:
+        title: Чому це релевантно покупцю квартири
+        text: "Кейc відповідає на головний страх компактної квартири: чи зведуть інженерію, меблі, світло і мокрі зони в один маршрут без конфліктів у фініші."
+      en:
+        title: Why this matters to an apartment buyer
+        text: "This case answers the main compact-apartment concern: whether engineering work, furniture, lighting, and wet zones were assembled into one route before finishing locked the mistakes in."
+    dossier:
+      uk:
+        eyebrow: Проєкт-доказ
+        title: Квартира з щільною інженерією і контролем мокрих зон до фінішу
+        lead: Цей кейс існує не як галерея, а як доказ того, що компактний об'єкт можна провести через сантехніку, електрику і чистовий шар без імпровізації в кінці.
+        snapshot_title: Що тут доведено
+        snapshot_text: Видно не лише готовий інтер'єр, а й маршрут рішень до закриття стель, облицювання та монтажу обладнання.
+      en:
+        eyebrow: Project proof
+        title: Apartment route with dense engineering and wet-zone control before finishing
+        lead: This case is structured as proof, not as a gallery. It shows how a compact property can move through plumbing, electrical work, and finishing without last-minute improvisation.
+        snapshot_title: What this proves
+        snapshot_text: The buyer sees more than a polished interior. The page shows the decision route before ceilings, cladding, and equipment closed the work.
+    summary:
+      uk: Показує, як у компактній квартирі поєднали приховані сантехнічні вузли, світлові сценарії та готовність до здачі.
+      en: Shows how concealed plumbing junctions, lighting scenes, and handover readiness were coordinated inside a compact apartment.
+    bridge:
+      uk:
+        title: Пов'язані маршрути
+        text: Якщо ця квартира схожа на ваш сценарій, далі варто порівняти загальний маршрут квартири, сантехнічний вузол і електричну логіку.
+      en:
+        title: Related routes
+        text: If this apartment matches your situation, the next useful reading path is the apartment route plus the plumbing and electrical detail pages.
+    gallery:
+      - image: /assets/images/work/core-shell-prep.webp
+        uk:
+          alt: Підготовлена квартира до старту прихованих вузлів
+          caption: Початкова підготовка показує, що компактний простір був зібраний під інженерію до чистового шару.
+        en:
+          alt: Apartment shell prepared before concealed work begins
+          caption: The shell stage shows that the compact plan was assembled around engineering constraints before the finish layer.
+      - image: /assets/images/work/plumbing-bath-installation.webp
+        uk:
+          alt: Монтаж сантехніки у мокрій зоні квартири
+          caption: Мокра зона фіксується на етапі, коли ще видно логіку доступу, ревізій і геометрії.
+        en:
+          alt: Plumbing installation inside the apartment wet zone
+          caption: The wet zone is documented while service access, inspection logic, and geometry remain visible.
+      - image: /assets/images/work/electrical-led-room.webp
+        uk:
+          alt: Готовий світловий сценарій у квартирі
+          caption: Фінішний кадр пов'язаний з чорновими рішеннями по точках і навантаженню, а не існує окремо від них.
+        en:
+          alt: Finished lighting scene in the apartment
+          caption: The final image is tied back to rough-stage point and load decisions instead of standing alone as decoration.
+    stages:
+      - key: audit
+        type: audit
+        uk:
+          title: Аудит і маршрут вузлів
+          text: До старту зібрали геометрію мокрих зон, світлові сценарії та меблеві прив'язки, щоб далі не лікувати помилки фінішем.
+        en:
+          title: Audit and junction route
+          text: Wet-zone geometry, lighting scenes, and furniture coordinates were defined before work started so the finish layer would not be used to repair bad early decisions.
+      - key: engineering
+        type: engineering
+        uk:
+          title: Приховані вузли під контролем
+          text: Сантехніка і електрика проходять фотофіксацію до облицювання і стель, тому покупець бачить не лише обіцянку, а точку перевірки.
+        en:
+          title: Concealed junction control
+          text: Plumbing and electrical work are photo-documented before cladding and ceilings close them, so the buyer sees a real control point instead of a promise.
+      - key: handover
+        type: handover
+        uk:
+          title: Здача без розриву між технікою і виглядом
+          text: Фінальний результат читається як готовий простір, бо технічні рішення були зібрані ще до фінішу.
+        en:
+          title: Handover without a gap between technical work and visual finish
+          text: The final state reads as a ready-to-use space because the technical decisions were assembled before decoration.
+  house-stage-coordination:
+    status: publishable
+    route:
+      uk: /projects/house-stage-coordination/
+      en: /en/projects/house-stage-coordination/
+    translation_key: house-stage-coordination
+    image: /assets/images/work/electrical-track-corridor.webp
+    card_image: /assets/images/work/finishing-hallway.webp
+    related_services:
+      - house-renovation
+      - electrical
+      - procurement
+    related_property_types:
+      - house-renovation
+    proof_source:
+      type: site-audit
+      status: publishable
+      uk:
+        label: Публічний кейс по координації зон будинку
+        note: Пояснює, як поверхи, поставки і готовність кімнат тримались в одному маршруті до здачі.
+      en:
+        label: Publishable house coordination case
+        note: Explains how floors, deliveries, and room readiness stayed inside one route through handover.
+    buyer_relevance:
+      uk:
+        title: Чому це релевантно покупцю будинку
+        text: "Тут показано не просто красиві кімнати, а дисципліну великого об'єкта: як тримали зони, поставки і контроль переходів між етапами."
+      en:
+        title: Why this matters to a house buyer
+        text: "The point here is not pretty rooms. It is showing large-property discipline: zone control, delivery timing, and stage handoffs across the whole house."
+    dossier:
+      uk:
+        eyebrow: Проєкт-доказ
+        title: Будинок, де масштаб не зламав координацію між зонами
+        lead: Цей кейс потрібен для покупця, який боїться не окремої кімнати, а розпаду логіки між поверхами, поставками і здачею великого об'єкта.
+        snapshot_title: Що тут доведено
+        snapshot_text: Сторінка фіксує маршрут рішень по зонах, контроль прихованих етапів і готовність кімнат до монтажу та передачі.
+      en:
+        eyebrow: Project proof
+        title: House route where scale did not break coordination between zones
+        lead: This case is for the buyer who is worried less about one room and more about the whole property losing order between floors, deliveries, and handoff.
+        snapshot_title: What this proves
+        snapshot_text: The page captures zone sequencing, hidden-stage control, and room readiness for installation and handover.
+    summary:
+      uk: Пояснює, як у будинку з кількома зонами тримали один маршрут для інженерії, поставок і фінального запуску.
+      en: Explains how a multi-zone house kept one route for engineering work, deliveries, and final readiness.
+    bridge:
+      uk:
+        title: Пов'язані маршрути
+        text: Для схожого сценарію варто читати сторінку будинку, повний процес і етапи, які найбільше впливають на готовність зон.
+      en:
+        title: Related routes
+        text: For a similar property, the next useful path is the house route, the process page, and the stages that most strongly affect room readiness.
+    gallery:
+      - image: /assets/images/work/core-open-floor-ready.webp
+        uk:
+          alt: Відкритий простір будинку на етапі підготовки
+          caption: Рання стадія потрібна, щоб показати, як масштаб об'єкта розкладається на керовані зони.
+        en:
+          alt: Open house floor during the preparation stage
+          caption: The early stage shows how a larger property is broken down into controllable zones.
+      - image: /assets/images/work/electrical-track-corridor.webp
+        uk:
+          alt: Етап електричної координації у коридорі будинку
+          caption: Координація проходів, світла і сервісних зон фіксується до того, як стелі та оздоблення закриють рішення.
+        en:
+          alt: Electrical coordination stage in the house corridor
+          caption: Corridor circulation, lighting, and service logic are documented before ceilings and finishes cover the decisions.
+      - image: /assets/images/work/finishing-hallway.webp
+        uk:
+          alt: Готовий коридор будинку після фінішу
+          caption: Фінішний вигляд підкріплений маршрутом перевірок, а не існує як ізольована картинка.
+        en:
+          alt: Finished house corridor after handover
+          caption: The finished look is backed by a verified route instead of standing as an isolated beauty shot.
+    stages:
+      - key: audit
+        type: audit
+        uk:
+          title: Зонування і стартова карта
+          text: До активних робіт визначили, які поверхи і кімнати відкриваються першими, що блокує поставки і де потрібні контрольні точки.
+        en:
+          title: Zoning and the starting map
+          text: Before active work, the team defined which floors and rooms would open first, what blocked deliveries, and where control points were needed.
+      - key: finishing
+        type: finishing
+        uk:
+          title: Координація суміжних етапів
+          text: Електрика, оздоблення і комплектація рухалися за реальною готовністю зон, а не за випадковими вікнами в графіку.
+        en:
+          title: Cross-stage coordination
+          text: Electrical work, finishing, and procurement moved according to real zone readiness instead of opportunistic schedule gaps.
+      - key: handover
+        type: handover
+        uk:
+          title: Читабельна готовність до здачі
+          text: Передача об'єкта спиралась на перевірені зони і зрозумілий статус, а не лише на декоративний фінал.
+        en:
+          title: Readable handover readiness
+          text: The property handoff rested on checked zones and readable status, not only on decorative completion.

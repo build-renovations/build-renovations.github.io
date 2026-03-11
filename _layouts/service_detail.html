@@ -3,6 +3,8 @@ layout: default
 ---
 {% assign service = site.data.service_pages.items[page.service_key] %}
 {% assign content = service[page.lang] | default: service.uk %}
+{% assign case_study_refs = service.case_study_refs | default: content.case_study_refs %}
+{% assign case_study_bridge = service.case_study_bridge[page.lang] | default: content.case_study_bridge %}
 {% assign t = site.data.translations[page.lang] | default: site.data.translations.uk %}
 {% assign accountability = content.accountability %}
 {% assign proof_module = content.proof_module %}
@@ -181,6 +183,16 @@ layout: default
     </div>
   </div>
 </section>
+{% endif %}
+
+{% if case_study_refs and case_study_bridge %}
+  {% include featured-case-studies.html
+    lang=page.lang
+    refs=case_study_refs
+    marker="project-index-visibility"
+    surface="service-featured-case-studies"
+    bridge=case_study_bridge
+  %}
 {% endif %}
 
 <section class="section section--accent">
