@@ -191,6 +191,29 @@ handoff:
       text: The buyer can see which zones are ready for normal use and what was verified before handoff.
     - title: Less post-project chaos
       text: The result reads as a finished system instead of a beautiful ending with hidden leftovers.
+coordination:
+  uk:
+    eyebrow: Координація між етапами
+    title: Спокій покупця тримається на тому, як зібрані переходи між роботами
+    text: Процес має пояснювати не тільки окремі етапи, а й момент переходу між ними. Саме тут видно, чи рішення, поставки і готовність зон складаються в одну систему.
+    items:
+    - title: Рішення не розсипаються між командами
+      text: Геометрія, інженерія, меблі й матеріали зводяться в одну карту залежностей ще до переходу до наступної стадії.
+    - title: Кожна зона має точку приймання
+      text: Наступний етап входить лише тоді, коли попередній шар перевірено і він не створює прихованого конфлікту.
+    - title: Логіка руху видима клієнту
+      text: Фотофіксація і статус потрібні, щоб покупець розумів, чому об'єкт іде далі без хаосу і поспіху.
+  en:
+    eyebrow: Coordination between stages
+    title: Buyer confidence depends on how the handoffs between trades are assembled
+    text: The process page should explain not only separate stages, but the moment of transition between them. This is where decisions, deliveries, and zone readiness either become one system or fall apart.
+    items:
+    - title: Decisions do not scatter between teams
+      text: Geometry, engineering work, furniture, and materials are assembled into one dependency map before the next stage starts.
+    - title: Every zone has an acceptance point
+      text: The next stage enters only after the previous layer is checked and known not to create hidden conflict.
+    - title: The route stays visible to the buyer
+      text: Photo reporting and status notes exist so the buyer can understand why the property can move forward without chaos or rush.
 route_bridges:
   uk:
     eyebrow: Куди йти далі
