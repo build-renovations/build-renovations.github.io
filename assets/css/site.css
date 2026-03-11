@@ -445,6 +445,10 @@ h3 {
   margin-top: 3rem;
 }
 
+.service-card__eyebrow + h3 {
+  margin-top: 0.55rem;
+}
+
 .feature-band,
 .contact-banner {
   display: grid;

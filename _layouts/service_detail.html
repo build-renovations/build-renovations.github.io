@@ -229,8 +229,8 @@ layout: default
   <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="service-route-bridge">
     <div class="section-heading section-heading--wide">
       <p class="eyebrow">{{ t.phase2_next_route_label }}</p>
-      <h2>{% if page.lang == 'en' %}Read the connected stages before you lock the final scope{% else %}Прочитайте пов'язані етапи до того, як фіксувати фінальний обсяг робіт{% endif %}</h2>
-      <p class="section-intro">{% if page.lang == 'en' %}A strong service page should clarify what needs to be aligned around this stage, not pretend the route ends here.{% else %}Сильна сторінка послуги має показати, що саме потрібно узгодити навколо цього етапу, а не робити вигляд, що маршрут закінчується тут.{% endif %}</p>
+      <h2>{% if page.service_key == 'apartment-renovation' or page.service_key == 'house-renovation' %}{% if page.lang == 'en' %}Read the service pages that usually shape this project format next{% else %}Прочитайте далі ті сторінки послуг, які зазвичай формують саме цей тип проєкту{% endif %}{% else %}{% if page.lang == 'en' %}Read the connected stages before you lock the final scope{% else %}Прочитайте пов'язані етапи до того, як фіксувати фінальний обсяг робіт{% endif %}{% endif %}</h2>
+      <p class="section-intro">{% if page.service_key == 'apartment-renovation' or page.service_key == 'house-renovation' %}{% if page.lang == 'en' %}These property-format pages should send the buyer toward the trade pages and the process page that clarify the next real decisions, not trap them in one generic route.{% else %}Сторінки за форматом об'єкта мають вести покупця до тих сторінок послуг і процесу, які пояснюють наступні реальні рішення, а не замикати його в одному загальному сценарії.{% endif %}{% else %}{% if page.lang == 'en' %}A strong service page should clarify what needs to be aligned around this stage, not pretend the route ends here.{% else %}Сильна сторінка послуги має показати, що саме потрібно узгодити навколо цього етапу, а не робити вигляд, що маршрут закінчується тут.{% endif %}{% endif %}</p>
     </div>
     <div class="service-grid">
       <article class="service-card">

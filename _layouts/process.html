@@ -229,7 +229,7 @@ layout: default
 <section class="section section--accent">
   <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="process-route-bridges">
     <div class="section-heading section-heading--wide">
-      <p class="eyebrow">{{ route_bridges.eyebrow }}</p>
+      <p class="eyebrow">{{ route_bridges.eyebrow | default: t.route_bridge_label }}</p>
       <h2>{{ route_bridges.title }}</h2>
       <p class="section-intro">{{ route_bridges.text }}</p>
     </div>
