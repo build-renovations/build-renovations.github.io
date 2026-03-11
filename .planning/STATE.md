@@ -6,14 +6,14 @@ current_phase: 01
 current_phase_name: trust and phone foundation
 current_plan: 3
 status: verifying
-stopped_at: Completed 01-03-PLAN.md
-last_updated: "2026-03-11T11:13:49.690Z"
+stopped_at: Completed 01-04-PLAN.md
+last_updated: "2026-03-11T12:34:40.851Z"
 last_activity: 2026-03-11
 progress:
   total_phases: 5
   completed_phases: 1
-  total_plans: 3
-  completed_plans: 3
+  total_plans: 4
+  completed_plans: 4
   percent: 100
 ---
 
@@ -31,11 +31,11 @@ See: `.planning/PROJECT.md` (updated 2026-03-10)
 - **Current Phase:** 01
 - **Current Phase Name:** trust and phone foundation
 - **Total Phases:** 5
-- **Current Plan:** 3
-- **Total Plans in Phase:** 3
+- **Current Plan:** 4
+- **Total Plans in Phase:** 4
 - **Status:** Phase complete — ready for verification
 - **Last Activity:** 2026-03-11
-- **Last Activity Description:** Executing 01-03 trust layer rollout
+- **Last Activity Description:** Executing 01-04 trust copy gap closure
 - **Progress:** [██████████] 100%
 
 ## Performance Metrics
@@ -43,6 +43,7 @@ See: `.planning/PROJECT.md` (updated 2026-03-10)
 | Plan | Duration | Tasks | Files |
 |------|----------|-------|-------|
 | Phase 01 P03 | 7min | 4 tasks | 18 files |
+| Phase 01 P04 | 18 min | 3 tasks | 4 files |
 
 ## Decisions
 
@@ -55,6 +56,8 @@ See: `.planning/PROJECT.md` (updated 2026-03-10)
 - [Phase 01]: Trust content stays centralized in _data/trust_foundation.yml and shared includes so UA/EN parity is enforced from one contract.
 - [Phase 01]: Proof remains explicit placeholder/demo content with visible source and attribution labels until publishable evidence is available.
 - [Phase 01]: Phase 1 render checks now require trust-strip, accountability, and sourced-proof modules on the main UA/EN decision routes.
+- [Phase 01]: Kept the trust-strip card structure unchanged and solved the trust-label issue through shared data only.
+- [Phase 01]: Limited the copy pass to the exact UAT gaps so no CTA hierarchy, layout, or unrelated trust copy drifted.
 
 ## Blockers
 
@@ -62,6 +65,6 @@ None
 
 ## Session
 
-- **Last Date:** 2026-03-11T11:13:49.688Z
-- **Stopped At:** Completed 01-03-PLAN.md
+- **Last Date:** 2026-03-11T12:34:40.849Z
+- **Stopped At:** Completed 01-04-PLAN.md
 - **Resume File:** None
