@@ -4,17 +4,17 @@ milestone: v1.0
 milestone_name: milestone
 current_phase: 03
 current_phase_name: case study and proof system
-current_plan: 2
+current_plan: 3
 status: executing
-stopped_at: Completed 03-02-PLAN.md
-last_updated: "2026-03-11T19:43:01.049Z"
+stopped_at: Completed 03-03-PLAN.md
+last_updated: "2026-03-11T19:56:18.490Z"
 last_activity: 2026-03-11
 progress:
   total_phases: 5
   completed_phases: 2
   total_plans: 12
-  completed_plans: 10
-  percent: 83
+  completed_plans: 11
+  percent: 92
 ---
 
 # Project State
@@ -31,12 +31,12 @@ See: `.planning/PROJECT.md` (updated 2026-03-10)
 - **Current Phase:** 03
 - **Current Phase Name:** case study and proof system
 - **Total Phases:** 5
-- **Current Plan:** 2
+- **Current Plan:** 3
 - **Total Plans in Phase:** 4
-- **Status:** Ready to execute
+- **Status:** Executing
 - **Last Activity:** 2026-03-11
-- **Last Activity Description:** Finalized Phase 3 research, validation strategy, and execution plans
-- **Progress:** [████████░░] 83%
+- **Last Activity Description:** Executed 03-03 route integration, dossier-backed proof replacement, and supporting-page bridge rollout
+- **Progress:** [█████████░] 92%
 
 ## Performance Metrics
 
@@ -46,6 +46,7 @@ See: `.planning/PROJECT.md` (updated 2026-03-10)
 | Phase 01 P04 | 18 min | 3 tasks | 4 files |
 | Phase 02 P01 | 13m | 4 tasks | 12 files |
 | Phase 03 P02 | 6min | 3 tasks | 8 files |
+| Phase 03 P03 | 11min | 3 tasks | 12 files |
 
 ## Decisions
 
@@ -68,6 +69,9 @@ See: `.planning/PROJECT.md` (updated 2026-03-10)
 - [Phase 03]: Homepage, process, and service/property routes will map into case studies through shared keys so deeper proof routing stays bilingual and testable.
 - [Phase 03]: The first dossier rollout adds new publishable project keys instead of replacing the Phase 3 foundation examples, so existing proof integrations keep working while the named routes from this plan go live.
 - [Phase 03]: Buyer relevance now includes linked service and property routes high on the page so visitors understand the practical fit before the detailed stage timeline.
+- [Phase 03]: Featured dossier selection now lives in _data/case_studies.yml so home, process, and service routes pull from one shared mapping contract.
+- [Phase 03]: Default sourced-proof cards remain visibly temporary for legacy surfaces, while module-driven proof blocks upgrade to publishable dossier-backed cards when real evidence exists.
+- [Phase 03]: About and services index pages keep the inherited sourced-proof module for Phase 1 parity but add lightweight dossier bridges instead of long duplicate proof copy.
 
 ## Blockers
 
@@ -75,6 +79,6 @@ None
 
 ## Session
 
-- **Last Date:** 2026-03-11T19:43:01.047Z
-- **Stopped At:** Completed 03-02-PLAN.md
+- **Last Date:** 2026-03-11T19:56:08.662Z
+- **Stopped At:** Completed 03-03-PLAN.md
 - **Resume File:** None
