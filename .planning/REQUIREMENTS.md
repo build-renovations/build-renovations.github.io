@@ -9,8 +9,8 @@
 
 - [x] **TRST-01**: Visitor can see clear business identity and legitimacy signals on core pages, including company framing, service profile, and trust-supporting commercial context.
 - [x] **TRST-02**: Visitor can understand what kinds of renovation projects are a fit before making contact.
-- [ ] **TRST-03**: Visitor can understand how the team manages scope, coordination, and accountability across renovation stages.
-- [ ] **TRST-04**: Visitor can access sourced trust proof such as testimonials, reviews, credentials, or equivalent evidence without leaving the core decision path.
+- [x] **TRST-03**: Visitor can understand how the team manages scope, coordination, and accountability across renovation stages.
+- [x] **TRST-04**: Visitor can access sourced trust proof such as testimonials, reviews, credentials, or equivalent evidence without leaving the core decision path.
 
 ### Phone-First Conversion
 
@@ -78,8 +78,8 @@
 |-------------|-------|--------|
 | TRST-01 | Phase 1 | Complete |
 | TRST-02 | Phase 1 | Complete |
-| TRST-03 | Phase 1 | Pending |
-| TRST-04 | Phase 1 | Pending |
+| TRST-03 | Phase 1 | Complete |
+| TRST-04 | Phase 1 | Complete |
 | CALL-01 | Phase 1 | Complete |
 | CALL-02 | Phase 1 | Complete |
 | CALL-03 | Phase 1 | Complete |
