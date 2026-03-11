@@ -111,11 +111,6 @@ items:
           text: Електрика, сантехніка, стелі й комплектація мають бути погоджені так, щоб не виправляти одне одного після монтажу.
         - title: Перед здачею квартири
           text: Клієнт має бачити, які зони реально готові до користування, а які рішення були перевірені до фінального запуску.
-      case_study_bridge:
-        title: Які досьє найкраще пояснюють ризики квартири
-        text: Ці кейси допомагають перейти від загального опису квартири до конкретного доказу по прихованих вузлах, світлу і готовності до здачі.
-      case_study_refs:
-      - compact-apartment-engineering
       faq_refs:
       - project-start
       - single-stage
@@ -202,11 +197,6 @@ items:
           text: Electrical work, plumbing, ceilings, and procurement need alignment so they do not repair one another during installation.
         - title: Before apartment handover
           text: The buyer should be able to see which zones are truly ready for use and which decisions were checked before final launch.
-      case_study_bridge:
-        title: Which dossiers explain apartment risk most clearly
-        text: These cases move the buyer from the general apartment route into specific proof about concealed junctions, lighting, and handover readiness.
-      case_study_refs:
-      - compact-apartment-engineering
       faq_refs:
       - project-start
       - single-stage
@@ -308,11 +298,6 @@ items:
           text: Інженерія, оздоблення, меблі й логістика мають бути синхронізовані з реальною готовністю зон, а не з бажаними датами.
         - title: Перед передачею будинку
           text: Клієнт має розуміти, які вузли прийняті по всьому об'єкту і що саме вважається готовим до нормального користування.
-      case_study_bridge:
-        title: Які досьє найкраще пояснюють ризики будинку
-        text: Вони показують, як масштаб, зони і готовність кімнат збираються в один маршрут до передачі об'єкта.
-      case_study_refs:
-      - house-stage-coordination
       faq_refs:
       - materials
       - quality-control
@@ -399,11 +384,6 @@ items:
           text: Engineering work, finishing, furniture, and logistics must stay synchronized with actual zone readiness instead of preferred dates.
         - title: Before house handover
           text: The buyer should understand which junctions were accepted across the property and what is truly ready for normal use.
-      case_study_bridge:
-        title: Which dossiers explain house risk most clearly
-        text: They show how scale, zoning, and room readiness are assembled into one route before handover.
-      case_study_refs:
-      - house-stage-coordination
       faq_refs:
       - materials
       - quality-control
@@ -511,12 +491,6 @@ items:
           text: Приховані вузли, ревізії та логіка монтажу обладнання мають пройти перевірку до закриття плиткою.
         - title: Перед здачею
           text: Клієнт має бачити не тільки красиву ванну кімнату, а й підтверджений маршрут експлуатації та обслуговування.
-      case_study_bridge:
-        title: Досьє, які показують сантехніку як доказ, а не як набір фото
-        text: Ці кейси фокусуються на прихованих вузлах, сервісному доступі і buyer-relevance для мокрих зон та квартир.
-      case_study_refs:
-      - compact-apartment-engineering
-      - house-stage-coordination
       faq_refs:
       - single-stage
       - quality-control
@@ -608,12 +582,6 @@ items:
           text: Concealed junctions, inspection points, and fixture logic need a clear check before tile or panels hide them.
         - title: Before handover
           text: The buyer should see not only an attractive bathroom, but a confirmed route for normal use and future service.
-      case_study_bridge:
-        title: Dossiers that show plumbing as proof instead of a photo set
-        text: These cases focus on concealed junctions, service access, and buyer relevance for wet zones and apartment routes.
-      case_study_refs:
-      - compact-apartment-engineering
-      - house-stage-coordination
       faq_refs:
       - single-stage
       - quality-control
@@ -721,12 +689,6 @@ items:
           text: Точки, треки, LED і сервісні зони мають пройти перевірку до фінішного шару.
         - title: Перед завершенням
           text: Готовий простір має підтверджувати не тільки монтаж точок, а й логіку користування кожною зоною.
-      case_study_bridge:
-        title: Досьє, які показують електрику через маршрут рішень
-        text: Тут видно, як чорнові точки, світлові сцени і готовність до експлуатації переводяться у publishable proof без демо-позначок.
-      case_study_refs:
-      - compact-apartment-engineering
-      - house-stage-coordination
       faq_refs:
       - single-stage
       - quality-control
@@ -818,12 +780,6 @@ items:
           text: Points, tracks, LED runs, and service zones need to be checked before the finish layer seals them.
         - title: Before completion
           text: The finished property should confirm not only installed points, but a working usage scenario for each zone.
-      case_study_bridge:
-        title: Dossiers that show electrical work through the decision route
-        text: These cases show how rough-stage points, lighting scenes, and readiness for use turn into publishable proof without demo labels.
-      case_study_refs:
-      - compact-apartment-engineering
-      - house-stage-coordination
       faq_refs:
       - single-stage
       - quality-control
