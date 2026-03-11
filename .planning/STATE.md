@@ -2,19 +2,19 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-current_phase: 02
-current_phase_name: content architecture expansion
-current_plan: 1
-status: in_progress
-stopped_at: Completed 02-01-PLAN.md
-last_updated: "2026-03-11T15:02:15.657Z"
+current_phase: 03
+current_phase_name: case study and proof system
+current_plan: 0
+status: ready_to_execute
+stopped_at: Phase 3 planning complete
+last_updated: "2026-03-11T16:45:00.000Z"
 last_activity: 2026-03-11
 progress:
   total_phases: 5
-  completed_phases: 1
-  total_plans: 8
-  completed_plans: 5
-  percent: 63
+  completed_phases: 2
+  total_plans: 12
+  completed_plans: 8
+  percent: 67
 ---
 
 # Project State
@@ -24,19 +24,19 @@ progress:
 See: `.planning/PROJECT.md` (updated 2026-03-10)
 
 **Core value:** Make a renovation buyer feel enough trust, clarity, and urgency to call after seeing a polished, glitch-free site with concrete proof of how the work is controlled.
-**Current focus:** Phase 2 — Content Architecture Expansion
+**Current focus:** Phase 3 — Case Study And Proof System
 
 ## Current Position
 
-- **Current Phase:** 02
-- **Current Phase Name:** content architecture expansion
+- **Current Phase:** 03
+- **Current Phase Name:** case study and proof system
 - **Total Phases:** 5
-- **Current Plan:** 1
+- **Current Plan:** 0
 - **Total Plans in Phase:** 4
-- **Status:** Phase in progress — Plan 01 complete, continuing remaining phase plans
+- **Status:** Phase planned — execution ready
 - **Last Activity:** 2026-03-11
-- **Last Activity Description:** Completed 02-01 Phase 2 guardrails and shared content contract setup
-- **Progress:** [██████░░░░] 63%
+- **Last Activity Description:** Finalized Phase 3 research, validation strategy, and execution plans
+- **Progress:** [███████░░░] 67%
 
 ## Performance Metrics
 
@@ -62,6 +62,9 @@ See: `.planning/PROJECT.md` (updated 2026-03-10)
 - [Phase 02]: Phase 2 validation is additive: qa.sh now runs Phase 1 and Phase 2 render checks together so trust and phone coverage cannot regress while content depth expands.
 - [Phase 02]: Shared FAQ content now uses grouped stable keys so service pages, the process page, and the standalone FAQ can reuse the same bilingual answers without copy drift.
 - [Phase 02]: Service-detail and process layouts carry the deepest Phase 2 modules while home and generic pages stay lighter and primarily bridge users toward those deeper reading surfaces.
+- [Phase 03]: Phase 3 will introduce a dedicated `/projects/` route family backed by `_data/case_studies.yml` rather than trying to stretch service galleries into full project dossiers.
+- [Phase 03]: Publishable proof may replace Phase 1 temporary proof only where real project-backed evidence exists; any unreplaced proof must stay visibly temporary.
+- [Phase 03]: Homepage, process, and service/property routes will map into case studies through shared keys so deeper proof routing stays bilingual and testable.
 
 ## Blockers
 
@@ -69,6 +72,6 @@ None
 
 ## Session
 
-- **Last Date:** 2026-03-11T15:02:15.655Z
-- **Stopped At:** Completed 02-01-PLAN.md
+- **Last Date:** 2026-03-11T16:45:00.000Z
+- **Stopped At:** Phase 3 planning complete
 - **Resume File:** None

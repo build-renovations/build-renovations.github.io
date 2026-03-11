@@ -6,7 +6,9 @@ Use this file as the orchestrator-managed queue. Every task must have one owner 
 
 | ID | Title | Owner | Status | Tool mode | Depends on | Definition of done |
 | --- | --- | --- | --- | --- | --- | --- |
-| ORCH-003 | Track placeholder replacement across later roadmap phases | orchestrator | ready | repo_only | ORCH-002 | Phase 3 and Phase 5 planning explicitly replace placeholder proof and placeholder business identity/contact content before release |
+| PHASE3-001 | Execute Phase 3 Wave 1 foundation | development | ready | repo_only | ORCH-003 | Shared case-study contract, `/projects/` route family scaffold, and Phase 3 QA guardrails are implemented and passing |
+| PHASE3-002 | Execute Phase 3 dossier rollout | content | ready | repo_only | PHASE3-001 | At least three bilingual project dossiers are live with honest stage logic and buyer-relevance framing |
+| PHASE3-003 | Integrate case studies into entry routes | development | ready | repo_only | PHASE3-002 | Homepage, process, and representative service routes link into relevant dossiers and placeholder proof is selectively replaced where publishable evidence exists |
 
 ## In progress
 
@@ -30,6 +32,7 @@ Use this file as the orchestrator-managed queue. Every task must have one owner 
 
 | ID | Title | Owner | Status | Tool mode | Depends on | Outcome |
 | --- | --- | --- | --- | --- | --- | --- |
+| ORCH-003 | Track placeholder replacement across later roadmap phases | orchestrator | done | repo_only | ORCH-002 | Phase 3 plans now define placeholder-proof replacement and preserve placeholder identity/contact replacement before release in Phase 5 |
 | ORCH-002 | Map current codebase into planning reference docs | orchestrator | done | repo_only | none | `.planning/codebase/` populated with 7 reference docs; fallback default agents used because `gsd-codebase-mapper` was unavailable in session |
 | CONTENT-004 | Expand image-led process content from sibling asset library | content | done | mcp_preferred | DEV-002 | Curated sibling assets imported as metadata-free WebP, shared work sections expanded bilingually, and QA now enforces image format plus metadata rules |
 | DEV-002 | Repair responsive layout across shared site components | development | done | mcp_preferred | DEV-001 | Final responsive overrides added for shared layouts, with browser verification at phone, tablet, and desktop widths |

@@ -10,11 +10,11 @@ Build a multilingual renovation website for apartments and houses, covering plum
 
 ## Current phase
 
-Gate 4 is complete. The repository is technically ready for production deployment, pending business-data replacement.
+Phase 3 planning is complete. The repository is ready to execute the case-study and proof-system wave next.
 
 ## Active gate
 
-Gate 4 — All Audits Passed
+GSD Phase 3 — Case Study And Proof System (planned, execution ready)
 
 ## Milestones
 
@@ -34,7 +34,7 @@ Gate 4 — All Audits Passed
 
 ## Active tasks
 
-- none
+- Execute Phase 3 Wave 1 to add the case-study data contract, project routes, and additive QA coverage.
 
 ## Gate checklist
 
@@ -53,6 +53,7 @@ Gate 4 — All Audits Passed
 
 ## Recent updates
 
+- 2026-03-11: Phase 3 planning completed with `03-RESEARCH.md`, `03-VALIDATION.md`, and four execution plans covering project dossiers, proof routing, placeholder-proof replacement, and final sign-off.
 - 2026-03-10: ORCH-002 completed with a fresh `.planning/codebase/` map covering stack, integrations, architecture, structure, conventions, testing, and concerns; fallback default agents were used because the dedicated `gsd-codebase-mapper` role was unavailable.
 - 2026-03-11: Phase 1 planning was updated to allow clearly labeled placeholder contact and proof content now, while deferring replacement with real business identity and publishable proof to later roadmap phases.
 - 2026-03-10: CONTENT-004 completed with curated sibling assets converted to metadata-free WebP, expanded bilingual work sections, and QA enforcement for image format plus metadata policy.
@@ -76,4 +77,4 @@ Gate 4 — All Audits Passed
 
 ## Next orchestration step
 
-Execute Phase 1 with placeholder-safe trust and contact content, then replace placeholder proof in Phase 3 and placeholder identity/contact details before release in Phase 5.
+Execute Phase 3 with `$gsd-execute-phase 3`, then move to Phase 4 once the dossier system and proof routing are verified.
