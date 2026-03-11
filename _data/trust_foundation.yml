@@ -1,0 +1,138 @@
+required_locales:
+  - uk
+  - en
+required_modules:
+  - strip
+  - accountability
+  - proof
+  - page_contexts
+uk:
+  strip:
+    eyebrow: "Хто веде об'єкт"
+    title: "Ремонт читається як керований маршрут, а не як хаос окремих майстрів"
+    intro: "Цей блок не замінює реальні кейси. Він пояснює, як саме зібрана відповідальність, поки на сайті ще накопичуються публічні докази."
+    labels:
+      company: "Статус бренду"
+      profile: "Профіль роботи"
+      service_area: "Географія"
+      accountability: "Хто веде рішення"
+    profile: "Квартири, будинки, інженерія, чорнові етапи, чистове оздоблення, комплектація та нагляд"
+    accountability_value: "Один робочий контакт тримає послідовність етапів і стики між підрядниками"
+    company_note: "Назву та реквізити буде оновлено після фінального підтвердження. Поки сайт тестує довірчі сценарії на централізованих Phase 1 даних."
+  accountability:
+    eyebrow: "Що означає відповідальність"
+    title: "Клієнт має розуміти, хто контролює маршрут рішень до того, як залишить заявку"
+    text: "Тут важлива не гучна обіцянка, а робоча дисципліна: хто збирає інформацію, хто стикує суміжні етапи і хто відповідає за перехід до наступної стадії."
+    items:
+      - title: "Аудит перед стартом"
+        text: "Об'єкт розглядається через реальний стан, технічні обмеження і ризики, а не через абстрактний прайс."
+      - title: "Контроль стиків"
+        text: "Сантехніка, електрика, чорнові та чистові етапи узгоджуються як один маршрут, щоб помилки не перекидалися між бригадами."
+      - title: "Хто дає рух далі"
+        text: "Кожна наступна стадія починається після зрозумілої перевірки, а не після мовчазного припущення, що попередній етап 'десь готовий'."
+  proof:
+    eyebrow: "Поточний стан доказів"
+    title: "Поки сайт не підв'язав усі публічні кейси, докази показуються як чесно позначені тимчасові модулі"
+    intro: "Мета цього блоку не видати демо за відгуки. Він показує, який формат доказів команда збирає для подальшої публікації."
+    source_label: "Джерело"
+    attribution_label: "Атрибуція"
+    placeholder_badge: "Тимчасовий демо-доказ"
+    publishable_badge: "Публічний доказ"
+    placeholder_note: "Не клієнтський відгук. Це демонстрація формату доказів для наступних фаз."
+    items:
+      - key: routing-audit
+        status: placeholder
+        title: "Демо: маршрут рішень для об'єкта до старту робіт"
+        summary: "Майбутній публічний матеріал показуватиме, які вузли, ризики та суміжні етапи були зібрані в одну стартову карту."
+        source_label: "Демо-структура сайту"
+        attribution: "Placeholder content for Phase 1 until publishable site-audit material is approved."
+      - key: hidden-junction-control
+        status: placeholder
+        title: "Демо: фотофіксація прихованих вузлів до закриття"
+        summary: "На реальному кейсі тут з'явиться добірка кадрів і короткі пояснення, що саме було перевірено перед оздобленням."
+        source_label: "Тимчасовий формат доказу"
+        attribution: "Phase 1 placeholder demonstrating how concealed-junction proof will be labeled."
+      - key: handover-checklist
+        status: placeholder
+        title: "Демо: перелік контрольних точок перед здачею"
+        summary: "Публічний доказ пізніше покаже, які саме деталі й переходи між етапами були перевірені перед завершенням об'єкта."
+        source_label: "Демо чек-лист"
+        attribution: "Temporary placeholder until a publishable handover case can be cited."
+  page_contexts:
+    home:
+      title: "На головній сторінці довіра має пояснювати формат контролю, а не просто створювати настрій"
+      text: "Саме тут людина вирішує, чи виглядає команда достатньо зібраною для першого дзвінка."
+    about:
+      title: "Сторінка 'Про нас' повинна пояснити, яким способом команда тримає об'єкт у руках"
+      text: "Тут довіра будується через модель роботи, а не через абстрактні гасла про якість."
+    services:
+      title: "Сторінка послуг має показати, що окремі напрями складаються в одну систему"
+      text: "Покупець повинен бачити не перелік майстрів, а контроль над переходами між етапами."
+    contact:
+      title: "На контактах модулі довіри мають стояти поруч із поясненням першого дзвінка"
+      text: "Фінальний конверсійний екран повинен доводити, що команда працює предметно ще до початку розмови."
+en:
+  strip:
+    eyebrow: "Who runs the project"
+    title: "The renovation should read like a controlled route, not like chaos between separate trades"
+    intro: "This block does not replace real case studies. It explains how responsibility is assembled while the site is still collecting publishable proof."
+    labels:
+      company: "Brand status"
+      profile: "Service profile"
+      service_area: "Coverage"
+      accountability: "Who owns decisions"
+    profile: "Apartments, houses, engineering work, core construction, finishing, procurement, and site supervision"
+    accountability_value: "One working contact holds the stage sequence and the junctions between trades together"
+    company_note: "The business name and legal details will be updated after final confirmation. For now the site uses centralized Phase 1 placeholder identity data."
+  accountability:
+    eyebrow: "What accountability means here"
+    title: "A buyer should understand who controls the decision route before making contact"
+    text: "The point is not a loud promise. It is working discipline: who gathers information, who aligns adjacent stages, and who decides when the project can safely move forward."
+    items:
+      - title: "Audit before commitment"
+        text: "The property is read through its actual condition, technical limits, and risks instead of through a generic price list."
+      - title: "Junction control"
+        text: "Plumbing, electrical, core work, and finishing are aligned as one route so mistakes do not bounce between crews."
+      - title: "Clear release to the next stage"
+        text: "Each stage moves forward after an explicit check instead of an unspoken assumption that the previous crew is 'probably done'."
+  proof:
+    eyebrow: "Current proof status"
+    title: "Until the site carries full public case material, proof is shown through honestly labeled temporary modules"
+    intro: "The goal is not to disguise demo content as reviews. It shows the proof format the team is preparing for later publication."
+    source_label: "Source"
+    attribution_label: "Attribution"
+    placeholder_badge: "Temporary demo proof"
+    publishable_badge: "Publishable proof"
+    placeholder_note: "Not a client testimonial. This is a demonstration of the proof format planned for later phases."
+    items:
+      - key: routing-audit
+        status: placeholder
+        title: "Demo: decision-routing map before work starts"
+        summary: "The future publishable item will show which junctions, risks, and adjacent stages were assembled into one starting map."
+        source_label: "Site demo structure"
+        attribution: "Placeholder content for Phase 1 until publishable site-audit material is approved."
+      - key: hidden-junction-control
+        status: placeholder
+        title: "Demo: photo reporting for concealed junctions before closure"
+        summary: "A real case later will add image-backed notes about what was checked before finishing covered the work."
+        source_label: "Temporary proof format"
+        attribution: "Phase 1 placeholder demonstrating how concealed-junction proof will be labeled."
+      - key: handover-checklist
+        status: placeholder
+        title: "Demo: control-point checklist before handover"
+        summary: "The publishable version will show which details and stage transitions were checked before the property was handed over."
+        source_label: "Demo checklist"
+        attribution: "Temporary placeholder until a publishable handover case can be cited."
+  page_contexts:
+    home:
+      title: "On the homepage, trust needs to explain the operating model instead of just creating a mood"
+      text: "This is where a buyer decides whether the team sounds controlled enough to deserve the first call."
+    about:
+      title: "The about page should explain how the team keeps the property under control"
+      text: "Trust is earned here through the delivery model, not through abstract quality slogans."
+    services:
+      title: "The services page must show that separate categories still operate as one system"
+      text: "A buyer should see control over stage transitions, not just a list of trades."
+    contact:
+      title: "On contact, trust modules need to sit next to the first-call explanation"
+      text: "The last conversion surface should prove that the team works concretely before the conversation even starts."

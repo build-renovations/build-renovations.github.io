@@ -72,6 +72,20 @@ items:
         - "Підготовка під ванни, душові, інсталяції та обладнання"
       process: "Рішення по сантехніці приймаються разом із геометрією мокрих зон і чистовими матеріалами, а не окремо від оздоблення."
       proof: "Фото мокрих зон повинні показувати не лише плитку, а логіку розміщення вузлів, стиків і сервісного доступу."
+      accountability:
+        title: "Як сантехніка вбудовується в контроль об'єкта"
+        text: "Сантехнічний етап має сенс лише тоді, коли маршрути води, каналізації, ревізій і чистового монтажу вирішуються як один вузол."
+        items:
+          - "Погодження мокрих зон до закриття коробів і облицювання."
+          - "Контроль сервісного доступу до колекторів, інсталяцій і ревізій."
+          - "Стикування з плиткою, меблями й сантехнічним обладнанням до фінального монтажу."
+      proof_module:
+        eyebrow: "Який доказ потрібен для сантехніки"
+        title: "Покупець повинен бачити не лише чистову ванну кімнату, а й логіку прихованих вузлів"
+        text: "Для цієї послуги релевантний доказ показує фотофіксацію прихованих стиків і маршрут рішень перед закриттям мокрої зони."
+        item_keys:
+          - hidden-junction-control
+          - routing-audit
     en:
       eyebrow: "Service"
       title: "Plumbing"
@@ -83,6 +97,20 @@ items:
         - "Preparation for baths, showers, installations, and equipment"
       process: "Plumbing decisions are made together with wet-zone geometry and finish materials, never in isolation."
       proof: "Wet-zone images should show not only tile, but the placement logic of technical junctions and service access."
+      accountability:
+        title: "How plumbing fits into project control"
+        text: "The plumbing stage only works when water routes, drainage, access points, and finish interfaces are resolved as one junction."
+        items:
+          - "Wet-zone decisions are aligned before boxes and finishes close them."
+          - "Service access for collectors, concealed frames, and inspection points is checked explicitly."
+          - "Tile, furniture, and fixture mounting are coordinated before final installation."
+      proof_module:
+        eyebrow: "What proof matters for plumbing"
+        title: "A buyer should see more than a finished bathroom. The hidden junction logic matters."
+        text: "Relevant proof for this service shows concealed-junction photo reporting and the decision route before a wet zone is closed."
+        item_keys:
+          - hidden-junction-control
+          - routing-audit
   electrical:
     image: /assets/images/work/electrical-led-room.webp
     related:
@@ -100,6 +128,20 @@ items:
         - "Безпечне навантаження та логіка груп"
       process: "Електрику потрібно узгоджувати з меблями, стелями, оздобленням і побутовими сценаріями ще до фінішних етапів."
       proof: "Сильні приклади для цієї послуги показують як чорнову підготовку точок, так і фінальну роботу світла в готовому інтер'єрі."
+      accountability:
+        title: "Як електрика тримає зв'язок між сценаріями і безпекою"
+        text: "Електромонтаж не можна оцінювати окремо від меблів, світлових сценаріїв і сервісних зон. Інакше фінал починає виправляти чорнові рішення."
+        items:
+          - "Групування навантаження узгоджується з реальним використанням простору."
+          - "Точки, треки і LED-сценарії перевіряються до чистових стель і меблів."
+          - "Суміжні рішення не залишаються на імпровізацію монтажників у фіналі."
+      proof_module:
+        eyebrow: "Який доказ потрібен для електрики"
+        title: "Доказ для цієї послуги має поєднати чорнову дисципліну і фінальний світловий результат"
+        text: "На сторінці електрики важливо показати, як підготовка точок і прихованих ліній переводиться у контрольований готовий сценарій."
+        item_keys:
+          - hidden-junction-control
+          - handover-checklist
     en:
       eyebrow: "Service"
       title: "Electrical installation"
@@ -111,6 +153,20 @@ items:
         - "Safe load planning and circuit logic"
       process: "Electrical work must be aligned with furniture, ceilings, finishes, and appliance scenarios before the finish phase starts."
       proof: "Strong evidence here shows both rough electrical preparation and the final lighting result inside the finished interior."
+      accountability:
+        title: "How electrical work holds lighting logic and safety together"
+        text: "Electrical installation cannot be judged separately from furniture, lighting scenes, and service zones. Otherwise the finish phase starts repairing rough-stage decisions."
+        items:
+          - "Load grouping is aligned with real room use instead of abstract point counts."
+          - "Points, tracks, and LED scenes are checked before finish ceilings and furniture are closed."
+          - "Adjacent decisions are not left to installer improvisation at the end."
+      proof_module:
+        eyebrow: "What proof matters for electrical work"
+        title: "Proof on this page needs to connect rough-stage discipline with the finished lighting result"
+        text: "The relevant signal here is how point preparation and concealed lines turn into a controlled final scene."
+        item_keys:
+          - hidden-junction-control
+          - handover-checklist
   rough-works:
     image: /assets/images/work/core-selflevel-floor.webp
     related:
@@ -128,6 +184,20 @@ items:
         - "Підготовка зон до інженерії та чистових робіт"
       process: "Чорнові етапи перевіряються не за принципом «закрили й забули», а як база для наступних вузлів і геометрії."
       proof: "Фотографії повинні показувати рівні, чистоту підготовки й готовність до монтажу, а не просто порожнє приміщення."
+      accountability:
+        title: "Як підготовчі роботи захищають усі наступні стадії"
+        text: "Чорнова база визначає, наскільки точно зійдуться інженерія, меблі, плитка і чистові поверхні. Тут контроль потрібен ще до красивого результату."
+        items:
+          - "Геометрія і основи перевіряються під майбутні вузли, а не по формальній готовності."
+          - "Інженерні проходи та точки примикання не залишаються на вирішення 'по місцю'."
+          - "Наступні етапи стартують лише після перевірки бази, а не через тиск графіка."
+      proof_module:
+        eyebrow: "Який доказ потрібен для чорнових робіт"
+        title: "Тут доказ має пояснювати, як підготовлена база знімає ризики для всього ремонту"
+        text: "Для цієї сторінки релевантні приклади маршруту рішень до старту і контроль прихованих вузлів перед закриттям."
+        item_keys:
+          - routing-audit
+          - hidden-junction-control
     en:
       eyebrow: "Service"
       title: "Core construction and preparation"
@@ -139,6 +209,20 @@ items:
         - "Readiness for engineering work and finishing"
       process: "Core work is checked as the base for later junctions and geometry, not as a hidden stage that gets forgotten."
       proof: "Images should show level quality, preparation discipline, and readiness for the next installation step."
+      accountability:
+        title: "How preparatory work protects every later stage"
+        text: "The rough base determines how accurately engineering, furniture, tile, and finishes will come together. Control is required here before anything looks polished."
+        items:
+          - "Geometry and substrates are checked against future junctions, not against a vague idea of readiness."
+          - "Engineering passages and interfaces are not left for someone to resolve on site later."
+          - "Later stages start only after the base is checked instead of because the schedule is under pressure."
+      proof_module:
+        eyebrow: "What proof matters for rough works"
+        title: "Proof here should explain how the prepared base removes risk from the whole renovation"
+        text: "Relevant examples on this page show the decision route before start and concealed-junction control before closure."
+        item_keys:
+          - routing-audit
+          - hidden-junction-control
   finishing:
     image: /assets/images/work/finishing-hallway.webp
     related:
@@ -156,6 +240,20 @@ items:
         - "Фінальна інтеграція світла й меблевих рішень"
       process: "Чистове оздоблення починається тільки тоді, коли основа, інженерія й поставки не створюють прихованих конфліктів."
       proof: "У цій категорії важливо показувати фактури, світло і вузли, де видно дисципліну виконання."
+      accountability:
+        title: "Як чистовий етап тримає якість, а не маскує помилки"
+        text: "Оздоблення не повинно ставати ширмою для невирішених вузлів. Воно має закривати вже перевірену основу."
+        items:
+          - "Перед фінішем перевіряються площини, стики і готовність усіх прихованих рішень."
+          - "Підрізки, стикування матеріалів і переходи між зонами контролюються як частина загальної композиції."
+          - "Завершення не стартує, якщо попередні етапи залишили технічні хвости."
+      proof_module:
+        eyebrow: "Який доказ потрібен для оздоблення"
+        title: "Для чистових робіт важливо показати не тільки красу, а й дисципліну деталей перед здачею"
+        text: "На цій сторінці доказ повинен підкреслювати контроль перед фінішем і чек-лист завершення, а не абстрактну 'акуратність'."
+        item_keys:
+          - handover-checklist
+          - hidden-junction-control
     en:
       eyebrow: "Service"
       title: "Finishing"
@@ -167,6 +265,20 @@ items:
         - "Final integration of lighting and furniture decisions"
       process: "Finishing should start only when the base, engineering work, and deliveries no longer create hidden conflicts."
       proof: "This category should highlight texture, light, and precise junctions where execution quality is visible."
+      accountability:
+        title: "How finishing protects quality instead of hiding mistakes"
+        text: "Finishing should not become a screen for unresolved junctions. It should close over a base that has already been checked."
+        items:
+          - "Before finishing starts, planes, interfaces, and hidden decisions are checked explicitly."
+          - "Cuts, material transitions, and zone changes are controlled as part of one composition."
+          - "Completion does not start if earlier stages left technical loose ends behind."
+      proof_module:
+        eyebrow: "What proof matters for finishing"
+        title: "For finishing, proof should show detail discipline before handover, not just a pretty final shot"
+        text: "The useful signal on this page is pre-finish control and a handover checklist rather than abstract claims about neatness."
+        item_keys:
+          - handover-checklist
+          - hidden-junction-control
   procurement:
     image: /assets/images/work/procurement-wardrobe-fit.webp
     related:
@@ -212,6 +324,21 @@ items:
         - "Узгодження переходу до наступної стадії"
       process: "Ця послуга створює контрольні точки між різними видами робіт і не дозволяє накопичувати приховані дефекти."
       proof: "Показувати варто як проміжні етапи, де видно технічний стан об'єкта, так і фінальну дисципліну після контрольованої здачі."
+      accountability:
+        title: "Як технагляд утримує об'єкт у контрольованому стані"
+        text: "Нагляд потрібен не для формальної присутності на об'єкті, а для раннього виявлення конфліктів між етапами і рішеннями."
+        items:
+          - "Контрольні точки ставляться до того, як наступна бригада приховає попередню помилку."
+          - "Клієнт отримує зрозумілий статус: що перевірено, де ризик, що рухається далі."
+          - "Нагляд переводить розрізнені роботи в один читабельний маршрут рішень."
+      proof_module:
+        eyebrow: "Який доказ потрібен для технагляду"
+        title: "Сторінка технагляду має показати мову перевірок, а не просто факт присутності на об'єкті"
+        text: "Найкращий сигнал тут: фотофіксація прихованих вузлів, карта маршруту рішень і контрольні точки перед здачею."
+        item_keys:
+          - hidden-junction-control
+          - routing-audit
+          - handover-checklist
     en:
       eyebrow: "Service"
       title: "Site supervision"
@@ -223,3 +350,18 @@ items:
         - "Approval of readiness for the next stage"
       process: "This service creates control points between different kinds of work and prevents hidden defects from accumulating."
       proof: "The best proof combines intermediate stages that show technical condition with the final discipline of a controlled handover."
+      accountability:
+        title: "How site supervision keeps the property in a controlled state"
+        text: "Supervision is not about symbolic presence. It is about catching conflicts between stages and decisions before they become expensive."
+        items:
+          - "Control points happen before the next crew hides an earlier mistake."
+          - "The buyer receives a readable status: what was checked, where the risk sits, and what moves next."
+          - "Supervision turns fragmented work into one visible decision route."
+      proof_module:
+        eyebrow: "What proof matters for site supervision"
+        title: "The supervision page should show the language of checks, not just the fact that someone visited the site"
+        text: "The strongest signal here is concealed-junction photo reporting, the decision map, and control points before handover."
+        item_keys:
+          - hidden-junction-control
+          - routing-audit
+          - handover-checklist

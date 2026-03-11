@@ -38,6 +38,40 @@ proof:
     text: "When plumbing, electrical, structural preparation, and finishing run separately, the buyer ends up paying for the gaps between them. The process is built so every next step rests on an already checked base."
     quote: "Trust appears when each stage makes it clear who decides, what was checked, and why the project can safely move forward."
     signature: "Project-control principle"
+accountability:
+  uk:
+    eyebrow: "Хто тримає маршрут"
+    title: "Процес має показувати не лише етапи, а й дисципліну переходу між ними"
+    text: "Для сторінки процесу важливо не просто описати послідовність, а пояснити, хто збирає вузли в робочу систему."
+    items:
+      - "Аудит і рішення по зонах збираються до закупівель та старту бригад."
+      - "Кожна стадія має контрольну точку перед тим, як її закриє наступний етап."
+      - "Фотофіксація і пояснення статусу потрібні, щоб клієнт бачив логіку руху об'єкта."
+  en:
+    eyebrow: "Who holds the route together"
+    title: "The process should show not only stages, but discipline at the handoff between them"
+    text: "On the process page, the point is not just sequencing. It is showing who turns the junctions into one operating system."
+    items:
+      - "Audit findings and zone decisions are assembled before procurement and crew starts."
+      - "Each stage has a control point before the next layer closes it."
+      - "Photo reporting and status notes make the project logic visible to the buyer."
+proof_module:
+  uk:
+    eyebrow: "Який доказ доречний саме тут"
+    title: "Для сторінки процесу доказ має підтверджувати контроль переходів, а не просто красивий фінал"
+    text: "Тут доречні матеріали, які показують маршрут рішень до старту, перевірку прихованих вузлів і контроль перед здачею."
+    item_keys:
+      - routing-audit
+      - hidden-junction-control
+      - handover-checklist
+  en:
+    eyebrow: "What proof matters on this page"
+    title: "On the process page, proof should confirm stage control, not just a polished finish"
+    text: "Relevant proof here shows the decision route before start, concealed-junction checks, and control before handover."
+    item_keys:
+      - routing-audit
+      - hidden-junction-control
+      - handover-checklist
 stages:
   - key: audit
     image: /assets/images/work/core-corridor-stage.webp
