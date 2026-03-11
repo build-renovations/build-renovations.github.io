@@ -1,0 +1,64 @@
+uk:
+  completeness:
+    fit:
+      title: "Чи підходить вам такий формат роботи"
+      intro: "Блок допомагає швидко зрозуміти, чи підходить команда за типом об'єкта, масштабом і способом ведення ремонту."
+      items:
+        - title: "Квартира або будинок, де треба зібрати кілька етапів"
+          text: "Найкраще підходять об'єкти, де сантехніка, електрика, підготовка основ і чистове оздоблення мають працювати як одна система."
+        - title: "Потрібен один відповідальний контакт"
+          text: "Формат підходить замовникам, які не хочуть окремо зводити майстрів, графік і технічні рішення."
+        - title: "Важлива логіка етапів, а не лише фінальна картинка"
+          text: "Перший діалог будується навколо стану об'єкта, ризиків і послідовності робіт, щоб уникнути випадкових рішень на ходу."
+      note: "Якщо об'єкт ще на етапі вибору або потрібен лише один дрібний виклик без загальної координації, це краще уточнити одразу."
+    call:
+      title: "Що підготувати до першого дзвінка"
+      intro: "Достатньо короткого брифу, а не повного технічного завдання. Головне дати команді реальну відправну точку."
+      prepare:
+        - "Тип об'єкта: квартира, будинок або окремий поверх"
+        - "Поточний стан: новобудова, вторинне житло, часткове оновлення"
+        - "Які етапи вже закриті, а які треба взяти в роботу"
+        - "Бажаний старт і дедлайн, якщо вони вже є"
+      clarify_title: "Що команда уточнює на першому контакті"
+      clarify:
+        - "Який склад робіт реально потрібен саме зараз"
+        - "Які вузли або етапи впливають на послідовність ремонту"
+        - "Чи є готові креслення, дизайн або матеріали"
+      return_title: "Що ви отримаєте після розмови"
+      return_items:
+        - "Зрозумілий наступний крок: дзвінок, виїзд, уточнення або підготовка даних"
+        - "Попередню рамку по складу робіт і логіці запуску"
+        - "Список питань, без яких неможливо чесно оцінити об'єкт"
+      messenger_note: "Якщо зручніше написати в Telegram, Viber або WhatsApp, надішліть ті самі вихідні дані. Телефон все одно лишається найшвидшим способом вирівняти картину."
+en:
+  completeness:
+    fit:
+      title: "How to tell if this format fits your project"
+      intro: "This block is meant to help a buyer quickly judge whether the team matches the property type, scope, and way the renovation needs to be run."
+      items:
+        - title: "Apartment or house with several connected stages"
+          text: "The format works best when plumbing, electrical, substrate preparation, and finishing need to be coordinated as one delivery system."
+        - title: "You want one accountable point of contact"
+          text: "It suits buyers who do not want to assemble separate trades, schedules, and technical decisions on their own."
+        - title: "Stage logic matters as much as the visual result"
+          text: "The first conversation focuses on the current property condition, risks, and stage order so the work does not drift into ad-hoc decisions."
+      note: "If the property is still undecided or only a very small isolated visit is needed, it is better to say that immediately."
+    call:
+      title: "What to prepare before the first call"
+      intro: "A short practical brief is enough. There is no need to arrive with a full technical package before the first conversation."
+      prepare:
+        - "Property type: apartment, house, or a specific level"
+        - "Current condition: new build, resale property, or partial renewal"
+        - "Which stages are already closed and which ones still need to be handled"
+        - "Target start and deadline if those are already known"
+      clarify_title: "What the team clarifies on first contact"
+      clarify:
+        - "Which work stages are actually required right now"
+        - "Which technical junctions or steps define the renovation sequence"
+        - "Whether there are drawings, design files, or material decisions already in place"
+      return_title: "What you get back after the conversation"
+      return_items:
+        - "A clear next step: call, site visit, clarification round, or data to prepare"
+        - "An initial frame for scope and the logic of how the project should start"
+        - "A list of questions that must be answered before the property can be assessed honestly"
+      messenger_note: "If writing in Telegram, Viber, or WhatsApp is easier, send the same project basics there. Phone still remains the fastest way to align the picture."
