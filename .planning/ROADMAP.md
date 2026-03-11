@@ -32,7 +32,7 @@ This roadmap expands the existing bilingual renovation site into a stronger sale
 
 **Goal:** Build a clear trust layer and a consistent phone-first conversion system that explains who the business is, what kinds of projects fit, and what happens when a buyer calls.
 
-**Plan progress:** 1 / 3 complete (`01-01` finished on 2026-03-11)
+**Plan progress:** 2 / 3 complete (`01-01`, `01-02` finished on 2026-03-11)
 
 **Requirements:** `TRST-01`, `TRST-02`, `TRST-03`, `TRST-04`, `CALL-01`, `CALL-02`, `CALL-03`, `CALL-04`
 

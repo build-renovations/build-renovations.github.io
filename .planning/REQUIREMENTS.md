@@ -8,16 +8,16 @@
 ### Trust Foundation
 
 - [x] **TRST-01**: Visitor can see clear business identity and legitimacy signals on core pages, including company framing, service profile, and trust-supporting commercial context.
-- [ ] **TRST-02**: Visitor can understand what kinds of renovation projects are a fit before making contact.
+- [x] **TRST-02**: Visitor can understand what kinds of renovation projects are a fit before making contact.
 - [ ] **TRST-03**: Visitor can understand how the team manages scope, coordination, and accountability across renovation stages.
 - [ ] **TRST-04**: Visitor can access sourced trust proof such as testimonials, reviews, credentials, or equivalent evidence without leaving the core decision path.
 
 ### Phone-First Conversion
 
 - [x] **CALL-01**: Visitor can start a phone call from every primary page on both mobile and desktop.
-- [ ] **CALL-02**: Visitor can understand what happens during the first call and what information to prepare before calling.
+- [x] **CALL-02**: Visitor can understand what happens during the first call and what information to prepare before calling.
 - [x] **CALL-03**: Visitor can reach a persistent, tap-friendly phone CTA on mobile without it obscuring core content.
-- [ ] **CALL-04**: Visitor can access a secondary fallback contact path without it competing with the primary phone conversion path.
+- [x] **CALL-04**: Visitor can access a secondary fallback contact path without it competing with the primary phone conversion path.
 
 ### Case Studies And Proof
 
@@ -77,13 +77,13 @@
 | Requirement | Phase | Status |
 |-------------|-------|--------|
 | TRST-01 | Phase 1 | Complete |
-| TRST-02 | Phase 1 | Pending |
+| TRST-02 | Phase 1 | Complete |
 | TRST-03 | Phase 1 | Pending |
 | TRST-04 | Phase 1 | Pending |
 | CALL-01 | Phase 1 | Complete |
-| CALL-02 | Phase 1 | Pending |
+| CALL-02 | Phase 1 | Complete |
 | CALL-03 | Phase 1 | Complete |
-| CALL-04 | Phase 1 | Pending |
+| CALL-04 | Phase 1 | Complete |
 | CASE-01 | Phase 3 | Pending |
 | CASE-02 | Phase 3 | Pending |
 | CASE-03 | Phase 3 | Pending |
