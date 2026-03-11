@@ -76,6 +76,29 @@ proof_module:
     - routing-audit
     - hidden-junction-control
     - handover-checklist
+coordination_logic:
+  uk:
+    eyebrow: Як тримається координація
+    title: Координація потрібна не для бюрократії, а щоб рішення не розпадались між зонами і бригадами
+    text: На сторінці процесу важливо показати, як планування, суміжні роботи, поставки і приймання зводяться в один читабельний маршрут для клієнта.
+    items:
+    - title: Один маршрут рішень
+      text: Сантехніка, електрика, чорнова база, оздоблення і комплектація рухаються не окремими потоками, а через погоджені точки переходу.
+    - title: Зони не живуть окремо
+      text: Готовність кухні, санвузла, коридору чи житлових кімнат перевіряється з урахуванням того, що блокує наступний етап по всьому об'єкту.
+    - title: Клієнт читає логіку руху
+      text: Статус пояснюється через перевірені вузли і наступні рішення, а не через хаотичний набір дрібних оновлень.
+  en:
+    eyebrow: How coordination holds together
+    title: Coordination exists so decisions do not fall apart between zones and crews
+    text: The process page should show how planning, adjacent work, deliveries, and acceptance are assembled into one readable route for the buyer.
+    items:
+    - title: One decision route
+      text: Plumbing, electrical, the rough base, finishing, and procurement move through aligned handoff points instead of separate streams.
+    - title: Zones do not live separately
+      text: Kitchen, wet-zone, corridor, and living-area readiness is checked against what blocks the next stage across the property.
+    - title: The buyer can read progress logic
+      text: Status is explained through checked junctions and next decisions rather than a chaotic pile of minor updates.
 planning:
   uk:
     eyebrow: Планування до старту
@@ -99,6 +122,29 @@ planning:
       text: Materials, engineering work, furniture, and zone readiness are assembled into one readable route instead of trade-by-trade contradiction.
     - title: Control points
       text: Before work starts, the team defines where the project pauses for checks before the next layer moves in.
+readiness_checks:
+  uk:
+    eyebrow: Що означає готовність
+    title: Кожен перехід до наступного етапу має зрозумілий критерій готовності
+    text: Це потрібно не для зайвих формальностей, а щоб клієнт бачив, чому об'єкт рухається далі без прихованих хвостів і термінових виправлень.
+    items:
+    - title: Перед інженерією
+      text: База, проходи і доступ до вузлів мають бути прийняті до того, як стартують приховані системи.
+    - title: Перед чистовим шаром
+      text: Приховані роботи, контрольні фото і суміжні рішення мають бути закриті ще до декоративного етапу.
+    - title: Перед здачею
+      text: Клієнт розуміє, які деталі, сценарії використання і контрольні вузли вже готові до нормальної експлуатації.
+  en:
+    eyebrow: What readiness means
+    title: Every handoff to the next stage needs a clear readiness criterion
+    text: This is not about extra bureaucracy. It is about letting the buyer see why the property can move forward without hidden leftovers or urgent repair loops.
+    items:
+    - title: Before engineering work
+      text: The base, passages, and junction access need acceptance before concealed systems begin.
+    - title: Before the finish layer
+      text: Hidden work, control photos, and adjacent decisions need closure before decoration starts.
+    - title: Before handover
+      text: The buyer understands which details, use scenarios, and control junctions are ready for normal use.
 procurement:
   uk:
     eyebrow: Комплектація без хаосу
@@ -145,6 +191,35 @@ handoff:
       text: The buyer can see which zones are ready for normal use and what was verified before handoff.
     - title: Less post-project chaos
       text: The result reads as a finished system instead of a beautiful ending with hidden leftovers.
+route_bridges:
+  uk:
+    eyebrow: Куди йти далі
+    title: Далі клієнт може заглибитися або в тип об'єкта, або в конкретний етап
+    text: Сторінка процесу має допомогти вибрати правильний маршрут читання, а не змушувати всіх читати все підряд.
+    items:
+    - title: Квартира
+      text: Якщо рішення залежать від щільного простору, меблів і логіки кімнат, варто почати зі сторінки ремонту квартир.
+      url: /services/apartment-renovation/
+    - title: Будинок
+      text: Якщо ключова складність у масштабі, зонах і багатоступеневій координації, наступний крок — сторінка ремонту будинків.
+      url: /services/house-renovation/
+    - title: Інженерія і чистовий результат
+      text: Якщо питання впирається в конкретний технічний етап, далі краще перейти на сторінки сантехніки, електрики або оздоблення.
+      url: /services/
+  en:
+    eyebrow: Where to go next
+    title: From here the buyer can go deeper into either the property type or a specific stage
+    text: The process page should help the visitor choose the right reading route instead of forcing everyone through every page.
+    items:
+    - title: Apartment
+      text: If decisions are shaped by tight space, furniture coordination, and room logic, start with the apartment-renovation page.
+      url: /en/services/apartment-renovation/
+    - title: House
+      text: If the main difficulty is scale, zoning, and multi-stage coordination, the next step is the house-renovation page.
+      url: /en/services/house-renovation/
+    - title: Engineering and finish stages
+      text: If the question is really about a technical stage, continue to the plumbing, electrical, or finishing pages.
+      url: /en/services/
 objection_cards:
   uk:
     eyebrow: Заперечення по процесу
