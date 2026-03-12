@@ -69,7 +69,15 @@ layout: default
 </section>
 
 <section class="section section--accent">
-  <div class="shell">
+  <div class="shell home-story-shell" data-phase4-marker="scan-rhythm" data-phase4-surface="home-story-shell">
+    <div class="home-intro-band">
+      <div class="home-intro-band__copy">
+        <p class="eyebrow">{{ t.home_intro_label }}</p>
+        <h2>{{ t.home_intro_title }}</h2>
+        <p>{{ t.home_intro_text }}</p>
+      </div>
+      <p class="home-intro-band__quote">{{ t.home_intro_quote }}</p>
+    </div>
     {% include trust-strip.html lang=page.lang context="home" %}
   </div>
 </section>
@@ -87,10 +95,16 @@ layout: default
 
 <section class="section">
   <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="home-service-teaser" data-phase4-marker="scan-rhythm" data-phase4-surface="home-service-teaser">
-    <div class="section-heading section-heading--wide">
-      <p class="eyebrow">{{ t.scope_label }}</p>
-      <h2>{{ t.services_heading }}</h2>
-      <p class="section-intro">{{ t.services_intro }}</p>
+    <div class="home-section-head">
+      <div class="section-heading section-heading--wide">
+        <p class="eyebrow">{{ t.scope_label }}</p>
+        <h2>{{ t.services_heading }}</h2>
+        <p class="section-intro">{{ t.services_intro }}</p>
+      </div>
+      <aside class="home-section-note">
+        <p class="home-section-note__label">{{ t.services_note_label }}</p>
+        <p>{{ t.services_note_text }}</p>
+      </aside>
     </div>
     <div class="service-grid">
       {% for item in site.data.services.items %}
@@ -115,11 +129,12 @@ layout: default
 
 <section class="section section--accent">
   <div class="shell">
-    <div class="feature-band">
+    <div class="feature-band home-feature-band">
       <div class="feature-band__copy">
         <p class="eyebrow">{{ t.featured_label }}</p>
         <h2>{{ t.featured_title }}</h2>
         <p>{{ t.featured_text }}</p>
+        <p class="home-feature-band__note">{{ t.home_feature_note }}</p>
       </div>
       <div class="feature-band__media">
         <figure><img src="{{ '/assets/images/work/electrical-led-room.webp' | relative_url }}" alt="{% if page.lang == 'en' %}Interior with completed lighting{% else %}Інтер'єр із завершеним освітленням{% endif %}" loading="lazy" width="960" height="1280"></figure>
@@ -139,20 +154,28 @@ layout: default
 
 <section class="section">
   <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="home-process-teaser" data-phase4-marker="scan-rhythm" data-phase4-surface="home-process-teaser">
-    <div class="section-heading section-heading--wide">
-      <p class="eyebrow">{{ t.process_label }}</p>
-      <h2>{{ t.process_heading }}</h2>
-      <p class="section-intro">{{ t.process_intro }}</p>
-    </div>
-    <div class="process-grid">
-      {% for step in site.data.process.steps %}
-        {% assign content = step[page.lang] | default: step.uk %}
-        <article class="process-card">
-          <p class="process-card__label">{{ t.process_card_label }}</p>
-          <h3>{{ content.title }}</h3>
-          <p>{{ content.description }}</p>
-        </article>
-      {% endfor %}
+    <div class="home-process-layout">
+      <div class="home-process-copy">
+        <div class="section-heading section-heading--wide">
+          <p class="eyebrow">{{ t.process_label }}</p>
+          <h2>{{ t.process_heading }}</h2>
+          <p class="section-intro">{{ t.process_intro }}</p>
+        </div>
+        <aside class="home-process-note">
+          <p class="home-section-note__label">{{ t.process_note_label }}</p>
+          <p>{{ t.process_note_text }}</p>
+        </aside>
+      </div>
+      <div class="process-grid">
+        {% for step in site.data.process.steps %}
+          {% assign content = step[page.lang] | default: step.uk %}
+          <article class="process-card">
+            <p class="process-card__label">{{ t.process_card_label }}</p>
+            <h3>{{ content.title }}</h3>
+            <p>{{ content.description }}</p>
+          </article>
+        {% endfor %}
+      </div>
     </div>
   </div>
 </section>
@@ -168,20 +191,20 @@ layout: default
       <h2>{{ t.route_bridge_title }}</h2>
       <p class="section-intro">{{ t.route_bridge_intro }}</p>
     </div>
-    <div class="service-grid">
-      <article class="service-card">
+    <div class="service-grid home-route-grid">
+      <article class="service-card home-route-card">
         <p class="service-card__eyebrow">{{ t.process_label }}</p>
         <h3>{% if page.lang == 'en' %}Read the full process before comparing stages one by one{% else %}Прочитайте повний процес, перш ніж порівнювати окремі етапи по одному{% endif %}</h3>
         <p>{% if page.lang == 'en' %}This route explains planning, control points, procurement timing, and what handover actually means for a live project.{% else %}Цей маршрут пояснює планування, контрольні точки, ритм закупівель і те, що на практиці означає здача об'єкта.{% endif %}</p>
         <a class="service-card__link" href="{% if page.lang == 'en' %}{{ '/en/process/' | relative_url }}{% else %}{{ '/process/' | relative_url }}{% endif %}">{{ t.phase2_process_route_label }}</a>
       </article>
-      <article class="service-card">
+      <article class="service-card home-route-card">
         <p class="service-card__eyebrow">{{ t.project_fit_label }}</p>
         <h3>{{ apartment_content.title }}</h3>
         <p>{{ apartment_content.summary }}</p>
         <a class="service-card__link" href="{% if page.lang == 'en' %}{{ '/en/services/apartment-renovation/' | relative_url }}{% else %}{{ '/services/apartment-renovation/' | relative_url }}{% endif %}">{{ t.service_link_label }}</a>
       </article>
-      <article class="service-card">
+      <article class="service-card home-route-card">
         <p class="service-card__eyebrow">{{ t.project_fit_label }}</p>
         <h3>{{ house_content.title }}</h3>
         <p>{{ house_content.summary }}</p>
@@ -219,7 +242,7 @@ layout: default
 {% endif %}
 
 <section class="section">
-  <div class="shell">
+  <div class="shell home-proof-shell">
     {% include sourced-proof.html lang=page.lang %}
     <div class="contact-banner">
       <div>

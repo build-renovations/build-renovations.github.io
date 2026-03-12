@@ -2459,7 +2459,128 @@ body.has-sticky-phone-cta main {
   color: var(--ink);
 }
 
+.home-story-shell,
+.home-proof-shell {
+  display: grid;
+  gap: 1.35rem;
+}
+
+.home-intro-band {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(18rem, 0.9fr);
+  gap: 1rem;
+  padding: 1.3rem 1.4rem;
+  border-radius: 30px;
+  background:
+    linear-gradient(145deg, rgba(255, 251, 246, 0.92), rgba(242, 232, 220, 0.86));
+  border: 1px solid rgba(24, 32, 29, 0.08);
+  box-shadow: var(--shadow-soft);
+}
+
+.home-intro-band__copy {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.home-intro-band__copy h2 {
+  max-width: 14ch;
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+}
+
+.home-intro-band__quote,
+.home-section-note,
+.home-process-note {
+  margin: 0;
+  padding: 1.1rem 1.2rem;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.58);
+  border: 1px solid rgba(24, 32, 29, 0.08);
+  color: var(--muted);
+}
+
+.home-intro-band__quote {
+  align-self: end;
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  line-height: 1.35;
+  color: var(--ink);
+}
+
+.home-section-head,
+.home-process-copy {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.42fr);
+  gap: 1.2rem;
+  align-items: end;
+  margin-bottom: 1.8rem;
+}
+
+.home-section-head .section-heading,
+.home-process-copy .section-heading {
+  margin-bottom: 0;
+}
+
+.home-section-note,
+.home-process-note {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.home-section-note__label {
+  margin: 0;
+  color: var(--accent-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.home-feature-band {
+  align-items: stretch;
+}
+
+.home-feature-band__note {
+  margin: 1rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(24, 32, 29, 0.08);
+  color: var(--accent-dark);
+  font-weight: 600;
+}
+
+.home-process-layout {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.home-route-grid {
+  align-items: stretch;
+}
+
+.home-route-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.home-route-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, rgba(202, 106, 52, 0.65), rgba(202, 106, 52, 0));
+}
+
+.home-proof-shell .contact-banner {
+  margin-top: 0;
+}
+
 @media (max-width: 900px) {
+  .home-intro-band,
+  .home-section-head,
+  .home-process-copy {
+    grid-template-columns: 1fr;
+  }
+
   .site-header__inner {
     align-items: stretch;
   }
@@ -2502,6 +2623,10 @@ body.has-sticky-phone-cta main {
 }
 
 @media (max-width: 640px) {
+  .home-intro-band {
+    padding: 1.1rem;
+  }
+
   .brand {
     align-items: flex-start;
   }
