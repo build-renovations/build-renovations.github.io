@@ -42,6 +42,17 @@ layout: default
 
 <section class="page-content">
   <div class="shell service-detail" data-phase2-marker="content-depth" data-phase2-surface="service-depth" data-phase4-marker="scan-rhythm" data-phase4-surface="service-depth">
+    <article class="scan-rail scan-rail--service">
+      <p class="scan-rail__eyebrow">{{ t.chapter_overview_label }}</p>
+      <h2>{% if page.lang == 'en' %}Read this route in four layers{% else %}Читайте цей маршрут у чотири шари{% endif %}</h2>
+      <p>{% if page.lang == 'en' %}Start with the scope, then judge integration, project-fit complexity, and the next route before you compare prices or isolated trades.{% else %}Почніть з обсягу, далі оцініть вбудування, складність формату об'єкта і наступний маршрут ще до порівняння цін або окремих майстрів.{% endif %}</p>
+      <ul class="scan-rail__list">
+        <li><strong>{{ t.chapter_overview_label }}:</strong> {% if page.lang == 'en' %}what is inside the service and where responsibility starts{% else %}що входить у послугу і де починається відповідальність{% endif %}</li>
+        <li><strong>{{ t.chapter_fit_label }}:</strong> {% if page.lang == 'en' %}which property or risk pattern makes this stage heavier{% else %}який формат об'єкта або ризик робить цей етап складнішим{% endif %}</li>
+        <li><strong>{{ t.chapter_proof_label }}:</strong> {% if page.lang == 'en' %}what the evidence should prove before you trust the route{% else %}що саме мають доводити приклади до того, як довіряти маршруту{% endif %}</li>
+        <li><strong>{{ t.chapter_bridge_label }}:</strong> {% if page.lang == 'en' %}which page to open next so the route stays connected{% else %}яку сторінку відкривати далі, щоб маршрут залишався пов'язаним{% endif %}</li>
+      </ul>
+    </article>
     <article class="service-detail__card">
       <h2>{% if page.lang == 'en' %}What this service covers{% else %}Що входить у послугу{% endif %}</h2>
       <p>{{ content.summary }}</p>
@@ -110,7 +121,7 @@ layout: default
 <section class="section section--accent">
   <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="service-property-fit" data-phase4-marker="scan-rhythm" data-phase4-surface="service-property-fit">
     <div class="section-heading section-heading--wide">
-      <p class="eyebrow">{% if page.lang == 'en' %}Property fit{% else %}Формат об'єкта{% endif %}</p>
+      <p class="eyebrow">{{ t.chapter_fit_label }}</p>
       <h2>{{ project_conditions.title }}</h2>
       <p class="section-intro">{% if page.lang == 'en' %}This layer helps the buyer decide whether the project format itself is the real source of complexity before comparing separate trades one by one.{% else %}Цей блок допомагає зрозуміти, чи головна складність ховається саме у форматі об'єкта ще до порівняння окремих етапів по одному.{% endif %}</p>
     </div>
@@ -131,8 +142,9 @@ layout: default
   <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="service-sequence" data-phase4-marker="scan-rhythm" data-phase4-surface="service-sequence">
     <div class="process-risk">
       <div class="process-risk__copy">
-        <p class="eyebrow">{{ t.phase2_sequence_label }}</p>
+        <p class="eyebrow">{{ t.service_sequence_label }}</p>
         <h2>{{ sequence_signals.title }}</h2>
+        <p>{% if page.lang == 'en' %}Use this block as the stage-order check: if these decisions are not aligned, the final finish quality will usually be hiding a coordination problem upstream.{% else %}Сприймайте цей блок як перевірку порядку етапів: якщо ці рішення не зібрані, фінальна якість оздоблення зазвичай приховує проблему координації вище по маршруту.{% endif %}</p>
       </div>
       <div class="process-risk__list">
         {% for item in sequence_signals.items %}
@@ -192,6 +204,7 @@ layout: default
     refs=case_study_refs
     marker="project-index-visibility"
     surface="service-featured-case-studies"
+    chapter_label=t.chapter_proof_label
     bridge=case_study_bridge
   %}
 {% endif %}
@@ -241,7 +254,7 @@ layout: default
 <section class="section">
   <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="service-route-bridge" data-phase4-marker="scan-rhythm" data-phase4-surface="service-route-bridge">
     <div class="section-heading section-heading--wide">
-      <p class="eyebrow">{{ t.phase2_next_route_label }}</p>
+      <p class="eyebrow">{{ t.chapter_bridge_label }}</p>
       <h2>{% if page.service_key == 'apartment-renovation' or page.service_key == 'house-renovation' %}{% if page.lang == 'en' %}Read the service pages that usually shape this project format next{% else %}Прочитайте далі ті сторінки послуг, які зазвичай формують саме цей тип проєкту{% endif %}{% else %}{% if page.lang == 'en' %}Read the connected stages before you lock the final scope{% else %}Прочитайте пов'язані етапи до того, як фіксувати фінальний обсяг робіт{% endif %}{% endif %}</h2>
       <p class="section-intro">{% if page.service_key == 'apartment-renovation' or page.service_key == 'house-renovation' %}{% if page.lang == 'en' %}These property-format pages should send the buyer toward the trade pages and the process page that clarify the next real decisions, not trap them in one generic route.{% else %}Сторінки за форматом об'єкта мають вести покупця до тих сторінок послуг і процесу, які пояснюють наступні реальні рішення, а не замикати його в одному загальному сценарії.{% endif %}{% else %}{% if page.lang == 'en' %}A strong service page should clarify what needs to be aligned around this stage, not pretend the route ends here.{% else %}Сильна сторінка послуги має показати, що саме потрібно узгодити навколо цього етапу, а не робити вигляд, що маршрут закінчується тут.{% endif %}{% endif %}</p>
     </div>
@@ -270,9 +283,9 @@ layout: default
 {% assign content_faq_refs = content.faq_refs | default: empty %}
 {% if faq_groups != empty %}
 <section class="section section--accent">
-  <div class="shell" data-phase2-marker="faq-group-visibility" data-phase2-surface="service-faq-bridge">
+  <div class="shell" data-phase2-marker="faq-group-visibility" data-phase2-surface="service-faq-bridge" data-phase4-marker="scan-rhythm" data-phase4-surface="service-faq-bridge">
     <div class="section-heading section-heading--wide">
-      <p class="eyebrow">{% if page.lang == 'en' %}Related questions{% else %}Пов'язані питання{% endif %}</p>
+      <p class="eyebrow">{{ t.chapter_faq_label }}</p>
       <h2>{% if page.lang == 'en' %}These answers stay shared across the FAQ and the deeper service pages{% else %}Ці відповіді залишаються спільними для FAQ і глибших сторінок послуг{% endif %}</h2>
     </div>
     <div class="service-grid">

@@ -6,15 +6,23 @@
 {% assign marker = include.marker | default: "project-index-visibility" %}
 {% assign section_title = include.title %}
 {% assign section_intro = include.intro %}
+{% assign chapter_label = include.chapter_label %}
 
 <section class="section {% if include.accent %}section--accent{% endif %}">
   <div class="shell" data-phase3-marker="{{ marker }}" data-phase3-surface="{{ surface }}">
-    <div class="section-heading section-heading--wide">
+    <div class="section-heading section-heading--wide featured-case-studies__intro">
+      <div>
+        {% if chapter_label %}
+          <p class="eyebrow">{{ chapter_label }}</p>
+        {% elsif bridge %}
+          <p class="eyebrow">{{ bridge.eyebrow | default: bridge.title }}</p>
+        {% endif %}
+        <h2>{{ section_title | default: bridge.title }}</h2>
+        <p class="section-intro">{{ section_intro | default: bridge.text }}</p>
+      </div>
       {% if bridge %}
-        <p class="eyebrow">{{ bridge.eyebrow | default: bridge.title }}</p>
+        <p class="featured-case-studies__bridge-note">{{ bridge.eyebrow | default: bridge.title }}</p>
       {% endif %}
-      <h2>{{ section_title | default: bridge.title }}</h2>
-      <p class="section-intro">{{ section_intro | default: bridge.text }}</p>
     </div>
     <div class="service-grid">
       {% for ref_key in ref_keys %}
@@ -29,15 +37,19 @@
             <figure class="service-card__media">
               <img src="{{ item.card_image | default: item.image | relative_url }}" alt="{{ card.title }}" loading="lazy" width="960" height="1280">
             </figure>
-            <p class="service-card__eyebrow">{{ card.eyebrow }}</p>
+            <div class="service-card__topline">
+              <p class="service-card__eyebrow">{{ card.eyebrow }}</p>
+              <p class="service-card__status">{{ proof.label }}</p>
+            </div>
             <h3>{{ card.title }}</h3>
             <p>{{ item.summary[lang] | default: item.summary.uk }}</p>
             {% if scan_card %}
-              <p><strong>{% if lang == 'en' %}Best for{% else %}Найкраще для{% endif %}:</strong> {{ scan_card.concern }}</p>
-              <p><strong>{% if lang == 'en' %}Route focus{% else %}Фокус маршруту{% endif %}:</strong> {{ scan_card.stage_focus }}</p>
+              <div class="service-card__scan-notes">
+                <p><strong>{% if lang == 'en' %}Best for{% else %}Найкраще для{% endif %}:</strong> {{ scan_card.concern }}</p>
+                <p><strong>{% if lang == 'en' %}Route focus{% else %}Фокус маршруту{% endif %}:</strong> {{ scan_card.stage_focus }}</p>
+              </div>
             {% endif %}
             <p data-phase3-marker="buyer-relevance" data-case-study-buyer-relevance><strong>{{ relevance.title }}:</strong> {{ relevance.text }}</p>
-            <p data-case-study-proof-status><strong>{% if lang == 'en' %}Proof status{% else %}Статус доказу{% endif %}:</strong> {{ proof.label }}</p>
             <a class="service-card__link" href="{{ route | relative_url }}">{% if lang == 'en' %}Open the full dossier{% else %}Відкрити повне досьє{% endif %}</a>
           </article>
         {% endif %}

@@ -8,6 +8,7 @@ layout: default
 {% assign bridge = case_study.bridge[page.lang] | default: case_study.bridge.uk %}
 {% assign scan_card = case_study.scan_card[page.lang] | default: case_study.scan_card.uk %}
 {% assign service_data = site.data.service_pages.items %}
+{% assign t = site.data.translations[page.lang] | default: site.data.translations.uk %}
 <section class="page-hero" data-phase4-marker="layout-parity" data-phase4-surface="case-study-hero">
   <div class="shell service-hero" data-phase3-marker="dossier-snapshot" data-phase3-surface="case-study-dossier">
     <div class="service-hero__copy">
@@ -28,6 +29,17 @@ layout: default
 <section class="section">
   <div class="shell" data-phase3-marker="proof-source-status" data-phase3-surface="case-study-dossier" data-phase4-marker="scan-rhythm" data-phase4-surface="case-study-snapshot">
     <div class="service-detail">
+      <article class="scan-rail">
+        <p class="scan-rail__eyebrow">{{ t.chapter_overview_label }}</p>
+        <h2>{% if page.lang == 'en' %}Read the dossier like a decision route{% else %}Читайте досьє як маршрут рішень{% endif %}</h2>
+        <p>{% if page.lang == 'en' %}Start with the snapshot, confirm the proof status, then move through buyer relevance and stage order before judging the gallery or the related routes.{% else %}Почніть зі стислого знімка, підтвердьте статус доказу, далі перейдіть через buyer relevance і порядок етапів ще до перегляду галереї або пов'язаних маршрутів.{% endif %}</p>
+        <ul class="scan-rail__list">
+          <li><strong>{{ t.chapter_overview_label }}:</strong> {% if page.lang == 'en' %}what this project proves in one glance{% else %}що саме цей проєкт доводить одним поглядом{% endif %}</li>
+          <li><strong>{{ t.chapter_proof_label }}:</strong> {% if page.lang == 'en' %}whether the proof is publishable or audit-led{% else %}чи тримається доказ на publishable фото або audit-маршруті{% endif %}</li>
+          <li><strong>{{ t.service_sequence_label }}:</strong> {% if page.lang == 'en' %}how the stages sequence the control points{% else %}як етапи вибудовують контрольні точки{% endif %}</li>
+          <li><strong>{{ t.chapter_bridge_label }}:</strong> {% if page.lang == 'en' %}which routes stay relevant after this dossier{% else %}які маршрути залишаються релевантними після цього досьє{% endif %}</li>
+        </ul>
+      </article>
       <article class="service-detail__card" data-case-study-proof-status="{{ case_study.proof_source.status }}">
         <p class="eyebrow">{{ content.snapshot_title }}</p>
         <h2>{% if page.lang == 'en' %}Snapshot and proof status{% else %}Стислий знімок і статус доказу{% endif %}</h2>
@@ -149,6 +161,7 @@ layout: default
   refs=page.related_case_study_refs
   marker="related-route-bridge"
   surface="case-study-dossier"
+  chapter_label=t.chapter_bridge_label
   title=bridge.title
   intro=bridge.text
 %}

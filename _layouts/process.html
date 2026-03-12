@@ -46,9 +46,14 @@ layout: default
   <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="process-planning" data-phase4-marker="scan-rhythm" data-phase4-surface="process-planning">
     <div class="process-proof">
       <div class="process-proof__copy">
-        <p class="eyebrow">{{ planning.eyebrow }}</p>
+        <p class="eyebrow">{{ t.chapter_overview_label }}</p>
         <h2>{{ planning.title }}</h2>
         <p>{{ planning.text }}</p>
+        <ul class="scan-rail__list scan-rail__list--inline">
+          <li><strong>{{ t.chapter_overview_label }}:</strong> {% if page.lang == 'en' %}what gets clarified before work starts{% else %}що прояснюється до старту робіт{% endif %}</li>
+          <li><strong>{{ t.chapter_proof_label }}:</strong> {% if page.lang == 'en' %}which checkpoints create confidence instead of promises{% else %}які контрольні точки створюють довіру замість обіцянок{% endif %}</li>
+          <li><strong>{{ t.chapter_bridge_label }}:</strong> {% if page.lang == 'en' %}where the route sends you next when one stage ends{% else %}куди веде маршрут далі після завершення кожного етапу{% endif %}</li>
+        </ul>
       </div>
       <div class="process-risk__list">
         {% for item in planning.items %}
@@ -103,9 +108,9 @@ layout: default
 </section>
 
 <section class="section">
-  <div class="shell" data-phase2-marker="objection-handling" data-phase2-surface="process-objections">
+  <div class="shell" data-phase2-marker="objection-handling" data-phase2-surface="process-objections" data-phase4-marker="scan-rhythm" data-phase4-surface="process-objections">
     <div class="section-heading section-heading--wide">
-      <p class="eyebrow">{{ objection_cards.eyebrow }}</p>
+      <p class="eyebrow">{{ t.chapter_faq_label }}</p>
       <h2>{{ objection_cards.title }}</h2>
       <p class="section-intro">{{ objection_cards.intro }}</p>
     </div>
@@ -180,6 +185,7 @@ layout: default
   refs=process_case_studies.refs
   marker="project-index-visibility"
   surface="process-featured-case-studies"
+  chapter_label=t.chapter_proof_label
   accent=true
   bridge=process_case_bridge
 %}
@@ -193,7 +199,7 @@ layout: default
 <section class="section">
   <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="process-stage-map" data-phase4-marker="scan-rhythm" data-phase4-surface="process-stage-map">
     <div class="section-heading section-heading--wide">
-      <p class="eyebrow">{% if page.lang == 'en' %}Stages{% else %}Стадії{% endif %}</p>
+      <p class="eyebrow">{{ t.service_sequence_label }}</p>
       <h2>{% if page.lang == 'en' %}How the property moves from uncertainty to a controlled result{% else %}Як об'єкт рухається від невизначеності до контрольованого результату{% endif %}</h2>
       <p class="section-intro">{% if page.lang == 'en' %}The stage map stays readable because each block explains one handoff, one protection point, and one buyer-facing outcome.{% else %}Карта етапів залишається читабельною, бо кожен блок пояснює один перехід, одну точку захисту і один зрозумілий для покупця результат.{% endif %}</p>
     </div>
@@ -240,7 +246,7 @@ layout: default
 <section class="section section--accent">
   <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="process-route-bridges" data-phase4-marker="scan-rhythm" data-phase4-surface="process-route-bridges">
     <div class="section-heading section-heading--wide">
-      <p class="eyebrow">{{ route_bridges.eyebrow | default: t.route_bridge_label }}</p>
+      <p class="eyebrow">{{ t.chapter_bridge_label }}</p>
       <h2>{{ route_bridges.title }}</h2>
       <p class="section-intro">{{ route_bridges.text }}</p>
     </div>
@@ -307,9 +313,9 @@ layout: default
 {% assign process_faq_refs = process.faq_refs | default: empty %}
 {% if faq_groups != empty %}
 <section class="section">
-  <div class="shell" data-phase2-marker="faq-group-visibility" data-phase2-surface="process-faq-bridge">
+  <div class="shell" data-phase2-marker="faq-group-visibility" data-phase2-surface="process-faq-bridge" data-phase4-marker="scan-rhythm" data-phase4-surface="process-faq-bridge">
     <div class="section-heading section-heading--wide">
-      <p class="eyebrow">{% if page.lang == 'en' %}Shared answers{% else %}Спільні відповіді{% endif %}</p>
+      <p class="eyebrow">{{ t.chapter_faq_label }}</p>
       <h2>{% if page.lang == 'en' %}The process page points to the same buyer questions used by the FAQ and service pages{% else %}Сторінка процесу веде до тих самих питань покупця, що й FAQ та сторінки послуг{% endif %}</h2>
     </div>
     <div class="service-grid">

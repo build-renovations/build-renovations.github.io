@@ -1,7 +1,8 @@
 ---
 layout: default
 ---
-<section class="page-hero">
+{% assign t = site.data.translations[page.lang] | default: site.data.translations.uk %}
+<section class="page-hero" data-phase4-marker="layout-parity" data-phase4-surface="page-hero">
   <div class="shell">
     <p class="eyebrow">{{ page.eyebrow }}</p>
     <h1>{{ page.title }}</h1>
@@ -14,7 +15,12 @@ layout: default
 {% if page.translation_key == 'faq' %}
   {% assign faq_groups = site.data.faqs.groups | default: empty %}
   <section class="page-content">
-    <div class="shell" data-phase2-marker="faq-group-visibility" data-phase2-surface="faq-reference-surface">
+    <div class="shell" data-phase2-marker="faq-group-visibility" data-phase2-surface="faq-reference-surface" data-phase4-marker="scan-rhythm" data-phase4-surface="page-support-faq">
+      <div class="section-heading section-heading--wide">
+        <p class="eyebrow">{{ t.chapter_faq_label }}</p>
+        <h2>{% if page.lang == 'en' %}Use the grouped answers as a routing surface, not a flat wall of text{% else %}Читайте згруповані відповіді як поверхню вибору маршруту, а не як плоску стіну тексту{% endif %}</h2>
+        <p class="section-intro">{% if page.lang == 'en' %}Each group should help a buyer decide whether the next step is process, fit, scope, or direct contact.{% else %}Кожна група має підказувати, чи наступний крок лежить у процесі, форматі об'єкта, обсязі робіт або вже у прямому контакті.{% endif %}</p>
+      </div>
       {% for group in faq_groups %}
         {% assign group_copy = group[page.lang] | default: group.uk %}
         <section class="faq-group" data-faq-group="{{ group.key }}">
@@ -57,18 +63,18 @@ layout: default
   </section>
 {% else %}
   <section class="page-content">
-    <div class="shell prose">
+    <article class="shell prose page-shell" data-phase4-marker="scan-rhythm" data-phase4-surface="page-shell">
       {{ content }}
-    </div>
+    </article>
   </section>
 {% endif %}
 
 {% if page.translation_key == 'services' %}
   {% assign featured_keys = "plumbing,electrical,apartment-renovation" | split: "," %}
   <section class="section section--accent">
-    <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="page-depth-bridge">
+    <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="page-depth-bridge" data-phase4-marker="scan-rhythm" data-phase4-surface="page-support-bridge">
       <div class="section-heading section-heading--wide">
-        <p class="eyebrow">{% if page.lang == 'en' %}Where to read deeper{% else %}Куди йти за деталями{% endif %}</p>
+        <p class="eyebrow">{{ t.chapter_bridge_label }}</p>
         <h2>{% if page.lang == 'en' %}Use the service routes for scope, fit, and commercial expectations{% else %}Для обсягу, відповідності й комерційних очікувань переходьте на сторінки окремих послуг{% endif %}</h2>
         <p class="section-intro">{% if page.lang == 'en' %}The index stays scan-friendly. The deeper service pages carry the denser explanations about coordination, objections, and what a controlled result really means.{% else %}Індекс залишається швидким для сканування. Глибші сторінки послуг несуть щільніші пояснення про координацію, заперечення і те, що означає контрольований результат.{% endif %}</p>
       </div>
@@ -89,9 +95,9 @@ layout: default
   {% assign faq_groups = site.data.faqs.groups | default: empty %}
   {% if faq_groups != empty %}
   <section class="section">
-    <div class="shell" data-phase2-marker="faq-group-visibility" data-phase2-surface="page-faq-teaser">
+    <div class="shell" data-phase2-marker="faq-group-visibility" data-phase2-surface="page-faq-teaser" data-phase4-marker="scan-rhythm" data-phase4-surface="page-support-faq">
       <div class="section-heading section-heading--wide">
-        <p class="eyebrow">{% if page.lang == 'en' %}FAQ clusters{% else %}FAQ-кластери{% endif %}</p>
+        <p class="eyebrow">{{ t.chapter_faq_label }}</p>
         <h2>{% if page.lang == 'en' %}The FAQ stays shared so service pages can answer objections without duplicating long copy{% else %}FAQ залишається спільним джерелом, щоб сторінки послуг знімали заперечення без дублювання довгого тексту{% endif %}</h2>
       </div>
       <div class="service-grid">
@@ -126,7 +132,7 @@ layout: default
 
 {% if page.show_project_fit %}
 <section class="section">
-  <div class="shell" data-phase2-marker="fit-guidance" data-phase2-surface="page-fit-guidance">
+  <div class="shell" data-phase2-marker="fit-guidance" data-phase2-surface="page-fit-guidance" data-phase4-marker="scan-rhythm" data-phase4-surface="page-fit-guidance">
     {% include project-fit.html lang=page.lang %}
   </div>
 </section>
