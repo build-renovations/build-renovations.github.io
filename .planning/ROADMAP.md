@@ -72,7 +72,7 @@ This roadmap expands the existing bilingual renovation site into a stronger sale
 
 **Goal:** Upgrade the design system, page composition, and responsive behavior so the site feels more premium and controlled without introducing visual drift or glitches.
 
-**Plan progress:** 3 / 4 complete (`04-01`, `04-02`, `04-03` finished on 2026-03-12)
+**Plan progress:** 4 / 4 complete (`04-01`, `04-02`, `04-03`, `04-04` finished on 2026-03-12)
 
 **Requirements:** `UX-01`, `UX-02`, `UX-03`, `UX-04`
 

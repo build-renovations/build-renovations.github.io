@@ -1,8 +1,8 @@
 ---
 phase: 4
 slug: premium-ux-and-layout-hardening
-status: in_progress
-nyquist_compliant: false
+status: complete
+nyquist_compliant: true
 wave_0_complete: true
 created: 2026-03-12
 ---
@@ -42,15 +42,15 @@ created: 2026-03-12
 | 04-01-01 | 01 | 1 | UX-02 | rendered + metadata | `./scripts/qa.sh` (`scripts/phase4_render_checks.mjs` validates premium-shell, scan-rhythm, cta-stability, and layout-parity on target routes) | ✅ | ✅ green |
 | 04-01-02 | 01 | 1 | UX-01 | shared-style integrity | `./scripts/qa.sh` plus rendered browser spot-check on built output | ✅ | ✅ green |
 | 04-01-03 | 01 | 1 | UX-02 | validation artifact | `rg -n "phase4_render_checks|premium-shell|scan-rhythm|cta-stability|layout-parity" .planning/phases/04-premium-ux-and-layout-hardening/04-VALIDATION.md` | ✅ | ✅ green |
-| 04-02-01 | 02 | 2 | UX-01 | rendered | `./scripts/qa.sh` | ⬜ | ⬜ pending |
-| 04-02-02 | 02 | 2 | UX-02 | browser review | `./scripts/qa.sh` | ⬜ | ⬜ pending |
-| 04-02-03 | 02 | 2 | UX-03 | rendered parity | `./scripts/qa.sh` | ⬜ | ⬜ pending |
-| 04-03-01 | 03 | 3 | UX-04 | rendered | `./scripts/qa.sh` | ⬜ | ⬜ pending |
-| 04-03-02 | 03 | 3 | UX-01 | browser review | `./scripts/qa.sh` | ⬜ | ⬜ pending |
-| 04-03-03 | 03 | 3 | UX-03 | rendered parity | `./scripts/qa.sh` | ⬜ | ⬜ pending |
-| 04-04-01 | 04 | 4 | UX-02 | browser matrix | `./scripts/qa.sh` | ⬜ | ⬜ pending |
-| 04-04-02 | 04 | 4 | UX-03 | rendered + browser | `./scripts/qa.sh` | ⬜ | ⬜ pending |
-| 04-04-03 | 04 | 4 | UX-04 | sign-off gate | `./scripts/qa.sh` | ⬜ | ⬜ pending |
+| 04-02-01 | 02 | 2 | UX-01 | rendered | `./scripts/qa.sh` | ✅ | ✅ green |
+| 04-02-02 | 02 | 2 | UX-02 | browser review | `./scripts/qa.sh` | ✅ | ✅ green |
+| 04-02-03 | 02 | 2 | UX-03 | rendered parity | `./scripts/qa.sh` | ✅ | ✅ green |
+| 04-03-01 | 03 | 3 | UX-04 | rendered | `./scripts/qa.sh` | ✅ | ✅ green |
+| 04-03-02 | 03 | 3 | UX-01 | browser review | `./scripts/qa.sh` | ✅ | ✅ green |
+| 04-03-03 | 03 | 3 | UX-03 | rendered parity | `./scripts/qa.sh` | ✅ | ✅ green |
+| 04-04-01 | 04 | 4 | UX-02 | browser matrix | `./scripts/qa.sh` | ✅ | ✅ green |
+| 04-04-02 | 04 | 4 | UX-03 | rendered + browser | `./scripts/qa.sh` | ✅ | ✅ green |
+| 04-04-03 | 04 | 4 | UX-04 | sign-off gate | `./scripts/qa.sh` | ✅ | ✅ green |
 
 *Status: ⬜ pending · ✅ green · ❌ red · ⚠️ flaky*
 
@@ -73,19 +73,21 @@ created: 2026-03-12
 
 | Viewport | UA Route | EN Route | What must be reviewed | Owner | Status |
 |----------|----------|----------|------------------------|-------|--------|
-| Desktop `1440x1100` | `/` | `/en/` | premium-shell spacing, hero hierarchy, proof rhythm, and persistent CTA clarity | Plan `04-01` | ✅ reviewed during execution |
-| Desktop `1440x1100` | `/process/` | `/en/process/` | scan-rhythm on long sections, stage-map composure, no CTA drift | Plan `04-01` for baseline, later plans for final polish | ⬜ pending final phase sign-off |
-| Desktop `1440x1100` | `/services/plumbing/` | `/en/services/plumbing/` | service hero parity, section pacing, and long-route shell consistency | Later Phase 4 plans | ⬜ pending final phase sign-off |
-| Desktop `1440x1100` | `/projects/compact-apartment-engineering/` | `/en/projects/compact-apartment-engineering/` | dossier shell parity, snapshot readability, and stage timeline rhythm | Later Phase 4 plans | ⬜ pending final phase sign-off |
-| Mobile `390x844` | `/` | `/en/` | stacked rhythm, no cramped card wall, sticky CTA remains clear and unobtrusive | Later Phase 4 plans | ⬜ pending final phase sign-off |
-| Mobile `390x844` | `/process/` | `/en/process/` | long-page calmness, no overflow, sticky CTA and menu stay readable | Plan `04-01` for baseline, later plans for final polish | ✅ UA baseline reviewed during execution |
-| Mobile `390x844` | `/services/apartment-renovation/` | `/en/services/apartment-renovation/` | property-fit sections remain scannable and CTA behavior stays stable | Later Phase 4 plans | ⬜ pending final phase sign-off |
-| Mobile `390x844` | `/projects/house-stage-coordination/` | `/en/projects/house-stage-coordination/` | dossier parity, stage density, and bottom CTA spacing | Later Phase 4 plans | ⬜ pending final phase sign-off |
+| Desktop `1440x1100` | `/` | `/en/` | premium-shell spacing, hero hierarchy, proof rhythm, and persistent CTA clarity | Plan `04-04` final sign-off | ✅ reviewed 2026-03-12 |
+| Desktop `1440x1100` | `/process/` | `/en/process/` | scan-rhythm on long sections, stage-map composure, no CTA drift | Plan `04-04` final sign-off | ✅ reviewed 2026-03-12 |
+| Desktop `1440x1100` | `/services/plumbing/` | `/en/services/plumbing/` | service hero parity, section pacing, and long-route shell consistency | Plan `04-04` final sign-off | ✅ reviewed 2026-03-12 |
+| Desktop `1440x1100` | `/projects/` | `/en/projects/` | projects-index shell parity, route clarity, and CTA continuity | Plan `04-04` final sign-off | ✅ reviewed 2026-03-12 |
+| Desktop `1440x1100` | `/projects/compact-apartment-engineering/` | `/en/projects/compact-apartment-engineering/` | dossier shell parity, snapshot readability, and stage timeline rhythm | Plan `04-04` final sign-off | ✅ reviewed 2026-03-12 |
+| Mobile `390x844` | `/` | `/en/` | stacked rhythm, no cramped card wall, sticky CTA remains clear and unobtrusive | Plan `04-04` final sign-off | ✅ reviewed 2026-03-12 |
+| Mobile `390x844` | `/process/` | `/en/process/` | long-page calmness, no overflow, sticky CTA and menu stay readable | Plan `04-04` final sign-off | ✅ reviewed 2026-03-12 |
+| Mobile `390x844` | `/services/apartment-renovation/` | `/en/services/apartment-renovation/` | property-fit sections remain scannable and CTA behavior stays stable | Plan `04-04` final sign-off | ✅ reviewed 2026-03-12 |
+| Mobile `390x844` | `/projects/` | `/en/projects/` | projects-index shell parity, route clarity, and sticky CTA continuity | Plan `04-04` final sign-off | ✅ reviewed 2026-03-12 |
+| Mobile `390x844` | `/projects/house-stage-coordination/` | `/en/projects/house-stage-coordination/` | dossier parity, stage density, and bottom CTA spacing | Plan `04-04` final sign-off | ✅ reviewed 2026-03-12 |
 
 ## Wave 0 Sign-Off Expectations
 
 - Automation owner: Plan `04-01` must keep `scripts/phase4_render_checks.mjs` green in the default `./scripts/qa.sh` path.
-- Browser owner: every later Phase 4 plan inherits this matrix and must review the route pairs it changes on both desktop and mobile before phase close.
+- Browser owner: final sign-off was completed in Plan `04-04` with MCP browser automation against a Bundler/Jekyll-served local site.
 - Parity rule: touched UA and EN routes must keep the same `data-phase4-surface` set and keep language switching plus primary phone CTA intact.
 - Final phase sign-off remains blocked until the matrix above is reviewed after the later layout-polish plans land.
 
@@ -109,6 +111,16 @@ created: 2026-03-12
 - [x] Wave 0 owns the new layout and parity rendered checks
 - [x] No watch-mode flags
 - [x] Feedback latency < 240s
-- [ ] `nyquist_compliant: true` remains blocked until all four Phase 4 plans land and browser review confirms premium quality, layout stability, and parity
+- [x] `nyquist_compliant: true` was set only after all four Phase 4 plans landed and browser review confirmed premium quality, layout stability, and parity
 
-**Approval:** Planning complete. Phase 4 execution must not be marked Nyquist-compliant until the automated render checks and browser review both confirm premium-shell quality, route scannability, CTA stability, and UA/EN parity.
+**Approval:** Phase 4 execution is complete. Automated render checks and final browser review both confirmed premium-shell quality, route scannability, CTA stability, and UA/EN parity before Nyquist closure.
+
+## Phase 4 Closure Notes
+
+- `./scripts/qa.sh` passed after the final `04-04` sign-off pass on 2026-03-12.
+- Final browser review used MCP browser automation against `bundle exec jekyll serve --host 127.0.0.1 --port 4012 --no-watch --skip-initial-build`; no Python HTTP server was used for local verification.
+- Desktop review covered `/`, `/en/`, `/process/`, `/en/process/`, `/services/plumbing/`, `/en/services/plumbing/`, `/projects/`, `/en/projects/`, `/projects/compact-apartment-engineering/`, and `/en/projects/compact-apartment-engineering/`.
+- Mobile review covered `/`, `/en/`, `/process/`, `/en/process/`, `/services/apartment-renovation/`, `/en/services/apartment-renovation/`, `/projects/`, `/en/projects/`, `/projects/house-stage-coordination/`, and `/en/projects/house-stage-coordination/`.
+- All reviewed routes rendered with `overflowX = 0`; sticky phone CTA stayed hidden on desktop and visible on mobile, while visible `tel:` links and language-switcher parity remained intact on every reviewed route.
+- Browser automation MCP was used for rendered validation. `ui-ux-pro-max` was intentionally not used in `04-04` because the final wave closed evidence and sign-off rather than reopening design-concept exploration.
+- UX-01 through UX-04 are now covered by implemented premium surfaces, additive rendered QA, and browser-reviewed route parity, so Phase 4 is ready for verification.
