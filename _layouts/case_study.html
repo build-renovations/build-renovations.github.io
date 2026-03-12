@@ -8,7 +8,7 @@ layout: default
 {% assign bridge = case_study.bridge[page.lang] | default: case_study.bridge.uk %}
 {% assign scan_card = case_study.scan_card[page.lang] | default: case_study.scan_card.uk %}
 {% assign service_data = site.data.service_pages.items %}
-<section class="page-hero">
+<section class="page-hero" data-phase4-marker="layout-parity" data-phase4-surface="case-study-hero">
   <div class="shell service-hero" data-phase3-marker="dossier-snapshot" data-phase3-surface="case-study-dossier">
     <div class="service-hero__copy">
       <p class="eyebrow">{{ content.eyebrow }}</p>
@@ -26,7 +26,7 @@ layout: default
 </section>
 
 <section class="section">
-  <div class="shell" data-phase3-marker="proof-source-status" data-phase3-surface="case-study-dossier">
+  <div class="shell" data-phase3-marker="proof-source-status" data-phase3-surface="case-study-dossier" data-phase4-marker="scan-rhythm" data-phase4-surface="case-study-snapshot">
     <div class="service-detail">
       <article class="service-detail__card" data-case-study-proof-status="{{ case_study.proof_source.status }}">
         <p class="eyebrow">{{ content.snapshot_title }}</p>
@@ -91,7 +91,7 @@ layout: default
 </section>
 
 <section class="section section--accent">
-  <div class="shell" data-phase3-marker="stage-proof-timeline" data-phase3-surface="case-study-dossier">
+  <div class="shell" data-phase3-marker="stage-proof-timeline" data-phase3-surface="case-study-dossier" data-phase4-marker="scan-rhythm" data-phase4-surface="case-study-stage-map">
     <div class="section-heading section-heading--wide">
       <p class="eyebrow">{% if page.lang == 'en' %}Stage-proof timeline{% else %}Таймлайн доказів по етапах{% endif %}</p>
       <h2>{% if page.lang == 'en' %}How the route moved from audit to readiness{% else %}Як маршрут рухався від аудиту до готовності{% endif %}</h2>

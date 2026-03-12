@@ -3,18 +3,18 @@
   <head>
     {% include head.html %}
   </head>
-  <body>
+  <body data-phase4-marker="premium-shell" data-phase4-surface="premium-shell" data-phase4-lang="{{ page.lang | default: site.lang }}">
     <div class="scroll-progress" aria-hidden="true"></div>
     {% include header.html %}
-    <main>
+    <main data-phase4-surface="page-main">
       {{ content }}
     </main>
-    <div class="shell">
+    <div class="shell site-contact-shell" data-phase4-marker="layout-parity" data-phase4-surface="contact-shell">
       {% include contact-options.html lang=page.lang class="site-contact-shell" %}
     </div>
     {% include footer.html %}
     {% assign contact = site.data.contact_channels[page.lang] | default: site.data.contact_channels.uk %}
-    <div class="sticky-phone-cta" data-sticky-phone-cta hidden>
+    <div class="sticky-phone-cta" data-sticky-phone-cta data-phase4-marker="cta-stability" data-phase4-surface="sticky-phone-cta" hidden>
       <div class="shell">
         <div class="sticky-phone-cta__inner">
           <div class="sticky-phone-cta__copy">

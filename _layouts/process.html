@@ -18,7 +18,7 @@ layout: default
 {% assign route_bridges = process.route_bridges[page.lang] | default: process.route_bridges.uk %}
 {% assign objection_cards = process.objection_cards[page.lang] | default: process.objection_cards.uk %}
 {% assign commercial_clarity = process.commercial_clarity[page.lang] | default: process.commercial_clarity.uk %}
-<section class="page-hero process-hero">
+<section class="page-hero process-hero" data-phase4-marker="layout-parity" data-phase4-surface="process-hero">
   <div class="shell process-hero__grid">
     <div class="process-hero__copy">
       <p class="eyebrow">{{ page.eyebrow }}</p>
@@ -43,7 +43,7 @@ layout: default
 </section>
 
 <section class="section">
-  <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="process-planning">
+  <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="process-planning" data-phase4-marker="scan-rhythm" data-phase4-surface="process-planning">
     <div class="process-proof">
       <div class="process-proof__copy">
         <p class="eyebrow">{{ planning.eyebrow }}</p>
@@ -191,7 +191,7 @@ layout: default
 </section>
 
 <section class="section">
-  <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="process-stage-map">
+  <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="process-stage-map" data-phase4-marker="scan-rhythm" data-phase4-surface="process-stage-map">
     <div class="section-heading section-heading--wide">
       <p class="eyebrow">{% if page.lang == 'en' %}Stages{% else %}Стадії{% endif %}</p>
       <h2>{% if page.lang == 'en' %}How the property moves from uncertainty to a controlled result{% else %}Як об'єкт рухається від невизначеності до контрольованого результату{% endif %}</h2>
@@ -238,7 +238,7 @@ layout: default
 </section>
 
 <section class="section section--accent">
-  <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="process-route-bridges">
+  <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="process-route-bridges" data-phase4-marker="scan-rhythm" data-phase4-surface="process-route-bridges">
     <div class="section-heading section-heading--wide">
       <p class="eyebrow">{{ route_bridges.eyebrow | default: t.route_bridge_label }}</p>
       <h2>{{ route_bridges.title }}</h2>

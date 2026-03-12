@@ -17,7 +17,7 @@ layout: default
 {% assign objection_cards = content.objection_cards %}
 {% assign coordination_notes = content.coordination_notes %}
 {% assign commercial_clarity = content.commercial_clarity %}
-<section class="page-hero">
+<section class="page-hero" data-phase4-marker="layout-parity" data-phase4-surface="service-hero">
   <div class="shell service-hero">
     <div class="service-hero__copy">
       <p class="eyebrow">{{ content.eyebrow }}</p>
@@ -41,7 +41,7 @@ layout: default
 </section>
 
 <section class="page-content">
-  <div class="shell service-detail" data-phase2-marker="content-depth" data-phase2-surface="service-depth">
+  <div class="shell service-detail" data-phase2-marker="content-depth" data-phase2-surface="service-depth" data-phase4-marker="scan-rhythm" data-phase4-surface="service-depth">
     <article class="service-detail__card">
       <h2>{% if page.lang == 'en' %}What this service covers{% else %}Що входить у послугу{% endif %}</h2>
       <p>{{ content.summary }}</p>
@@ -108,7 +108,7 @@ layout: default
 
 {% if project_conditions %}
 <section class="section section--accent">
-  <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="service-property-fit">
+  <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="service-property-fit" data-phase4-marker="scan-rhythm" data-phase4-surface="service-property-fit">
     <div class="section-heading section-heading--wide">
       <p class="eyebrow">{% if page.lang == 'en' %}Property fit{% else %}Формат об'єкта{% endif %}</p>
       <h2>{{ project_conditions.title }}</h2>
@@ -128,7 +128,7 @@ layout: default
 
 {% if sequence_signals %}
 <section class="section">
-  <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="service-sequence">
+  <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="service-sequence" data-phase4-marker="scan-rhythm" data-phase4-surface="service-sequence">
     <div class="process-risk">
       <div class="process-risk__copy">
         <p class="eyebrow">{{ t.phase2_sequence_label }}</p>
@@ -239,7 +239,7 @@ layout: default
 </section>
 
 <section class="section">
-  <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="service-route-bridge">
+  <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="service-route-bridge" data-phase4-marker="scan-rhythm" data-phase4-surface="service-route-bridge">
     <div class="section-heading section-heading--wide">
       <p class="eyebrow">{{ t.phase2_next_route_label }}</p>
       <h2>{% if page.service_key == 'apartment-renovation' or page.service_key == 'house-renovation' %}{% if page.lang == 'en' %}Read the service pages that usually shape this project format next{% else %}Прочитайте далі ті сторінки послуг, які зазвичай формують саме цей тип проєкту{% endif %}{% else %}{% if page.lang == 'en' %}Read the connected stages before you lock the final scope{% else %}Прочитайте пов'язані етапи до того, як фіксувати фінальний обсяг робіт{% endif %}{% endif %}</h2>

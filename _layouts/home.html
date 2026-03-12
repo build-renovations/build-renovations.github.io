@@ -2,7 +2,7 @@
 layout: default
 ---
 {% assign t = site.data.translations[page.lang] | default: site.data.translations.uk %}
-<section class="hero">
+<section class="hero" data-phase4-marker="layout-parity" data-phase4-surface="home-hero">
   <div class="shell hero__grid">
     <div class="hero__copy">
       <p class="eyebrow">{{ page.eyebrow }}</p>
@@ -86,7 +86,7 @@ layout: default
 %}
 
 <section class="section">
-  <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="home-service-teaser">
+  <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="home-service-teaser" data-phase4-marker="scan-rhythm" data-phase4-surface="home-service-teaser">
     <div class="section-heading section-heading--wide">
       <p class="eyebrow">{{ t.scope_label }}</p>
       <h2>{{ t.services_heading }}</h2>
@@ -138,7 +138,7 @@ layout: default
 {% include work-examples.html lang=page.lang %}
 
 <section class="section">
-  <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="home-process-teaser">
+  <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="home-process-teaser" data-phase4-marker="scan-rhythm" data-phase4-surface="home-process-teaser">
     <div class="section-heading section-heading--wide">
       <p class="eyebrow">{{ t.process_label }}</p>
       <h2>{{ t.process_heading }}</h2>
@@ -162,7 +162,7 @@ layout: default
 {% assign house_service = site.data.service_pages.items['house-renovation'] %}
 {% assign house_content = house_service[page.lang] | default: house_service.uk %}
 <section class="section section--accent">
-  <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="home-route-bridge">
+  <div class="shell" data-phase2-marker="content-depth" data-phase2-surface="home-route-bridge" data-phase4-marker="scan-rhythm" data-phase4-surface="home-route-bridge">
     <div class="section-heading section-heading--wide">
       <p class="eyebrow">{{ t.route_bridge_label }}</p>
       <h2>{{ t.route_bridge_title }}</h2>
