@@ -3,8 +3,21 @@ document.addEventListener("DOMContentLoaded", () => {
   const siteHeader = document.querySelector(".site-header");
   const progressBar = document.querySelector(".scroll-progress");
   const stickyPhoneCta = document.querySelector("[data-sticky-phone-cta]");
-  const parallaxNodes = document.querySelectorAll(".hero__shot, .service-card, .feature-band__media figure");
-  const nodes = document.querySelectorAll(".service-card, .process-card, .proof-card, .feature-band, .work-category, .contact-banner, .page-hero, .service-detail__card, .service-hero__copy, .service-hero__media, .process-stage, .process-proof, .process-metric");
+  const parallaxNodes = document.querySelectorAll(".hero__shot, .feature-band__media figure, [data-tilt]");
+  const calmMotionRoot = document.body.dataset.phase4Motion === "calm";
+  const reduceMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+  const revealSelectors = [
+    ".hero__copy",
+    ".hero__panel",
+    ".page-hero",
+    ".feature-band",
+    ".contact-banner",
+    ".service-detail__card",
+    ".process-proof",
+    ".process-stage",
+    "[data-phase4-marker='scan-rhythm']"
+  ];
+  const nodes = [...new Set(document.querySelectorAll(revealSelectors.join(", ")))];
   const stickyMediaQuery = window.matchMedia("(max-width: 900px)");
 
   if (menuToggle && siteHeader) {
@@ -41,12 +54,20 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   window.addEventListener("resize", syncStickyPhoneCta, { passive: true });
 
+  nodes.forEach((node) => node.setAttribute("data-reveal", ""));
+  nodes.forEach((node, index) => node.style.setProperty("--reveal-delay", `${Math.min(index * 55, 220)}ms`));
+
+  if (reduceMotionQuery.matches) {
+    nodes.forEach((node) => node.classList.add("is-visible"));
+    return;
+  }
+
   parallaxNodes.forEach((node) => {
     node.addEventListener("pointermove", (event) => {
-      if (window.innerWidth < 901) return;
+      if (!calmMotionRoot || window.innerWidth < 901) return;
       const rect = node.getBoundingClientRect();
-      const x = ((event.clientX - rect.left) / rect.width - 0.5) * 8;
-      const y = ((event.clientY - rect.top) / rect.height - 0.5) * 8;
+      const x = ((event.clientX - rect.left) / rect.width - 0.5) * 5;
+      const y = ((event.clientY - rect.top) / rect.height - 0.5) * 5;
       node.style.setProperty("--tilt-x", `${x}px`);
       node.style.setProperty("--tilt-y", `${y}px`);
     });
@@ -57,9 +78,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  nodes.forEach((node) => node.setAttribute("data-reveal", ""));
-  nodes.forEach((node, index) => node.style.setProperty("--reveal-delay", `${Math.min(index * 35, 280)}ms`));
-
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -69,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     },
-    { threshold: 0.2 }
+    { threshold: calmMotionRoot ? 0.24 : 0.2, rootMargin: "0px 0px -6% 0px" }
   );
 
   nodes.forEach((node) => observer.observe(node));
