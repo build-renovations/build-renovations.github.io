@@ -4,17 +4,17 @@ milestone: v1.0
 milestone_name: milestone
 current_phase: 04
 current_phase_name: premium ux and layout hardening
-current_plan: 4
-status: planned
-stopped_at: Completed 04 planning
-last_updated: "2026-03-12T10:10:00.000Z"
+current_plan: 2
+status: in_progress
+stopped_at: Completed 04-01-PLAN.md
+last_updated: "2026-03-12T08:34:48.058Z"
 last_activity: 2026-03-12
 progress:
   total_phases: 5
   completed_phases: 3
   total_plans: 16
-  completed_plans: 12
-  percent: 75
+  completed_plans: 13
+  percent: 81
 ---
 
 # Project State
@@ -31,12 +31,12 @@ See: `.planning/PROJECT.md` (updated 2026-03-10)
 - **Current Phase:** 04
 - **Current Phase Name:** premium ux and layout hardening
 - **Total Phases:** 5
-- **Current Plan:** 4
+- **Current Plan:** 2
 - **Total Plans in Phase:** 4
-- **Status:** Phase planned — all four execution plans are ready
+- **Status:** Phase in progress — `04-01` complete, `04-02` next
 - **Last Activity:** 2026-03-12
-- **Last Activity Description:** Finalized Phase 4 research, validation strategy, and execution plans
-- **Progress:** [███████░░░] 75%
+- **Last Activity Description:** Executed `04-01` shared shell guardrails, rendered QA, and validation ownership updates
+- **Progress:** [████████░░] 81%
 
 ## Performance Metrics
 
@@ -49,6 +49,7 @@ See: `.planning/PROJECT.md` (updated 2026-03-10)
 | Phase 03 P03 | 11min | 3 tasks | 12 files |
 | Phase 03 P04 | 4m 47s | 3 tasks | 6 files |
 | Phase 04 Planning | 18m | 4 plans | 6 docs |
+| Phase 04 P01 | 12m | 3 tasks | 10 files |
 
 ## Decisions
 
@@ -80,6 +81,8 @@ See: `.planning/PROJECT.md` (updated 2026-03-10)
 - [Phase 04]: Phase 4 planning keeps the warm editorial visual language and focuses on hierarchy, section rhythm, and responsive hardening rather than a brand reset.
 - [Phase 04]: Browser automation is preferred throughout execution because premium quality and layout stability must be judged from rendered output, not only static files.
 - [Phase 04]: Placeholder business identity remains honest but should be visually de-emphasized until Phase 5 replaces it with final business data.
+- [Phase 04]: Phase 4 parity is enforced through shared data-phase4-surface contracts so UA and EN route pairs must keep the same shell markers as premium polish expands.
+- [Phase 04]: Motion was narrowed to hero and media tilt plus higher-level reveal groups so the shared shell feels calmer before route-level redesign begins.
 
 ## Blockers
 
@@ -87,6 +90,6 @@ None
 
 ## Session
 
-- **Last Date:** 2026-03-12T10:10:00.000Z
-- **Stopped At:** Completed 04 planning
+- **Last Date:** 2026-03-12T08:34:37.962Z
+- **Stopped At:** Completed 04-01-PLAN.md
 - **Resume File:** None

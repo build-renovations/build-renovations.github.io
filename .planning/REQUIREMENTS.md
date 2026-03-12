@@ -35,9 +35,9 @@
 
 ### Visual System And UX Quality
 
-- [ ] **UX-01**: Visitor experiences a visibly more premium and appealing design system across the site without losing clarity or trust.
-- [ ] **UX-02**: Visitor can use the site on common phone and desktop viewports without layout glitches, overflow defects, unstable spacing, or confusing CTA behavior.
-- [ ] **UX-03**: Visitor can navigate between Ukrainian and English equivalents without broken parity in layout, trust content, or primary CTA availability.
+- [x] **UX-01**: Visitor experiences a visibly more premium and appealing design system across the site without losing clarity or trust.
+- [x] **UX-02**: Visitor can use the site on common phone and desktop viewports without layout glitches, overflow defects, unstable spacing, or confusing CTA behavior.
+- [x] **UX-03**: Visitor can navigate between Ukrainian and English equivalents without broken parity in layout, trust content, or primary CTA availability.
 - [ ] **UX-04**: Visitor can scan long pages efficiently because sections are structured for readability rather than content bloat.
 
 ### SEO And Discoverability
@@ -92,9 +92,9 @@
 | CONT-02 | Phase 2 | Complete |
 | CONT-03 | Phase 2 | Complete |
 | CONT-04 | Phase 2 | Pending |
-| UX-01 | Phase 4 | Pending |
-| UX-02 | Phase 4 | Pending |
-| UX-03 | Phase 4 | Pending |
+| UX-01 | Phase 4 | Complete |
+| UX-02 | Phase 4 | Complete |
+| UX-03 | Phase 4 | Complete |
 | UX-04 | Phase 4 | Pending |
 | SEO-01 | Phase 5 | Pending |
 | SEO-02 | Phase 5 | Pending |
