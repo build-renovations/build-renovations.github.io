@@ -62,7 +62,7 @@ completed: 2026-03-12
 The original executor session stopped before git writes, so the finished Wave 3 code was recovered into one implementation commit and one follow-up docs/state commit in the main session.
 
 1. **Recovered implementation commit** - `e3c2785`
-2. **Recovered docs/state commit** - `PENDING`
+2. **Recovered docs/state commit** - `ef84139`
 
 **Plan metadata:** recorded in the docs/state recovery commit after the implementation commit.
 
