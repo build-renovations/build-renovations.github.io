@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const parallaxNodes = document.querySelectorAll(".hero__shot, .feature-band__media figure, [data-tilt]");
   const calmMotionRoot = document.body.dataset.phase4Motion === "calm";
   const reduceMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+  const desktopNavQuery = window.matchMedia("(min-width: 901px)");
   const revealSelectors = [
     ".hero__copy",
     ".hero__panel",
@@ -20,11 +21,33 @@ document.addEventListener("DOMContentLoaded", () => {
   const nodes = [...new Set(document.querySelectorAll(revealSelectors.join(", ")))];
   const stickyMediaQuery = window.matchMedia("(max-width: 900px)");
 
+  const closeMenu = () => {
+    if (!menuToggle || !siteHeader) return;
+    menuToggle.setAttribute("aria-expanded", "false");
+    siteHeader.classList.remove("is-open");
+  };
+
   if (menuToggle && siteHeader) {
     menuToggle.addEventListener("click", () => {
       const expanded = menuToggle.getAttribute("aria-expanded") === "true";
       menuToggle.setAttribute("aria-expanded", String(!expanded));
       siteHeader.classList.toggle("is-open", !expanded);
+    });
+
+    document.addEventListener("click", (event) => {
+      if (!siteHeader.classList.contains("is-open")) return;
+      if (siteHeader.contains(event.target)) return;
+      closeMenu();
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        closeMenu();
+      }
+    });
+
+    siteHeader.querySelectorAll(".site-nav a").forEach((link) => {
+      link.addEventListener("click", closeMenu);
     });
   }
 
@@ -37,6 +60,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   updateProgress();
   window.addEventListener("scroll", updateProgress, { passive: true });
+  const syncHeaderState = () => {
+    if (!siteHeader) return;
+    siteHeader.classList.toggle("is-scrolled", window.scrollY > 12);
+  };
+  syncHeaderState();
+  window.addEventListener("scroll", syncHeaderState, { passive: true });
 
   const syncStickyPhoneCta = () => {
     const enabled = Boolean(stickyPhoneCta) && stickyMediaQuery.matches;
@@ -51,6 +80,19 @@ document.addEventListener("DOMContentLoaded", () => {
     stickyMediaQuery.addEventListener("change", syncStickyPhoneCta);
   } else if (typeof stickyMediaQuery.addListener === "function") {
     stickyMediaQuery.addListener(syncStickyPhoneCta);
+  }
+  if (typeof desktopNavQuery.addEventListener === "function") {
+    desktopNavQuery.addEventListener("change", (event) => {
+      if (event.matches) {
+        closeMenu();
+      }
+    });
+  } else if (typeof desktopNavQuery.addListener === "function") {
+    desktopNavQuery.addListener((event) => {
+      if (event.matches) {
+        closeMenu();
+      }
+    });
   }
   window.addEventListener("resize", syncStickyPhoneCta, { passive: true });
 

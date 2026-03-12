@@ -10,14 +10,16 @@
       {{ content }}
     </main>
     <div class="shell site-contact-shell" data-phase4-marker="layout-parity" data-phase4-surface="contact-shell">
-      {% include contact-options.html lang=page.lang class="site-contact-shell" %}
+      {% include contact-options.html lang=page.lang class="site-contact-shell__panel" %}
     </div>
     {% include footer.html %}
+    {% assign t = site.data.translations[page.lang] | default: site.data.translations.uk %}
     {% assign contact = site.data.contact_channels[page.lang] | default: site.data.contact_channels.uk %}
     <div class="sticky-phone-cta" data-sticky-phone-cta data-phase4-marker="cta-stability" data-phase4-surface="sticky-phone-cta" hidden>
       <div class="shell">
         <div class="sticky-phone-cta__inner">
           <div class="sticky-phone-cta__copy">
+            <span class="sticky-phone-cta__eyebrow">{{ t.contact_phone_label }}</span>
             <strong>{{ contact.sticky_note }}</strong>
             <span>{{ site.company.phone_display | default: site.company.phone }}</span>
           </div>

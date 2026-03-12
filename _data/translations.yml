@@ -1,6 +1,8 @@
 uk:
   locale: uk_UA
+  brand_eyebrow: "Керований ремонт"
   brand_tagline: "Інженерія, чорнові етапи та чистове оздоблення під одним контролем"
+  header_status: "Квартири та будинки • дзвінок як перший крок"
   cta_primary: "Обговорити проєкт"
   cta_call: "Подзвонити"
   cta_nav: "Запит"
@@ -21,6 +23,9 @@ uk:
   proof_intro: "Довіру формують не гучні слогани, а конкретні докази: зрозумілий процес, реальні фото та чітка відповідальність."
   language_label: "Мова"
   footer_note: "Сайт сфокусований на реальних етапах ремонту, прикладах робіт і предметній комунікації з клієнтом."
+  footer_shell_label: "Система подачі"
+  footer_prompt_title: "Що сказати на старті"
+  footer_contact_title: "Контактний канал"
   contact_prompt: "Опишіть тип об'єкта, етап і бажаний термін. Ми повернемось із логічним планом наступних кроків."
   seo_description: "Комплексний ремонт квартир і будинків: сантехніка, електрика, чорнові роботи, оздоблення та здача об'єкта під ключ."
   scope_label: "Напрями робіт"
@@ -68,7 +73,9 @@ uk:
   proof_signature: "Принцип подачі сайту"
 en:
   locale: en_US
+  brand_eyebrow: "Managed renovation"
   brand_tagline: "Engineering, structural preparation, and finishing under one accountable lead"
+  header_status: "Apartments and houses • call first"
   cta_primary: "Discuss your project"
   cta_call: "Call now"
   cta_nav: "Enquire"
@@ -89,6 +96,9 @@ en:
   proof_intro: "Trust is built through evidence, not slogans: a clear process, real site photos, and visible accountability."
   language_label: "Language"
   footer_note: "The site is built around real renovation stages, work examples, and concrete client communication."
+  footer_shell_label: "Site framing"
+  footer_prompt_title: "What to share first"
+  footer_contact_title: "Contact channel"
   contact_prompt: "Share the property type, current stage, and target timeline. We will return with a logical next-step plan."
   seo_description: "Turnkey renovation services for apartments and houses: plumbing, electrical, walls, ceilings, flooring, and final finishing."
   scope_label: "Work categories"

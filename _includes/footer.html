@@ -3,12 +3,18 @@
   <div class="shell site-footer__inner">
     <div class="site-footer__brand">
       <img class="site-footer__mark" src="{{ '/assets/images/logo-mark.svg' | relative_url }}" alt="" width="48" height="48">
-      <div>
+      <div class="site-footer__brand-copy">
+        <p class="site-footer__eyebrow">{{ t.footer_shell_label }}</p>
         <strong>{{ site.company.name }}</strong>
         <p>{{ t.footer_note }}</p>
       </div>
     </div>
+    <div class="site-footer__prompt">
+      <p class="site-footer__heading">{{ t.footer_prompt_title }}</p>
+      <p>{{ t.contact_prompt }}</p>
+    </div>
     <div class="site-footer__contacts">
+      <p class="site-footer__heading">{{ t.footer_contact_title }}</p>
       <a href="tel:{{ site.company.phone }}">{{ site.company.phone_display | default: site.company.phone }}</a>
       <a href="mailto:{{ site.company.email }}">{{ t.contact_email_label }}: {{ site.company.email }}</a>
     </div>
