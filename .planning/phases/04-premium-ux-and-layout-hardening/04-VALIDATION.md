@@ -1,9 +1,9 @@
 ---
 phase: 4
 slug: premium-ux-and-layout-hardening
-status: planned
+status: in_progress
 nyquist_compliant: false
-wave_0_complete: false
+wave_0_complete: true
 created: 2026-03-12
 ---
 
@@ -39,9 +39,9 @@ created: 2026-03-12
 
 | Task ID | Plan | Wave | Requirement | Test Type | Automated Command | File Exists | Status |
 |---------|------|------|-------------|-----------|-------------------|-------------|--------|
-| 04-01-01 | 01 | 1 | UX-02 | rendered + metadata | `./scripts/qa.sh` (`scripts/phase4_render_checks.mjs` validates premium markers, CTA stability, and parity hooks on target routes) | ⬜ | ⬜ pending |
-| 04-01-02 | 01 | 1 | UX-01 | shared-style integrity | `bundle exec ruby -e 'require "yaml"; %w[_data/translations.yml _data/service_pages.yml _data/process_page.yml _data/case_studies.yml].each { |path| YAML.load_file(path) if File.exist?(path) }'` | ✅ | ⬜ pending |
-| 04-01-03 | 01 | 1 | UX-02 | validation artifact | `rg -n "phase4_render_checks|premium-shell|layout-parity|cta-stability" .planning/phases/04-premium-ux-and-layout-hardening/04-VALIDATION.md` | ✅ | ⬜ pending |
+| 04-01-01 | 01 | 1 | UX-02 | rendered + metadata | `./scripts/qa.sh` (`scripts/phase4_render_checks.mjs` validates premium-shell, scan-rhythm, cta-stability, and layout-parity on target routes) | ✅ | ✅ green |
+| 04-01-02 | 01 | 1 | UX-01 | shared-style integrity | `./scripts/qa.sh` plus rendered browser spot-check on built output | ✅ | ✅ green |
+| 04-01-03 | 01 | 1 | UX-02 | validation artifact | `rg -n "phase4_render_checks|premium-shell|scan-rhythm|cta-stability|layout-parity" .planning/phases/04-premium-ux-and-layout-hardening/04-VALIDATION.md` | ✅ | ✅ green |
 | 04-02-01 | 02 | 2 | UX-01 | rendered | `./scripts/qa.sh` | ⬜ | ⬜ pending |
 | 04-02-02 | 02 | 2 | UX-02 | browser review | `./scripts/qa.sh` | ⬜ | ⬜ pending |
 | 04-02-03 | 02 | 2 | UX-03 | rendered parity | `./scripts/qa.sh` | ⬜ | ⬜ pending |
@@ -58,16 +58,36 @@ created: 2026-03-12
 
 ## Wave 0 Requirements
 
-- [ ] Add `scripts/phase4_render_checks.mjs` and wire it into `./scripts/qa.sh`
-- [ ] Add checks for `/`, `/en/`, `/process/`, `/en/process/`, representative service routes, representative dossier routes, and `/projects/` plus `/en/projects/`
-- [ ] Add stable rendered markers for premium-shell, scan-rhythm, cta-stability, and layout-parity surfaces
-- [ ] Add assertions that touched routes retain visible primary CTA, language-switch links, and sticky CTA shell where applicable
-- [ ] Add parity assertions so touched UA and EN route pairs keep the same premium surface set
-- [ ] Encode the browser-review matrix for mobile and desktop sign-off inside this validation file
+- [x] Add `scripts/phase4_render_checks.mjs` and wire it into `./scripts/qa.sh`
+- [x] Add checks for `/`, `/en/`, `/process/`, `/en/process/`, representative service routes, representative dossier routes, and `/projects/` plus `/en/projects/`
+- [x] Add stable rendered markers for premium-shell, scan-rhythm, cta-stability, and layout-parity surfaces
+- [x] Add assertions that touched routes retain visible primary CTA, language-switch links, and sticky CTA shell where applicable
+- [x] Add parity assertions so touched UA and EN route pairs keep the same premium surface set
+- [x] Encode the browser-review matrix for mobile and desktop sign-off inside this validation file
 
 **Wave 0 owner:** Plan `04-01`
 
-**Expected route coverage:** `/`, `/en/`, `/process/`, `/en/process/`, `/services/plumbing/`, `/en/services/plumbing/`, `/projects/`, `/en/projects/`, representative dossier routes, and at least one support content page pair touched during execution.
+**Wave 0 route coverage now implemented:** `/`, `/en/`, `/process/`, `/en/process/`, `/services/plumbing/`, `/en/services/plumbing/`, `/services/apartment-renovation/`, `/en/services/apartment-renovation/`, `/projects/`, `/en/projects/`, `/projects/compact-apartment-engineering/`, `/en/projects/compact-apartment-engineering/`, `/projects/house-stage-coordination/`, `/en/projects/house-stage-coordination/`.
+
+## Wave 0 Browser Matrix
+
+| Viewport | UA Route | EN Route | What must be reviewed | Owner | Status |
+|----------|----------|----------|------------------------|-------|--------|
+| Desktop `1440x1100` | `/` | `/en/` | premium-shell spacing, hero hierarchy, proof rhythm, and persistent CTA clarity | Plan `04-01` | ✅ reviewed during execution |
+| Desktop `1440x1100` | `/process/` | `/en/process/` | scan-rhythm on long sections, stage-map composure, no CTA drift | Plan `04-01` for baseline, later plans for final polish | ⬜ pending final phase sign-off |
+| Desktop `1440x1100` | `/services/plumbing/` | `/en/services/plumbing/` | service hero parity, section pacing, and long-route shell consistency | Later Phase 4 plans | ⬜ pending final phase sign-off |
+| Desktop `1440x1100` | `/projects/compact-apartment-engineering/` | `/en/projects/compact-apartment-engineering/` | dossier shell parity, snapshot readability, and stage timeline rhythm | Later Phase 4 plans | ⬜ pending final phase sign-off |
+| Mobile `390x844` | `/` | `/en/` | stacked rhythm, no cramped card wall, sticky CTA remains clear and unobtrusive | Later Phase 4 plans | ⬜ pending final phase sign-off |
+| Mobile `390x844` | `/process/` | `/en/process/` | long-page calmness, no overflow, sticky CTA and menu stay readable | Plan `04-01` for baseline, later plans for final polish | ✅ UA baseline reviewed during execution |
+| Mobile `390x844` | `/services/apartment-renovation/` | `/en/services/apartment-renovation/` | property-fit sections remain scannable and CTA behavior stays stable | Later Phase 4 plans | ⬜ pending final phase sign-off |
+| Mobile `390x844` | `/projects/house-stage-coordination/` | `/en/projects/house-stage-coordination/` | dossier parity, stage density, and bottom CTA spacing | Later Phase 4 plans | ⬜ pending final phase sign-off |
+
+## Wave 0 Sign-Off Expectations
+
+- Automation owner: Plan `04-01` must keep `scripts/phase4_render_checks.mjs` green in the default `./scripts/qa.sh` path.
+- Browser owner: every later Phase 4 plan inherits this matrix and must review the route pairs it changes on both desktop and mobile before phase close.
+- Parity rule: touched UA and EN routes must keep the same `data-phase4-surface` set and keep language switching plus primary phone CTA intact.
+- Final phase sign-off remains blocked until the matrix above is reviewed after the later layout-polish plans land.
 
 ---
 
