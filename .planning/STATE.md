@@ -2,19 +2,19 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-current_phase: 03
-current_phase_name: case study and proof system
+current_phase: 04
+current_phase_name: premium ux and layout hardening
 current_plan: 4
-status: executing
-stopped_at: Completed 03-04-PLAN.md
-last_updated: "2026-03-11T20:04:17.817Z"
-last_activity: 2026-03-11
+status: planned
+stopped_at: Completed 04 planning
+last_updated: "2026-03-12T10:10:00.000Z"
+last_activity: 2026-03-12
 progress:
   total_phases: 5
   completed_phases: 3
-  total_plans: 12
+  total_plans: 16
   completed_plans: 12
-  percent: 100
+  percent: 75
 ---
 
 # Project State
@@ -24,19 +24,19 @@ progress:
 See: `.planning/PROJECT.md` (updated 2026-03-10)
 
 **Core value:** Make a renovation buyer feel enough trust, clarity, and urgency to call after seeing a polished, glitch-free site with concrete proof of how the work is controlled.
-**Current focus:** Phase 3 — Case Study And Proof System
+**Current focus:** Phase 4 — Premium UX And Layout Hardening
 
 ## Current Position
 
-- **Current Phase:** 03
-- **Current Phase Name:** case study and proof system
+- **Current Phase:** 04
+- **Current Phase Name:** premium ux and layout hardening
 - **Total Phases:** 5
 - **Current Plan:** 4
 - **Total Plans in Phase:** 4
-- **Status:** Ready to execute
-- **Last Activity:** 2026-03-11
-- **Last Activity Description:** Executed 03-03 route integration, dossier-backed proof replacement, and supporting-page bridge rollout
-- **Progress:** [██████████] 100%
+- **Status:** Phase planned — all four execution plans are ready
+- **Last Activity:** 2026-03-12
+- **Last Activity Description:** Finalized Phase 4 research, validation strategy, and execution plans
+- **Progress:** [███████░░░] 75%
 
 ## Performance Metrics
 
@@ -48,6 +48,7 @@ See: `.planning/PROJECT.md` (updated 2026-03-10)
 | Phase 03 P02 | 6min | 3 tasks | 8 files |
 | Phase 03 P03 | 11min | 3 tasks | 12 files |
 | Phase 03 P04 | 4m 47s | 3 tasks | 6 files |
+| Phase 04 Planning | 18m | 4 plans | 6 docs |
 
 ## Decisions
 
@@ -76,6 +77,9 @@ See: `.planning/PROJECT.md` (updated 2026-03-10)
 - [Phase 03]: Project indexes now group dossiers by buyer concern so visitors can choose proof by risk instead of scanning a flat list.
 - [Phase 03]: Case-study pages surface snapshot and proof-status cues before deeper buyer-relevance and stage detail so dossier pages stay scannable.
 - [Phase 03]: Phase 3 sign-off happens only after the full QA suite stays green with explicit CASE coverage and replacement-policy checks.
+- [Phase 04]: Phase 4 planning keeps the warm editorial visual language and focuses on hierarchy, section rhythm, and responsive hardening rather than a brand reset.
+- [Phase 04]: Browser automation is preferred throughout execution because premium quality and layout stability must be judged from rendered output, not only static files.
+- [Phase 04]: Placeholder business identity remains honest but should be visually de-emphasized until Phase 5 replaces it with final business data.
 
 ## Blockers
 
@@ -83,6 +87,6 @@ None
 
 ## Session
 
-- **Last Date:** 2026-03-11T20:04:17.815Z
-- **Stopped At:** Completed 03-04-PLAN.md
+- **Last Date:** 2026-03-12T10:10:00.000Z
+- **Stopped At:** Completed 04 planning
 - **Resume File:** None

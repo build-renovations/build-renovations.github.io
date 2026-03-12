@@ -1,6 +1,6 @@
 # Progress Tracker
 
-Last updated: 2026-03-11
+Last updated: 2026-03-12
 Orchestrator: codex
 Project: Remonty bilingual GitHub Pages site
 
@@ -10,11 +10,11 @@ Build a multilingual renovation website for apartments and houses, covering plum
 
 ## Current phase
 
-Phase 3 planning is complete. The repository is ready to execute the case-study and proof-system wave next.
+Phase 4 planning is complete. The repository is ready for premium UX and layout hardening next.
 
 ## Active gate
 
-GSD Phase 3 — Case Study And Proof System (planned, execution ready)
+GSD Phase 4 — Premium UX And Layout Hardening (planned, execution ready)
 
 ## Milestones
 
@@ -34,7 +34,7 @@ GSD Phase 3 — Case Study And Proof System (planned, execution ready)
 
 ## Active tasks
 
-- Execute Phase 3 Wave 1 to add the case-study data contract, project routes, and additive QA coverage.
+- Execute Phase 4 Wave 1 through Wave 4 to upgrade the shared shell, long-page composition, and viewport hardening with browser-reviewed parity.
 
 ## Gate checklist
 
@@ -49,11 +49,12 @@ GSD Phase 3 — Case Study And Proof System (planned, execution ready)
 
 ## Blockers
 
-- Missing final production company profile, contacts, proof sources, and brand details for the later replacement pass.
+- Missing final production company profile, contacts, and brand details still limit how premium the site can feel until the Phase 5 replacement pass lands.
 
 ## Recent updates
 
-- 2026-03-11: Phase 3 planning completed with `03-RESEARCH.md`, `03-VALIDATION.md`, and four execution plans covering project dossiers, proof routing, placeholder-proof replacement, and final sign-off.
+- 2026-03-12: Phase 4 planning completed with `04-RESEARCH.md`, `04-VALIDATION.md`, and four execution plans covering design-system guardrails, homepage/shell polish, long-page composition hardening, and final viewport/parity sign-off.
+- 2026-03-11: Phase 3 execution and verification completed; `/projects/` and dossier routes are live, route-level proof bridges are integrated, and `03-VERIFICATION.md` passed.
 - 2026-03-10: ORCH-002 completed with a fresh `.planning/codebase/` map covering stack, integrations, architecture, structure, conventions, testing, and concerns; fallback default agents were used because the dedicated `gsd-codebase-mapper` role was unavailable.
 - 2026-03-11: Phase 1 planning was updated to allow clearly labeled placeholder contact and proof content now, while deferring replacement with real business identity and publishable proof to later roadmap phases.
 - 2026-03-10: CONTENT-004 completed with curated sibling assets converted to metadata-free WebP, expanded bilingual work sections, and QA enforcement for image format plus metadata policy.
@@ -77,4 +78,4 @@ GSD Phase 3 — Case Study And Proof System (planned, execution ready)
 
 ## Next orchestration step
 
-Execute Phase 3 with `$gsd-execute-phase 3`, then move to Phase 4 once the dossier system and proof routing are verified.
+Execute Phase 4 with `$gsd-execute-phase 4`, then move to Phase 5 once premium-shell quality, viewport stability, and bilingual parity are verified.
