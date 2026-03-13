@@ -4,8 +4,7 @@ layout: null
 
 {% if site.seo.allow_indexing %}
 User-agent: *
-Allow: /
-
+Disallow:
 Sitemap: {{ '/sitemap.xml' | absolute_url }}
 {% else %}
 User-agent: *
