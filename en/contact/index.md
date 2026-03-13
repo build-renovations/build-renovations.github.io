@@ -29,5 +29,4 @@ If messaging is easier, it still helps to send the same short brief you would us
 
 ## Contact channel
 
-{{ site.company.phone }}  
-{{ site.company.email }}
+{{ site.company.phone }}

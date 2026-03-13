@@ -29,5 +29,4 @@ show_call_expectations: true
 
 ## Контактний канал
 
-{{ site.company.phone }}  
-{{ site.company.email }}
+{{ site.company.phone }}

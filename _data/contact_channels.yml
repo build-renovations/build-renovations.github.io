@@ -5,7 +5,6 @@ uk:
   sticky_note: "Телефон для короткого брифу"
   secondary_heading: "Месенджери, якщо зручніше написати"
   secondary_support: "Telegram, Viber і WhatsApp підтримують ту саму розмову про об'єкт, але не перехоплюють головну телефонну дію."
-  email_label: "Email для документів і уточнень"
   messengers:
     - name: Telegram
       label: "Telegram"
@@ -23,7 +22,6 @@ en:
   sticky_note: "Phone line for a short project brief"
   secondary_heading: "Messengers if writing is easier"
   secondary_support: "Telegram, Viber, and WhatsApp support the same project conversation without overtaking the primary call action."
-  email_label: "Email for documents and follow-up"
   messengers:
     - name: Telegram
       label: "Telegram"

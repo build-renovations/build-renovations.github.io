@@ -36,10 +36,9 @@ defaults:
       image: /assets/images/og-cover.svg
 
 company:
-  name: "Business name pending confirmation"
-  phone: "+380000000000"
-  phone_display: "+380 (00) 000-00-00"
-  email: "hello@example.com"
+  name: "Рівень"
+  phone: "+380977878523"
+  phone_display: "+380 (97) 787-85-23"
   city: "Lviv"
   country: "Ukraine"
   service_area:
@@ -48,9 +47,6 @@ company:
   phase1_placeholder:
     status: "approved-phase-1"
     fields:
-      - name
-      - phone
-      - email
       - service_area.uk
       - service_area.en
     note: "Phase 1 uses centralized placeholder identity values until the production business details are confirmed."
@@ -59,7 +55,7 @@ company:
       url: "https://github.com/build-renovations/build-renovations.github.io"
 
 seo:
-  allow_indexing: false
+  allow_indexing: true
   type: HomeAndConstructionBusiness
   uk:
     locale: uk_UA
