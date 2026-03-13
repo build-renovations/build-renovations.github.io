@@ -6,15 +6,15 @@ current_phase: 04
 current_phase_name: premium ux and layout hardening
 current_plan: 4
 status: verifying
-stopped_at: Completed 05-01-PLAN.md
-last_updated: "2026-03-13T07:59:02.723Z"
+stopped_at: Completed 05-02-PLAN.md
+last_updated: "2026-03-13T08:06:21.509Z"
 last_activity: 2026-03-13
 progress:
   total_phases: 5
   completed_phases: 4
   total_plans: 19
-  completed_plans: 17
-  percent: 89
+  completed_plans: 18
+  percent: 95
 ---
 
 # Project State
@@ -36,7 +36,7 @@ See: `.planning/PROJECT.md` (updated 2026-03-10)
 - **Status:** Phase complete — ready for verification
 - **Last Activity:** 2026-03-13
 - **Last Activity Description:** Executed `04-04` final browser matrix and Phase 4 sign-off on Bundler/Jekyll-served UA/EN routes
-- **Progress:** [█████████░] 89%
+- **Progress:** [██████████] 95%
 
 ## Performance Metrics
 
@@ -52,6 +52,7 @@ See: `.planning/PROJECT.md` (updated 2026-03-10)
 | Phase 04 P01 | 12m | 3 tasks | 10 files |
 | Phase 04 P02 | 9m | 3 tasks | 7 files |
 | Phase 05 P01 | 2min | 2 tasks | 3 files |
+| Phase 05 P02 | 15min | 1 tasks | 8 files |
 
 ## Decisions
 
@@ -91,6 +92,8 @@ See: `.planning/PROJECT.md` (updated 2026-03-10)
 - [Phase 05]: Phase 5 render checks use noindex detection as a hard fail so the quality gate is RED before Plan 02 flips allow_indexing
 - [Phase 05]: jsonify filter used for JSON-LD string values instead of escape to avoid Ruby 4.0 untaint error in Liquid escape filter
 - [Phase 05]: Service schema fires on page.layout == service_detail and FAQPage schema fires on page.translation_key == faq to prevent schema leakage
+- [Phase 05]: Email dropped from the website entirely at owner's request — removed from _config.yml, all templates, includes, and data files
+- [Phase 05]: phase1_placeholder.fields narrowed to only service_area entries after real name and phone replaced placeholders
 
 ## Blockers
 
@@ -98,6 +101,6 @@ None
 
 ## Session
 
-- **Last Date:** 2026-03-13T07:59:02.721Z
-- **Stopped At:** Completed 05-01-PLAN.md
+- **Last Date:** 2026-03-13T08:06:21.507Z
+- **Stopped At:** Completed 05-02-PLAN.md
 - **Resume File:** None
