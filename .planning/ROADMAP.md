@@ -44,7 +44,7 @@ This roadmap expands the existing bilingual renovation site into a stronger sale
 
 ### Phase 2: Content Architecture Expansion
 
-**Goal:** Expand the site’s textual depth and trust content through reusable structures, clearer page roles, and stronger buyer-facing information design.
+**Goal:** Expand the site's textual depth and trust content through reusable structures, clearer page roles, and stronger buyer-facing information design.
 
 **Requirements:** `CONT-01`, `CONT-02`, `CONT-03`, `CONT-04`
 
@@ -85,6 +85,13 @@ This roadmap expands the existing bilingual renovation site into a stronger sale
 ### Phase 5: SEO And Regression Hardening
 
 **Goal:** Make the expanded site more discoverable and more safely maintainable through stronger metadata coverage, broader intent pages, and rendered QA.
+
+**Plans:** 3 plans
+
+Plans:
+- [ ] 05-01-PLAN.md — Phase 5 render check script + Service and FAQPage JSON-LD structured data
+- [ ] 05-02-PLAN.md — Business identity replacement and indexing flag flip
+- [ ] 05-03-PLAN.md — Final QA suite and human release sign-off
 
 **Requirements:** `SEO-01`, `SEO-02`, `SEO-03`
 
