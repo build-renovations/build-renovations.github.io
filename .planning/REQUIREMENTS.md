@@ -42,9 +42,9 @@
 
 ### SEO And Discoverability
 
-- [ ] **SEO-01**: Search engines can crawl a broader set of trust and service-supporting pages with correct canonical and `hreflang` behavior.
-- [ ] **SEO-02**: Visitor landing from search can find pages that match specific renovation intents such as property type, service scope, or proof-oriented queries.
-- [ ] **SEO-03**: Search engines can read richer business and page context through maintained metadata and structured data where accurate.
+- [x] **SEO-01**: Search engines can crawl a broader set of trust and service-supporting pages with correct canonical and `hreflang` behavior.
+- [x] **SEO-02**: Visitor landing from search can find pages that match specific renovation intents such as property type, service scope, or proof-oriented queries.
+- [x] **SEO-03**: Search engines can read richer business and page context through maintained metadata and structured data where accurate.
 
 ## v2 Requirements
 
@@ -96,9 +96,9 @@
 | UX-02 | Phase 4 | Complete |
 | UX-03 | Phase 4 | Complete |
 | UX-04 | Phase 4 | Pending |
-| SEO-01 | Phase 5 | Pending |
-| SEO-02 | Phase 5 | Pending |
-| SEO-03 | Phase 5 | Pending |
+| SEO-01 | Phase 5 | Complete |
+| SEO-02 | Phase 5 | Complete |
+| SEO-03 | Phase 5 | Complete |
 
 **Coverage:**
 - v1 requirements: 23 total

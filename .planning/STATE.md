@@ -5,16 +5,16 @@ milestone_name: milestone
 current_phase: 04
 current_phase_name: premium ux and layout hardening
 current_plan: 4
-status: phase_complete
-stopped_at: Completed 04-04-PLAN.md
-last_updated: "2026-03-12T14:16:12Z"
-last_activity: 2026-03-12
+status: verifying
+stopped_at: Completed 05-01-PLAN.md
+last_updated: "2026-03-13T07:59:02.723Z"
+last_activity: 2026-03-13
 progress:
   total_phases: 5
   completed_phases: 4
-  total_plans: 16
-  completed_plans: 16
-  percent: 100
+  total_plans: 19
+  completed_plans: 17
+  percent: 89
 ---
 
 # Project State
@@ -33,10 +33,10 @@ See: `.planning/PROJECT.md` (updated 2026-03-10)
 - **Total Phases:** 5
 - **Current Plan:** 4
 - **Total Plans in Phase:** 4
-- **Status:** Phase complete
-- **Last Activity:** 2026-03-12
+- **Status:** Phase complete — ready for verification
+- **Last Activity:** 2026-03-13
 - **Last Activity Description:** Executed `04-04` final browser matrix and Phase 4 sign-off on Bundler/Jekyll-served UA/EN routes
-- **Progress:** [██████████] 100%
+- **Progress:** [█████████░] 89%
 
 ## Performance Metrics
 
@@ -51,6 +51,7 @@ See: `.planning/PROJECT.md` (updated 2026-03-10)
 | Phase 04 Planning | 18m | 4 plans | 6 docs |
 | Phase 04 P01 | 12m | 3 tasks | 10 files |
 | Phase 04 P02 | 9m | 3 tasks | 7 files |
+| Phase 05 P01 | 2min | 2 tasks | 3 files |
 
 ## Decisions
 
@@ -87,6 +88,9 @@ See: `.planning/PROJECT.md` (updated 2026-03-10)
 - [Phase 04]: Premium shell polish de-emphasizes the placeholder business identity by giving more visual weight to route clarity, accountability microcopy, and contact structure instead of the temporary brand name.
 - [Phase 04]: Homepage rhythm is improved through sectional support rails and editorial transitions rather than adding more length or flattening content into uniform card walls.
 - [Phase 04]: UA and EN parity is treated as a rendered-output concern and was verified through browser automation on desktop and mobile routes, not assumed from shared templates alone.
+- [Phase 05]: Phase 5 render checks use noindex detection as a hard fail so the quality gate is RED before Plan 02 flips allow_indexing
+- [Phase 05]: jsonify filter used for JSON-LD string values instead of escape to avoid Ruby 4.0 untaint error in Liquid escape filter
+- [Phase 05]: Service schema fires on page.layout == service_detail and FAQPage schema fires on page.translation_key == faq to prevent schema leakage
 
 ## Blockers
 
@@ -94,6 +98,6 @@ None
 
 ## Session
 
-- **Last Date:** 2026-03-12T08:46:54.370Z
-- **Stopped At:** Completed 04-04-PLAN.md
+- **Last Date:** 2026-03-13T07:59:02.721Z
+- **Stopped At:** Completed 05-01-PLAN.md
 - **Resume File:** None
