@@ -24,7 +24,7 @@ This roadmap expands the existing bilingual renovation site into a stronger sale
 | 2 | Content Architecture Expansion | Add structured, higher-density trust content without turning pages into ungoverned copy piles. | CONT-01, CONT-02, CONT-03, CONT-04 | 4 |
 | 3 | Case Study And Proof System | Turn portfolio content into deeper project evidence that answers real buyer hesitation. | CASE-01, CASE-02, CASE-03, CASE-04 | 4 |
 | 4 | Premium UX And Layout Hardening | Make the site feel materially more premium while removing layout instability and parity drift. | UX-01, UX-02, UX-03, UX-04 | 4 |
-| 5 | 2/3 | In Progress|  | 4 |
+| 5 | 3/3 | Complete   | 2026-03-13 | 4 |
 
 ## Phase Details
 
@@ -86,10 +86,10 @@ This roadmap expands the existing bilingual renovation site into a stronger sale
 
 **Goal:** Make the expanded site more discoverable and more safely maintainable through stronger metadata coverage, broader intent pages, and rendered QA.
 
-**Plans:** 2/3 plans executed
+**Plans:** 3/3 plans complete
 
 Plans:
-- [ ] 05-01-PLAN.md — Phase 5 render check script + Service and FAQPage JSON-LD structured data
+- [x] 05-01-PLAN.md — Phase 5 render check script + Service and FAQPage JSON-LD structured data (completed 2026-03-13)
 - [ ] 05-02-PLAN.md — Business identity replacement and indexing flag flip
 - [ ] 05-03-PLAN.md — Final QA suite and human release sign-off
 
