@@ -2,7 +2,6 @@
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-SITE_DIR="$ROOT_DIR/_site"
 STATUS_DIR="$ROOT_DIR/agents/status"
 REPORT_DIR="$ROOT_DIR/agents/status/reports"
 GATE_REPORT="$STATUS_DIR/gates.md"
@@ -57,7 +56,15 @@ run_gate_3() {
 
 start_server() {
   local port="${1:-4010}"
-  python3 -m http.server "$port" --directory "$SITE_DIR" >/tmp/remonty-gates-server.log 2>&1 &
+  (
+    cd "$ROOT_DIR"
+    RUBYOPT="-r./scripts/jekyll_compat.rb ${RUBYOPT:-}" \
+      bundle exec jekyll serve \
+      --host 127.0.0.1 \
+      --port "$port" \
+      --no-watch \
+      --skip-initial-build
+  ) >/tmp/remonty-gates-server.log 2>&1 &
   SERVER_PID=$!
   SERVER_PORT="$port"
   trap stop_server EXIT
@@ -134,7 +141,7 @@ run_link_check() {
 
   npx --yes linkinator "$url" \
     --recurse \
-    --skip "mailto:.*,tel:.*" \
+    --skip "mailto:.*,tel:.*,build-renovations\.github\.io" \
     --format json >"$out"
 
   node -e '

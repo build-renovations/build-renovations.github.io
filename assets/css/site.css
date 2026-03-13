@@ -348,7 +348,7 @@ h3 {
 }
 
 .button--primary {
-  background: var(--accent);
+  background: #a85228; /* darkened from var(--accent)=#ca6a34 for WCAG AA contrast */
   color: #fff9f3;
 }
 
@@ -481,7 +481,7 @@ h3 {
   justify-content: center;
   border-radius: 999px;
   background: var(--bg-strong);
-  color: var(--accent-dark);
+  color: #7a3514; /* darkened from var(--accent-dark)=#9a4b20 for WCAG AA contrast */
   font-weight: 700;
 }
 
