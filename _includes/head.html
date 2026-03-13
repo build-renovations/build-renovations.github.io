@@ -71,3 +71,46 @@
   "areaServed": "{{ site.company.service_area[lang] | default: site.company.service_area.uk }}"
 }
 </script>
+{% if page.layout == 'service_detail' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": {{ page.title | jsonify }},
+  "description": {{ page.seo_description | default: page.description | jsonify }},
+  "url": "{{ page.url | absolute_url }}",
+  "provider": {
+    "@type": "{{ site.seo.type }}",
+    "name": {{ site.company.name | jsonify }},
+    "telephone": "{{ site.company.phone }}",
+    "areaServed": {{ site.company.service_area[page.lang] | default: site.company.service_area.uk | jsonify }}
+  }
+}
+</script>
+{% endif %}
+{% assign faq_page_key = 'faq' %}
+{% if page.translation_key == faq_page_key %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% assign faq_first = true %}
+    {% for group in site.data.faqs.groups %}
+      {% for item in group.items %}
+        {% unless faq_first %},{% endunless %}
+        {% assign faq_first = false %}
+        {
+          "@type": "Question",
+          "name": {{ item[page.lang].question | jsonify }},
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": {{ item[page.lang].answer | jsonify }}
+          }
+        }
+      {% endfor %}
+    {% endfor %}
+  ]
+}
+</script>
+{% endif %}
