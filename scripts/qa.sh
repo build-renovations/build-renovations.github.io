@@ -47,5 +47,6 @@ node ./scripts/phase1_render_checks.mjs
 node ./scripts/phase2_render_checks.mjs
 node ./scripts/phase3_render_checks.mjs
 node ./scripts/phase4_render_checks.mjs
+node ./scripts/phase5_render_checks.mjs
 
 echo "Build and file checks passed."
