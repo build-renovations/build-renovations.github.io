@@ -2,19 +2,19 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-current_phase: 05
-current_phase_name: premium ux and layout hardening
-current_plan: Not started
-status: completed
-stopped_at: Completed 05-03-PLAN.md — Phase 5 complete
-last_updated: "2026-03-13T09:05:13.394Z"
-last_activity: 2026-03-13
+current_phase: 06
+current_phase_name: identity-contact-and-navigation-completion
+current_plan: 01
+status: in-progress
+stopped_at: Completed 06-01-PLAN.md
+last_updated: "2026-03-15T15:01:22Z"
+last_activity: 2026-03-15
 progress:
-  total_phases: 5
+  total_phases: 7
   completed_phases: 5
-  total_plans: 19
-  completed_plans: 19
-  percent: 100
+  total_plans: 21
+  completed_plans: 20
+  percent: 95
 ---
 
 # Project State
@@ -28,15 +28,15 @@ See: `.planning/PROJECT.md` (updated 2026-03-10)
 
 ## Current Position
 
-- **Current Phase:** 05
-- **Current Phase Name:** premium ux and layout hardening
-- **Total Phases:** 5
-- **Current Plan:** Not started
-- **Total Plans in Phase:** 4
-- **Status:** Milestone complete
-- **Last Activity:** 2026-03-13
-- **Last Activity Description:** Phase 05 complete
-- **Progress:** [██████████] 100%
+- **Current Phase:** 06
+- **Current Phase Name:** identity-contact-and-navigation-completion
+- **Total Phases:** 7
+- **Current Plan:** 01 (completed)
+- **Total Plans in Phase:** 2
+- **Status:** In progress — awaiting plan 06-02 (owner-supplied messenger handles required)
+- **Last Activity:** 2026-03-15
+- **Last Activity Description:** Phase 06 Plan 01 complete — brand name fixed, nav links added, phase6 render check script created
+- **Progress:** [█████████░] 95%
 
 ## Performance Metrics
 
@@ -54,6 +54,7 @@ See: `.planning/PROJECT.md` (updated 2026-03-10)
 | Phase 05 P01 | 2min | 2 tasks | 3 files |
 | Phase 05 P02 | 15min | 1 tasks | 8 files |
 | Phase 05 P03 | 30min | 2 tasks | 4 files |
+| Phase 06 P01 | 4min | 2 tasks | 6 files |
 
 ## Decisions
 
@@ -96,6 +97,8 @@ See: `.planning/PROJECT.md` (updated 2026-03-10)
 - [Phase 05]: Email dropped from the website entirely at owner's request — removed from _config.yml, all templates, includes, and data files
 - [Phase 05]: phase1_placeholder.fields narrowed to only service_area entries after real name and phone replaced placeholders
 - [Phase 05]: Phase 5 human sign-off gate approved after all automated checks passed (qa.sh green, Lighthouse SEO=100, pa11y clean)
+- [Phase 06]: Phase 6 render checks include checkNoPlaceholderMessengers gate that stays red until plan 06-02 (autonomous: false) supplies real owner-provided messenger handles
+- [Phase 06]: Brand name in page-level seo_title frontmatter (index.md, en/index.md) must be updated alongside _config.yml since page frontmatter overrides config seo title fallback
 
 ## Blockers
 
@@ -103,6 +106,6 @@ None
 
 ## Session
 
-- **Last Date:** 2026-03-13T08:57:56.750Z
-- **Stopped At:** Completed 05-03-PLAN.md — Phase 5 complete
+- **Last Date:** 2026-03-15T15:01:22Z
+- **Stopped At:** Completed 06-01-PLAN.md
 - **Resume File:** None

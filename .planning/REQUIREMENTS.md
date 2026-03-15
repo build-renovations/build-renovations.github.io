@@ -7,7 +7,7 @@
 
 ### Trust Foundation
 
-- [ ] **TRST-01**: Visitor can see clear business identity and legitimacy signals on core pages, including company framing, service profile, and trust-supporting commercial context.
+- [x] **TRST-01**: Visitor can see clear business identity and legitimacy signals on core pages, including company framing, service profile, and trust-supporting commercial context.
 - [x] **TRST-02**: Visitor can understand what kinds of renovation projects are a fit before making contact.
 - [x] **TRST-03**: Visitor can understand how the team manages scope, coordination, and accountability across renovation stages.
 - [x] **TRST-04**: Visitor can access sourced trust proof such as testimonials, reviews, credentials, or equivalent evidence without leaving the core decision path.
@@ -23,7 +23,7 @@
 
 - [x] **CASE-01**: Visitor can browse structured project proof that explains scope, stages, decisions, and outcomes rather than only viewing isolated images.
 - [x] **CASE-02**: Visitor can understand renovation quality through before, during, and after states where those states are available.
-- [ ] **CASE-03**: Visitor can move from a service page or homepage proof section into deeper project evidence relevant to that service or property type.
+- [x] **CASE-03**: Visitor can move from a service page or homepage proof section into deeper project evidence relevant to that service or property type.
 - [x] **CASE-04**: Visitor can understand why a featured project or proof block is relevant to their own renovation concerns.
 
 ### Content Depth
@@ -76,7 +76,7 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| TRST-01 | Phase 6 | Pending |
+| TRST-01 | Phase 6 | Complete |
 | TRST-02 | Phase 1 | Complete |
 | TRST-03 | Phase 1 | Complete |
 | TRST-04 | Phase 1 | Complete |
@@ -86,7 +86,7 @@
 | CALL-04 | Phase 6 | Pending |
 | CASE-01 | Phase 7 | Pending |
 | CASE-02 | Phase 3 | Complete |
-| CASE-03 | Phase 6 | Pending |
+| CASE-03 | Phase 6 | Complete |
 | CASE-04 | Phase 7 | Pending |
 | CONT-01 | Phase 2 | Complete |
 | CONT-02 | Phase 2 | Complete |
