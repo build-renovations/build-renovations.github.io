@@ -17,7 +17,7 @@
 - [x] **CALL-01**: Visitor can start a phone call from every primary page on both mobile and desktop.
 - [x] **CALL-02**: Visitor can understand what happens during the first call and what information to prepare before calling.
 - [x] **CALL-03**: Visitor can reach a persistent, tap-friendly phone CTA on mobile without it obscuring core content.
-- [ ] **CALL-04**: Visitor can access a secondary fallback contact path without it competing with the primary phone conversion path.
+- [x] **CALL-04**: Visitor can access a secondary fallback contact path without it competing with the primary phone conversion path.
 
 ### Case Studies And Proof
 
@@ -83,7 +83,7 @@
 | CALL-01 | Phase 1 | Complete |
 | CALL-02 | Phase 1 | Complete |
 | CALL-03 | Phase 1 | Complete |
-| CALL-04 | Phase 6 | Pending |
+| CALL-04 | Phase 6 | Complete |
 | CASE-01 | Phase 7 | Pending |
 | CASE-02 | Phase 3 | Complete |
 | CASE-03 | Phase 6 | Complete |
