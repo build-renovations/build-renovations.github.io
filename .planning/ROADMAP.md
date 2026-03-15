@@ -101,6 +101,33 @@ Plans:
 3. Structured data and metadata are upgraded where accurate and useful to search engines.
 4. Rendered QA covers root bilingual routes, primary CTA visibility, major layout regressions, and final replacement of placeholder identity/contact content before release.
 
+### Phase 6: Identity, Contact and Navigation Completion
+
+**Goal:** Close the three runtime gaps found in the v1.0 audit: real brand name in page titles, real messenger contact handles, and project evidence accessible from top-level navigation.
+
+**Requirements:** `TRST-01`, `CALL-04`, `CASE-03`
+
+**Gap Closure:** Closes gaps from v1.0 audit
+
+**Success criteria:**
+1. `<title>` and `og:title` display "Рівень" consistently with JSON-LD and in-page brand.
+2. All three messenger channels (Telegram, Viber, WhatsApp) resolve to real, active handles.
+3. `/projects/` and `/en/projects/` are linked in the top-level navigation for both locales.
+
+### Phase 7: QA Coverage Extension
+
+**Goal:** Extend rendered QA coverage to the full surface area of the site — 3 unchecked dossier routes and 5 unchecked service routes — so no page can silently regress.
+
+**Requirements:** `CASE-01`, `CASE-04`, `SEO-02`, `SEO-03`
+
+**Gap Closure:** Closes gaps from v1.0 audit
+
+**Success criteria:**
+1. `phase3_render_checks.mjs` covers all 5 dossier routes (+ EN pairs).
+2. `phase4_render_checks.mjs` covers all 5 dossier routes in its route matrix.
+3. `phase5_render_checks.mjs` `serviceDetailRoutes` covers all 8 service pages.
+4. `./scripts/qa.sh` exits 0 after extensions.
+
 ## Ordering Rationale
 
 - Phase 1 comes first because trust and call clarity directly support the project core value.

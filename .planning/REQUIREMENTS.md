@@ -7,7 +7,7 @@
 
 ### Trust Foundation
 
-- [x] **TRST-01**: Visitor can see clear business identity and legitimacy signals on core pages, including company framing, service profile, and trust-supporting commercial context.
+- [ ] **TRST-01**: Visitor can see clear business identity and legitimacy signals on core pages, including company framing, service profile, and trust-supporting commercial context.
 - [x] **TRST-02**: Visitor can understand what kinds of renovation projects are a fit before making contact.
 - [x] **TRST-03**: Visitor can understand how the team manages scope, coordination, and accountability across renovation stages.
 - [x] **TRST-04**: Visitor can access sourced trust proof such as testimonials, reviews, credentials, or equivalent evidence without leaving the core decision path.
@@ -17,13 +17,13 @@
 - [x] **CALL-01**: Visitor can start a phone call from every primary page on both mobile and desktop.
 - [x] **CALL-02**: Visitor can understand what happens during the first call and what information to prepare before calling.
 - [x] **CALL-03**: Visitor can reach a persistent, tap-friendly phone CTA on mobile without it obscuring core content.
-- [x] **CALL-04**: Visitor can access a secondary fallback contact path without it competing with the primary phone conversion path.
+- [ ] **CALL-04**: Visitor can access a secondary fallback contact path without it competing with the primary phone conversion path.
 
 ### Case Studies And Proof
 
 - [x] **CASE-01**: Visitor can browse structured project proof that explains scope, stages, decisions, and outcomes rather than only viewing isolated images.
 - [x] **CASE-02**: Visitor can understand renovation quality through before, during, and after states where those states are available.
-- [x] **CASE-03**: Visitor can move from a service page or homepage proof section into deeper project evidence relevant to that service or property type.
+- [ ] **CASE-03**: Visitor can move from a service page or homepage proof section into deeper project evidence relevant to that service or property type.
 - [x] **CASE-04**: Visitor can understand why a featured project or proof block is relevant to their own renovation concerns.
 
 ### Content Depth
@@ -76,18 +76,18 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| TRST-01 | Phase 1 | Complete |
+| TRST-01 | Phase 6 | Pending |
 | TRST-02 | Phase 1 | Complete |
 | TRST-03 | Phase 1 | Complete |
 | TRST-04 | Phase 1 | Complete |
 | CALL-01 | Phase 1 | Complete |
 | CALL-02 | Phase 1 | Complete |
 | CALL-03 | Phase 1 | Complete |
-| CALL-04 | Phase 1 | Complete |
-| CASE-01 | Phase 3 | Complete |
+| CALL-04 | Phase 6 | Pending |
+| CASE-01 | Phase 7 | Pending |
 | CASE-02 | Phase 3 | Complete |
-| CASE-03 | Phase 3 | Complete |
-| CASE-04 | Phase 3 | Complete |
+| CASE-03 | Phase 6 | Pending |
+| CASE-04 | Phase 7 | Pending |
 | CONT-01 | Phase 2 | Complete |
 | CONT-02 | Phase 2 | Complete |
 | CONT-03 | Phase 2 | Complete |
@@ -97,8 +97,8 @@
 | UX-03 | Phase 4 | Complete |
 | UX-04 | Phase 4 | Pending |
 | SEO-01 | Phase 5 | Complete |
-| SEO-02 | Phase 5 | Complete |
-| SEO-03 | Phase 5 | Complete |
+| SEO-02 | Phase 7 | Pending |
+| SEO-03 | Phase 7 | Pending |
 
 **Coverage:**
 - v1 requirements: 23 total
@@ -107,4 +107,4 @@
 
 ---
 *Requirements defined: 2026-03-11*
-*Last updated: 2026-03-11 after roadmap mapping*
+*Last updated: 2026-03-15 after v1.0 audit — gap closure phases 06, 07 added*
