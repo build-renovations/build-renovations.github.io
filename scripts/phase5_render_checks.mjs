@@ -17,6 +17,16 @@ const checkedRoutes = [
   "/en/services/apartment-renovation/",
   "/services/house-renovation/",
   "/en/services/house-renovation/",
+  "/services/electrical/",
+  "/en/services/electrical/",
+  "/services/finishing/",
+  "/en/services/finishing/",
+  "/services/rough-works/",
+  "/en/services/rough-works/",
+  "/services/procurement/",
+  "/en/services/procurement/",
+  "/services/site-supervision/",
+  "/en/services/site-supervision/",
   "/projects/",
   "/en/projects/",
   "/faq/",
@@ -29,6 +39,11 @@ const bilingualPairs = [
   ["/services/plumbing/", "/en/services/plumbing/"],
   ["/services/apartment-renovation/", "/en/services/apartment-renovation/"],
   ["/services/house-renovation/", "/en/services/house-renovation/"],
+  ["/services/electrical/", "/en/services/electrical/"],
+  ["/services/finishing/", "/en/services/finishing/"],
+  ["/services/rough-works/", "/en/services/rough-works/"],
+  ["/services/procurement/", "/en/services/procurement/"],
+  ["/services/site-supervision/", "/en/services/site-supervision/"],
   ["/projects/", "/en/projects/"],
   ["/faq/", "/en/faq/"]
 ];
@@ -39,7 +54,17 @@ const serviceDetailRoutes = [
   "/services/apartment-renovation/",
   "/en/services/apartment-renovation/",
   "/services/house-renovation/",
-  "/en/services/house-renovation/"
+  "/en/services/house-renovation/",
+  "/services/electrical/",
+  "/en/services/electrical/",
+  "/services/finishing/",
+  "/en/services/finishing/",
+  "/services/rough-works/",
+  "/en/services/rough-works/",
+  "/services/procurement/",
+  "/en/services/procurement/",
+  "/services/site-supervision/",
+  "/en/services/site-supervision/",
 ];
 
 const faqRoutes = ["/faq/", "/en/faq/"];
