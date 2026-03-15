@@ -384,6 +384,7 @@ h3 {
 
 .section--accent {
   position: relative;
+  background: rgba(24, 32, 29, 0.035);
 }
 
 [data-phase4-marker="scan-rhythm"] {
@@ -606,6 +607,17 @@ h3 {
   padding: 2rem;
 }
 
+.service-detail__card h2 {
+  font-size: clamp(1.25rem, 2.2vw, 1.75rem);
+  max-width: none;
+}
+
+.process-proof__copy h2,
+.process-risk__copy h2 {
+  font-size: clamp(1.3rem, 2.2vw, 1.85rem);
+  max-width: none;
+}
+
 .service-hero__media {
   margin: 0;
   overflow: hidden;
@@ -624,6 +636,8 @@ h3 {
   align-content: start;
   padding: 1.9rem;
   border-radius: 28px;
+  overflow-wrap: break-word;
+  word-break: break-word;
   background:
     linear-gradient(155deg, rgba(24, 32, 29, 0.94), rgba(57, 45, 35, 0.88)),
     var(--surface-dark);
@@ -686,6 +700,10 @@ h3 {
 .prose h2 {
   margin: 2rem 0 1rem;
   font-size: clamp(1.5rem, 3vw, 2.4rem);
+}
+
+.prose > :first-child {
+  margin-top: 0;
 }
 
 .prose p,
@@ -910,6 +928,10 @@ body::before {
 .page-hero {
   position: relative;
   padding-top: 5.6rem;
+}
+
+.page-hero {
+  padding-bottom: 1.5rem;
 }
 
 .hero::before {
@@ -1150,7 +1172,7 @@ h1 {
 }
 
 .section-heading h2 {
-  max-width: 12ch;
+  max-width: 26ch;
   letter-spacing: -0.025em;
 }
 
@@ -1499,7 +1521,7 @@ h1 {
 }
 
 .work-shot figcaption {
-  padding: 0.85rem 0.25rem 0;
+  padding: 0.75rem 1rem 0.85rem;
   color: var(--muted);
   font-size: 0.9rem;
   line-height: 1.5;
@@ -1544,6 +1566,8 @@ h1 {
   align-content: start;
   min-height: 12rem;
   padding: 1.35rem;
+  overflow-wrap: break-word;
+  word-break: break-word;
   background:
     linear-gradient(160deg, rgba(24,32,29,0.95), rgba(57,45,35,0.9)),
     var(--surface-dark);
@@ -2559,6 +2583,7 @@ body.has-sticky-phone-cta main {
 }
 
 .site-nav {
+  order: -1;
   gap: 0.35rem;
   padding: 0.42rem 0.52rem;
   background: rgba(255, 252, 247, 0.66);
@@ -2879,6 +2904,15 @@ body.has-sticky-phone-cta main {
   .contact-options__panel {
     grid-template-columns: 1fr;
   }
+
+  .process-hero__grid,
+  .process-proof {
+    grid-template-columns: 1fr;
+  }
+
+  .process-hero__proofstrip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 640px) {
@@ -2905,6 +2939,10 @@ body.has-sticky-phone-cta main {
   .project-fit,
   .call-expectations {
     padding: 1.4rem;
+  }
+
+  .process-hero__proofstrip {
+    grid-template-columns: 1fr;
   }
 
   .call-expectations__footer {

@@ -4,16 +4,16 @@ lang: en
 translation_key: home
 permalink: /en/
 title: "Рівень"
-seo_title: "Рівень | Renovation from plumbing to final finishing"
-seo_description: "Turnkey renovation services for apartments and houses: plumbing, electrical, walls, ceilings, flooring, and final finishing."
-eyebrow: "Full-scope renovation"
-hero_title: "Renovation where engineering, preparation, and finishing stay coordinated."
-hero_lead: "We take responsibility for the technical logic of the property, the stage sequence, and the final interior assembly so the buyer does not have to force separate decisions into one system."
+seo_title: "Рівень | Turnkey apartment and house renovation"
+seo_description: "Full-scope renovation for apartments and houses: plumbing, electrical, structural work, finishing, and complete handover under one accountable contractor."
+eyebrow: "Full-scope turnkey renovation"
+hero_title: "Apartment and house renovation — from structural work to final finishing under one accountable lead."
+hero_lead: "You do not coordinate a plumber, electrician, and finishing contractor separately. We take responsibility for the entire route, manage every handoff between stages, and deliver the finished property with full photo documentation."
 primary_cta_url: /en/contact/
 secondary_cta_url: /en/services/
-panel_title: "Positioning baseline"
+panel_title: "Why clients choose Рівень"
 panel_points:
-  - "Apartments and houses, selective stages, and full renovation projects"
-  - "Engineering work, substrate preparation, and disciplined finishing"
-  - "Photo reporting, cross-trade control, and one accountable communication lead"
+  - "One contract covers the full scope: plumbing, electrical, structural work, and finishing"
+  - "Photo report after every stage — you see the site condition before walls close the work"
+  - "One accountable contact instead of five separate contractors and constant oversight from your side"
 ---

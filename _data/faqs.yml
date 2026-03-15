@@ -5,126 +5,126 @@ required_locales:
 groups:
 - key: starting-the-project
   uk:
-    title: Старт і рамка проєкту
-    intro: Ці питання знімають невизначеність ще до першого виїзду або дзвінка по об'єкту.
+    title: Старт проєкту
+    intro: Відповіді на питання, які виникають ще до першого дзвінка або виїзду на об'єкт.
   en:
-    title: Project start and framing
-    intro: These questions remove uncertainty before the first call or site visit.
+    title: Starting the project
+    intro: Answers to questions that come up before the first call or site visit.
   items:
   - key: project-start
     uk:
       question: З чого починається робота по об'єкту?
-      answer: Робота починається з короткого брифу, розуміння стану об'єкта і визначення тих етапів, які реально відкривають маршрут ремонту. Без цього будь-яка розмова про вартість або строки буде надто умовною.
+      answer: З короткого брифу та огляду стану об'єкта. Нам важливо зрозуміти, які етапи реально потрібні, які є обмеження і які ризики треба враховувати до старту. Без цього будь-яка розмова про вартість чи строки буде надто умовною.
     en:
       question: How does work on a property start?
-      answer: Work starts with a short brief, an understanding of the site condition, and clarity on which stages actually open the renovation route. Without that, any discussion of cost or timing stays too conditional.
+      answer: With a short brief and an assessment of the site condition. We need to understand which stages are actually needed, what constraints exist, and which risks need to be addressed before starting. Without that, any discussion of cost or timing is too approximate.
   - key: initial-assessment
     uk:
       question: Що потрібно для попередньої оцінки?
-      answer: Тип об'єкта, поточний стан, потрібні етапи, бажаний темп робіт і будь-які фото чи плани. Чим точніші вихідні дані, тим менше випадкових припущень у першій відповіді.
+      answer: Тип об'єкта (квартира чи будинок), поточний стан, перелік потрібних етапів, бажані строки та будь-які фото чи плани, якщо є. Чим точніші вихідні дані, тим конкретнішою буде перша відповідь.
     en:
       question: What is needed for an initial assessment?
-      answer: Property type, current condition, the needed stages, the desired pace of work, and any photos or plans. Better starting data means fewer random assumptions in the first response.
+      answer: Property type (apartment or house), current condition, the needed stages, target timeline, and any photos or plans if available. Better starting data means a more concrete first response.
 - key: fit-and-scope
   uk:
-    title: Формат робіт і відповідність маршруту
-    intro: Тут покупець вирішує, чи читати сторінку окремого етапу, повний маршрут квартири або будинку, чи процес загалом.
+    title: Обсяг і формат робіт
+    intro: Тут з'ясовується, чи підходить ваш об'єкт під комплексний ремонт, окремий етап або нагляд.
   en:
-    title: Work format and route fit
-    intro: This is where the buyer decides whether they need a stage page, a full apartment or house route, or the process page first.
+    title: Work scope and format
+    intro: This is where you figure out whether your project fits full renovation, a single stage, or supervision only.
   items:
   - key: single-stage
     uk:
-      question: Чи можна замовити лише окремий етап?
-      answer: Так, але окремий етап усе одно потрібно прив'язати до суміжних робіт. Сантехніка, електрика, підготовка основи й чистовий шар не можуть оцінюватися чесно, якщо їх розглядати як ізольовані шматки без маршруту переходів.
+      question: Чи можна замовити лише окремий етап — наприклад, тільки сантехніку або тільки плитку?
+      answer: Так, але окремий етап все одно потрібно прив'язати до суміжних робіт. Сантехніка залежить від стану стін і підлоги. Укладання плитки залежить від якості чорнової підготовки. Ми оцінюємо стан об'єкта перед стартом, щоб результат не постраждав через чужі помилки на попередньому етапі.
     en:
-      question: Can I order only one stage of work?
-      answer: Yes, but even a single stage still has to be tied to adjacent work. Plumbing, electrical, substrate preparation, and finishing cannot be judged honestly as isolated fragments with no handoff route.
+      question: Can I order only one stage — for example, just plumbing or just tiling?
+      answer: Yes, but a single stage still has to account for adjacent work. Plumbing depends on wall and floor condition. Tile laying depends on the quality of substrate preparation. We assess the site before starting so the result is not undermined by mistakes from a previous stage.
   - key: project-fit
     uk:
-      question: Як зрозуміти, чи мені потрібна сторінка квартири, будинку чи конкретної послуги?
-      answer: Якщо ключове питання у форматі об'єкта, масштабі й координації зон, варто почати зі сторінки квартири або будинку. Якщо ризик упирається в конкретний вузол, матеріали чи технічний етап, краще перейти на сторінку окремої послуги.
+      question: "Як зрозуміти, що мені потрібно: ремонт квартири під ключ, окрема послуга чи нагляд?"
+      answer: Якщо питання про масштаб і координацію всіх зон — підходить комплексний ремонт під ключ. Якщо є конкретний вузол або технічний ризик — варто почати зі сторінки відповідної послуги. Якщо бригади вже є, але потрібен контроль — підходить нагляд.
     en:
-      question: How do I know whether I need the apartment page, house page, or a specific service page?
-      answer: If the main question is about project format, scale, and zone coordination, start with the apartment or house page. If the risk is tied to a specific junction, material decision, or technical stage, the service page is the better next step.
+      question: How do I know whether I need a full turnkey renovation, a specific service, or just supervision?
+      answer: If the question is about coordinating all zones and stages — full turnkey renovation is the right fit. If the issue is a specific junction or technical risk — start with the relevant service page. If you already have crews but need oversight — site supervision is the answer.
 - key: timing-and-sequence
   uk:
-    title: Черговість і контроль переходів
-    intro: Найбільше напруження в ремонті виникає там, де рішення, поставки і бригади не сходяться в одну послідовність.
+    title: Послідовність і контроль переходів
+    intro: Найбільші проблеми в ремонті виникають там, де рішення, поставки й бригади не збігаються в часі.
   en:
-    title: Timing and handoff sequence
-    intro: The biggest tension in renovation appears when decisions, deliveries, and crews do not line up in one sequence.
+    title: Stage sequence and handoff control
+    intro: The biggest problems in renovation appear when decisions, deliveries, and crews do not align in time.
   items:
   - key: stage-sequence
     uk:
-      question: Що не дає об'єкту зупинятися між етапами?
-      answer: Об'єкт не зупиняється тоді, коли критичні рішення приймаються до наступного шару, а готовність зон перевіряється до переходу між бригадами. Саме тому на сторінках процесу і послуг так багато уваги до контрольних точок, а не лише до фінального вигляду.
+      question: Що не дає ремонту зупинятися між етапами?
+      answer: Наступний етап починається тільки після підтвердженої готовності попереднього. Ми перевіряємо вузли, фотографуємо результат і тільки тоді переходимо далі. Це знімає ризик того, що один підрядник заважає наступному або ламає вже зроблену роботу.
     en:
-      question: What keeps a property from stalling between stages?
-      answer: A project keeps moving when critical decisions are made before the next layer starts and zone readiness is checked before the handoff between crews. That is why the process and service pages emphasize control points rather than only the final look.
+      question: What keeps the renovation from stalling between stages?
+      answer: The next stage begins only after confirmed readiness of the previous one. We check junctions, photograph the result, and only then move forward. This removes the risk of one crew blocking the next or damaging completed work.
   - key: communication-visibility
     uk:
-      question: Як клієнт розуміє, що об'єкт справді рухається під контролем?
-      answer: Через фотофіксацію, зрозумілий статус по вузлах і пояснення, які рішення вже закриті, а які ще блокують маршрут. Контроль має бути видимим, а не обіцяним загальними словами.
+      question: Як я розумію, що відбувається на об'єкті, якщо мене там немає?
+      answer: Ви отримуєте фотозвіти після кожного значущого етапу. Зрозумілий статус по ключових вузлах і пояснення, які рішення вже закриті, а які ще попереду. Контроль має бути видимим, а не обіцяним на словах.
     en:
-      question: How does the buyer know the property is really moving under control?
-      answer: Through photo reporting, readable status notes on key junctions, and clear explanations of which decisions are already closed and which still block the route. Control has to be visible, not promised in slogans.
+      question: How do I know what is happening on site when I am not there?
+      answer: You receive photo reports after every significant stage. Clear status notes on key junctions and explanations of which decisions are already closed and which are still ahead. Visibility is built in, not promised verbally.
 - key: materials-and-procurement
   uk:
-    title: Матеріали, комплектація і готовність зон
-    intro: Тут знімаються питання про закупівлі, поставки і ризик перетворити об'єкт на склад або місце випадкових замін.
+    title: Матеріали та комплектація
+    intro: Питання про закупівлі, поставки і те, як не перетворити об'єкт на склад або місце постійних замін.
   en:
-    title: Materials, procurement, and zone readiness
-    intro: These answers deal with procurement, delivery timing, and the risk of turning the property into a storage problem or a chain of substitutions.
+    title: Materials and procurement
+    intro: Questions about purchasing, delivery timing, and how to avoid turning the site into a warehouse or a chain of last-minute substitutions.
   items:
   - key: materials
     uk:
-      question: Хто займається матеріалами?
-      answer: Це залежить від формату співпраці, але в нормальному маршруті матеріали не живуть окремо від етапів. Якщо комплектація входить у роботу, позиції, вбудовані елементи й поставки прив'язуються до реальної готовності зон.
+      question: Хто займається підбором і закупівлею матеріалів?
+      answer: Залежить від формату співпраці. Якщо комплектація входить у роботу, ми підбираємо позиції, контролюємо поставки й прив'язуємо їх до реальної готовності зон — щоб матеріали приходили тоді, коли об'єкт готовий їх прийняти.
     en:
-      question: Who handles materials?
-      answer: That depends on the collaboration format, but in a controlled route materials do not live separately from the stages. If procurement is included, positions, built-ins, and deliveries are tied to actual zone readiness.
+      question: Who handles material selection and purchasing?
+      answer: That depends on the collaboration format. If procurement is included in the scope, we select the items, control deliveries, and tie them to actual zone readiness — so materials arrive when the site is ready to receive them.
   - key: material-readiness
     uk:
-      question: Як не допустити, щоб матеріали і поставки ламали графік?
-      answer: Через порядок підтверджень, перевірку розмірів і прив'язку поставок до монтажної готовності. Проблеми починаються тоді, коли матеріали приїжджають за власним графіком, а не за логікою об'єкта.
+      question: Як уникнути затримок через поставки?
+      answer: Через чіткий порядок підтверджень, перевірку розмірів до замовлення і прив'язку термінів поставки до монтажної готовності. Проблеми починаються тоді, коли матеріали замовляються за власним графіком, а не за логікою об'єкта.
     en:
-      question: How do you keep materials and deliveries from breaking the schedule?
-      answer: Through a clear confirmation order, checked dimensions, and deliveries tied to installation readiness. Problems start when materials arrive on their own calendar instead of the project's logic.
+      question: How do you avoid delays caused by deliveries?
+      answer: Through a clear confirmation order, dimension checks before ordering, and delivery dates tied to installation readiness. Problems start when materials are ordered on their own calendar instead of the project's logic.
 - key: control-and-risk
   uk:
-    title: Ризики, бюджет і контроль якості
-    intro: Це найважливіший блок для тих, хто боїться прихованих доплат, переробок і втрати контролю між етапами.
+    title: Бюджет, ризики та контроль якості
+    intro: Найважливіший блок для тих, хто хоче уникнути прихованих доплат, переробок і втрати контролю між етапами.
   en:
-    title: Risk, budget, and quality control
-    intro: This is the most important block for buyers worried about hidden add-ons, rework, and losing control between stages.
+    title: Budget, risks, and quality control
+    intro: The most important block for anyone who wants to avoid hidden add-ons, rework, and losing control between stages.
   items:
   - key: budget-surprises
     uk:
-      question: Чи можна зменшити ризик раптових доплат і бюджетних сюрпризів?
-      answer: Так, але не абстрактними обіцянками. Ризик зменшується тоді, коли вузли, матеріали, суміжні рішення і порядок етапів фіксуються до того, як їх заховає наступний шар або поламає пізня поставка.
+      question: Чи можна зменшити ризик несподіваних доплат по ходу ремонту?
+      answer: Так — через фіксацію вузлів, матеріалів і суміжних рішень до того, як їх приховає наступний шар або зламає пізня поставка. Чим більше зрозуміло на вході, тим менше сюрпризів у процесі.
     en:
-      question: Can the risk of sudden add-ons and budget surprises be reduced?
-      answer: Yes, but not through vague promises. Risk drops when junctions, materials, adjacent decisions, and stage order are fixed before the next layer hides them or a late delivery breaks the route.
+      question: Can the risk of unexpected add-ons during renovation be reduced?
+      answer: Yes — by locking in junctions, materials, and adjacent decisions before the next layer hides them or a late delivery breaks the sequence. The more clarity at the start, the fewer surprises along the way.
   - key: quality-control
     uk:
-      question: Як контролюється якість?
-      answer: Через контрольні точки між етапами, фотофіксацію, перевірку вузлів і логічну передачу об'єкта до наступної стадії. Якість перевіряється не лише в кінці, а в місцях, де помилка ще не захована.
+      question: Як контролюється якість робіт?
+      answer: "Через контрольні точки між етапами: перевірка вузлів, фотофіксація і підтвердження готовності зони до переходу. Якість перевіряється не тільки наприкінці, а там, де помилка ще видима і виправлення не вимагає розбирати оздоблення."
     en:
-      question: How is quality controlled?
-      answer: Through control points between stages, photo reporting, junction checks, and a logical handoff to the next stage. Quality is checked not only at the end, but where a mistake is still visible.
+      question: How is quality controlled throughout the project?
+      answer: "Through checkpoints between stages: junction checks, photo documentation, and confirmed zone readiness before handoff. Quality is checked not only at the end, but where a mistake is still visible and correcting it does not require dismantling finished work."
 - key: handoff-and-readiness
   uk:
-    title: Здача і готовність до користування
-    intro: Фінал має пояснювати не тільки красу інтер'єру, а й те, що саме вже готове до нормального використання.
+    title: Здача об'єкта та готовність до проживання
+    intro: Фінал ремонту має пояснювати не тільки зовнішній вигляд, а й те, що реально готове до використання.
   en:
     title: Handover and readiness for use
-    intro: The finish has to explain not only visual appeal, but what is actually ready for normal use.
+    intro: The end of renovation should explain not only how things look, but what is genuinely ready for normal use.
   items:
   - key: handover-readiness
     uk:
-      question: Що означає, що об'єкт готовий до здачі?
-      answer: Це означає, що критичні вузли перевірені, зони передані без прихованих хвостів, а клієнт розуміє, що саме вважається готовим до користування. Гарні фото без такої рамки не є реальною здачею.
+      question: Що означає «здача об'єкта під ключ»?
+      answer: Це означає, що всі критичні вузли перевірені, зони передані без прихованих недоробок, інженерні системи протестовані, а клієнт розуміє, що саме вважається готовим до використання. Красиві фото без такої рамки — не є повноцінною здачею.
     en:
-      question: What does it mean for a property to be ready for handover?
-      answer: It means critical junctions were checked, zones were handed over without hidden leftovers, and the buyer understands what is actually ready for use. Attractive photos without that frame are not a real handover.
+      question: What does "turnkey handover" actually mean?
+      answer: It means all critical junctions were checked, zones were handed over without hidden leftovers, engineering systems were tested, and the client understands exactly what is ready for use. Attractive photos without that framework are not a real handover.

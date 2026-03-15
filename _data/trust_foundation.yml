@@ -11,7 +11,7 @@ uk:
   strip:
     eyebrow: "Хто веде об'єкт"
     title: "Ремонт читається як керований маршрут, а не як хаос окремих майстрів"
-    intro: "Цей блок не замінює реальні кейси. Він пояснює, як саме зібрана відповідальність, поки на сайті ще накопичуються публічні докази."
+    intro: "За кожним об'єктом стоїть один відповідальний виконавець, який тримає послідовність етапів і контролює стики між сантехнікою, електрикою, чорновими і чистовими роботами."
     labels:
       company: "Компанія"
       profile: "Профіль роботи"
@@ -19,44 +19,44 @@ uk:
       accountability: "Хто веде рішення"
     profile: "Квартири, будинки, інженерія, чорнові етапи, чистове оздоблення, комплектація та нагляд"
     accountability_value: "Один робочий контакт тримає послідовність етапів і стики між підрядниками"
-    company_note: "Назву та реквізити буде оновлено після фінального підтвердження. Поки сайт тестує довірчі сценарії на централізованих Phase 1 даних."
+    company_note: "Рівень — команда, що спеціалізується на комплексному ремонті квартир і будинків."
   accountability:
     eyebrow: "Що означає відповідальність"
-    title: "Клієнт має розуміти, хто контролює маршрут рішень до того, як залишить заявку"
-    text: "Тут важлива не гучна обіцянка, а робоча дисципліна: хто збирає інформацію, хто стикує суміжні етапи і хто відповідає за перехід до наступної стадії."
+    title: "Ви знаєте, хто контролює маршрут рішень — ще до того, як залишите заявку"
+    text: "Важлива не гучна обіцянка, а робоча дисципліна: один контакт збирає інформацію, узгоджує суміжні етапи і вирішує, коли об'єкт готовий рухатися далі."
     items:
       - title: "Аудит перед стартом"
-        text: "Об'єкт розглядається через реальний стан, технічні обмеження і ризики, а не через абстрактний прайс."
-      - title: "Контроль стиків"
-        text: "Сантехніка, електрика, чорнові та чистові етапи узгоджуються як один маршрут, щоб помилки не перекидалися між бригадами."
-      - title: "Хто дає рух далі"
-        text: "Кожна наступна стадія починається після зрозумілої перевірки, а не після мовчазного припущення, що попередній етап 'десь готовий'."
+        text: "Об'єкт оглядається через реальний стан, технічні обмеження і ризики — а не через абстрактний прайс-лист."
+      - title: "Контроль стиків між етапами"
+        text: "Сантехніка, електрика, чорнові та чистові роботи узгоджуються як один маршрут, щоб помилки одного підрядника не переходили до наступного."
+      - title: "Чіткий перехід до наступної стадії"
+        text: "Кожен наступний етап починається після перевірки готовності попереднього — не за припущенням, що «десь вже зробили»."
   proof:
-    eyebrow: "Поточний стан доказів"
-    title: "Поки сайт не підв'язав усі публічні кейси, докази показуються як чесно позначені тимчасові модулі"
-    intro: "Мета цього блоку не видати демо за відгуки. Він показує, який формат доказів команда збирає для подальшої публікації."
+    eyebrow: "Докази якості"
+    title: "Реальні приклади робіт з фотодокументацією кожного етапу"
+    intro: "Фото показують не тільки фінальний результат, а й те, що відбувалося до нього: вузли до закриття, стяжки до фінішу, інженерні системи до монтажу оздоблення."
     source_label: "Джерело"
     attribution_label: "Атрибуція"
-    placeholder_badge: "Тимчасовий демо-доказ"
-    publishable_badge: "Публічний доказ"
-    placeholder_note: "Не клієнтський відгук. Це демонстрація формату доказів для наступних фаз."
+    placeholder_badge: "Приклад формату"
+    publishable_badge: "Реальний проєкт"
+    placeholder_note: "Приклад оформлення проєктної документації. Реальні кейси публікуються після підтвердження клієнта."
     publishable_items:
       routing-audit:
         case_study_ref: apartment-system-renovation
         status: publishable
         proof_source_status: publishable
         proof_source_label: Фотофіксація квартирного маршруту від підготовки до готового сценарію
-        title: "Публічний доказ: системна карта рішень для квартири до чистового етапу"
-        summary: "Досьє показує, як оболонка, мокрі зони, точки світла і готовність до здачі були зібрані в один маршрут ще до того, як фініш сховав помилки."
+        title: "Системна підготовка квартири: від розведення комунікацій до чистового фінішу"
+        summary: "Досьє показує, як оболонка, мокрі зони, точки світла і готовність до здачі були зібрані в один маршрут — ще до того, як фінішний шар приховав усю підготовчу роботу."
         source_label: "Досьє реального квартирного маршруту"
-        attribution: "Побудовано на опублікованому досьє apartment-system-renovation з фотофіксацією етапів і buyer-relevance."
+        attribution: "Побудовано на опублікованому досьє apartment-system-renovation з фотофіксацією етапів."
       hidden-junction-control:
         case_study_ref: wet-zone-control
         status: publishable
         proof_source_status: publishable
         proof_source_label: Фотофіксація контролю мокрої зони до закриття облицюванням
-        title: "Публічний доказ: приховані вузли перевірені до плитки, скла і фінального монтажу"
-        summary: "Опублікований кейс по мокрій зоні показує, як сервісний доступ, геометрія, трап і стики були зафіксовані до того, як декоративний шар закрив рішення."
+        title: "Контроль мокрої зони: приховані вузли перевірені до укладання плитки"
+        summary: "Кейс по мокрій зоні показує, як сервісний доступ, геометрія, трап і стики між матеріалами були зафіксовані до того, як облицювання закрило всі рішення."
         source_label: "Публічне досьє по контролю мокрої зони"
         attribution: "Побудовано на опублікованому досьє wet-zone-control з проміжними фото та поясненням контрольних точок."
       handover-checklist:
@@ -64,51 +64,51 @@ uk:
         status: publishable
         proof_source_status: publishable
         proof_source_label: Публічне досьє контрольованої здачі
-        title: "Публічний доказ: контрольні точки готовності перед передачею об'єкта"
-        summary: "Цей матеріал вже не імітує чек-лист. Він показує, як поставки, світло, оздоблення і приймання зон сходяться у читабельну здачу."
+        title: "Здача об'єкта: контрольні точки готовності перед передачею клієнту"
+        summary: "Матеріал показує, як поставки, освітлення, оздоблення і приймання зон сходяться у прозору передачу об'єкта — без прихованих хвостів."
         source_label: "Досьє по контрольованій здачі"
         attribution: "Побудовано на опублікованому досьє controlled-handover з передфінальними і фінальними кадрами."
     items:
       - key: routing-audit
         status: placeholder
         proof_source_status: temporary-demo-proof
-        proof_source_label: Тимчасовий демо-доказ маршруту
-        title: "Демо: маршрут рішень для об'єкта до старту робіт"
-        summary: "Майбутній публічний матеріал показуватиме, які вузли, ризики та суміжні етапи були зібрані в одну стартову карту."
-        source_label: "Демо-структура сайту"
+        proof_source_label: Приклад формату маршрутного аудиту
+        title: "Маршрут рішень по об'єкту: від першого аудиту до старту робіт"
+        summary: "Реальний кейс покаже, які вузли, ризики та суміжні етапи були зафіксовані в одній стартовій карті перед початком робіт."
+        source_label: "Приклад структури аудиту"
         attribution: "Placeholder content for Phase 1 until publishable site-audit material is approved."
       - key: hidden-junction-control
         status: placeholder
         proof_source_status: temporary-demo-proof
-        proof_source_label: Тимчасовий демо-доказ прихованих вузлів
-        title: "Демо: фотофіксація прихованих вузлів до закриття"
-        summary: "На реальному кейсі тут з'явиться добірка кадрів і короткі пояснення, що саме було перевірено перед оздобленням."
-        source_label: "Тимчасовий формат доказу"
+        proof_source_label: Приклад формату фіксації прихованих вузлів
+        title: "Фотофіксація прихованих вузлів до закриття оздобленням"
+        summary: "На реальному кейсі тут буде добірка фото і коментарі до кожного вузла — що саме перевірялося перед переходом до фінішного шару."
+        source_label: "Приклад формату доказу"
         attribution: "Phase 1 placeholder demonstrating how concealed-junction proof will be labeled."
       - key: handover-checklist
         status: placeholder
         proof_source_status: temporary-demo-proof
-        proof_source_label: Тимчасовий демо-доказ здачі
-        title: "Демо: перелік контрольних точок перед здачею"
-        summary: "Публічний доказ пізніше покаже, які саме деталі й переходи між етапами були перевірені перед завершенням об'єкта."
-        source_label: "Демо чек-лист"
+        proof_source_label: Приклад формату здачі об'єкта
+        title: "Контрольні точки перед здачею: що перевіряється до передачі клієнту"
+        summary: "Реальний кейс покаже конкретні деталі й переходи між етапами, які були перевірені перед завершенням об'єкта."
+        source_label: "Приклад чек-листу здачі"
         attribution: "Temporary placeholder until a publishable handover case can be cited."
   page_contexts:
     home:
-      title: "На головній сторінці довіра має пояснювати формат контролю, а не просто створювати настрій"
-      text: "Саме тут людина вирішує, чи виглядає команда достатньо зібраною для першого дзвінка."
+      title: "Контроль і відповідальність — ще до першого дзвінка"
+      text: "Ви бачите, як організована робота, хто за що відповідає і як виглядає реальна передача об'єкта."
     about:
-      title: "Сторінка 'Про нас' повинна пояснити, яким способом команда тримає об'єкт у руках"
-      text: "Тут довіра будується через модель роботи, а не через абстрактні гасла про якість."
+      title: "Як ми тримаємо об'єкт під контролем"
+      text: "Один виконавець, чітка послідовність етапів і фотодокументація на кожному кроці — це не слоган, а робоча модель."
     services:
-      title: "Сторінка послуг має показати, що окремі напрями складаються в одну систему"
-      text: "Покупець повинен бачити не перелік майстрів, а контроль над переходами між етапами."
+      title: "Окремі напрями складаються в одну систему відповідальності"
+      text: "Ви замовляєте не перелік майстрів, а керований процес з контролем переходів між сантехнікою, електрикою і оздобленням."
     contact:
-      title: "На контактах модулі довіри мають стояти поруч із поясненням першого дзвінка"
-      text: "Фінальний конверсійний екран повинен доводити, що команда працює предметно ще до початку розмови."
+      title: "Перший крок — короткий бриф по вашому об'єкту"
+      text: "Розкажіть про тип об'єкта, поточний стан і бажані етапи. Ми оцінимо маршрут і запропонуємо конкретний план."
   case_study_bridge:
-    title: "Перші проєкти-докази замінюють абстрактну довіру конкретним маршрутом"
-    text: "Поки не всі сторінки отримали повні досьє, головна вже має вести в ті кейси, де видно buyer relevance, етапи і статус джерела доказу."
+    title: "Реальні проєкти замінюють абстрактні обіцянки конкретними доказами"
+    text: "Перегляньте кейси, де видно послідовність рішень, фотофіксацію етапів і підсумковий результат."
     refs:
       - compact-apartment-engineering
       - house-stage-coordination
@@ -116,7 +116,7 @@ en:
   strip:
     eyebrow: "Who runs the project"
     title: "The renovation should read like a controlled route, not like chaos between separate trades"
-    intro: "This block does not replace real case studies. It explains how responsibility is assembled while the site is still collecting publishable proof."
+    intro: "Every project has one accountable lead who holds the stage sequence together and controls the handoffs between plumbing, electrical, structural, and finishing work."
     labels:
       company: "Company"
       profile: "Service profile"
@@ -124,44 +124,44 @@ en:
       accountability: "Who owns decisions"
     profile: "Apartments, houses, engineering work, core construction, finishing, procurement, and site supervision"
     accountability_value: "One working contact holds the stage sequence and the junctions between trades together"
-    company_note: "The business name and legal details will be updated after final confirmation. For now the site uses centralized Phase 1 placeholder identity data."
+    company_note: "Рівень is a team specialising in full-scope renovation for apartments and houses."
   accountability:
     eyebrow: "What accountability means here"
-    title: "A buyer should understand who controls the decision route before making contact"
-    text: "The point is not a loud promise. It is working discipline: who gathers information, who aligns adjacent stages, and who decides when the project can safely move forward."
+    title: "You know who controls the decision route before you make contact"
+    text: "The point is not a loud promise. It is working discipline: one contact gathers information, aligns adjacent stages, and decides when the project is ready to move forward."
     items:
       - title: "Audit before commitment"
-        text: "The property is read through its actual condition, technical limits, and risks instead of through a generic price list."
-      - title: "Junction control"
-        text: "Plumbing, electrical, core work, and finishing are aligned as one route so mistakes do not bounce between crews."
+        text: "The property is assessed through its actual condition, technical limits, and risks — not through a generic price list."
+      - title: "Junction control between stages"
+        text: "Plumbing, electrical, structural work, and finishing are aligned as one route so mistakes from one trade do not carry over to the next."
       - title: "Clear release to the next stage"
-        text: "Each stage moves forward after an explicit check instead of an unspoken assumption that the previous crew is 'probably done'."
+        text: "Each stage moves forward after an explicit readiness check — not on the assumption that the previous crew is probably done."
   proof:
-    eyebrow: "Current proof status"
-    title: "Until the site carries full public case material, proof is shown through honestly labeled temporary modules"
-    intro: "The goal is not to disguise demo content as reviews. It shows the proof format the team is preparing for later publication."
+    eyebrow: "Proof of quality"
+    title: "Real project examples with photo documentation from every stage"
+    intro: "The photos show not only the finished result but what happened before it: junctions before closure, screeds before finishing, engineering systems before the decorative layer went in."
     source_label: "Source"
     attribution_label: "Attribution"
-    placeholder_badge: "Temporary demo proof"
-    publishable_badge: "Publishable proof"
-    placeholder_note: "Not a client testimonial. This is a demonstration of the proof format planned for later phases."
+    placeholder_badge: "Format example"
+    publishable_badge: "Real project"
+    placeholder_note: "Example of project documentation format. Real cases are published after client confirmation."
     publishable_items:
       routing-audit:
         case_study_ref: apartment-system-renovation
         status: publishable
         proof_source_status: publishable
         proof_source_label: Photo-backed apartment route from shell preparation to the finished scene
-        title: "Publishable proof: the apartment decision map is already backed by a real dossier"
-        summary: "This dossier shows how shell prep, wet zones, lighting points, and handover readiness were assembled into one route before the finish layer could hide mistakes."
+        title: "Apartment system preparation: from service routing to final finishing"
+        summary: "This dossier shows how shell prep, wet zones, lighting points, and handover readiness were assembled into one route before the finish layer could hide the preparatory work."
         source_label: "Published apartment route dossier"
-        attribution: "Built from the published apartment-system-renovation dossier with stage photography and buyer-relevance framing."
+        attribution: "Built from the published apartment-system-renovation dossier with stage photography."
       hidden-junction-control:
         case_study_ref: wet-zone-control
         status: publishable
         proof_source_status: publishable
         proof_source_label: Photo-backed wet-zone control before the finish closes the work
-        title: "Publishable proof: concealed junctions are checked before tile, glass, and final fitting"
-        summary: "The wet-zone dossier makes service access, geometry, drain logic, and hidden-junction checks visible before decorative layers hide the decisions."
+        title: "Wet-zone control: concealed junctions checked before tile is laid"
+        summary: "The wet-zone dossier makes service access, geometry, drain logic, and hidden-junction checks visible before the cladding layer closes all the decisions."
         source_label: "Published wet-zone control dossier"
         attribution: "Built from the published wet-zone-control dossier with intermediate images and explicit control-point notes."
       handover-checklist:
@@ -169,51 +169,51 @@ en:
         status: publishable
         proof_source_status: publishable
         proof_source_label: Publishable dossier about controlled handover
-        title: "Publishable proof: readiness is checked before the property is handed over"
-        summary: "This no longer stands in for a checklist. It shows how deliveries, lighting, finishing, and acceptance converge into a readable handover route."
+        title: "Property handover: readiness checkpoints before the keys are handed over"
+        summary: "This shows how deliveries, lighting, finishing, and zone acceptance converge into a transparent handover — with no hidden leftovers."
         source_label: "Published controlled-handover dossier"
         attribution: "Built from the published controlled-handover dossier with pre-final and final photography."
     items:
       - key: routing-audit
         status: placeholder
         proof_source_status: temporary-demo-proof
-        proof_source_label: Temporary demo route proof
-        title: "Demo: decision-routing map before work starts"
-        summary: "The future publishable item will show which junctions, risks, and adjacent stages were assembled into one starting map."
-        source_label: "Site demo structure"
+        proof_source_label: Example of route audit format
+        title: "Decision route for the property: from first audit to project start"
+        summary: "A real case will show which junctions, risks, and adjacent stages were captured in a single starting map before work began."
+        source_label: "Example audit structure"
         attribution: "Placeholder content for Phase 1 until publishable site-audit material is approved."
       - key: hidden-junction-control
         status: placeholder
         proof_source_status: temporary-demo-proof
-        proof_source_label: Temporary concealed-junction demo proof
-        title: "Demo: photo reporting for concealed junctions before closure"
-        summary: "A real case later will add image-backed notes about what was checked before finishing covered the work."
-        source_label: "Temporary proof format"
+        proof_source_label: Example of concealed-junction documentation format
+        title: "Photo documentation of concealed junctions before they are closed"
+        summary: "A real case will include a set of photos and notes for each junction — exactly what was checked before the finishing layer was applied."
+        source_label: "Example proof format"
         attribution: "Phase 1 placeholder demonstrating how concealed-junction proof will be labeled."
       - key: handover-checklist
         status: placeholder
         proof_source_status: temporary-demo-proof
-        proof_source_label: Temporary handover demo proof
-        title: "Demo: control-point checklist before handover"
-        summary: "The publishable version will show which details and stage transitions were checked before the property was handed over."
-        source_label: "Demo checklist"
+        proof_source_label: Example of handover documentation format
+        title: "Handover checkpoints: what is verified before the property is handed over"
+        summary: "A real case will show the specific details and stage transitions that were checked before project completion."
+        source_label: "Example handover checklist"
         attribution: "Temporary placeholder until a publishable handover case can be cited."
   page_contexts:
     home:
-      title: "On the homepage, trust needs to explain the operating model instead of just creating a mood"
-      text: "This is where a buyer decides whether the team sounds controlled enough to deserve the first call."
+      title: "Control and accountability — visible before the first call"
+      text: "You can see how the work is organised, who is responsible for what, and what a real property handover looks like."
     about:
-      title: "The about page should explain how the team keeps the property under control"
-      text: "Trust is earned here through the delivery model, not through abstract quality slogans."
+      title: "How we keep the property under control"
+      text: "One accountable lead, a clear stage sequence, and photo documentation at every step — not a slogan, but a working model."
     services:
-      title: "The services page must show that separate categories still operate as one system"
-      text: "A buyer should see control over stage transitions, not just a list of trades."
+      title: "Separate categories operate as one system of accountability"
+      text: "You are not ordering a list of trades — you are buying a managed process with controlled transitions between plumbing, electrical, and finishing work."
     contact:
-      title: "On contact, trust modules need to sit next to the first-call explanation"
-      text: "The last conversion surface should prove that the team works concretely before the conversation even starts."
+      title: "The first step is a short brief about your property"
+      text: "Share the property type, current condition, and desired stages. We will assess the route and propose a concrete plan."
   case_study_bridge:
-    title: "The first project dossiers replace abstract trust with route-level proof"
-    text: "Not every page has a full dossier yet, but the homepage should already point to the cases that show buyer relevance, stage logic, and proof-source status."
+    title: "Real projects replace abstract promises with route-level proof"
+    text: "Review cases where you can see the decision sequence, stage-by-stage photography, and the final outcome."
     refs:
       - compact-apartment-engineering
       - house-stage-coordination

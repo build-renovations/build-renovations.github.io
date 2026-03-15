@@ -5,11 +5,11 @@ items:
     image: /assets/images/work/plumbing-glass-shower.webp
     uk:
       title: "Сантехніка"
-      description: "Розводка води, каналізація, колектори, вбудовані системи та підготовка під обладнання."
-      micro: "Мокрі зони, ревізії, підготовка під ванни й душові."
+      description: "Розводка води та каналізації, колектори, інсталяції для підвісних унітазів, підготовка під ванни, душові кабіни та технічні зони. Всі вузли перевіряються та фотографуються до закриття стін."
+      micro: "Мокрі зони, ревізійні люки, підготовка під ванни й душові."
     en:
       title: "Plumbing"
-      description: "Water and drainage routing, collector systems, concealed installation, and equipment preparation."
+      description: "Water and drainage routing, collector systems, concealed cistern installation, and preparation for baths, shower enclosures, and utility zones. All junctions are checked and photographed before walls are closed."
       micro: "Wet zones, access points, and bath or shower preparation."
   - icon: "02"
     key: electrical
@@ -17,57 +17,57 @@ items:
     image: /assets/images/work/electrical-led-room.webp
     uk:
       title: "Електрика"
-      description: "Нові лінії, щити, захист, освітлення, розумні сценарії та безпечне навантаження."
-      micro: "Світло, треки, техніка й продумана логіка точок."
+      description: "Нові електролінії, розподільні щити, захисна автоматика, освітлення та розумні сценарії керування. Навантаження розраховується під реальний перелік техніки, щоб не було сюрпризів після заселення."
+      micro: "Освітлення, трекові системи, підключення техніки й логіка точок."
     en:
       title: "Electrical"
-      description: "New wiring runs, panels, protection, lighting, smart scenarios, and safe load planning."
-      micro: "Lighting, tracks, equipment feeds, and planned point logic."
+      description: "New wiring runs, distribution panels, protective automation, lighting, and smart control scenarios. Load is calculated against your actual equipment list to prevent surprises after move-in."
+      micro: "Lighting, track systems, equipment feeds, and planned point logic."
   - icon: "03"
     key: rough-works
     url: /services/rough-works/
     image: /assets/images/work/core-selflevel-floor.webp
     uk:
       title: "Чорнові роботи"
-      description: "Демонтаж, стяжки, штукатурка, перепланування, підготовка основ під наступні етапи."
-      micro: "Основа, рівні й технічна дисципліна перед фінішем."
+      description: "Демонтаж, перепланування, стяжки підлоги, штукатурка стін та стелі, підготовка основ під плитку, підлогові покриття та оздоблення. Чорнові роботи визначають якість всього, що йде після."
+      micro: "Стяжка, рівні поверхонь і технічна підготовка перед фінішем."
     en:
-      title: "Core construction"
-      description: "Demolition, screeds, plastering, reconfiguration, and substrate preparation for later stages."
-      micro: "Substrate, levels, and technical discipline before finishing."
+      title: "Structural work"
+      description: "Demolition, reconfiguration, floor screeds, wall and ceiling plastering, and substrate preparation for tile, flooring, and finishing. Structural work defines the quality of everything that follows."
+      micro: "Screeds, surface levels, and technical preparation before finishing."
   - icon: "04"
     key: finishing
     url: /services/finishing/
     image: /assets/images/work/finishing-hallway.webp
     uk:
       title: "Чистове оздоблення"
-      description: "Плитка, фарбування, декор, підлога, двері, плінтуси та фінальна збірка інтер'єру."
-      micro: "Фактури, світло, вузли й зібраний характер простору."
+      description: "Укладання плитки, фарбування стін і стелі, монтаж підлогових покриттів, встановлення дверей, плінтусів та декоративних елементів. Фінальна збірка інтер'єру з перевіркою кожного вузла."
+      micro: "Плитка, фарба, підлога, двері та фінальна збірка простору."
     en:
       title: "Finishing"
-      description: "Tile, paint, decorative surfaces, flooring, doors, skirting, and the final interior assembly."
-      micro: "Texture, light, junctions, and a finished spatial character."
+      description: "Tile laying, wall and ceiling painting, flooring installation, doors, skirting, and decorative elements. Final interior assembly with every junction checked before completion."
+      micro: "Tile, paint, flooring, doors, and final spatial assembly."
   - icon: "05"
     key: procurement
     url: /services/procurement/
     image: /assets/images/work/procurement-living-fit.webp
     uk:
       title: "Комплектація"
-      description: "Підбір матеріалів, відомості закупівель, координація постачальників і контроль поставок."
-      micro: "Матеріали, меблі та поставки без хаосу на об'єкті."
+      description: "Підбір матеріалів, складання відомостей закупівель, координація постачальників і контроль поставок по датах монтажної готовності. Матеріали приходять тоді, коли об'єкт готовий їх прийняти."
+      micro: "Матеріали, меблі та поставки без хаосу і затримок."
     en:
       title: "Procurement"
-      description: "Material selection, procurement schedules, supplier coordination, and delivery control."
-      micro: "Materials, furniture, and deliveries without site chaos."
+      description: "Material selection, procurement schedules, supplier coordination, and delivery control tied to installation readiness dates. Materials arrive when the site is ready to receive them."
+      micro: "Materials, furniture, and deliveries without chaos or delays."
   - icon: "06"
     key: site-supervision
     url: /services/site-supervision/
     image: /assets/images/work/electrical-track-corridor.webp
     uk:
       title: "Нагляд за об'єктом"
-      description: "Календар етапів, фотозвіти, контроль якості та одне відповідальне контактне вікно."
-      micro: "Приймання етапів, фотофіксація й контроль суміжних робіт."
+      description: "Складання календаря етапів, фотозвіти після кожної стадії, контроль якості вузлів до їх закриття та єдине відповідальне контактне вікно. Ви завжди знаєте, що відбувається на вашому об'єкті."
+      micro: "Приймання етапів, фотофіксація та контроль суміжних робіт."
     en:
       title: "Site supervision"
-      description: "Stage planning, photo reports, quality control, and one accountable point of contact."
-      micro: "Stage acceptance, photo proof, and cross-trade control."
+      description: "Stage scheduling, photo reports after every phase, quality checks on junctions before they are closed, and one accountable point of contact. You always know what is happening on your site."
+      micro: "Stage acceptance, photo proof, and cross-trade quality control."
