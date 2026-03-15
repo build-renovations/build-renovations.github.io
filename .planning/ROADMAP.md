@@ -105,6 +105,12 @@ Plans:
 
 **Goal:** Close the three runtime gaps found in the v1.0 audit: real brand name in page titles, real messenger contact handles, and project evidence accessible from top-level navigation.
 
+**Plans:** 2 plans
+
+Plans:
+- [ ] 06-01-PLAN.md — Phase 6 render checks + brand name fix (_config.yml) + projects nav links (navigation.yml)
+- [ ] 06-02-PLAN.md — Real messenger handles in contact_channels.yml (requires owner input)
+
 **Requirements:** `TRST-01`, `CALL-04`, `CASE-03`
 
 **Gap Closure:** Closes gaps from v1.0 audit
