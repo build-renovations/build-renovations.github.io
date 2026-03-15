@@ -7,6 +7,8 @@ uk:
     url: /faq/
   - title: "Про нас"
     url: /about/
+  - title: "Проєкти"
+    url: /projects/
   - title: "Контакти"
     url: /contact/
 en:
@@ -18,5 +20,7 @@ en:
     url: /en/faq/
   - title: "About"
     url: /en/about/
+  - title: "Projects"
+    url: /en/projects/
   - title: "Contact"
     url: /en/contact/

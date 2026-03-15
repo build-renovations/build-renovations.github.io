@@ -3,8 +3,8 @@ layout: home
 lang: en
 translation_key: home
 permalink: /en/
-title: "Remonty"
-seo_title: "Remonty | Renovation from plumbing to final finishing"
+title: "Рівень"
+seo_title: "Рівень | Renovation from plumbing to final finishing"
 seo_description: "Turnkey renovation services for apartments and houses: plumbing, electrical, walls, ceilings, flooring, and final finishing."
 eyebrow: "Full-scope renovation"
 hero_title: "Renovation where engineering, preparation, and finishing stay coordinated."
