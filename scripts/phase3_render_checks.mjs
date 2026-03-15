@@ -30,12 +30,21 @@ const routeChecks = [
   { route: "/en/services/apartment-renovation/", lang: "en", markers: ["project-index-visibility", "related-route-bridge"], surfaces: ["service-featured-case-studies"] },
   { route: "/en/projects/", lang: "en", markers: ["project-index-visibility"], surfaces: ["projects-index-featured"] },
   { route: "/en/projects/compact-apartment-engineering/", lang: "en", markers: requiredPhase3Markers, surfaces: ["case-study-dossier"] },
-  { route: "/en/projects/house-stage-coordination/", lang: "en", markers: requiredPhase3Markers, surfaces: ["case-study-dossier"] }
+  { route: "/en/projects/house-stage-coordination/", lang: "en", markers: requiredPhase3Markers, surfaces: ["case-study-dossier"] },
+  { route: "/projects/apartment-system-renovation/", lang: "uk", markers: requiredPhase3Markers, surfaces: ["case-study-dossier"] },
+  { route: "/en/projects/apartment-system-renovation/", lang: "en", markers: requiredPhase3Markers, surfaces: ["case-study-dossier"] },
+  { route: "/projects/wet-zone-control/", lang: "uk", markers: requiredPhase3Markers, surfaces: ["case-study-dossier"] },
+  { route: "/en/projects/wet-zone-control/", lang: "en", markers: requiredPhase3Markers, surfaces: ["case-study-dossier"] },
+  { route: "/projects/controlled-handover/", lang: "uk", markers: requiredPhase3Markers, surfaces: ["case-study-dossier"] },
+  { route: "/en/projects/controlled-handover/", lang: "en", markers: requiredPhase3Markers, surfaces: ["case-study-dossier"] },
 ];
 const metadataPairs = [
   ["/projects/", "/en/projects/"],
   ["/projects/compact-apartment-engineering/", "/en/projects/compact-apartment-engineering/"],
-  ["/projects/house-stage-coordination/", "/en/projects/house-stage-coordination/"]
+  ["/projects/house-stage-coordination/", "/en/projects/house-stage-coordination/"],
+  ["/projects/apartment-system-renovation/", "/en/projects/apartment-system-renovation/"],
+  ["/projects/wet-zone-control/", "/en/projects/wet-zone-control/"],
+  ["/projects/controlled-handover/", "/en/projects/controlled-handover/"],
 ];
 
 function fail(message) {
