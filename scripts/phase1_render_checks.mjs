@@ -27,6 +27,11 @@ const requiredRoutes = [
   "/en/services/site-supervision/"
 ];
 const messengerNames = ["telegram", "viber", "whatsapp"];
+const messengerHrefTokens = {
+  telegram: ["telegram", "t.me"],
+  viber: ["viber"],
+  whatsapp: ["whatsapp"]
+};
 const placeholderRegexByField = {
   name: /(placeholder|temp|temporary|demo|example|tbd|pending|remonty)/i,
   phone: /(\+?3800{8,}|000[-\s]?000|example|placeholder|pending|tbd)/i,
@@ -351,7 +356,10 @@ function checkRenderedRoutes(contactChannels, callFlow, trustFoundation) {
 
     const messengerLinks = links.filter((link) => {
       const href = link.href.toLowerCase();
-      return messengerNames.some((name) => href.includes(name));
+      return messengerNames.some((name) => {
+        const tokens = messengerHrefTokens[name] || [name];
+        return tokens.some((token) => href.includes(token));
+      });
     });
     if (messengerLinks.length !== messengerNames.length) {
       fail(`route ${route} does not expose all secondary messenger links`);

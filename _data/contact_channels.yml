@@ -8,13 +8,13 @@ uk:
   messengers:
     - name: Telegram
       label: "Telegram"
-      url: "https://t.me/telegram_phase1_contact"
+      url: "https://t.me/+380977878523"
     - name: Viber
       label: "Viber"
-      url: "https://invite.viber.com/?g2=AQExamplePhase1"
+      url: "https://viber.me/+380977878523"
     - name: WhatsApp
       label: "WhatsApp"
-      url: "https://api.whatsapp.com/send?phone=380000000000"
+      url: "https://api.whatsapp.com/send?phone=380977878523"
 en:
   primary_label: "Call and outline the property brief"
   primary_support: "Phone stays the main channel for a fast brief about property type, work stages, and timing."
@@ -25,10 +25,10 @@ en:
   messengers:
     - name: Telegram
       label: "Telegram"
-      url: "https://t.me/telegram_phase1_contact"
+      url: "https://t.me/+380977878523"
     - name: Viber
       label: "Viber"
-      url: "https://invite.viber.com/?g2=AQExamplePhase1"
+      url: "https://viber.me/+380977878523"
     - name: WhatsApp
       label: "WhatsApp"
-      url: "https://api.whatsapp.com/send?phone=380000000000"
+      url: "https://api.whatsapp.com/send?phone=380977878523"
