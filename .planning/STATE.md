@@ -6,14 +6,14 @@ current_phase: 07
 current_phase_name: qa coverage extension
 current_plan: Not started
 status: planning
-stopped_at: Completed 06-02-PLAN.md
-last_updated: "2026-03-15T15:22:13.078Z"
+stopped_at: Completed 07-01-PLAN.md
+last_updated: "2026-03-15T15:42:09.663Z"
 last_activity: 2026-03-15
 progress:
   total_phases: 7
-  completed_phases: 6
-  total_plans: 21
-  completed_plans: 21
+  completed_phases: 7
+  total_plans: 22
+  completed_plans: 22
   percent: 100
 ---
 
@@ -56,6 +56,7 @@ See: `.planning/PROJECT.md` (updated 2026-03-10)
 | Phase 05 P03 | 30min | 2 tasks | 4 files |
 | Phase 06 P01 | 4min | 2 tasks | 6 files |
 | Phase 06 P02 | multi-session | 3 tasks | 1 files |
+| Phase 07 P01 | 6min | 3 tasks | 3 files |
 
 ## Decisions
 
@@ -101,6 +102,8 @@ See: `.planning/PROJECT.md` (updated 2026-03-10)
 - [Phase 06]: Phase 6 render checks include checkNoPlaceholderMessengers gate that stays red until plan 06-02 (autonomous: false) supplies real owner-provided messenger handles
 - [Phase 06]: Brand name in page-level seo_title frontmatter (index.md, en/index.md) must be updated alongside _config.yml since page frontmatter overrides config seo title fallback
 - [Phase 06]: Messenger handles are owner-supplied values requiring a human-action gate; no automated inference or placeholder substitution is acceptable for live contact channels
+- [Phase 07]: QA coverage extended additively — no existing entries, check logic, or marker constants modified
+- [Phase 07]: Service schema checks in phase5 fire on all 8 service routes including the 5 newly added
 
 ## Blockers
 
@@ -108,6 +111,6 @@ None
 
 ## Session
 
-- **Last Date:** 2026-03-15T15:19:08.242Z
-- **Stopped At:** Completed 06-02-PLAN.md
+- **Last Date:** 2026-03-15T15:42:09.661Z
+- **Stopped At:** Completed 07-01-PLAN.md
 - **Resume File:** None

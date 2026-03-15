@@ -124,7 +124,7 @@ Plans:
 
 **Goal:** Extend rendered QA coverage to the full surface area of the site — 3 unchecked dossier routes and 5 unchecked service routes — so no page can silently regress.
 
-**Plans:** 1 plan
+**Plans:** 1/1 plans complete
 
 Plans:
 - [ ] 07-01-PLAN.md — Extend phase3, phase4, phase5 render check scripts to cover all dossier and service routes

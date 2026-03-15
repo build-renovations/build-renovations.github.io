@@ -84,10 +84,10 @@
 | CALL-02 | Phase 1 | Complete |
 | CALL-03 | Phase 1 | Complete |
 | CALL-04 | Phase 6 | Complete |
-| CASE-01 | Phase 7 | Pending |
+| CASE-01 | Phase 7 | Complete |
 | CASE-02 | Phase 3 | Complete |
 | CASE-03 | Phase 6 | Complete |
-| CASE-04 | Phase 7 | Pending |
+| CASE-04 | Phase 7 | Complete |
 | CONT-01 | Phase 2 | Complete |
 | CONT-02 | Phase 2 | Complete |
 | CONT-03 | Phase 2 | Complete |
@@ -97,8 +97,8 @@
 | UX-03 | Phase 4 | Complete |
 | UX-04 | Phase 4 | Pending |
 | SEO-01 | Phase 5 | Complete |
-| SEO-02 | Phase 7 | Pending |
-| SEO-03 | Phase 7 | Pending |
+| SEO-02 | Phase 7 | Complete |
+| SEO-03 | Phase 7 | Complete |
 
 **Coverage:**
 - v1 requirements: 23 total
