@@ -89,7 +89,43 @@ const routeChecks = [
     lang: "en",
     markers: ["premium-shell", "layout-parity", "scan-rhythm", "cta-stability"],
     surfaces: ["premium-shell", "case-study-hero", "case-study-snapshot", "case-study-stage-map", "contact-shell", "sticky-phone-cta"]
-  }
+  },
+  {
+    route: "/projects/apartment-system-renovation/",
+    lang: "uk",
+    markers: ["premium-shell", "layout-parity", "scan-rhythm", "cta-stability"],
+    surfaces: ["premium-shell", "case-study-hero", "case-study-snapshot", "case-study-stage-map", "contact-shell", "sticky-phone-cta"]
+  },
+  {
+    route: "/en/projects/apartment-system-renovation/",
+    lang: "en",
+    markers: ["premium-shell", "layout-parity", "scan-rhythm", "cta-stability"],
+    surfaces: ["premium-shell", "case-study-hero", "case-study-snapshot", "case-study-stage-map", "contact-shell", "sticky-phone-cta"]
+  },
+  {
+    route: "/projects/wet-zone-control/",
+    lang: "uk",
+    markers: ["premium-shell", "layout-parity", "scan-rhythm", "cta-stability"],
+    surfaces: ["premium-shell", "case-study-hero", "case-study-snapshot", "case-study-stage-map", "contact-shell", "sticky-phone-cta"]
+  },
+  {
+    route: "/en/projects/wet-zone-control/",
+    lang: "en",
+    markers: ["premium-shell", "layout-parity", "scan-rhythm", "cta-stability"],
+    surfaces: ["premium-shell", "case-study-hero", "case-study-snapshot", "case-study-stage-map", "contact-shell", "sticky-phone-cta"]
+  },
+  {
+    route: "/projects/controlled-handover/",
+    lang: "uk",
+    markers: ["premium-shell", "layout-parity", "scan-rhythm", "cta-stability"],
+    surfaces: ["premium-shell", "case-study-hero", "case-study-snapshot", "case-study-stage-map", "contact-shell", "sticky-phone-cta"]
+  },
+  {
+    route: "/en/projects/controlled-handover/",
+    lang: "en",
+    markers: ["premium-shell", "layout-parity", "scan-rhythm", "cta-stability"],
+    surfaces: ["premium-shell", "case-study-hero", "case-study-snapshot", "case-study-stage-map", "contact-shell", "sticky-phone-cta"]
+  },
 ];
 const parityPairs = [
   ["/", "/en/"],
@@ -98,7 +134,10 @@ const parityPairs = [
   ["/services/apartment-renovation/", "/en/services/apartment-renovation/"],
   ["/projects/", "/en/projects/"],
   ["/projects/compact-apartment-engineering/", "/en/projects/compact-apartment-engineering/"],
-  ["/projects/house-stage-coordination/", "/en/projects/house-stage-coordination/"]
+  ["/projects/house-stage-coordination/", "/en/projects/house-stage-coordination/"],
+  ["/projects/apartment-system-renovation/", "/en/projects/apartment-system-renovation/"],
+  ["/projects/wet-zone-control/", "/en/projects/wet-zone-control/"],
+  ["/projects/controlled-handover/", "/en/projects/controlled-handover/"],
 ];
 
 function fail(message) {
