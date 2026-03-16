@@ -266,7 +266,6 @@ h1 {
 
 h2 {
   font-size: clamp(2rem, 5vw, 3.4rem);
-  text-wrap: balance;
 }
 
 h3 {
@@ -429,7 +428,7 @@ h3 {
 }
 
 .section-heading--wide {
-  max-width: 52rem;
+  max-width: none;
 }
 
 .section-intro {
