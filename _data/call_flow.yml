@@ -2,7 +2,7 @@ uk:
   completeness:
     fit:
       title: "Чи підходить вам такий формат роботи"
-      intro: "Блок допомагає швидко зрозуміти, чи підходить команда за типом об'єкта, масштабом і способом ведення ремонту."
+      intro: "Швидка перевірка того, чи підходить цей формат для вашого типу об'єкта, масштабу і способу ведення ремонту."
       items:
         - title: "Квартира або будинок, де треба зібрати кілька етапів"
           text: "Найкраще підходять об'єкти, де сантехніка, електрика, підготовка основ і чистове оздоблення мають працювати як одна система."
@@ -34,7 +34,7 @@ en:
   completeness:
     fit:
       title: "How to tell if this format fits your project"
-      intro: "This block is meant to help a buyer quickly judge whether the team matches the property type, scope, and way the renovation needs to be run."
+      intro: "A quick way to check whether this format fits your property type, scope, and the way your renovation needs to run."
       items:
         - title: "Apartment or house with several connected stages"
           text: "The format works best when plumbing, electrical, substrate preparation, and finishing need to be coordinated as one delivery system."

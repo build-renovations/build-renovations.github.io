@@ -67,11 +67,11 @@ items:
         - title: Кімнати залежать одна від одної сильніше, ніж здається
           text: Кухня, санвузол, коридор і житлові кімнати часто ділять спільні рішення по електриці, сантехніці, стелях і фінішу.
         - title: Формат добре працює, коли рішення треба зібрати до монтажу
-          text: Якщо клієнт хоче зрозуміти весь маршрут до старту чистового шару, сторінка квартири дає правильну рамку для самокваліфікації.
+          text: Якщо вам важливо зрозуміти весь маршрут ще до старту чистового шару, цей формат допоможе визначити правильну послідовність рішень.
       objection_cards:
         eyebrow: Що найчастіше турбує покупця
         title: Квартира викликає не стільки питання про стиль, скільки про контроль обмеженого простору
-        intro: Ці побоювання краще закривати прямо на сторінці послуги, а не ховати лише в загальному FAQ.
+        intro: Ось чесні відповіді на найпоширеніші побоювання — щоб ви могли прийняти рішення, розуміючи реальні ризики.
         cards:
         - key: apartment-budget
           title: Чи не перетвориться квартира на ланцюг дрібних доплат?
@@ -144,7 +144,7 @@ items:
         - title: Needs an extra frame
           text: Phased renovations with residents on site, where room access and stage order have to be negotiated explicitly.
         - title: Not a shortcut to simplicity
-          text: If the expectation is a quick decorative refresh without dealing with hidden junctions, this page should not pretend the risk disappears.
+          text: "If the expectation is a quick decorative refresh without dealing with hidden junctions, be honest with yourself: the risk does not disappear — it just gets hidden behind the finish."
       project_conditions:
         title: Which signs show that an apartment needs this route
         items:
@@ -153,11 +153,11 @@ items:
         - title: Rooms depend on one another more than they seem to
           text: The kitchen, wet zones, corridor, and living areas often share electrical, plumbing, ceiling, and finish decisions.
         - title: The format works best when decisions must be assembled before installation
-          text: If the buyer wants to understand the whole route before the finish layer starts, the apartment page provides the right self-qualification frame.
+          text: If you want to understand the whole route before the finish layer starts, this format gives you the right framework to make the right decisions in the right order.
       objection_cards:
         eyebrow: Common buyer objections
         title: Apartment projects create more control questions than style questions
-        intro: These concerns belong directly on the service page instead of being buried only inside a general FAQ.
+        intro: Here are honest answers to the most common concerns — so you can decide with a clear picture of the real risks.
         cards:
         - key: apartment-budget
           title: Will an apartment project turn into constant small add-ons?
@@ -237,8 +237,8 @@ items:
         - Матеріали і монтаж прив'язані до реальної готовності зон, а не до випадкових вікон у графіку.
         - Перед здачею зрозуміло, які вузли перевірені і що вважається готовим до нормального користування.
       fit_boundaries:
-        title: Коли сторінка будинку найбільш релевантна
-        text: Сторінка будинку корисна там, де обсяг робіт і кількість суміжних рішень вже не дозволяють управляти об'єктом «по кімнатах».
+        title: Кому підходить цей формат ремонту будинку
+        text: Цей формат підходить там, де обсяг робіт і кількість суміжних рішень вже не дозволяють управляти об'єктом «по кімнатах» — потрібна одна система координації.
         items:
         - title: Добре підходить
           text: Приватні будинки й котеджі, де потрібна синхронізація інженерії, оздоблення, поставок і нагляду між кількома зонами.
@@ -254,11 +254,11 @@ items:
         - title: Координація відбувається між зонами, а не лише всередині кімнати
           text: Тут важливо тримати логіку між поверхами, технічними приміщеннями, меблями, світлом і оздобленням, а не лише окремий локальний вузол.
         - title: Формат підходить, коли потрібен читабельний маршрут по всьому об'єкту
-          text: Якщо клієнт оцінює не одну кімнату, а керованість великого об'єкта до здачі, сторінка будинку має бути точкою входу.
+          text: Якщо ви оцінюєте керованість великого об'єкта в цілому, а не лише окрему кімнату, цей формат дає потрібну рамку від старту до здачі.
       objection_cards:
         eyebrow: Головні заперечення
         title: У будинку найбільше лякають масштаб, зупинки і втрата контролю між зонами
-        intro: Мета сторінки не драматизувати, а показати, як ці ризики переводяться в керовані рішення.
+        intro: Ось як кожен із цих страхів переводиться в конкретне рішення — без драматизації.
         cards:
         - key: house-scale
           title: Як не втратити контроль через масштаб об'єкта?
@@ -280,8 +280,8 @@ items:
         - Поставки матеріалів, дверей, світла і меблів відповідно до готовності кімнат.
         - Контроль переходу від чорнових етапів до чистового шару і фінального наповнення будинку.
       commercial_clarity:
-        title: Яка комерційна ясність потрібна покупцю будинку
-        text: Покупець будинку має розуміти, де закінчується загальна рамка управління і де починаються рішення по окремих зонах, поставках та здачі. Це знімає страх хаотичного розростання робіт.
+        title: Що впливає на вартість і терміни ремонту будинку
+        text: Розуміння того, де закінчується загальна рамка управління і де починаються рішення по окремих зонах, поставках та здачі — знімає страх хаотичного розростання робіт і непередбачуваних витрат.
         items:
         - title: Планування
           text: Потрібно рано зафіксувати, які зони запускаються першими і які рішення блокують інші етапи.
@@ -323,15 +323,15 @@ items:
         - Materials and installation follow actual zone readiness instead of random gaps in the schedule.
         - Before handover, it is clear which junctions were checked and what is considered ready for normal use.
       fit_boundaries:
-        title: When the house page is most relevant
-        text: This page becomes useful when the amount of work and cross-trade decisions no longer allows the property to be managed room by room.
+        title: Who this house renovation format fits
+        text: This format fits when the amount of work and cross-trade decisions no longer allows the property to be managed room by room — you need one coordination system.
         items:
         - title: Strong fit
           text: Private houses and cottages where engineering, finishing, deliveries, and supervision must stay synchronized across multiple zones.
         - title: Needs explicit staging
           text: Reconstructions with phased floor launches or exterior-zone dependencies where access, season, and occupancy affect the schedule.
         - title: Weak fit
-          text: If the buyer only needs a local crew for one isolated task, this page should not imply full-route control.
+          text: If you only need a local crew for one isolated task without coordination across zones, this format provides more structure than you currently need.
       project_conditions:
         title: Which signs show that a house needs its own management frame
         items:
@@ -340,11 +340,11 @@ items:
         - title: Coordination happens between zones, not only inside one room
           text: The route has to hold logic between floors, technical rooms, furniture, lighting, and finishing instead of solving only one local junction.
         - title: The format fits when the buyer needs a readable whole-property route
-          text: If the buyer is judging the controllability of a large property rather than one room, the house page should be the real entry point.
+          text: If you are judging the controllability of a large property rather than one room, this format gives you the right frame from start to handover.
       objection_cards:
         eyebrow: Main objections
         title: House buyers usually fear scale, delays, and losing control between zones
-        intro: The goal is not fear-based copy. It is to show how those risks are translated into controlled decisions.
+        intro: Here is how each of those fears is translated into a concrete decision — without dramatizing the risks.
         cards:
         - key: house-scale
           title: How do you avoid losing control because the property is large?
@@ -430,7 +430,7 @@ items:
         - hidden-junction-control
         - routing-audit
       overview:
-        title: Чому сторінка сантехніки має бути глибшою за перелік труб
+        title: Чому сантехніку не можна оцінювати лише за метражем труб
         text: Покупець сантехнічних робіт оцінює не метраж труб, а те, чи будуть зручними ревізії, монтаж приладів, плитка і щоденна експлуатація мокрих зон після фінішу.
       outcomes:
         title: Що повинно вийти в результаті
@@ -439,8 +439,8 @@ items:
         - Мокрі зони готові до чистового монтажу без імпровізації по місцю.
         - Клієнт розуміє, де контроль прихованих вузлів відбувається до закриття стін і коробів.
       fit_boundaries:
-        title: Коли сантехнічна сторінка найбільш корисна
-        text: Ця сторінка особливо потрібна там, де мокрі зони складні, прихований монтаж важливий, а чистовий результат залежить від точності вузлів ще до оздоблення.
+        title: Коли координація сантехніки найважливіша
+        text: Цей формат особливо важливий там, де мокрі зони складні, прихований монтаж критичний, а чистовий результат залежить від точності вузлів ще до оздоблення.
         items:
         - title: Добре підходить
           text: Ванні кімнати, душові, кухні та інші зони, де доступ, інсталяції і облицювання мають працювати як одна система.
@@ -451,7 +451,7 @@ items:
       objection_cards:
         eyebrow: Типові заперечення
         title: Сантехніка викликає страх прихованих помилок і дорогого доступу після облицювання
-        intro: Сторінка повинна відповідати на ці ризики спокійною логікою контролю, а не загальними обіцянками.
+        intro: Ось конкретні відповіді на ці ризики — спокійна логіка контролю замість загальних обіцянок.
         cards:
         - key: plumbing-hidden
           title: Що якщо помилка сховається під плиткою?
@@ -473,8 +473,8 @@ items:
         - Сервісний доступ до колекторів, інсталяцій і прихованих елементів ще до фінішу.
         - Прив'язка обладнання, змішувачів і чистових матеріалів до реальних точок монтажу.
       commercial_clarity:
-        title: Що важливо пояснити по комерційній рамці сантехніки
-        text: Публічне пояснення має показувати, що сантехніка впливає на вартість не через абстрактні «сюрпризи», а через визначеність вузлів, доступу і чистового монтажу.
+        title: Що впливає на вартість і терміни сантехнічних робіт
+        text: Сантехніка впливає на вартість через визначеність вузлів, доступу і чистового монтажу — чим раніше ці питання вирішені, тим передбачуваніший бюджет.
         items:
         - title: Планування
           text: До монтажу треба погодити мокрі зони, типи обладнання і логіку прихованих вузлів.
@@ -521,7 +521,7 @@ items:
         - hidden-junction-control
         - routing-audit
       overview:
-        title: Why the plumbing page has to be deeper than a pipe list
+        title: Why plumbing cannot be judged by pipe length alone
         text: A buyer does not judge plumbing by pipe length. They judge whether access points, fixture installation, tile, and daily use of wet zones will work after finishing.
       outcomes:
         title: What the result should look like
@@ -530,8 +530,8 @@ items:
         - Wet zones are ready for finish installation without on-site improvisation.
         - The buyer understands where hidden-junction control happens before walls and boxes are closed.
       fit_boundaries:
-        title: When this plumbing page is most useful
-        text: This page matters most when wet zones are complex, concealed installation matters, and the finish result depends on junction accuracy before decoration starts.
+        title: When plumbing coordination matters most
+        text: This format matters most when wet zones are complex, concealed installation is critical, and the finish result depends on junction accuracy before decoration starts.
         items:
         - title: Strong fit
           text: Bathrooms, showers, kitchens, and other zones where access, frames, and cladding need to work as one system.
@@ -542,7 +542,7 @@ items:
       objection_cards:
         eyebrow: Typical objections
         title: Plumbing usually triggers fear of hidden mistakes and expensive access later
-        intro: The page should answer those risks with calm control logic instead of generic promises.
+        intro: Here are concrete answers to those risks — calm control logic instead of generic promises.
         cards:
         - key: plumbing-hidden
           title: What if a mistake disappears behind the tile?
@@ -564,8 +564,8 @@ items:
         - Service access to collectors, concealed frames, and hidden elements before finishing.
         - Fixture, mixer, and finish-material decisions tied to real installation points.
       commercial_clarity:
-        title: What the plumbing page should make commercially clear
-        text: The public explanation should show that plumbing affects cost through the clarity of junctions, access, and finish interfaces rather than through vague scare language about surprises.
+        title: What affects the cost and scope of plumbing work
+        text: Plumbing affects cost through the clarity of junctions, access, and finish interfaces — not through vague surprises. The more clearly these are defined early, the more predictable your budget becomes.
         items:
         - title: Planning
           text: Wet zones, fixture types, and hidden-junction logic need to be agreed before installation starts.
@@ -622,8 +622,8 @@ items:
         - Суміжні рішення не залишаються на імпровізацію монтажників у фіналі.
       proof_module:
         eyebrow: Який доказ потрібен для електрики
-        title: Доказ для цієї послуги має поєднати чорнову дисципліну і фінальний світловий результат
-        text: На сторінці електрики важливо показати, як підготовка точок і прихованих ліній переводиться у контрольований готовий сценарій.
+        title: Дивіться не лише на фінальне освітлення — дивіться, як точки і лінії готувались до закриття стелями
+        text: Перевірена підготовка прихованих ліній і точок до закриття — це те, що відрізняє передбачуваний фінал від дорогих переробок після монтажу.
         item_keys:
         - hidden-junction-control
         - handover-checklist
@@ -649,7 +649,7 @@ items:
       objection_cards:
         eyebrow: Що турбує перед замовленням
         title: Електрика лякає не тільки безпекою, а й тим, що фініш потім не пробачить невдалих рішень
-        intro: Тому сторінка має показати, як сценарії і безпека збираються в одну систему.
+        intro: Ось як ми збираємо сценарії і безпеку в одну систему — ще до того, як стелі й меблі закрили можливість щось змінити.
         cards:
         - key: electrical-scenes
           title: Що якщо світло і меблі зійдуться невдало?
@@ -671,8 +671,8 @@ items:
         - Навантаження і сервісні зони без відриву від реального сценарію життя в приміщенні.
         - Підготовку точок до закриття стель, шаф, кухонь і декоративних поверхонь.
       commercial_clarity:
-        title: Яку комерційну ясність має дати сторінка електрики
-        text: Пояснення має показувати, що вартість і контроль залежать від сценаріїв використання, кількості рішень по світлу і від того, наскільки рано вони зібрані разом з суміжними роботами.
+        title: Що впливає на вартість і терміни електромонтажу
+        text: Вартість і контроль залежать від сценаріїв використання, кількості рішень по світлу і від того, наскільки рано вони зібрані разом з суміжними роботами.
         items:
         - title: Планування
           text: До монтажу потрібно розуміти меблі, техніку, світлові сцени і критичні точки навантаження.
@@ -713,8 +713,8 @@ items:
         - Adjacent decisions are not left to installer improvisation at the end.
       proof_module:
         eyebrow: What proof matters for electrical work
-        title: Proof on this page needs to connect rough-stage discipline with the finished lighting result
-        text: The relevant signal here is how point preparation and concealed lines turn into a controlled final scene.
+        title: Look beyond the finished lighting — see how points and lines were prepared before ceilings closed them
+        text: Verified preparation of concealed lines and points before closure is what separates a predictable result from expensive rework after installation.
         item_keys:
         - hidden-junction-control
         - handover-checklist
@@ -740,7 +740,7 @@ items:
       objection_cards:
         eyebrow: What worries buyers before ordering
         title: Electrical work raises fear not only about safety, but also about the finish exposing bad decisions later
-        intro: That is why the page should show how safety and usage scenes are assembled into one system.
+        intro: Here is how we assemble safety and usage scenes into one system — before ceilings and furniture make changes impossible.
         cards:
         - key: electrical-scenes
           title: What if lighting and furniture collide badly?
@@ -762,8 +762,8 @@ items:
         - Load planning and service zones tied to the real way the room will be used.
         - Point preparation before ceilings, cabinetry, kitchens, and decorative surfaces are closed.
       commercial_clarity:
-        title: What the electrical page should make commercially clear
-        text: The page should explain that cost and control depend on the planned usage scenes, the number of lighting decisions, and how early they are assembled together with adjacent work.
+        title: What affects the cost and schedule of electrical installation
+        text: Cost and control depend on the planned usage scenes, the number of lighting decisions, and how early they are assembled together with adjacent work.
         items:
         - title: Planning
           text: Furniture, equipment, lighting scenes, and critical load points need to be understood before installation starts.
@@ -813,8 +813,8 @@ items:
         - Наступні етапи стартують лише після перевірки бази, а не через тиск графіка.
       proof_module:
         eyebrow: Який доказ потрібен для чорнових робіт
-        title: Тут доказ має пояснювати, як підготовлена база знімає ризики для всього ремонту
-        text: Для цієї сторінки релевантні приклади маршруту рішень до старту і контроль прихованих вузлів перед закриттям.
+        title: Дивіться не лише на порожнє приміщення — дивіться на перевірені рівні і маршрути, що тримають весь наступний ремонт
+        text: "Ви отримуєте перевірену основу: маршрут рішень до старту зафіксований, а приховані вузли перевірені до закриття — щоб інженерія і фініш не виправляли базу після монтажу."
         item_keys:
         - routing-audit
         - hidden-junction-control
@@ -836,7 +836,7 @@ items:
         - title: Потрібно мислити системою
           text: Якщо інженерія, меблі й чистове оздоблення вже залежать від точних рівнів, чорновий етап не можна спрощувати до «підготовки під щось потім».
         - title: Слабкий сценарій
-          text: Якщо очікування зводиться лише до швидкого вирівнювання без уваги до наступних вузлів, ця сторінка повинна чесно показати ризик переробок.
+          text: "Якщо очікування зводиться лише до швидкого вирівнювання без уваги до наступних вузлів, майте на увазі: такий підхід часто призводить до дорогого ланцюга переробок."
       sequence_signals:
         title: Які рішення треба закрити ще на чорновому етапі
         items:
@@ -849,7 +849,7 @@ items:
       objection_cards:
         eyebrow: Типові заперечення
         title: Чорнові роботи часто недооцінюють, поки саме вони не створюють дорогий ланцюг переробок
-        intro: Сторінка має пояснювати цей ризик спокійно і предметно, без драматизації.
+        intro: Ось чому недооцінювати підготовчий етап небезпечно — і як ми це вирішуємо.
         cards:
         - key: rough-hidden
           title: Чому не можна просто «вирівняти, а далі розберемося»?
@@ -900,8 +900,8 @@ items:
         - Later stages start only after the base is checked instead of because the schedule is under pressure.
       proof_module:
         eyebrow: What proof matters for rough works
-        title: Proof here should explain how the prepared base removes risk from the whole renovation
-        text: Relevant examples on this page show the decision route before start and concealed-junction control before closure.
+        title: Look beyond the empty room — see the checked levels and passages that carry the whole renovation forward
+        text: "You get a verified base: the decision route documented before start, and concealed junctions checked before closure — so engineering and finishing do not have to repair the substrate after installation."
         item_keys:
         - routing-audit
         - hidden-junction-control
@@ -923,7 +923,7 @@ items:
         - title: Needs system thinking
           text: If engineering work, furniture, and finishing already depend on precise levels, the rough stage cannot be reduced to generic prep work.
         - title: Weak scenario
-          text: If the expectation is only quick leveling with no regard for later junctions, the page should make the rework risk explicit.
+          text: "If the expectation is only quick leveling with no regard for later junctions, be aware: that approach typically triggers the most expensive rework chain in any renovation."
       sequence_signals:
         title: Which decisions need to be closed during the rough stage
         items:
@@ -936,7 +936,7 @@ items:
       objection_cards:
         eyebrow: Typical objections
         title: Rough works are often underestimated until they trigger the most expensive chain of rework
-        intro: The page should explain that calmly and concretely instead of dramatizing it.
+        intro: Here is why underestimating the preparation stage is costly — and how we address it.
         cards:
         - key: rough-hidden
           title: Why not just level things quickly and sort it out later?
@@ -996,13 +996,13 @@ items:
         - Завершення не стартує, якщо попередні етапи залишили технічні хвости.
       proof_module:
         eyebrow: Який доказ потрібен для оздоблення
-        title: Для чистових робіт важливо показати не тільки красу, а й дисципліну деталей перед здачею
-        text: На цій сторінці доказ повинен підкреслювати контроль перед фінішем і чек-лист завершення, а не абстрактну 'акуратність'.
+        title: Дивіться не лише на готовий інтер'єр — дивіться на стики, переходи і перевірки деталей перед здачею
+        text: "Ви отримуєте підтвердження: примикання, переходи між матеріалами і технічні деталі перевірені до завершення — а не просто красива картинка без пояснень що саме готове до користування."
         item_keys:
         - handover-checklist
         - hidden-junction-control
       overview:
-        title: Чому сторінка оздоблення має говорити не лише про фактури
+        title: Чому чистове оздоблення — це не лише про фактури
         text: Покупець оцінює чистовий етап через стики, переходи між матеріалами, світло і відчуття завершеності. Це вимагає дисципліни деталей, а не просто набору декоративних робіт.
       outcomes:
         title: Який результат має дати сильний чистовий етап
@@ -1019,7 +1019,7 @@ items:
         - title: Потрібна підготовлена база
           text: Якщо чорновий шар, інженерія або поставки ще нестабільні, чистове оздоблення не може чесно обіцяти спокійний фінал.
         - title: Слабкий сценарій
-          text: Якщо очікування зводиться до швидкої декоративної картинки без перевірки деталей, сторінка має відверто показати межу такого підходу.
+          text: "Якщо очікування зводиться до швидкої декоративної картинки без перевірки деталей, будьте готові: без контролю вузлів навіть гарний фінал може приховати технічні проблеми."
       sequence_signals:
         title: Які рішення треба закрити до чистового старту
         items:
@@ -1032,7 +1032,7 @@ items:
       objection_cards:
         eyebrow: Що турбує перед фінішем
         title: Чистове оздоблення часто лякає тим, що саме на ньому стають видимими всі попередні помилки
-        intro: Тому сторінка має показати дисципліну стиків і перевірок, а не просто натискати на емоцію «вау».
+        intro: Ось чому ми перевіряємо стики, переходи і деталі до старту фінішу — щоб ви отримали завершений простір, а не виправлення прихованих хвостів після здачі.
         cards:
         - key: finishing-details
           title: Хто відповідає за стики, підрізки і переходи між матеріалами?
@@ -1050,8 +1050,8 @@ items:
         - Світло, меблі, фурнітура й декоративні рішення в одному сценарії фінального монтажу.
         - Готовність поставок і суміжних робіт без тиску на останні дні перед здачею.
       commercial_clarity:
-        title: Яку комерційну ясність має дати сторінка оздоблення
-        text: Комерційна рамка тут повинна пояснювати, що обсяг чистового етапу залежить від деталей, матеріалів, точності примикань і підготовленості бази, а не тільки від площі поверхонь.
+        title: Що впливає на вартість і терміни чистового оздоблення
+        text: Обсяг і вартість чистового етапу залежать від деталей, матеріалів, точності примикань і підготовленості бази, а не тільки від площі поверхонь.
         items:
         - title: Планування
           text: До старту потрібно зафіксувати матеріали, переходи, світлові сценарії і вузли, які визначають якість фінішу.
@@ -1083,13 +1083,13 @@ items:
         - Completion does not start if earlier stages left technical loose ends behind.
       proof_module:
         eyebrow: What proof matters for finishing
-        title: For finishing, proof should show detail discipline before handover, not just a pretty final shot
-        text: The useful signal on this page is pre-finish control and a handover checklist rather than abstract claims about neatness.
+        title: Look beyond the polished interior — see the interfaces, transitions, and detail checks that happened before handover
+        text: "You get confirmation: joints, material transitions, and technical details are verified before completion — not just an attractive result with no explanation of what is actually ready for use."
         item_keys:
         - handover-checklist
         - hidden-junction-control
       overview:
-        title: Why the finishing page has to speak about more than textures
+        title: Why finishing is about more than choosing textures
         text: Buyers judge finishing through interfaces, material transitions, lighting, and the sense that the interior is truly complete. That requires detail discipline, not a decorative keyword list.
       outcomes:
         title: What a strong finish phase should deliver
@@ -1106,7 +1106,7 @@ items:
         - title: Needs a ready base
           text: If the rough layer, engineering work, or deliveries are still unstable, finishing cannot honestly promise a calm final stage.
         - title: Weak scenario
-          text: If the expectation is only a quick decorative look with no detail checks, the page should make that limitation explicit.
+          text: "If the expectation is only a quick decorative look with no detail checks, be aware: without junction control even a beautiful finish can hide technical issues that show up later."
       sequence_signals:
         title: Which decisions need closure before finishing starts
         items:
@@ -1119,7 +1119,7 @@ items:
       objection_cards:
         eyebrow: Common finishing objections
         title: Finishing often feels risky because it is the phase where earlier mistakes become visible
-        intro: The page therefore needs to show interface discipline and verification, not only emotional “wow” language.
+        intro: That is why we check interfaces, transitions, and details before finishing starts — so you receive a complete space, not a cleanup of hidden issues after handover.
         cards:
         - key: finishing-details
           title: Who owns the interfaces, trims, and transitions between materials?
@@ -1137,8 +1137,8 @@ items:
         - Lighting, furniture, hardware, and decorative choices inside one final-assembly scenario.
         - Delivery readiness and adjacent work without last-week pressure before handover.
       commercial_clarity:
-        title: What the finishing page should make commercially clear
-        text: The commercial frame here should explain that the finish scope depends on details, materials, interface precision, and the readiness of the base, not only on the area of visible surfaces.
+        title: What affects the cost and scope of the finishing phase
+        text: The scope and cost of finishing depend on details, materials, interface precision, and the readiness of the base, not only on the area of visible surfaces.
         items:
         - title: Planning
           text: Materials, transitions, lighting scenes, and the junctions that define finish quality need to be fixed before start.
@@ -1215,7 +1215,7 @@ items:
       objection_cards:
         eyebrow: Типові заперечення
         title: Комплектація часто лякає хаосом вибору, поставок і розмірів
-        intro: Сторінка має показати, що це не окремий потік покупок, а частина контрольованого ремонту.
+        intro: Комплектація стає керованою, коли вона вбудована в логіку маршруту, а не існує як окремий потік покупок.
         cards:
         - key: procurement-chaos
           title: Чи не перетвориться комплектація на нескінченний список узгоджень?
@@ -1233,8 +1233,8 @@ items:
         - Черговість підтверджень по матеріалах, меблях, світлу і сантехнічному обладнанню.
         - Поставки, щоб вони підтримували монтаж, а не створювали перевантаження і паузи.
       commercial_clarity:
-        title: Яку комерційну ясність має дати сторінка комплектації
-        text: Комерційна рамка тут пояснює не ціни на окремі позиції, а те, як вибір матеріалів, кількість хвиль поставок і точність розмірів впливають на керованість маршруту.
+        title: Що впливає на вартість і керованість комплектації
+        text: Ціна і контроль тут залежать не від окремих позицій, а від того, як вибір матеріалів, кількість хвиль поставок і точність розмірів узгоджені з реальним маршрутом ремонту.
         items:
         - title: Планування
           text: Критичні позиції і строки їх підтвердження потрібно визначити ще до того, як монтаж почне від них залежати.
@@ -1281,8 +1281,8 @@ items:
         - The buyer can see which choices are critical for the schedule and which can be refined without breaking the route.
         - Deliveries support finishing and installation instead of turning the property into a warehouse.
       fit_boundaries:
-        title: When this page is most relevant
-        text: The procurement page matters most when the renovation carries many dependencies between materials, built-ins, and the actual readiness of zones.
+        title: When procurement coordination matters most
+        text: This format matters most when the renovation carries many dependencies between materials, built-ins, and the actual readiness of zones.
         items:
         - title: Strong fit
           text: Apartments and houses with many finish positions, built-in assemblies, and deliveries spread across multiple waves.
@@ -1302,7 +1302,7 @@ items:
       objection_cards:
         eyebrow: Typical objections
         title: Procurement often feels risky because of choice overload, delivery timing, and dimension mistakes
-        intro: The page should show that this is not a separate shopping stream, but part of a controlled renovation route.
+        intro: Procurement becomes manageable when it is built into the renovation route — not run as a separate shopping track.
         cards:
         - key: procurement-chaos
           title: Will procurement become an endless chain of approvals?
@@ -1320,8 +1320,8 @@ items:
         - Order of confirmations for materials, furniture, lighting, and plumbing equipment.
         - Deliveries that support installation rather than causing overload and idle time.
       commercial_clarity:
-        title: What the procurement page should make commercially clear
-        text: The commercial frame here is not about line-item prices. It explains how material choices, the number of delivery waves, and dimension accuracy affect the controllability of the route.
+        title: What affects the cost and controllability of procurement
+        text: Cost and control here depend not on individual line items, but on how material choices, the number of delivery waves, and dimension accuracy are aligned with the actual renovation route.
         items:
         - title: Planning
           text: Critical positions and their confirmation deadlines need to be defined before installation depends on them.
@@ -1362,8 +1362,8 @@ items:
         - Нагляд переводить розрізнені роботи в один читабельний маршрут рішень.
       proof_module:
         eyebrow: Який доказ потрібен для технагляду
-        title: Сторінка технагляду має показати мову перевірок, а не просто факт присутності на об'єкті
-        text: 'Найкращий сигнал тут: фотофіксація прихованих вузлів, карта маршруту рішень і контрольні точки перед здачею.'
+        title: Дивіться не лише на факт виїзду — дивіться на зафіксовані вузли, карту рішень і контрольні точки перед здачею
+        text: 'Найкращий сигнал тут: фотофіксація прихованих вузлів, карта маршруту рішень і контрольні точки перед здачею — саме це підтверджує реальний контроль, а не символічну присутність.'
         item_keys:
         - hidden-junction-control
         - routing-audit
@@ -1378,15 +1378,15 @@ items:
         - Конфлікти між суміжними роботами ловляться до того, як їх закриє наступний шар.
         - Статус об'єкта читається по перевірених вузлах, ризиках і наступних рішеннях.
       fit_boundaries:
-        title: Коли ця сторінка найбільш релевантна
-        text: Сторінка нагляду особливо потрібна там, де клієнт не хоче особисто зводити між собою підрядників, приймання і фотофіксацію.
+        title: Кому підходить технагляд
+        text: Технагляд особливо потрібен там, де клієнт не хоче особисто зводити між собою підрядників, приймання і фотофіксацію.
         items:
         - title: Добре підходить
           text: Об'єкти з кількома етапами, щільними вузлами і високою ціною помилки між суміжними роботами.
         - title: Потрібна прозорість статусу
           text: Якщо клієнту важливо розуміти, що перевірено і що рухається далі, нагляд має бути читабельним, а не символічним.
         - title: Слабкий сценарій
-          text: Якщо очікування зводиться до формальної присутності без права впливати на послідовність і приймання, сторінка має чесно показати межу цього формату.
+          text: Якщо очікування зводиться до формальної присутності без права впливати на послідовність і приймання, такий формат не дасть реального захисту від прихованих дефектів.
       sequence_signals:
         title: Які точки контролю не можна пропускати
         items:
@@ -1399,7 +1399,7 @@ items:
       objection_cards:
         eyebrow: Типові заперечення
         title: Нагляд часто сприймають як формальність, доки об'єкт не починає втрачати контроль між бригадами
-        intro: Сторінка має показати, що реальна цінність нагляду в прийманні, фотофіксації і ранньому виявленні конфліктів.
+        intro: Реальна цінність нагляду — в прийманні, фотофіксації і ранньому виявленні конфліктів між етапами, а не у формальному виїзді.
         cards:
         - key: supervision-visibility
           title: Як зрозуміти, що нагляд щось реально контролює?
@@ -1417,8 +1417,8 @@ items:
         - Фотофіксацію і пояснення статусу по кожній стадії, яка впливає на наступний крок.
         - Готовність зон до передачі між бригадами без прихованих технічних хвостів.
       commercial_clarity:
-        title: Яку комерційну ясність має дати сторінка нагляду
-        text: Покупець має розуміти, що цінність нагляду полягає не у формальній присутності, а в контрольних точках, прийманні вузлів і видимості статусу між етапами.
+        title: Що впливає на вартість і цінність технагляду
+        text: Цінність нагляду полягає не у формальній присутності, а в контрольних точках, прийманні вузлів і видимості статусу між етапами.
         items:
         - title: Планування
           text: На старті потрібно визначити, які саме вузли й переходи потребують обов'язкової перевірки.
@@ -1450,8 +1450,8 @@ items:
         - Supervision turns fragmented work into one visible decision route.
       proof_module:
         eyebrow: What proof matters for site supervision
-        title: The supervision page should show the language of checks, not just the fact that someone visited the site
-        text: The strongest signal here is concealed-junction photo reporting, the decision map, and control points before handover.
+        title: Look beyond the site visit — see the documented junctions, decision map, and control points before handover
+        text: The strongest signal here is concealed-junction photo reporting, the decision map, and control points before handover — that is what confirms real control, not symbolic presence.
         item_keys:
         - hidden-junction-control
         - routing-audit
@@ -1466,15 +1466,15 @@ items:
         - Conflicts between adjacent works are caught before the next layer hides them.
         - Site status reads through checked junctions, known risks, and the next decisions in sequence.
       fit_boundaries:
-        title: When this page is most relevant
-        text: The supervision page matters most when the buyer does not want to personally coordinate contractors, acceptance, and photo-backed progress logic.
+        title: When site supervision matters most
+        text: This format matters most when you do not want to personally coordinate contractors, acceptance, and photo-backed progress logic.
         items:
         - title: Strong fit
           text: Projects with multiple stages, dense junctions, and a high cost of mistakes between adjacent works.
         - title: Needs status transparency
           text: If the buyer needs to understand what was checked and what moves next, supervision has to be readable instead of symbolic.
         - title: Weak scenario
-          text: If the expectation is only occasional presence with no influence over sequence or acceptance, the page should make that limit explicit.
+          text: If the expectation is only occasional presence with no influence over sequence or acceptance, that format will not provide real protection against hidden defects.
       sequence_signals:
         title: Which control points cannot be skipped
         items:
@@ -1487,7 +1487,7 @@ items:
       objection_cards:
         eyebrow: Typical objections
         title: Site supervision is often treated as a formality until the property starts losing control between crews
-        intro: The page should show that the real value of supervision is in acceptance, photo reporting, and early conflict detection.
+        intro: The real value of supervision is in acceptance, photo reporting, and early conflict detection — not in the fact that someone visited the site.
         cards:
         - key: supervision-visibility
           title: How do you know supervision is actually controlling anything?
@@ -1505,8 +1505,8 @@ items:
         - Photo reporting and status explanation for every stage that affects the next move.
         - Zone readiness for crew handoff without hidden technical leftovers.
       commercial_clarity:
-        title: What the supervision page should make commercially clear
-        text: The buyer should understand that supervision is valuable not because of symbolic presence, but because of control points, junction acceptance, and visible status between stages.
+        title: What affects the value and cost of site supervision
+        text: Supervision is valuable not because of symbolic presence, but because of control points, junction acceptance, and visible status between stages.
         items:
         - title: Planning
           text: At the start, the team needs to define which junctions and handoffs require mandatory checks.

@@ -45,16 +45,16 @@ proof:
 accountability:
   uk:
     eyebrow: Хто тримає маршрут
-    title: Процес має показувати не лише етапи, а й дисципліну переходу між ними
-    text: Для сторінки процесу важливо не просто описати послідовність, а пояснити, хто збирає вузли в робочу систему.
+    title: Ви отримуєте не просто перелік етапів, а дисципліну переходу між ними
+    text: Саме хтось один збирає вузли в робочу систему — не дозволяє стикам між бригадами перетворюватися на джерело помилок і зупинок.
     items:
     - Аудит і рішення по зонах збираються до закупівель та старту бригад.
     - Кожна стадія має контрольну точку перед тим, як її закриє наступний етап.
     - Фотофіксація і пояснення статусу потрібні, щоб клієнт бачив логіку руху об'єкта.
   en:
     eyebrow: Who holds the route together
-    title: The process should show not only stages, but discipline at the handoff between them
-    text: On the process page, the point is not just sequencing. It is showing who turns the junctions into one operating system.
+    title: You get not just a list of stages, but discipline at the handoff between them
+    text: One person assembles the junctions into one operating system — preventing the gaps between crews from becoming a source of mistakes and delays.
     items:
     - Audit findings and zone decisions are assembled before procurement and crew starts.
     - Each stage has a control point before the next layer closes it.
@@ -62,16 +62,16 @@ accountability:
 proof_module:
   uk:
     eyebrow: Який доказ доречний саме тут
-    title: Для сторінки процесу доказ має підтверджувати контроль переходів, а не просто красивий фінал
-    text: Тут доречні матеріали, які показують маршрут рішень до старту, перевірку прихованих вузлів і контроль перед здачею.
+    title: Дивіться не лише на фінал — дивіться, як вузли збираються і перевіряються ще до закриття
+    text: Ви бачите маршрут рішень до старту, фотофіксацію прихованих вузлів і контрольні точки перед здачею — не просто красивий фінальний результат.
     item_keys:
     - routing-audit
     - hidden-junction-control
     - handover-checklist
   en:
     eyebrow: What proof matters on this page
-    title: On the process page, proof should confirm stage control, not just a polished finish
-    text: Relevant proof here shows the decision route before start, concealed-junction checks, and control before handover.
+    title: Look beyond the final result — see how junctions are assembled and checked before they are closed
+    text: You see the decision route before start, concealed-junction photo reporting, and control points before handover — not just a polished finish.
     item_keys:
     - routing-audit
     - hidden-junction-control
@@ -80,7 +80,7 @@ coordination_logic:
   uk:
     eyebrow: Як тримається координація
     title: Координація потрібна не для бюрократії, а щоб рішення не розпадались між зонами і бригадами
-    text: На сторінці процесу важливо показати, як планування, суміжні роботи, поставки і приймання зводяться в один читабельний маршрут для клієнта.
+    text: Планування, суміжні роботи, поставки і приймання зводяться в один читабельний маршрут — ви бачите не хаос, а зрозумілу логіку руху об'єкта.
     items:
     - title: Один маршрут рішень
       text: Сантехніка, електрика, чорнова база, оздоблення і комплектація рухаються не окремими потоками, а через погоджені точки переходу.
@@ -91,7 +91,7 @@ coordination_logic:
   en:
     eyebrow: How coordination holds together
     title: Coordination exists so decisions do not fall apart between zones and crews
-    text: The process page should show how planning, adjacent work, deliveries, and acceptance are assembled into one readable route for the buyer.
+    text: Planning, adjacent work, deliveries, and acceptance are assembled into one readable route — you see a clear logic of how the property moves forward, not a pile of disconnected actions.
     items:
     - title: One decision route
       text: Plumbing, electrical, the rough base, finishing, and procurement move through aligned handoff points instead of separate streams.
@@ -102,8 +102,8 @@ coordination_logic:
 planning:
   uk:
     eyebrow: Планування до старту
-    title: Процес має пояснювати порядок рішень ще до першого активного монтажу
-    text: 'Покупцю важливо розуміти не тільки етапи на майданчику, а й логіку рішень до старту: що треба визначити по зонах, які вузли блокують далі і як команда не допускає хаотичного старту.'
+    title: Порядок рішень визначається до першого активного монтажу — не під час нього
+    text: 'Вам важливо розуміти не тільки що робиться на майданчику, а й логіку рішень до старту: що треба визначити по зонах, які вузли блокують далі і як команда запобігає хаотичному початку.'
     items:
     - title: Початковий аудит
       text: Фіксуються реальний стан об'єкта, технічні обмеження і точки, що впливають на черговість етапів.
@@ -113,8 +113,8 @@ planning:
       text: Ще до старту визначається, де саме проєкт зупиняється на перевірку перед переходом до наступного шару.
   en:
     eyebrow: Planning before start
-    title: The process should explain the order of decisions before active installation begins
-    text: 'A buyer needs to understand not only the site stages, but also the decision logic before start: what must be defined by zone, which junctions block the rest, and how the team prevents chaotic launch conditions.'
+    title: The order of decisions is set before active installation begins — not during it
+    text: 'You need to understand not only the site stages, but also the decision logic before start: what must be defined by zone, which junctions block the rest, and how the team prevents chaotic launch conditions.'
     items:
     - title: Initial audit
       text: The real site condition, technical limits, and the points that affect stage order are recorded first.
@@ -171,8 +171,8 @@ procurement:
 handoff:
   uk:
     eyebrow: Що означає здача
-    title: Передача об'єкта має пояснювати готовність до користування, а не лише естетику
-    text: 'Хороша сторінка процесу показує, як команда переходить від виконання до передачі: які вузли перевіряються, що вважається готовим, і чому клієнт отримує робочий простір, а не просто фотофініш.'
+    title: Передача означає готовність до користування, а не лише естетичний результат
+    text: 'Команда переходить від виконання до передачі так: перевіряються конкретні вузли, фіксується що вважається готовим, і ви отримуєте робочий простір — а не просто фотофініш.'
     items:
     - title: Перевірка деталей
       text: Передача включає контроль примикань, чистоти завершення і статусу критичних вузлів.
@@ -182,8 +182,8 @@ handoff:
       text: Результат читається як завершена система, а не як красивий фінал із прихованими хвостами.
   en:
     eyebrow: What handoff means
-    title: Property handoff should explain readiness for use, not only visual polish
-    text: 'A strong process page shows how the team moves from execution to handoff: which junctions are checked, what counts as ready, and why the buyer receives a workable space instead of a photo finish.'
+    title: Handover means readiness for use, not only a visually polished result
+    text: 'The team moves from execution to handoff by checking specific junctions, documenting what counts as ready, and delivering a workable space to you — not just a photo finish.'
     items:
     - title: Detail checks
       text: Handover includes interfaces, finish discipline, and the status of critical junctions.
@@ -217,8 +217,8 @@ coordination:
 route_bridges:
   uk:
     eyebrow: Куди йти далі
-    title: Далі клієнт може заглибитися або в тип об'єкта, або в конкретний етап
-    text: Сторінка процесу має допомогти вибрати правильний маршрут читання, а не змушувати всіх читати все підряд.
+    title: Далі ви можете заглибитися або в тип об'єкта, або в конкретний етап
+    text: Виберіть маршрут, який найближче до вашого проєкту — щоб отримати конкретну відповідь, а не читати все підряд.
     items:
     - title: Квартира
       text: Якщо рішення залежать від щільного простору, меблів і логіки кімнат, варто почати зі сторінки ремонту квартир.
@@ -231,8 +231,8 @@ route_bridges:
       url: /services/
   en:
     eyebrow: Where to go next
-    title: From here the buyer can go deeper into either the property type or a specific stage
-    text: The process page should help the visitor choose the right reading route instead of forcing everyone through every page.
+    title: From here you can go deeper into either the property type or a specific stage
+    text: Choose the route that is closest to your project — to get a concrete answer instead of reading everything in sequence.
     items:
     - title: Apartment
       text: If decisions are shaped by tight space, furniture coordination, and room logic, start with the apartment-renovation page.
@@ -246,10 +246,10 @@ route_bridges:
 case_study_bridge:
   uk:
     title: Проєкти-докази, які підтверджують логіку процесу
-    text: Ці кейси не дублюють сторінку процесу, а показують, як buyer-relevance, етапи і статус джерела доказу виглядають на конкретному об'єкті.
+    text: Ці кейси показують, як маршрут рішень, перевірка вузлів і контроль переходів між етапами виглядають на конкретному реальному об'єкті.
   en:
     title: Project dossiers that prove the process logic
-    text: These cases do not duplicate the process page. They show how buyer relevance, stage logic, and proof-source status look on a real route.
+    text: These cases show how the decision route, junction checks, and stage-handoff control look on a real renovation property.
 case_study_refs:
   - compact-apartment-engineering
   - house-stage-coordination
@@ -257,11 +257,11 @@ objection_cards:
   uk:
     eyebrow: Заперечення по процесу
     title: Покупець оцінює процес через ризики грошей, зупинок і втрати керування
-    intro: Ці питання мають бути видимими на сторінці процесу, бо саме тут формується довіра до логіки ведення об'єкта.
+    intro: Ось чесні відповіді на найпоширеніші питання — саме тут формується довіра до логіки ведення об'єкта.
   en:
     eyebrow: Process objections
     title: Buyers judge the process through money risk, delays, and loss of control
-    intro: These questions need to stay visible on the process page because this is where trust in delivery logic is formed.
+    intro: Here are honest answers to the most common questions — this is where trust in delivery logic is built.
 objection_refs:
 - budget-surprises
 - stage-sequence
@@ -269,8 +269,8 @@ objection_refs:
 commercial_clarity:
   uk:
     eyebrow: Комерційна ясність
-    title: Публічне пояснення процесу має спокійно розкривати планування, закупівлі й здачу
-    text: Цей блок не перетворює сторінку на операційний регламент. Він дає покупцю зрозуміти, де визначається рамка робіт, як рішення переходять у закупівлі і що означає контрольована передача об'єкта.
+    title: "Що впливає на вартість і терміни: планування, закупівлі і здача"
+    text: Ви розумієте, де визначається рамка робіт, як рішення переходять у закупівлі і що означає контрольована передача об'єкта — без перетворення цього на операційний регламент.
     items:
     - title: Планування
       text: На старті фіксуються зони, черговість і критичні рішення, які не можна відкладати до середини ремонту.
@@ -280,8 +280,8 @@ commercial_clarity:
       text: Передача означає перевірену готовність до користування, а не просто формальне завершення робіт.
   en:
     eyebrow: Commercial clarity
-    title: The public process explanation should calmly cover planning, procurement, and handoff
-    text: This section does not turn the page into an operations manual. It helps the buyer understand where the work frame is defined, how decisions move into procurement, and what a controlled handoff means.
+    title: "What affects cost and schedule: planning, procurement, and handoff"
+    text: You understand where the work frame is defined, how decisions move into procurement, and what a controlled handoff means — without turning this into an operations manual.
     items:
     - title: Planning
       text: The project starts by fixing the zones, order, and critical decisions that cannot be delayed until mid-renovation.
