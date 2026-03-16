@@ -39,25 +39,15 @@
     {% endif %}
   </div>
   <div class="trust-strip__grid">
-    <article class="trust-strip__card{% if company_placeholder %} trust-strip__card--placeholder{% endif %}">
-      <p class="trust-strip__label">{{ strip.labels.company }}</p>
-      <strong class="trust-strip__value">{{ site.company.name }}</strong>
-      <p class="trust-strip__support">
-        {% if company_placeholder %}
-          {{ strip.company_note }}
-        {% else %}
-          {{ site.company.city }}, {{ site.company.country }}
-        {% endif %}
-      </p>
-    </article>
     <article class="trust-strip__card">
       <p class="trust-strip__label">{{ strip.labels.profile }}</p>
       <strong class="trust-strip__value">{{ strip.profile }}</strong>
+      <p class="trust-strip__support">{{ strip.profile_note }}</p>
     </article>
     <article class="trust-strip__card">
       <p class="trust-strip__label">{{ strip.labels.service_area }}</p>
       <strong class="trust-strip__value">{{ site.company.service_area[lang] | default: site.company.service_area.uk }}</strong>
-      <p class="trust-strip__support">{{ site.company.city }}, {{ site.company.country }}</p>
+      <p class="trust-strip__support">{{ strip.service_area_note }}</p>
     </article>
     <article class="trust-strip__card">
       <p class="trust-strip__label">{{ strip.labels.accountability }}</p>
