@@ -2578,8 +2578,7 @@ body.has-sticky-phone-cta main {
 }
 
 .site-header__status {
-  color: var(--muted);
-  white-space: nowrap;
+  display: none;
 }
 
 .site-nav {
@@ -2880,7 +2879,8 @@ body.has-sticky-phone-cta main {
   }
 
   .site-header__status {
-    white-space: normal;
+    display: block;
+    color: var(--muted);
   }
 
   .site-nav {
