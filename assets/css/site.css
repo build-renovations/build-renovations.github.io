@@ -266,7 +266,6 @@ h1 {
 
 h2 {
   font-size: clamp(2rem, 5vw, 3.4rem);
-  max-width: 14ch;
   text-wrap: balance;
 }
 
@@ -1883,10 +1882,6 @@ h1 {
   h1 {
     max-width: none;
     line-height: 0.96;
-  }
-
-  h2 {
-    max-width: none;
   }
 
   .hero__stats {
