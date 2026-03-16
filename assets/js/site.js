@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     },
-    { threshold: calmMotionRoot ? 0.24 : 0.2, rootMargin: "0px 0px -6% 0px" }
+    { threshold: 0.05, rootMargin: "0px 0px -6% 0px" }
   );
 
   nodes.forEach((node) => observer.observe(node));

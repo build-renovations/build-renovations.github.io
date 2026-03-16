@@ -24,6 +24,8 @@ Plan, break down, assign, and coordinate all work across specialist agents until
 - Escalate blockers early and record them in the progress log.
 - Reference `docs/agents/expert-mode.md` and `docs/agents/mcp-policy.md` when creating tasks.
 - Do not unlock a gate until all required artifacts or checks exist and are validated.
+- When a task needs rendered browser validation, route it through Playwright-backed `browser_automation`.
+- When a task needs concept generation or hierarchy exploration, route it through `ui-ux-pro-max` and require it to cite rendered-page evidence when applicable.
 
 ## Standard flow
 
@@ -34,6 +36,7 @@ Plan, break down, assign, and coordinate all work across specialist agents until
    - owner
    - status
    - tool mode
+   - MCP capability expected
    - dependencies
    - files or areas affected
    - definition of done

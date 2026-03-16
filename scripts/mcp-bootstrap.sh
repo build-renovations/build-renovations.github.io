@@ -36,5 +36,5 @@ upsert_stdio_server docs_lookup \
 upsert_stdio_server memory \
   npx --yes @modelcontextprotocol/server-memory
 
-echo "Configured MCP servers:"
+echo "Configured MCP servers (browser_automation is Playwright-backed):"
 codex mcp list

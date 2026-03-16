@@ -192,18 +192,16 @@ This repository is small and currently builds with `./scripts/qa.sh`, but severa
 - Fix approach:
   - Extend gate coverage to one page per major template type in both languages.
 
-### Animation logic scales with DOM size and lacks reduced-motion handling
+### Animation logic scales with DOM size
 
 - Issue:
   - `assets/js/site.js` attaches pointer listeners to all `.hero__shot`, `.service-card`, and `.feature-band__media figure` nodes.
   - It also adds reveal attributes and observes a long selector list across every page.
-  - There is no `prefers-reduced-motion` guard.
-- Impact:
+- Status: `prefers-reduced-motion: reduce` IS handled — when matched, all reveal nodes receive `is-visible` immediately and the observer is bypassed. This concern is partially mitigated.
+- Remaining impact:
   - The current site is small, but richer galleries or longer landing pages will accumulate more event handlers and style writes.
-  - Motion-sensitive users are not respected.
 - Files: `assets/js/site.js`
 - Fix approach:
-  - Skip motion features when `prefers-reduced-motion: reduce` is set.
   - Scope expensive effects to pages/components that actually need them.
 
 ### Build warnings already signal dependency drift

@@ -53,6 +53,7 @@ GSD Phase 4 — Premium UX And Layout Hardening (planned, execution ready)
 
 ## Recent updates
 
+- 2026-03-12: ORCH-004 completed to harden GSD MCP routing defaults; Playwright-backed browser validation is now the explicit rendered-QA path and `ui-ux-pro-max` is the explicit concept-generation path for design-heavy work.
 - 2026-03-12: Phase 4 planning completed with `04-RESEARCH.md`, `04-VALIDATION.md`, and four execution plans covering design-system guardrails, homepage/shell polish, long-page composition hardening, and final viewport/parity sign-off.
 - 2026-03-11: Phase 3 execution and verification completed; `/projects/` and dossier routes are live, route-level proof bridges are integrated, and `03-VERIFICATION.md` passed.
 - 2026-03-10: ORCH-002 completed with a fresh `.planning/codebase/` map covering stack, integrations, architecture, structure, conventions, testing, and concerns; fallback default agents were used because the dedicated `gsd-codebase-mapper` role was unavailable.

@@ -50,6 +50,16 @@ This repository is a GitHub Pages compatible Jekyll site. Conventions here are s
   - image assets are expected to be metadata-free `.webp` or clean `.svg`
   - this policy is enforced in `scripts/qa.sh`
 
+## Responsive header layout
+
+The site header uses a two-tier responsive strategy:
+
+- **> 1370px**: single-row desktop layout — brand left, full navigation pill and language switcher right, all in one line.
+- **901–1370px**: two-row desktop layout — language switcher on the first row (right-aligned), navigation on the second row (right-aligned). Controlled by `@media (min-width: 901px) and (max-width: 1370px)` in `assets/css/site.css`, which sets `flex-wrap: wrap` on `.site-header__controls` and resets `.site-nav` to `order: 0; flex: 0 0 100%`.
+- **≤ 900px**: mobile layout — hamburger toggle reveals a stacked dropdown nav; language switcher stays inline.
+
+This two-row range exists because the Ukrainian navigation labels plus the CTA button exceed the available width at intermediate viewport sizes, and the language switcher must always remain visible.
+
 ## JavaScript conventions
 
 - Client-side JavaScript is intentionally lightweight and centralized in `assets/js/site.js`.

@@ -90,6 +90,14 @@ ls "$phase_dir"/*-SUMMARY.md 2>/dev/null
 Read each SUMMARY.md to extract testable deliverables.
 </step>
 
+<step name="decide_browser_evidence">
+If the summaries indicate user-facing routes, interactions, or visual changes, gather baseline rendered evidence with Playwright-backed `browser_automation` before or during user testing.
+
+- Use browser evidence to confirm the exact route/state under test.
+- Keep conversational UAT user-driven, but do not rely on user memory alone for browser-visible regressions when MCP is available.
+- If rendered sign-off is required and Playwright MCP is unavailable, record that limitation in the UAT notes.
+</step>
+
 <step name="extract_tests">
 **Extract testable deliverables from SUMMARY.md:**
 

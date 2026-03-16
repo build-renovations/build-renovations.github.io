@@ -135,7 +135,7 @@ No frontend package ecosystem integration was found:
 
 ### Python HTTP Server
 
-- `scripts/gates.sh` uses `python3 -m http.server` to serve `_site/` locally during gate 4 verification.
+- `scripts/gates.sh` uses `bundle exec jekyll serve --skip-initial-build` to serve the site locally during gate 4 verification.
 
 ### Lighthouse
 

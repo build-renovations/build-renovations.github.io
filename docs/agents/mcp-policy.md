@@ -20,6 +20,7 @@ Use MCP where it materially improves outcome quality. Do not invoke it by habit.
 - `mcp_preferred` for visual research, competitive references, interaction audits, or browser inspection.
 - `mcp_required` when the task explicitly depends on design-system inspection, live UI capture, or flow evidence.
 - When available in Codex, pair UI/UX work with the `ui-ux-pro-max` skill and ground it with `browser_automation` evidence from the actual rendered page.
+- For concept work, `ui-ux-pro-max` should be the first concept-generation path and `browser_automation` should provide the rendered-page baseline before recommendations are finalized.
 - For repository-constrained work, prefer recommendations that can be implemented inside Jekyll, Liquid, `_data/`, and the existing site CSS rather than generic framework output.
 
 ### Design
@@ -46,12 +47,15 @@ Use MCP where it materially improves outcome quality. Do not invoke it by habit.
 
 - `mcp_preferred` for browser automation and DOM-level inspection.
 - `mcp_required` when sign-off depends on rendered UI behavior rather than static output alone.
+- In this repository, the default browser-validation path is Playwright-backed `browser_automation`, not ad hoc manual browsing.
 
 ## Handoff requirement
 
 Each completed task must state:
 
 - tool mode
+- MCP capability expected
 - MCP used or not used
+- MCP evidence or artifacts gathered
 - evidence gathered
 - fallback used if MCP was unavailable

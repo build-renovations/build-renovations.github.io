@@ -198,6 +198,10 @@ body[data-phase4-surface="premium-shell"] {
   gap: 1rem;
 }
 
+.hero__visual .hero__mosaic {
+  margin: 20px;
+}
+
 .hero__mosaic {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
@@ -2596,6 +2600,22 @@ body.has-sticky-phone-cta main {
 
 .language-switcher {
   background: rgba(255, 252, 247, 0.68);
+}
+
+@media (min-width: 901px) and (max-width: 1370px) {
+  .site-header__inner {
+    align-items: flex-start;
+  }
+
+  .site-header__controls {
+    flex-wrap: wrap;
+  }
+
+  .site-nav {
+    order: 0;
+    flex: 0 0 100%;
+    justify-content: flex-end;
+  }
 }
 
 .site-contact-shell {

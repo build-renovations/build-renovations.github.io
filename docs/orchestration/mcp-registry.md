@@ -7,7 +7,7 @@ This file defines the intended MCP capability map for the repository. It is the 
 | Capability | Suggested alias | Primary users | Purpose | Default mode |
 | --- | --- | --- | --- | --- |
 | Filesystem access | `filesystem_repo` | orchestrator, development | Structured repo access and file-aware tooling | `repo_only` |
-| Browser automation | `browser_automation` | ui-ux-pro, qa, performance | Inspect rendered UI, flows, DOM state, and behavior | `mcp_preferred` |
+| Browser automation | `browser_automation` | ui-ux-pro, qa, performance | Inspect rendered UI, flows, DOM state, and behavior through the Playwright MCP server | `mcp_preferred` |
 | Docs lookup | `docs_lookup` | development, orchestrator | Official docs and implementation references | `mcp_preferred` |
 | Working memory | `memory` | orchestrator, all specialists | Shared durable notes, context capture, and task memory | `mcp_preferred` |
 
@@ -36,6 +36,7 @@ Expected skill pairing:
 
 - `ui-ux-pro-max` for concept generation, hierarchy guidance, and design-system exploration
 - `playwright` when the task needs step-by-step browser execution or artifact capture
+- Preferred combined flow for rendered concept work: capture the live route state with Playwright-backed `browser_automation`, then generate or refine concepts through `ui-ux-pro-max`
 
 ### Design
 
@@ -74,6 +75,8 @@ Expected skill pairing:
   - `memory`
 - Required when:
   - signoff depends on actual rendered behavior rather than static output alone
+- Default browser validation path:
+  - `browser_automation` backed by Playwright MCP
 
 ### Performance
 
@@ -101,7 +104,7 @@ The repository includes a working baseline example at `.mcp.example.json`. Adapt
 For Codex-based work, the expected skill pairing is:
 
 - `browser_automation` -> `playwright` skill
-- `browser_automation` + `filesystem_repo` + `memory` -> `ui-ux-pro-max` skill
+- `browser_automation` + rendered route capture + `filesystem_repo` + `memory` -> `ui-ux-pro-max` skill
 - skill installation and refresh -> `skill-installer`
 
 These pairings are part of the local readiness check and should be validated with `./scripts/mcp-check.sh`.

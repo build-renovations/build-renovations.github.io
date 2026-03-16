@@ -47,6 +47,7 @@ The phase boundary comes from ROADMAP.md and is FIXED. Discussion clarifies HOW 
 - "How should posts be displayed?" (layout, density, info shown)
 - "What happens on empty state?" (within the feature)
 - "Pull to refresh or manual?" (behavior choice)
+- "What should feel calmer, denser, more premium, or more obvious in the existing page flow?" (design-direction choice within scope)
 
 **Not allowed (scope creep):**
 - "Should we also add comments?" (new capability)
@@ -103,6 +104,11 @@ Phase: "API documentation"
 - Architecture patterns
 - Performance optimization
 - Scope (roadmap defines this)
+
+For design-heavy phases, discussion should capture the concept inputs that a later `ui-ux-pro-max` pass needs:
+- the route families that feel weakest today
+- the desired shift in hierarchy, tone, or interaction quality
+- what must remain intact from the current product
 </gray_area_identification>
 
 <process>

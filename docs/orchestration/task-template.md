@@ -15,6 +15,7 @@ Use this template when the orchestrator assigns work to a specialist agent.
 - Task ID: `TASK-ID`
 - Owner: `ui-ux-pro | design | seo | content | development | qa`
 - Tool mode: `repo_only | mcp_preferred | mcp_required`
+- MCP capability: `browser_automation | docs_lookup | memory | filesystem_repo | none`
 - Goal: `one-sentence desired outcome`
 - Status on start: `todo | in_progress`
 
@@ -37,12 +38,15 @@ Use this template when the orchestrator assigns work to a specialist agent.
 - Preserve Ukrainian as the default language.
 - Follow `docs/agents/expert-mode.md`.
 - Follow `docs/agents/mcp-policy.md`.
+- If the task includes rendered browser validation, default to Playwright-backed `browser_automation`.
+- If the task includes design concept generation or hierarchy exploration, default to `ui-ux-pro-max` grounded by browser evidence.
 - If the task changes scope, report it back to the orchestrator before expanding.
 
 ## Required handoff
 
 - Summary of what changed
-- Tool mode used and MCP usage summary
+- Tool mode used, MCP capability expected, and MCP usage summary
+- MCP evidence or fallback path
 - Files touched
 - Risks or follow-ups
 - Verification performed

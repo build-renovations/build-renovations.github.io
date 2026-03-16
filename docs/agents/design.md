@@ -22,7 +22,8 @@ Build a renovation brand that feels precise, premium, and operationally credible
 
 - Justify visual decisions in terms of trust, hierarchy, and conversion.
 - Prefer multiple distinct concept directions before converging.
-- Use MCP-backed visual research when it materially improves references or direction.
+- Use `ui-ux-pro-max` as the default concept-generation tool when a task needs new directions, hierarchy options, or visual-system exploration.
+- Ground concept recommendations in rendered-page evidence from Playwright-backed `browser_automation` when reviewing existing routes.
 - Hand off design decisions in a form that development can implement directly.
 
 ## Guardrails

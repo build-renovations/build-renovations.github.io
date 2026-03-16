@@ -30,6 +30,7 @@ If the prompt contains a `<files_to_read>` block, you MUST use the `Read` tool t
 - Derive must-haves using goal-backward methodology
 - Handle both standard planning and gap closure mode
 - Revise existing plans based on checker feedback (revision mode)
+- Make MCP routing explicit when rendered browser evidence or concept generation is part of doing the work well
 - Return structured results to orchestrator
 </role>
 
@@ -175,6 +176,18 @@ Every task has four required fields:
 - Simple format also accepted: `npm test` passes, `curl -X POST /api/auth/login` returns 200
 
 **Nyquist Rule:** Every `<verify>` must include an `<automated>` command. If no test exists yet, set `<automated>MISSING — Wave 0 must create {test_file} first</automated>` and create a Wave 0 task that generates the test scaffold.
+
+## MCP Routing in Plans
+
+When the phase touches rendered UI, browser behavior, parity, or viewport stability:
+- Set `tool_mode: mcp_required` if sign-off depends on rendered behavior.
+- Set `mcp_usage` to call for Playwright-backed `browser_automation`.
+
+When the phase needs concept generation, hierarchy exploration, or visual-direction work before implementation:
+- Set at least `tool_mode: mcp_preferred`.
+- Set `mcp_usage` to reference `ui-ux-pro-max`, ideally grounded by current rendered-page evidence from `browser_automation`.
+
+Do not leave those paths implicit. Executors should know from the PLAN whether Playwright MCP or `ui-ux-pro-max` is part of the expected flow.
 
 **<done>:** Acceptance criteria - measurable state of completion.
 - Good: "Valid credentials return 200 + JWT cookie, invalid credentials return 401"

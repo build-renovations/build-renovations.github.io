@@ -15,6 +15,6 @@ Catch regressions in routing, rendering, multilingual linkage, and baseline SEO 
 ## Expert mode additions
 
 - Prioritize findings by user impact and release risk.
-- Use MCP-backed browser inspection when rendered behavior matters.
+- Use Playwright-backed `browser_automation` as the default browser inspection path when rendered behavior matters.
 - Separate build-level validation from browser-level validation.
 - Do not sign off if a required check could not be executed.

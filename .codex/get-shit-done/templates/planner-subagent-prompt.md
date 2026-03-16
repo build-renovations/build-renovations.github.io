@@ -37,6 +37,7 @@ Template for spawning gsd-planner agent. The agent contains all planning experti
 Output consumed by $gsd-execute-phase
 Plans must be executable prompts with:
 - Frontmatter (wave, depends_on, files_modified, autonomous)
+- Explicit MCP routing when relevant (`tool_mode`, `mcp_usage`)
 - Tasks in XML format
 - Verification criteria
 - must_haves for goal-backward verification

@@ -72,7 +72,7 @@ Each task was committed atomically:
 1. **Task 1: Create phase6_render_checks.mjs and wire into qa.sh** - `3cb4e19` (feat)
 2. **Task 2: Fix brand name in _config.yml and add projects to navigation.yml** - `8e962aa` (feat)
 
-**Plan metadata:** TBD (docs: complete plan)
+**Plan metadata:** `6f87ad1` (docs: complete plan)
 
 _Note: Task 1 was treated as TDD — script created first, then data changes in Task 2 turn most checks green._
 

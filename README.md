@@ -68,6 +68,11 @@ Repository MCP setup artifacts:
 - [scripts/mcp-bootstrap.sh](/Users/mykhailomykhailenko/work/personal/vasyl/remonty/scripts/mcp-bootstrap.sh)
 - [scripts/mcp-check.sh](/Users/mykhailomykhailenko/work/personal/vasyl/remonty/scripts/mcp-check.sh)
 
+Operational defaults in this repository:
+
+- Rendered browser validation should use the Playwright-backed `browser_automation` MCP path.
+- UI/UX concept generation should use `ui-ux-pro-max`, ideally after inspecting the current rendered route with Playwright MCP.
+
 ## Agent outputs
 
 Specialist artifacts are stored under [agents/](/Users/mykhailomykhailenko/work/personal/vasyl/remonty/agents/). The Jekyll development agent is the exception and writes implementation changes directly in the site root.
@@ -76,7 +81,7 @@ Specialist artifacts are stored under [agents/](/Users/mykhailomykhailenko/work/
 
 The orchestrator uses strict phase gates defined in [docs/orchestration/phase-gates.md](/Users/mykhailomykhailenko/work/personal/vasyl/remonty/docs/orchestration/phase-gates.md). Work is only considered unlocked when the required gate artifacts and checks exist.
 
-`gate4` automation runs Lighthouse, WCAG 2.1 AA checks via `pa11y`, and a broken-link crawl against the built site served locally from `_site/`.
+`gate4` automation runs Lighthouse, WCAG 2.1 AA checks via `pa11y`, and a broken-link crawl against a local Jekyll server started through Bundler.
 
 ## Orchestration workflow
 

@@ -45,7 +45,7 @@ The main implication: a change is not considered safe if it only "looks fine" in
   - requires `Status: DONE` inside `agents/status/dev.md`
 - `gate4`
   - reruns `scripts/qa.sh`
-  - serves `_site/` locally with `python3 -m http.server`
+  - serves the site locally with `bundle exec jekyll serve --skip-initial-build`
   - runs Lighthouse via `npx --yes lighthouse`
   - runs accessibility checks via `npx --yes pa11y`
   - runs broken-link crawling via `npx --yes linkinator`

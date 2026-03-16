@@ -123,6 +123,15 @@ This IS the execution instructions. Follow exactly. If plan references CONTEXT.m
 **If plan contains `<interfaces>` block:** These are pre-extracted type definitions and contracts. Use them directly — do NOT re-read the source files to discover types. The planner already extracted what you need.
 </step>
 
+<step name="resolve_mcp_route">
+Read the plan frontmatter and route MCP-backed work deliberately.
+
+- If `tool_mode: mcp_required` and the plan includes rendered UI, parity, viewport, interaction, or browser validation work, use Playwright-backed `browser_automation` as the default evidence path.
+- If `tool_mode: mcp_preferred` with `mcp_usage` mentioning browser review, prefer Playwright-backed `browser_automation` over manual local browsing.
+- If the plan centers on design concepts, hierarchy exploration, or visual-direction decisions, use `ui-ux-pro-max` before implementation changes and ground the concept pass with current rendered-page evidence when possible.
+- If the needed MCP path is unavailable, stop short of sign-off for `mcp_required` plans and document the fallback plus limitation in the SUMMARY.
+</step>
+
 <step name="previous_phase_check">
 ```bash
 node "./.codex/get-shit-done/bin/gsd-tools.cjs" phases list --type summaries --raw
@@ -139,8 +148,9 @@ Deviations are normal — handle via rules below.
    - `type="auto"`: if `tdd="true"` → TDD execution. Implement with deviation rules + auth gates. Verify done criteria. Commit (see task_commit). Track hash for Summary.
    - `type="checkpoint:*"`: STOP → checkpoint_protocol → wait for user → continue only after confirmation.
 3. Run `<verification>` checks
-4. Confirm `<success_criteria>` met
-5. Document deviations in Summary
+4. For any browser-facing verification named in the plan, collect that evidence through Playwright-backed `browser_automation` unless the plan explicitly says a different MCP path is required.
+5. Confirm `<success_criteria>` met
+6. Document deviations in Summary
 </step>
 
 <authentication_gates>

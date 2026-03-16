@@ -48,6 +48,14 @@ PHASE_INFO=$(node "./.codex/get-shit-done/bin/gsd-tools.cjs" roadmap get-phase "
 
 **If `found` is false:** Error with available phases. **If `found` is true:** Extract `phase_number`, `phase_name`, `goal` from JSON.
 
+## 3.1. Classify MCP Expectations
+
+Before research and planning, classify whether the phase should explicitly lean on Playwright MCP or `ui-ux-pro-max`.
+
+- If the phase goal involves visual polish, hierarchy, conversion surfaces, interaction quality, viewport behavior, parity, or rendered QA, plans should default browser validation to Playwright-backed `browser_automation`.
+- If the phase goal involves concept generation, layout direction, information density, or design-system exploration, plans should reference `ui-ux-pro-max` as the preferred concept path.
+- The generated PLAN frontmatter should reflect this through `tool_mode` and `mcp_usage`, rather than leaving MCP choice implicit.
+
 ## 3.5. Handle PRD Express Path
 
 **Skip if:** No `--prd` flag in arguments.
@@ -199,6 +207,7 @@ Answer: "What do I need to know to PLAN this phase well?"
 
 **Project instructions:** Read ./CLAUDE.md if exists — follow project-specific guidelines
 **Project skills:** Check .claude/skills/ or .agents/skills/ directory (if either exists) — read SKILL.md files, research should account for project skill patterns
+**MCP routing expectations:** If the phase is browser-validated, research should assume Playwright-backed `browser_automation`. If the phase is design-heavy, research should account for the `ui-ux-pro-max` concept path grounded in rendered-page evidence.
 </additional_context>
 
 <output>

@@ -17,6 +17,10 @@ check_codex_mcp() {
   codex mcp get "$name" >/dev/null 2>&1
 }
 
+check_playwright_backing() {
+  codex mcp get browser_automation 2>/dev/null | grep -Eq '@playwright/mcp|playwright'
+}
+
 check_skill_file() {
   local path="$1"
   [[ -f "$path" ]]
@@ -41,6 +45,7 @@ Checks:
 - docs/agents/mcp-policy.md
 - codex mcp: filesystem_repo
 - codex mcp: browser_automation
+- codex mcp: browser_automation is Playwright-backed
 - codex mcp: docs_lookup
 - codex mcp: memory
 EOF
@@ -67,12 +72,13 @@ Checks:
 - user skill: ui-ux-pro-max
 - playwright wrapper: $codex_home/skills/playwright/scripts/playwright_cli.sh
 - ui-ux skill: $codex_home/skills/ui-ux-pro-max/SKILL.md
+- ui-ux search script: $codex_home/skills/ui-ux-pro-max/scripts/search.py
 - runtime prerequisites: codex, node, npm, npx
 
 Recommended pairings:
 
 - browser_automation -> playwright skill
-- browser_automation + filesystem_repo + memory -> ui-ux-pro-max skill
+- browser_automation + rendered route evidence + filesystem_repo + memory -> ui-ux-pro-max skill
 - docs_lookup -> direct MCP usage
 - filesystem_repo -> direct MCP usage
 - memory -> direct MCP usage
@@ -127,10 +133,18 @@ for server in filesystem_repo browser_automation docs_lookup memory; do
   fi
 done
 
+if ! check_playwright_backing; then
+  print_skill_status "FAIL" "The browser_automation MCP is registered, but it is not clearly backed by Playwright."
+  print_status "FAIL" "browser_automation is not configured as a Playwright-backed MCP server."
+  echo "browser_automation must be backed by Playwright MCP." >&2
+  exit 1
+fi
+
 CODEX_HOME_DIR="${CODEX_HOME:-$HOME/.codex}"
 PLAYWRIGHT_SKILL="$CODEX_HOME_DIR/skills/playwright/SKILL.md"
 PLAYWRIGHT_WRAPPER="$CODEX_HOME_DIR/skills/playwright/scripts/playwright_cli.sh"
 UIPRO_SKILL="$CODEX_HOME_DIR/skills/ui-ux-pro-max/SKILL.md"
+UIPRO_SEARCH="$CODEX_HOME_DIR/skills/ui-ux-pro-max/scripts/search.py"
 SKILL_INSTALLER="$CODEX_HOME_DIR/skills/.system/skill-installer/SKILL.md"
 
 if ! check_skill_file "$SKILL_INSTALLER"; then
@@ -161,6 +175,13 @@ if ! check_skill_file "$UIPRO_SKILL"; then
   exit 1
 fi
 
+if ! check_skill_file "$UIPRO_SEARCH"; then
+  print_skill_status "FAIL" "The ui-ux-pro-max search script is missing."
+  print_status "FAIL" "Skill prerequisites are incomplete."
+  echo "Missing ui-ux-pro-max search script." >&2
+  exit 1
+fi
+
 print_skill_status "PASS" "Required MCP-aligned skills and runtime prerequisites are present."
-print_status "PASS" "Repository MCP documentation and baseline tooling prerequisites are present."
+print_status "PASS" "Repository MCP documentation and Playwright-backed browser automation prerequisites are present."
 echo "MCP repository check passed."

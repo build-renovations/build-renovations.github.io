@@ -102,6 +102,8 @@ JavaScript:
   - scroll progress indicator
   - pointer-based tilt/parallax effects
   - reveal-on-scroll animation via `IntersectionObserver`
+- `prefers-reduced-motion: reduce` is respected: when matched, all reveal nodes receive `is-visible` immediately and the observer is skipped entirely.
+- IntersectionObserver reveal threshold is `0.05` (5% visibility required) with a `-6%` bottom root margin. This ensures elements already in the viewport on page load reveal immediately without requiring scroll.
 
 Media/assets:
 
@@ -143,11 +145,11 @@ Compatibility shim:
 Gate and QA toolchain:
 
 - Jekyll build via `bundle exec jekyll build`
-- Local static serving for gate checks via `python3 -m http.server`
+- Local gate serving via `bundle exec jekyll serve --skip-initial-build`
 - Lighthouse via `npx --yes lighthouse`
 - Accessibility checks via `npx --yes pa11y`
 - Link crawl via `npx --yes linkinator`
-- Shell tooling expects `bash`, `curl`, `node`, `npm`, `npx`, `python3`, `ffprobe`, and `rg`
+- Shell tooling expects `bash`, `bundle`, `curl`, `node`, `npm`, `npx`, `ffprobe`, and `rg`
 
 ## Project Operations Context
 

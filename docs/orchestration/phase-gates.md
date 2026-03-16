@@ -26,6 +26,7 @@ Requires:
 - `agents/content/page-copy/`
 - `agents/content/microcopy.md`
 - `agents/seo/front-matter-templates.md`
+- Any design-concept artifact created under `mcp_preferred` or `mcp_required` records whether `ui-ux-pro-max` was used and what rendered-page evidence informed it
 
 Unlocks:
 
@@ -54,6 +55,7 @@ Requires:
 - WCAG 2.1 AA compliance confirmed
 - SEO technical audit passed
 - `0` broken links
+- Any rendered QA sign-off marked `mcp_required` is backed by Playwright-backed `browser_automation` evidence, not static inspection alone
 
 Unlocks:
 
@@ -66,4 +68,3 @@ Unlocks:
 - Internal links should use Jekyll URL filters such as `relative_url` or `absolute_url`, not hardcoded deploy-host assumptions.
 - Images should declare width and height where practical to reduce layout shift.
 - Every page should provide front matter compatible with `jekyll-seo-tag`.
-

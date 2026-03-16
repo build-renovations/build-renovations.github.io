@@ -23,8 +23,10 @@ When working in Codex, install and use skills alongside MCPs instead of relying 
 
 - `browser_automation`:
   - Pair with the `playwright` skill for repeatable browser workflows, snapshots, and artifact capture.
+  - Treat this repository's `browser_automation` registration as Playwright-backed by default.
   - Verify the local wrapper exists at `~/.codex/skills/playwright/scripts/playwright_cli.sh`.
   - For UI/UX concept work, pair it with `ui-ux-pro-max` so design guidance is grounded in a rendered-page review instead of generic ideation.
+  - Recommended sequence: inspect target routes with Playwright MCP, capture the hierarchy/pain points, then run `ui-ux-pro-max` against that evidence to form concepts.
 - `docs_lookup`:
   - Use directly from MCP; no extra skill is required in this repository today.
 - `filesystem_repo`:
@@ -37,6 +39,7 @@ When working in Codex, install and use skills alongside MCPs instead of relying 
   - Use for UI/UX direction generation, hierarchy review, typography/color exploration, and trust/conversion heuristics.
   - In this repository, it must follow the Jekyll-safe, `_data_`-driven, bilingual constraints already defined in `AGENTS.md`.
   - Do not use its generic `html-tailwind` default as the implementation target for this repository.
+  - Use it as the default concept engine for design-heavy phases unless the task is strictly implementation-only.
 
 ## Setup flow
 
@@ -51,10 +54,12 @@ When working in Codex, install and use skills alongside MCPs instead of relying 
 A machine should not be treated as fully ready until all of the following are true:
 
 - `codex mcp list` shows `filesystem_repo`, `browser_automation`, `docs_lookup`, and `memory`
+- `codex mcp get browser_automation` resolves to a Playwright MCP command
 - `./scripts/mcp-check.sh` passes
 - the Playwright skill exists at `~/.codex/skills/playwright/`
 - the Playwright wrapper exists at `~/.codex/skills/playwright/scripts/playwright_cli.sh`
 - the UI/UX skill exists at `~/.codex/skills/ui-ux-pro-max/SKILL.md`
+- the UI/UX search script exists at `~/.codex/skills/ui-ux-pro-max/scripts/search.py`
 - `node`, `npm`, and `npx` are available
 
 ## Required environment variables
