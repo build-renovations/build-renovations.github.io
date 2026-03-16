@@ -2227,7 +2227,7 @@ body.has-sticky-phone-cta main {
 .sourced-proof__intro,
 .project-fit__intro,
 .call-expectations__intro {
-  max-width: 48rem;
+  max-width: none;
 }
 
 .trust-strip__intro p:last-child,
