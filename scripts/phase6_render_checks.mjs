@@ -184,9 +184,17 @@ function main() {
     try { htmlCache[route] = readHtml(route); } catch { /* route may not exist yet */ }
   }
 
-  // Brand checks
-  checkBrandName("/", htmlCache["/"]);
-  checkBrandName("/en/", htmlCache["/en/"]);
+  // Brand checks — all core routes must not contain "Remonty"
+  for (const [route, html] of Object.entries(htmlCache)) {
+    checkBrandName(route, html);
+  }
+
+  // Geographic regression — no page should reference Kyiv/Києві
+  for (const [route, html] of Object.entries(htmlCache)) {
+    if (/у Києві|in Kyiv|in Kiev/i.test(html)) {
+      fail(`${route} contains Kyiv geographic reference — company is in Lviv`);
+    }
+  }
 
   // Navigation checks
   checkProjectsNav("/", htmlCache["/"]);

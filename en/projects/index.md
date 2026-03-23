@@ -4,7 +4,7 @@ lang: en
 translation_key: projects
 title: "Projects"
 permalink: /en/projects/
-seo_title: "Projects | Remonty"
+seo_title: "Renovation projects in Lviv — real case studies with photo reports | Рівень"
 seo_description: "Project dossiers with decision routes, buyer relevance, stage logic, and proof-source status."
 ---
 {% assign concern_groups = site.data.case_studies.concern_groups %}

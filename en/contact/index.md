@@ -3,6 +3,8 @@ lang: en
 translation_key: contact
 title: "Contact"
 permalink: /en/contact/
+seo_title: "Contact us — discuss your renovation in Lviv | Рівень"
+seo_description: "Call or message to discuss your renovation. Share the property type, condition, and desired stages — we will propose a concrete plan."
 eyebrow: "Start the conversation"
 lead: "The best first contact for a renovation starts with a short but practical brief. That makes it possible to assess stages, risks, and the right collaboration format."
 show_trust_strip: true

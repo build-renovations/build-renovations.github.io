@@ -3,6 +3,8 @@ lang: en
 translation_key: about
 title: "About"
 permalink: /en/about/
+seo_title: "About Рівень — 15 years of apartment and house renovation in Lviv"
+seo_description: "Рівень team: over 300 completed projects, 15 years of full-scope renovation experience in Lviv. One contact, full accountability for the result."
 eyebrow: "Approach"
 lead: "Over 15 years and 300+ projects we learned the essential thing: renovation must be a controlled, sequential process that a buyer can understand — not an endurance test."
 show_trust_strip: true

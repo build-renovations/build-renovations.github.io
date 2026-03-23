@@ -4,7 +4,7 @@ lang: uk
 translation_key: projects
 title: "Проєкти"
 permalink: /projects/
-seo_title: "Проєкти | Remonty"
+seo_title: "Проєкти ремонтів у Львові — реальні кейси з фотозвітами | Рівень"
 seo_description: "Проєкти-докази з маршрутами рішень, buyer-relevance, етапами та статусом джерела доказу."
 ---
 {% assign concern_groups = site.data.case_studies.concern_groups %}

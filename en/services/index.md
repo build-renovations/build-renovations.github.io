@@ -3,6 +3,8 @@ lang: en
 translation_key: services
 title: "Services"
 permalink: /en/services/
+seo_title: "Renovation services in Lviv — apartments and houses | Рівень"
+seo_description: "Plumbing, electrical, structural work, finishing, procurement, and site supervision — all renovation stages under one accountable lead in Lviv."
 eyebrow: "Work categories"
 lead: "Services are presented as one delivery system: engineering work, substrate preparation, finishing, procurement, and on-site control."
 show_trust_strip: true
