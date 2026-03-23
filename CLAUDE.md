@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Bilingual Jekyll static site for a Ukrainian renovation company ("Рівень"). Ukrainian at `/`, English mirror at `/en/`. Deployed on GitHub Pages with safe-mode constraints — no custom plugins allowed.
+Bilingual Jekyll static site for "Рівень" — a renovation company based in Lviv, Ukraine. Ukrainian at `/`, English mirror at `/en/`. Deployed on GitHub Pages with safe-mode constraints — no custom plugins allowed.
 
 ## Ruby Setup
 
@@ -20,7 +20,7 @@ rbenv install 3.3.10              # One-time setup
 ```bash
 bundle install              # Install Ruby dependencies
 ./scripts/serve.sh          # Local dev server (localhost:4000)
-./scripts/qa.sh             # Build + image policy checks + phase render checks
+./scripts/qa.sh             # Build + image policy checks + phase render checks (6 phases)
 ./scripts/gates.sh gate4    # Full audit: Lighthouse 95+, WCAG 2.1 AA (pa11y), broken links
 ```
 
@@ -48,6 +48,37 @@ Gates 1-3 validate strategy/design/dev artifacts; gate 4 runs automated audits a
 - Reuse `_data/` YAML as the single source of truth — avoid duplicating content in markup.
 - Image policy: WebP and SVG only, no JPEG/PNG, no embedded metadata.
 
+## Content & SEO Rules
+
+- **Brand name** is "Рівень" (not "Remonty"). All `seo_title` fields must use "Рівень".
+- **Company location** is Lviv (Львів), not Kyiv. Use "у Львові" / "in Lviv" in SEO fields.
+- Every page must have `seo_title` and `seo_description` in its front matter with geographic targeting where appropriate.
+- Service page SEO titles follow: `"[Service] у Львові — [keywords] | Рівень"`.
+- Ukrainian is the source language. English must be semantically aligned, professional, and use natural homeowner language (not B2B "buyer" tone).
+- Content tone: professional, direct, evidence-based. Sell through process transparency and proof, not slogans.
+- Hero stats: 300+ projects, 15+ years, 90%+ referrals, Львів і область, 6 напрямів.
+
+## QA & Regression Testing
+
+Phase 6 render checks (`scripts/phase6_render_checks.mjs`) enforce:
+- No "Remonty" in any `<title>` or `og:title` across all routes
+- No Kyiv/Києві geographic references
+- 5 hero stat blocks with correct values and no warranty references
+- No duplicate `featured-case-studies__bridge-note` elements
+- No `ch`-based `max-width` on h1/h2 in CSS
+- Heading hierarchy: exactly one h1, no skipped levels
+- All `<img>` tags must have non-empty `alt`
+- Internal links on home pages resolve to built routes
+
+**When fixing bugs, always add a corresponding QA check to prevent regression.**
+
+## Content Routes
+
+- `/services/[slug]/` — 8 service detail pages (plumbing, electrical, rough-works, finishing, procurement, site-supervision, apartment-renovation, house-renovation)
+- `/projects/[slug]/` — 5 case study portfolio pages
+- `/process/`, `/about/`, `/contact/`, `/faq/` — informational pages
+- `/en/` — English mirror of all above
+
 ## Multi-Agent Workflow
 
 The repo includes an orchestration system for multi-agent LLM sessions:
@@ -58,10 +89,3 @@ The repo includes an orchestration system for multi-agent LLM sessions:
 - **Phase gates:** `docs/orchestration/phase-gates.md` — work is gated; artifacts must exist before proceeding.
 - **Agent artifacts:** stored in `agents/` (excluded from Jekyll build). Development agent writes directly to site root.
 - **MCP policy:** `docs/agents/mcp-policy.md` — tasks marked `repo_only`, `mcp_preferred`, or `mcp_required`.
-
-## Content Routes
-
-- `/services/[slug]/` — 6 service detail pages (plumbing, electrical, rough-works, finishing, procurement, site-supervision)
-- `/projects/[slug]/` — case study portfolio pages
-- `/process/`, `/about/`, `/contact/`, `/faq/` — informational pages
-- `/en/` — English mirror of all above

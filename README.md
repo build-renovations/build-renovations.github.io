@@ -1,6 +1,6 @@
-# Remonty
+# Рівень
 
-GitHub Pages compatible Jekyll bootstrap for a renovation website covering apartments and houses from plumbing and electrical work to final finishing. The repository is bilingual by default: Ukrainian at the root, English under `/en/`.
+GitHub Pages compatible Jekyll site for a renovation company based in Lviv, Ukraine. Covers full-scope apartment and house renovation: plumbing, electrical, structural work, finishing, procurement, and site supervision. The repository is bilingual by default: Ukrainian at the root, English under `/en/`.
 
 ## Stack
 
