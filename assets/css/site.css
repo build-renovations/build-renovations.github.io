@@ -2764,7 +2764,6 @@ body.has-sticky-phone-cta main {
 }
 
 .home-intro-band__copy h2 {
-  max-width: 14ch;
   font-size: clamp(1.8rem, 3vw, 2.8rem);
 }
 
