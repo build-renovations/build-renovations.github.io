@@ -264,8 +264,6 @@ h3 {
 
 h1 {
   font-size: clamp(2.8rem, 7vw, 5.4rem);
-  max-width: 11ch;
-  text-wrap: balance;
 }
 
 h2 {
@@ -982,7 +980,6 @@ body::before {
 h1 {
   font-size: clamp(2.2rem, 3.7vw, 3.8rem);
   line-height: 0.98;
-  max-width: 13.2ch;
   letter-spacing: -0.03em;
 }
 
