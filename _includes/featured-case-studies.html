@@ -20,9 +20,6 @@
         <h2>{{ section_title | default: bridge.title }}</h2>
         <p class="section-intro">{{ section_intro | default: bridge.text }}</p>
       </div>
-      {% if bridge %}
-        <p class="featured-case-studies__bridge-note">{{ bridge.eyebrow | default: bridge.title }}</p>
-      {% endif %}
     </div>
     <div class="service-grid">
       {% for ref_key in ref_keys %}
