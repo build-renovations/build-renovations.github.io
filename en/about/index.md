@@ -13,23 +13,23 @@ show_sourced_proof: true
 show_project_fit: true
 show_call_expectations: true
 ---
-## What the approach is built on
+## How we work
 
-- One route from engineering and structural preparation to the final finish
-- Process explanation in human language instead of technical noise
-- Visual examples that show not only the result, but the standard of execution
-- One clear communication path instead of fragmented subcontractor chaos
+- One route from engineering systems to turnkey handover — no handoffs between random crews
+- Every stage is documented with photos before the next layer covers the completed work
+- You see a clear sequence of decisions, not a chaotic stream of updates
+- Direct communication with the person responsible for the entire project — no middlemen
 
-## What matters to a buyer
+## What you get as a client
 
-- Clarity on which stages the team owns
-- A predictable rhythm of approvals and control
-- Real photos where workmanship discipline is visible
-- A concrete discussion about the property instead of vague promises
+- Clear understanding of which stages we own and in what order
+- A predictable schedule of approvals, checkpoints, and stage transitions
+- Real photos from every stage showing execution quality, not just the final look
+- A concrete conversation about your property instead of templated promises
 
-The first contact is treated as a short working brief about the property type, condition, scope, and timing. That helps filter out loose scenarios early and move into concrete next steps.
+The first contact is a short brief: property type, current condition, required stages, and target timeline. That is enough for us to assess the scope and propose a concrete action plan.
 
-## Where this approach is already visible as proof
+## Real projects where our approach delivers
 
 {% assign about_case_refs = "apartment-system-renovation,controlled-handover" | split: "," %}
-{% include featured-case-studies.html lang=page.lang refs=about_case_refs marker="project-index-visibility" surface="about-featured-case-studies" title="Two dossiers where the approach becomes a real decision route" intro="The about page should not repeat the whole proof system. It only needs to show how the operating model works on real properties and where to read the deeper evidence next." %}
+{% include featured-case-studies.html lang=page.lang refs=about_case_refs marker="project-index-visibility" surface="about-featured-case-studies" title="Project dossiers with photo evidence from every stage" intro="Not just polished photos after the renovation — the full route from engineering preparation to controlled handover." %}
