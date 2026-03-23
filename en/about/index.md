@@ -4,7 +4,7 @@ translation_key: about
 title: "About"
 permalink: /en/about/
 eyebrow: "Approach"
-lead: "The team should not sell abstract craftsmanship. It should sell the ability to turn renovation into a controlled, sequential process that a buyer can understand."
+lead: "Over 15 years and 300+ projects we learned the essential thing: renovation must be a controlled, sequential process that a buyer can understand — not an endurance test."
 show_trust_strip: true
 trust_context: about
 show_sourced_proof: true

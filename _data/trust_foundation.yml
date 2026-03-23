@@ -21,7 +21,7 @@ uk:
     profile_note: "Сантехніка, електрика, чорнові роботи, чистове оздоблення та здача об'єкта — в одному маршруті."
     service_area_note: "Виїзд на об'єкт, аудит стану і старт робіт — без зайвих посередників."
     accountability_value: "Один відповідальний контакт на весь маршрут"
-    company_note: "Рівень — команда, що спеціалізується на комплексному ремонті квартир і будинків."
+    company_note: "Рівень — команда з 15-річним досвідом комплексного ремонту квартир і будинків у Львові та області. Понад 300 завершених об'єктів."
   accountability:
     eyebrow: "Що означає відповідальність"
     title: "Ви знаєте, хто контролює маршрут рішень — ще до того, як залишите заявку"
@@ -128,7 +128,7 @@ en:
     profile_note: "Plumbing, electrical, structural work, finishing, and handover — managed as one route."
     service_area_note: "Site visit, condition audit, and project start — without extra intermediaries."
     accountability_value: "One accountable contact for the full project route"
-    company_note: "Рівень is a team specialising in full-scope renovation for apartments and houses."
+    company_note: "Рівень is a team with 15 years of experience in full-scope renovation for apartments and houses across Lviv and the surrounding region. Over 300 completed projects."
   accountability:
     eyebrow: "What accountability means here"
     title: "You know who controls the decision route before you make contact"

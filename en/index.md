@@ -8,7 +8,7 @@ seo_title: "Рівень | Turnkey apartment and house renovation"
 seo_description: "Full-scope renovation for apartments and houses: plumbing, electrical, structural work, finishing, and complete handover under one accountable contractor."
 eyebrow: "Full-scope turnkey renovation"
 hero_title: "Apartment and house renovation — from structural work to final finishing under one accountable lead."
-hero_lead: "You do not coordinate a plumber, electrician, and finishing contractor separately. We take responsibility for the entire route, manage every handoff between stages, and deliver the finished property with full photo documentation."
+hero_lead: "Over 15 years we have completed 300+ projects and learned exactly where renovations break down. You do not coordinate trades separately — we take responsibility for the entire route and deliver the finished property with full photo documentation."
 primary_cta_url: /en/contact/
 secondary_cta_url: /en/services/
 panel_title: "Why clients choose Рівень"
