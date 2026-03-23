@@ -1518,7 +1518,12 @@ h1 {
   padding: 2.4rem;
 }
 
-.process-hero__grid,
+.process-hero__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.4rem;
+}
+
 .process-proof {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
@@ -1795,7 +1800,6 @@ h1 {
 }
 
 @media (max-width: 900px) {
-  .process-hero__grid,
   .process-proof,
   .process-stage,
   .process-risk {
@@ -1897,7 +1901,6 @@ body {
   .work-category,
   .service-hero,
   .service-detail,
-  .process-hero__grid,
   .process-proof,
   .process-stage,
   .process-risk {
@@ -2899,7 +2902,6 @@ body.has-sticky-phone-cta main {
     grid-template-columns: 1fr;
   }
 
-  .process-hero__grid,
   .process-proof {
     grid-template-columns: 1fr;
   }
