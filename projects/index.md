@@ -9,6 +9,14 @@ seo_description: "Проєкти-докази з маршрутами рішен
 ---
 {% assign concern_groups = site.data.case_studies.concern_groups %}
 {% assign t = site.data.translations[page.lang] | default: site.data.translations.uk %}
+
+<section class="page-hero" data-phase4-marker="layout-parity" data-phase4-surface="page-hero">
+  <div class="shell">
+    <p class="eyebrow">{{ t.chapter_proof_label }}</p>
+    <h1>{{ page.title }}</h1>
+  </div>
+</section>
+
 {% include featured-case-studies.html
   lang=page.lang
   refs=site.data.case_studies.featured_sets.home.refs
