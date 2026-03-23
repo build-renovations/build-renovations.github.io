@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+if command -v rbenv >/dev/null 2>&1; then eval "$(rbenv init - bash)"; fi
+
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 STATUS_DIR="$ROOT_DIR/agents/status"
 REPORT_DIR="$ROOT_DIR/agents/status/reports"

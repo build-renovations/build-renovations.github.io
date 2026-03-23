@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+if command -v rbenv >/dev/null 2>&1; then eval "$(rbenv init - bash)"; fi
+
 check_image_policy() {
   local disallowed
   disallowed="$(find assets/images -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' -o -iname '*.tif' -o -iname '*.tiff' \) | sort || true)"

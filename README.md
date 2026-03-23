@@ -11,6 +11,13 @@ GitHub Pages compatible Jekyll bootstrap for a renovation website covering apart
 
 ## Local workflow
 
+The project pins Ruby 3.3.10 via `.ruby-version` (rbenv). All scripts auto-init rbenv, so you only need the one-time setup:
+
+```bash
+brew install rbenv ruby-build   # if not installed
+rbenv install 3.3.10
+```
+
 1. Install gems:
 
    ```bash
